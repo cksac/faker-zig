@@ -112,6 +112,7 @@ pub fn main() !void {
     };
     const f2 = faker.Faker(.{ en, base }, .{non_null_option}).init(allocator, rng.random());
     const user_val = f.dummy(User);
+    defer user_val.deinit();
     print("user_val = {}\n", user_val);
 }
 ```
