@@ -93,7 +93,7 @@ pub fn main() !void {
         };
     };
 
-    const blog = FAKER.dummy(BlogUnmanaged);
+    const blog = f.dummy(BlogUnmanaged);
     defer blog.deinit(FAKER.allocator);
     std.debug.print("blog.id {d}\n", .{blog.id});
     std.debug.print("blog.tag {s}\n", .{blog.tag});
