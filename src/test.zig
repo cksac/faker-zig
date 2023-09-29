@@ -1,4 +1,5 @@
 const std = @import("std");
+const Allocator = std.mem.Allocator;
 const testing = std.testing;
 const test_allocator = std.testing.allocator;
 
@@ -6,6 +7,9 @@ const faker = @import("faker.zig");
 
 const en = faker.locale.en;
 const base = faker.locale.base;
+
+var RNG = std.rand.DefaultPrng.init(0);
+const FAKER = faker.Faker(.{ en, base }, .{}).init(test_allocator, RNG.random());
 
 fn deterministic_test(comptime Target: type) !void {
     const seed = 100;
@@ -212,13 +216,6 @@ test "enum" {
 }
 
 test "test union" {
-    // const Payload = union {
-    //     int: i64,
-    //     float: f64,
-    //     boolean: bool,
-    // };
-    // try deterministic_test(EN, Payload);
-
     const ComplexTypeTag = enum {
         ok,
         not_ok,
@@ -264,20 +261,35 @@ test "std array types" {
 }
 
 test "customization" {
-    const Foo = struct {
+    const BlogUnmanaged = struct {
+        const Self = @This();
+
         id: u32,
-        color: []const u8,
-        color_space: []const u8,
+        tag: []const u8,
+        title: []u8,
+        body: []u8,
+
+        pub fn deinit(self: Self, allocator: Allocator) void {
+            allocator.free(self.title);
+            allocator.free(self.body);
+        }
 
         pub const @"faker.dummy" = struct {
-            const color = .{ "color", "human" };
+            pub const tag = .{ "color", "human" };
+            pub const title = .{ "lorem", "words", .{ .min = 5, .max = 10 } };
 
-            pub fn color_space(comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) []const u8 {
-                return f.color.space();
+            pub fn body(comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) []u8 {
+                return f.lorem.words(.{ .min = 20, .max = 30 });
             }
         };
     };
-    try deterministic_test(Foo);
+
+    const blog = FAKER.dummy(BlogUnmanaged);
+    defer blog.deinit(FAKER.allocator);
+    std.debug.print("blog.id {d}\n", .{blog.id});
+    std.debug.print("blog.tag {s}\n", .{blog.tag});
+    std.debug.print("blog.title {s}\n", .{blog.title});
+    std.debug.print("blog.body {s}\n", .{blog.body});
 }
 
 test "user impls" {
@@ -324,13 +336,10 @@ test "user impls" {
 }
 
 test "lorem" {
-    var rng = std.rand.DefaultPrng.init(0);
-    const f = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng.random());
-
-    const v1 = f.lorem.word();
+    const v1 = FAKER.lorem.word();
     std.debug.print("lorem.word() = {s}\n", .{v1});
 
-    const v2 = try f.lorem.words(.{ .min = 5 });
-    defer f.allocator.free(v2);
+    const v2 = FAKER.lorem.words(.{ .min = 5 });
+    defer FAKER.allocator.free(v2);
     std.debug.print("lorem.words = {s}\n", .{v2});
 }

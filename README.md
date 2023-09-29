@@ -70,22 +70,35 @@ pub fn main() !void {
     print("str_val = {s}\n", str_val);
 
     // customization
-    const Foo = struct {
+    const BlogUnmanaged = struct {
+        const Self = @This();
+
         id: u32,
-        color: []const u8,
-        color_space: []const u8,
+        tag: []const u8,
+        title: []u8,
+        body: []u8,
+
+        pub fn deinit(self: Self, allocator: Allocator) void {
+            allocator.free(self.title);
+            allocator.free(self.body);
+        }
 
         pub const @"faker.dummy" = struct {
-            const color = .{ "color", "human" };
+            pub const tag = .{ "color", "human" };
+            pub const title = .{ "lorem", "words", .{ .min = 5, .max = 10 } };
 
-            pub fn color_space(comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) []const u8 {
-                return f.color.space();
+            pub fn body(comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) []u8 {
+                return f.lorem.words(.{ .min = 20, .max = 30 });
             }
         };
     };
 
-    const foo_val = f.dummy(Foo);
-    print("foo_val = {}\n", foo_val);
+    const blog = FAKER.dummy(BlogUnmanaged);
+    defer blog.deinit(FAKER.allocator);
+    std.debug.print("blog.id {d}\n", .{blog.id});
+    std.debug.print("blog.tag {s}\n", .{blog.tag});
+    std.debug.print("blog.title {s}\n", .{blog.title});
+    std.debug.print("blog.body {s}\n", .{blog.body});
 
     // user impls
     const non_null_option = struct {

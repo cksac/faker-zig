@@ -9,9 +9,10 @@ pub fn is(
 pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
     const info = @typeInfo(T).Struct;
     var item: T = undefined;
+    const customization: ?type = if (comptime @hasDecl(T, "faker.dummy")) T.@"faker.dummy" else null;
+
     inline for (info.fields) |field| {
-        if (@hasDecl(T, "faker.dummy")) {
-            const cfg = T.@"faker.dummy";
+        if (customization) |cfg| {
             if (@hasDecl(cfg, field.name)) {
                 const field_cfg = @field(cfg, field.name);
                 if (@typeInfo(@TypeOf(field_cfg)) == .Fn) {
@@ -21,14 +22,16 @@ pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: a
                     const func_name = field_cfg[1];
                     const category = @field(faker, category_name);
                     const func = @field(@TypeOf(category), func_name);
-                    @field(item, field.name) = @call(.auto, func, .{category});
+                    if (field_cfg.len >= 3) {
+                        @field(item, field.name) = @call(.auto, func, .{ category, field_cfg[2] });
+                    } else {
+                        @field(item, field.name) = @call(.auto, func, .{category});
+                    }
                 }
-            } else {
-                @field(item, field.name) = faker.dummy(field.type);
+                continue;
             }
-        } else {
-            @field(item, field.name) = faker.dummy(field.type);
         }
+        @field(item, field.name) = faker.dummy(field.type);
     }
     return item;
 }
