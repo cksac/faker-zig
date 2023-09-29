@@ -21,6 +21,38 @@ fn deterministic_test(comptime Target: type) !void {
     try testing.expectEqual(t1, t2);
 }
 
+fn test_arr(comptime Target: type) !void {
+    const seed = 100;
+    var rng1 = std.rand.DefaultPrng.init(seed);
+    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+
+    var rng2 = std.rand.DefaultPrng.init(seed);
+    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+
+    const t1 = faker1.dummy(Target);
+    defer t1.deinit();
+    const t2 = faker2.dummy(Target);
+    defer t2.deinit();
+    std.debug.print("{s} = {any}\n", .{ @typeName(Target), t1 });
+    try testing.expectEqualSlices(std.meta.Child(@TypeOf(t1.items)), t1.items, t2.items);
+}
+
+fn test_arr_unmanaged(comptime Target: type) !void {
+    const seed = 100;
+    var rng1 = std.rand.DefaultPrng.init(seed);
+    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+
+    var rng2 = std.rand.DefaultPrng.init(seed);
+    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+
+    var t1 = faker1.dummy(Target);
+    defer t1.deinit(faker1.allocator);
+    var t2 = faker2.dummy(Target);
+    defer t2.deinit(faker2.allocator);
+    std.debug.print("{s} = {any}\n", .{ @typeName(Target), t1 });
+    try testing.expectEqualSlices(std.meta.Child(@TypeOf(t1.items)), t1.items, t2.items);
+}
+
 test "premitive types" {
     try deterministic_test(i8);
     try deterministic_test(u8);
@@ -215,6 +247,18 @@ test "strings" {
     try deterministic_test(Strings);
 }
 
+test "std array types" {
+    try test_arr(std.ArrayList(u8));
+    try test_arr(std.ArrayList(f32));
+    try test_arr(std.ArrayListAligned(u8, 16));
+    try test_arr(std.ArrayListAligned(f32, 16));
+
+    try test_arr_unmanaged(std.ArrayListUnmanaged(u8));
+    try test_arr_unmanaged(std.ArrayListUnmanaged(f32));
+    try test_arr_unmanaged(std.ArrayListAlignedUnmanaged(u8, 16));
+    try test_arr_unmanaged(std.ArrayListAlignedUnmanaged(f32, 16));
+}
+
 test "customization" {
     const Foo = struct {
         id: u32,
@@ -269,27 +313,6 @@ test "user impls" {
 
     var rng = std.rand.DefaultPrng.init(0);
     const f = faker.Faker(.{ en, base }, .{non_null_option}).init(test_allocator, rng.random());
-
-    const foo = f.dummy(Foo);
-    defer foo.deinit();
-    std.debug.print("foo = {}\n", .{foo});
-}
-
-test "ArrayList" {
-    const Foo = struct {
-        const Self = @This();
-
-        zig: std.ArrayList(u8),
-        zag: std.ArrayList(f32),
-
-        pub fn deinit(self: Self) void {
-            self.zig.deinit();
-            self.zag.deinit();
-        }
-    };
-
-    var rng = std.rand.DefaultPrng.init(0);
-    const f = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng.random());
 
     const foo = f.dummy(Foo);
     defer foo.deinit();
