@@ -16,6 +16,8 @@ fn deterministic_test(comptime Target: type) !void {
     const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
 
     const t1 = faker1.dummy(Target);
+    try testing.expect(@TypeOf(t1) == Target);
+
     const t2 = faker2.dummy(Target);
     std.debug.print("{s} = {any}\n", .{ @typeName(Target), t1 });
     try testing.expectEqual(t1, t2);
@@ -31,6 +33,8 @@ fn test_arr(comptime Target: type) !void {
 
     const t1 = faker1.dummy(Target);
     defer t1.deinit();
+    try testing.expect(@TypeOf(t1) == Target);
+
     const t2 = faker2.dummy(Target);
     defer t2.deinit();
     std.debug.print("{s} = {any}\n", .{ @typeName(Target), t1 });
