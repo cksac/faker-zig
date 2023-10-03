@@ -19,7 +19,7 @@ pub fn main() !void {
     // create faker with locales and random
     const allocator = std.heap.page_allocator;
     var rng = std.rand.DefaultPrng.init(0);
-    const f = faker.Faker(.{ en, base }, .{}).init(allocator, rng.random());
+    const f = Faker(.{ .locales = .{ en, base } }).init(allocator, rng.random());
 
     // primitive types
     const u8_val = f.dummy(u8);
@@ -108,7 +108,7 @@ pub fn main() !void {
             return @typeInfo(T) == .Optional;
         }
 
-        pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) T {
+        pub fn dummy(comptime T: type, comptime opt: anytype, f: faker.Faker(opt)) T {
             const info = @typeInfo(T).Optional;
             return f.dummy(info.child);
         }
@@ -121,9 +121,13 @@ pub fn main() !void {
 
         pub fn deinit(self: Self) void {
             if (self.friends) |v| v.deinit();
-        }        
+        }
     };
-    const f2 = faker.Faker(.{ en, base }, .{non_null_option}).init(allocator, rng.random());
+    const f2 = faker.Faker(.{
+        .locales = .{ en, base },
+        .user_impls = .{non_null_option},
+    }).init(allocator, rng.random());
+
     const user_val = f2.dummy(User);
     defer user_val.deinit();
     print("user_val = {}\n", user_val);
