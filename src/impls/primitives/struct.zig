@@ -6,7 +6,7 @@ pub fn is(
     return @typeInfo(T) == .Struct and !@typeInfo(T).Struct.is_tuple;
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     const info = @typeInfo(T).Struct;
     var item: T = undefined;
     const customization: ?type = if (comptime @hasDecl(T, "faker.dummy")) T.@"faker.dummy" else null;
@@ -16,7 +16,7 @@ pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: a
             if (@hasDecl(cfg, field.name)) {
                 const field_cfg = @field(cfg, field.name);
                 if (@typeInfo(@TypeOf(field_cfg)) == .Fn) {
-                    @field(item, field.name) = @call(.auto, field_cfg, .{ locales, user_impls, faker });
+                    @field(item, field.name) = @call(.auto, field_cfg, .{ opt, faker });
                 } else {
                     const category_name = field_cfg[0];
                     const func_name = field_cfg[1];

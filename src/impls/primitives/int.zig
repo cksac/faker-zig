@@ -6,6 +6,6 @@ pub fn is(
     return @typeInfo(T) == .Int;
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     return faker.random.int(T);
 }

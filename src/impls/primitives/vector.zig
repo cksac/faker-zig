@@ -6,7 +6,7 @@ pub fn is(
     return @typeInfo(T) == .Vector;
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     const info = @typeInfo(T).Vector;
     var arr: [info.len]info.child = undefined;
     inline for (0..info.len) |i| {

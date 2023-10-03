@@ -7,7 +7,7 @@ pub fn is(
     return comptime std.mem.startsWith(u8, @typeName(T), "array_list.ArrayListAligned(");
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     const len = faker.random.uintLessThan(usize, 10);
     const elemType = std.meta.Child(T.Slice);
     const alignment = std.meta.alignment(T.Slice);

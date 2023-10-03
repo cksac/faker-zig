@@ -6,6 +6,6 @@ pub fn is(
     return T == void;
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, _: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, _: Faker(opt)) T {
     return void{};
 }

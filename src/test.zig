@@ -9,15 +9,15 @@ const en = faker.locale.en;
 const base = faker.locale.base;
 
 var RNG = std.rand.DefaultPrng.init(0);
-const FAKER = faker.Faker(.{ en, base }, .{}).init(test_allocator, RNG.random());
+const FAKER = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, RNG.random());
 
 fn deterministic_test(comptime Target: type) !void {
     const seed = 100;
     var rng1 = std.rand.DefaultPrng.init(seed);
-    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+    const faker1 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng1.random());
 
     var rng2 = std.rand.DefaultPrng.init(seed);
-    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+    const faker2 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng2.random());
 
     const t1 = faker1.dummy(Target);
     try testing.expect(@TypeOf(t1) == Target);
@@ -30,10 +30,10 @@ fn deterministic_test(comptime Target: type) !void {
 fn test_arr(comptime Target: type) !void {
     const seed = 100;
     var rng1 = std.rand.DefaultPrng.init(seed);
-    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+    const faker1 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng1.random());
 
     var rng2 = std.rand.DefaultPrng.init(seed);
-    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+    const faker2 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng2.random());
 
     const t1 = faker1.dummy(Target);
     defer t1.deinit();
@@ -48,10 +48,10 @@ fn test_arr(comptime Target: type) !void {
 fn test_arr_unmanaged(comptime Target: type) !void {
     const seed = 100;
     var rng1 = std.rand.DefaultPrng.init(seed);
-    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+    const faker1 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng1.random());
 
     var rng2 = std.rand.DefaultPrng.init(seed);
-    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+    const faker2 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng2.random());
 
     var t1 = faker1.dummy(Target);
     defer t1.deinit(faker1.allocator);
@@ -64,10 +64,10 @@ fn test_arr_unmanaged(comptime Target: type) !void {
 fn test_hashmap(comptime Target: type) !void {
     const seed = 100;
     var rng1 = std.rand.DefaultPrng.init(seed);
-    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+    const faker1 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng1.random());
 
     var rng2 = std.rand.DefaultPrng.init(seed);
-    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+    const faker2 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng2.random());
 
     var t1 = faker1.dummy(Target);
     defer t1.deinit();
@@ -84,10 +84,10 @@ fn test_hashmap(comptime Target: type) !void {
 fn test_hashmap_unmanaged(comptime Target: type) !void {
     const seed = 100;
     var rng1 = std.rand.DefaultPrng.init(seed);
-    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+    const faker1 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng1.random());
 
     var rng2 = std.rand.DefaultPrng.init(seed);
-    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+    const faker2 = faker.Faker(.{ .locales = .{ en, base } }).init(test_allocator, rng2.random());
 
     var t1 = faker1.dummy(Target);
     defer t1.deinit(faker1.allocator);
@@ -325,7 +325,7 @@ test "customization" {
             pub const tag = .{ "color", "human" };
             pub const title = .{ "lorem", "words", .{ .min = 5, .max = 10 } };
 
-            pub fn body(comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) []u8 {
+            pub fn body(comptime opt: anytype, f: faker.Faker(opt)) []u8 {
                 return f.lorem.words(.{ .min = 20, .max = 30 });
             }
         };
@@ -368,14 +368,17 @@ test "user impls" {
             return @typeInfo(T) == .Optional;
         }
 
-        pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) T {
+        pub fn dummy(comptime T: type, comptime opt: anytype, f: faker.Faker(opt)) T {
             const info = @typeInfo(T).Optional;
             return f.dummy(info.child);
         }
     };
 
     var rng = std.rand.DefaultPrng.init(0);
-    const f = faker.Faker(.{ en, base }, .{non_null_option}).init(test_allocator, rng.random());
+    const f = faker.Faker(.{
+        .locales = .{ en, base },
+        .user_impls = .{non_null_option},
+    }).init(test_allocator, rng.random());
 
     const foo = f.dummy(Foo);
     defer foo.deinit();

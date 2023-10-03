@@ -7,7 +7,7 @@ pub fn is(
     return comptime std.meta.trait.isZigString(T);
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     // TODO: return same len of request type?
     const str = faker.lorem.word();
     return @ptrCast(@constCast(str));

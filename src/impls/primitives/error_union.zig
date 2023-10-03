@@ -6,7 +6,7 @@ pub fn is(
     return @typeInfo(T) == .ErrorUnion;
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     const info = @typeInfo(T).ErrorUnion;
     const is_err = faker.random.boolean();
     return if (is_err) faker.dummy(info.error_set) else faker.dummy(info.payload);

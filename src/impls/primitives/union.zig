@@ -6,7 +6,7 @@ pub fn is(
     return @typeInfo(T) == .Union;
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     const info = @typeInfo(T).Union;
     var item: T = undefined;
     const variant = faker.random.uintLessThan(usize, info.fields.len);

@@ -6,7 +6,7 @@ pub fn is(
     return @typeInfo(T) == .Struct and @typeInfo(T).Struct.is_tuple;
 }
 
-pub fn dummy(comptime T: type, comptime locales: anytype, comptime user_impls: anytype, faker: Faker(locales, user_impls)) T {
+pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     const info = @typeInfo(T).Struct;
     var item: T = undefined;
     inline for (info.fields) |field| {

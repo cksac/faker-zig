@@ -5,22 +5,22 @@ const impls = @import("impls.zig").impls;
 pub const locale = @import("locale.zig");
 pub const module = @import("module.zig");
 
-pub fn Faker(comptime locales: anytype, comptime user_impls: anytype) type {
+pub fn Faker(comptime opt: anytype) type {
     return struct {
         const Self = @This();
 
         allocator: Allocator,
         random: std.rand.Random,
-        data: locale.Data(locales),
+        data: locale.Data(opt.locales),
 
         // modules
-        color: module.Color(locales),
-        lorem: module.Lorem(locales),
+        color: module.Color(opt.locales),
+        lorem: module.Lorem(opt.locales),
 
         pub fn init(allocator: Allocator, random: std.rand.Random) Self {
-            const data = locale.Data(locales).init(allocator, random);
-            const color = module.Color(locales).init(data);
-            const lorem = module.Lorem(locales).init(data);
+            const data = locale.Data(opt.locales).init(allocator, random);
+            const color = module.Color(opt.locales).init(data);
+            const lorem = module.Lorem(opt.locales).init(data);
             return Self{
                 .allocator = allocator,
                 .random = random,
@@ -32,9 +32,11 @@ pub fn Faker(comptime locales: anytype, comptime user_impls: anytype) type {
 
         pub fn dummy(self: Self, comptime T: type) T {
             const fake = comptime blk: {
-                inline for (user_impls) |impl| {
-                    if (impl.is(T)) {
-                        break :blk impl;
+                if (@hasField(@TypeOf(opt), "user_impls")) {
+                    inline for (opt.user_impls) |impl| {
+                        if (impl.is(T)) {
+                            break :blk impl;
+                        }
                     }
                 }
 
@@ -47,7 +49,7 @@ pub fn Faker(comptime locales: anytype, comptime user_impls: anytype) type {
                 @compileError("type is not supported: " ++ @typeName(T));
             };
 
-            return fake.dummy(T, locales, user_impls, self);
+            return fake.dummy(T, opt, self);
         }
     };
 }
@@ -55,7 +57,7 @@ pub fn Faker(comptime locales: anytype, comptime user_impls: anytype) type {
 // pub fn main() !void {
 //     const allocator = std.heap.page_allocator;
 //     var rng = std.rand.DefaultPrng.init(0);
-//     const f = Faker(.{ locale.en, locale.base }, .{}).init(allocator, rng.random());
+//     const f = Faker(.{ .locales = .{ locale.en, locale.base } }).init(allocator, rng.random());
 
 //     std.debug.print("{s}\n", .{@typeName(std.hash_map.AutoHashMapUnmanaged(u8, u32))});
 //     //_ = f;
