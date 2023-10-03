@@ -51,3 +51,13 @@ pub fn Faker(comptime locales: anytype, comptime user_impls: anytype) type {
         }
     };
 }
+
+// pub fn main() !void {
+//     const allocator = std.heap.page_allocator;
+//     var rng = std.rand.DefaultPrng.init(0);
+//     const f = Faker(.{ locale.en, locale.base }, .{}).init(allocator, rng.random());
+
+//     std.debug.print("{s}\n", .{@typeName(std.hash_map.AutoHashMapUnmanaged(u8, u32))});
+//     //_ = f;
+//     std.debug.print("{}\n", .{f.dummy(std.hash_map.AutoHashMapUnmanaged(u8, u32))});
+// }

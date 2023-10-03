@@ -22,6 +22,8 @@ pub const impls = .{
     ////////////////////////////////////////////////////////////////////////
     @import("impls/std/array_list_aligned.zig"),
     @import("impls/std/array_list_aligned_unmanaged.zig"),
+    @import("impls/std/hash_map.zig"),
+    @import("impls/std/hash_map_unmanaged.zig"),
     ////////////////////////////////////////////////////////////////////////////
     // Aggregates
     //

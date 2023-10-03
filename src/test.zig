@@ -61,6 +61,45 @@ fn test_arr_unmanaged(comptime Target: type) !void {
     try testing.expectEqualSlices(std.meta.Child(@TypeOf(t1.items)), t1.items, t2.items);
 }
 
+fn test_hashmap(comptime Target: type) !void {
+    const seed = 100;
+    var rng1 = std.rand.DefaultPrng.init(seed);
+    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+
+    var rng2 = std.rand.DefaultPrng.init(seed);
+    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+
+    var t1 = faker1.dummy(Target);
+    defer t1.deinit();
+    try testing.expect(@TypeOf(t1) == Target);
+
+    var t2 = faker2.dummy(Target);
+    defer t2.deinit();
+    std.debug.print("{s} = {any}\n", .{ @typeName(Target), t1 });
+    // TODO: equal check
+    // try testing.expectEqualSlices(std.meta.Child(@TypeOf(t1.keyIterator().items)), t1.keyIterator().items, t2.keyIterator().items);
+    // try testing.expectEqualSlices(std.meta.Child(@TypeOf(t1.valueIterator().items)), t1.valueIterator().items, t2.valueIterator().items);
+}
+
+fn test_hashmap_unmanaged(comptime Target: type) !void {
+    const seed = 100;
+    var rng1 = std.rand.DefaultPrng.init(seed);
+    const faker1 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng1.random());
+
+    var rng2 = std.rand.DefaultPrng.init(seed);
+    const faker2 = faker.Faker(.{ en, base }, .{}).init(test_allocator, rng2.random());
+
+    var t1 = faker1.dummy(Target);
+    defer t1.deinit(faker1.allocator);
+    var t2 = faker2.dummy(Target);
+    defer t2.deinit(faker2.allocator);
+    std.debug.print("{s} = {any}\n", .{ @typeName(Target), t1 });
+
+    // TODO: equal check
+    // try testing.expectEqualSlices(std.meta.Child(@TypeOf(t1.keyIterator().items)), t1.keyIterator().items, t2.keyIterator().items);
+    // try testing.expectEqualSlices(std.meta.Child(@TypeOf(t1.valueIterator().items)), t1.valueIterator().items, t2.valueIterator().items);
+}
+
 test "premitive types" {
     try deterministic_test(i8);
     try deterministic_test(u8);
@@ -258,6 +297,14 @@ test "std array types" {
     try test_arr_unmanaged(std.ArrayListUnmanaged(f32));
     try test_arr_unmanaged(std.ArrayListAlignedUnmanaged(u8, 16));
     try test_arr_unmanaged(std.ArrayListAlignedUnmanaged(f32, 16));
+}
+
+test "std hashmap types" {
+    try test_hashmap(std.AutoHashMap(i32, i32));
+    try test_hashmap(std.AutoHashMap(i32, i32));
+
+    try test_hashmap_unmanaged(std.AutoHashMapUnmanaged(i32, i32));
+    try test_hashmap_unmanaged(std.AutoHashMapUnmanaged(i32, i32));
 }
 
 test "customization" {
