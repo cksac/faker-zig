@@ -87,7 +87,7 @@ pub fn main() !void {
             pub const tag = .{ "color", "human" };
             pub const title = .{ "lorem", "words", .{ .min = 5, .max = 10 } };
 
-            pub fn body(comptime locales: anytype, comptime user_impls: anytype, f: faker.Faker(locales, user_impls)) []u8 {
+            pub fn body(comptime opt: anytype, f: faker.Faker(opt)) []u8 {
                 return f.lorem.words(.{ .min = 20, .max = 30 });
             }
         };
