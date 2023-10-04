@@ -305,6 +305,12 @@ test "std hashmap types" {
 
     try test_hashmap_unmanaged(std.AutoHashMapUnmanaged(i32, i32));
     try test_hashmap_unmanaged(std.AutoHashMapUnmanaged(i32, i32));
+
+    try test_hashmap(std.AutoArrayHashMap(i32, i32));
+    try test_hashmap(std.AutoArrayHashMap(i32, i32));
+
+    try test_hashmap_unmanaged(std.AutoArrayHashMapUnmanaged(i32, i32));
+    try test_hashmap_unmanaged(std.AutoArrayHashMapUnmanaged(i32, i32));
 }
 
 test "customization" {
