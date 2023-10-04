@@ -28,6 +28,8 @@ pub const impls = .{
     @import("impls/std/array_hash_map_unmanaged.zig"),
     @import("impls/std/bit_stack.zig"),
     @import("impls/std/bounded_array_aligned.zig"),
+    @import("impls/std/buf_map.zig"),
+    @import("impls/std/buf_set.zig"),
     ////////////////////////////////////////////////////////////////////////////
     // Aggregates
     //
