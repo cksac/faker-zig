@@ -1,9 +1,6 @@
 const std = @import("std");
 const Allocator = std.mem.Allocator;
 
-pub const base = @import("locale/base.zig");
-pub const en = @import("locale/en.zig");
-
 pub fn Data(comptime locales: anytype) type {
     return struct {
         const Self = @This();
@@ -33,3 +30,71 @@ pub fn Data(comptime locales: anytype) type {
         }
     };
 }
+
+pub const af_ZA = @import("locale/af_ZA.zig");
+pub const ar = @import("locale/ar.zig");
+pub const az = @import("locale/az.zig");
+pub const base = @import("locale/base.zig");
+pub const cs_CZ = @import("locale/cs_CZ.zig");
+pub const da = @import("locale/da.zig");
+pub const de = @import("locale/de.zig");
+pub const de_AT = @import("locale/de_AT.zig");
+pub const de_CH = @import("locale/de_CH.zig");
+pub const dv = @import("locale/dv.zig");
+pub const el = @import("locale/el.zig");
+pub const en = @import("locale/en.zig");
+pub const en_AU = @import("locale/en_AU.zig");
+pub const en_AU_ocker = @import("locale/en_AU_ocker.zig");
+pub const en_BORK = @import("locale/en_BORK.zig");
+pub const en_CA = @import("locale/en_CA.zig");
+pub const en_GB = @import("locale/en_GB.zig");
+pub const en_GH = @import("locale/en_GH.zig");
+pub const en_HK = @import("locale/en_HK.zig");
+pub const en_IE = @import("locale/en_IE.zig");
+pub const en_IN = @import("locale/en_IN.zig");
+pub const en_NG = @import("locale/en_NG.zig");
+pub const en_US = @import("locale/en_US.zig");
+pub const en_ZA = @import("locale/en_ZA.zig");
+pub const eo = @import("locale/eo.zig");
+pub const es = @import("locale/es.zig");
+pub const es_MX = @import("locale/es_MX.zig");
+pub const fa = @import("locale/fa.zig");
+pub const fi = @import("locale/fi.zig");
+pub const fr = @import("locale/fr.zig");
+pub const fr_BE = @import("locale/fr_BE.zig");
+pub const fr_CA = @import("locale/fr_CA.zig");
+pub const fr_CH = @import("locale/fr_CH.zig");
+pub const fr_LU = @import("locale/fr_LU.zig");
+pub const he = @import("locale/he.zig");
+pub const hr = @import("locale/hr.zig");
+pub const hu = @import("locale/hu.zig");
+pub const hy = @import("locale/hy.zig");
+pub const id_ID = @import("locale/id_ID.zig");
+pub const it = @import("locale/it.zig");
+pub const ja = @import("locale/ja.zig");
+pub const ka_GE = @import("locale/ka_GE.zig");
+pub const ko = @import("locale/ko.zig");
+pub const lv = @import("locale/lv.zig");
+pub const mk = @import("locale/mk.zig");
+pub const nb_NO = @import("locale/nb_NO.zig");
+pub const ne = @import("locale/ne.zig");
+pub const nl = @import("locale/nl.zig");
+pub const nl_BE = @import("locale/nl_BE.zig");
+pub const pl = @import("locale/pl.zig");
+pub const pt_BR = @import("locale/pt_BR.zig");
+pub const pt_PT = @import("locale/pt_PT.zig");
+pub const ro = @import("locale/ro.zig");
+pub const ro_MD = @import("locale/ro_MD.zig");
+pub const ru = @import("locale/ru.zig");
+pub const sk = @import("locale/sk.zig");
+pub const sr_RS_latin = @import("locale/sr_RS_latin.zig");
+pub const sv = @import("locale/sv.zig");
+pub const th = @import("locale/th.zig");
+pub const tr = @import("locale/tr.zig");
+pub const uk = @import("locale/uk.zig");
+pub const ur = @import("locale/ur.zig");
+pub const vi = @import("locale/vi.zig");
+pub const yo_NG = @import("locale/yo_NG.zig");
+pub const zh_CN = @import("locale/zh_CN.zig");
+pub const zh_TW = @import("locale/zh_TW.zig");
+pub const zu_ZA = @import("locale/zu_ZA.zig");
