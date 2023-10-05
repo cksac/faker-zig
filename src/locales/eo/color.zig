@@ -1,0 +1,1 @@
+pub const human = [_][]const u8{ "arĝenta", "blanka", "blua", "bruna", "cejana", "ebura", "flava", "griza", "indiga", "kakia", "lavenda", "lazura", "malva", "maĝenta", "nigra", "okra", "ora", "oranĝa", "purpura", "roza", "ruĝa", "sukcena", "turkisa", "verda", "viola" };

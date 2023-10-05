@@ -1,0 +1,3 @@
+pub const department = [_][]const u8{ "Kitablar", "Filmlər", "musiqi", "oyunlar", "Elektronika", "Kompyuterlər", "Ev", "садинструмент", "Səhiyyə", "gözəllik", "Oyuncaqlar", "uşaq üçün", "Geyim", "Ayyaqqabı", "bəzək", "İdman", "turizm", "Avtomobil" };
+
+pub const product_name = .{ .adjective = [_][]const u8{ "Balaca", "Ergonomik", "Kobud", "İntellektual", "Möhtəşəm", "İnanılmaz", "Fantastik", "Əlverişli", "Parlaq", "Mükəmməl" }, .material = [_][]const u8{ "Polad", "Ağac", "Beton", "Plastik", "Pambıq", "Qranit", "Rezin" }, .product = [_][]const u8{ "Stul", "Avtomobil", "Kompyuter", "Beret", "Kulon", "Stol", "Sviter", "Kəmər" } };

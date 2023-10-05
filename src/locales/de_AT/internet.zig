@@ -1,0 +1,3 @@
+pub const domain_suffix = [_][]const u8{ "com", "info", "name", "net", "org", "de", "ch", "at" };
+
+pub const free_email = [_][]const u8{ "gmail.com", "yahoo.com", "hotmail.com" };

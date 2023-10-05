@@ -1,0 +1,3 @@
+pub const month = .{ .wide = [_][]const u8{ "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" }, .abbr = [_][]const u8{ "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic" }, .abbr_context = [_][]const u8{ "en.", "febr.", "mzo.", "abr.", "my.", "jun.", "jul.", "ag.", "sept.", "oct.", "nov.", "dic." } };
+
+pub const weekday = .{ .wide = [_][]const u8{ "domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado" }, .abbr = [_][]const u8{ "dom", "lun", "mar", "mié", "jue", "vie", "sáb" }, .abbr_context = [_][]const u8{ "dom.", "lun.", "mart.", "miérc.", "juev.", "vier.", "sáb." } };

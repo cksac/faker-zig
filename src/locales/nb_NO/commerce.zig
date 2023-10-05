@@ -1,0 +1,1 @@
+pub const department = [_][]const u8{ "Barn", "Bøker", "Dagligvarer", "Datamaskiner", "Elektronikk", "Filmer", "Hage og utemiljø", "Helse", "Hjem", "Klær", "Leker", "Musikk", "Sko", "Skjønnhet", "Spill", "Smykker", "Sport", "Verktøy" };

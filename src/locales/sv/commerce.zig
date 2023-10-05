@@ -1,0 +1,3 @@
+pub const department = [_][]const u8{ "Böcker", "Filmer", "Musik", "Spel", "Elektronik", "Datorer", "Hem", "Trädgård", "Verktyg", "Livsmedel", "Hälsa", "Skönhet", "Leksaker", "Klädsel", "Skor", "Smycken", "Sport" };
+
+pub const product_name = .{ .adjective = [_][]const u8{ "Liten", "Ergonomisk", "Robust", "Intelligent", "Söt", "Otrolig", "Fantastisk", "Praktisk", "Slimmad", "Grym" }, .material = [_][]const u8{ "Stål", "Metall", "Trä", "Betong", "Plast", "Bomull", "Granit", "Gummi", "Latex" }, .product = [_][]const u8{ "Stol", "Bil", "Dator", "Handskar", "Byxor", "Skjorta", "Bord", "Skor", "Hatt" } };

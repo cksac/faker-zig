@@ -1,0 +1,1 @@
+pub const human = [_][]const u8{ "kırmızı", "yeşil", "mavi", "sarı", "mor", "nane yeşili", "beyaz", "siyah", "turuncu", "pembe", "gri", "bordo", "menekşe", "turkuaz", "tan", "gökyüzü mavisi", "somon", "erik", "orkide", "zeytin", "eflatun", "misket limonu", "fildişi", "indigo", "altın", "fuşya", "camgöbeği", "masmavi", "lavanta", "gümüş" };

@@ -1,0 +1,1 @@
+pub const column = [_][]const u8{ "id", "titel", "name", "email", "telefonnummer", "token", "gruppe", "kategorie", "passwort", "kommentar", "avatar", "status", "erstelltAm", "aktualisiertAm", "bearbeitetAm", "vorname", "nachname", "geburtsdatum", "artikelnummer" };

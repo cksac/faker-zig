@@ -1,0 +1,1 @@
+pub const genre = [_][]const u8{ "Rock", "Metal", "Pop", "Électronique", "Folk", "World", "Country", "Jazz", "Funk", "Soul", "Hip Hop", "Classique", "Latine", "Reggae", "Blues", "Rap", "Variété", "Lofi" };
