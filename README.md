@@ -135,7 +135,8 @@ pub fn main() !void {
 ```
 
 # Credit
-faker-zig was inspired by and use data generated from [faker-js/faker v8.1.0](https://github.com/faker-js/faker)
+faker-zig was inspired by and use locale data generated from [faker-js/faker v8.1.0](https://github.com/faker-js/faker)
+Commit: https://github.com/cksac/faker-zig/commit/5a5f9072541bab9ce4728a03b1126298f81a9260
 
 # Orignal faker-js/faker LICENSE
 Faker - Copyright (c) 2022-2023
