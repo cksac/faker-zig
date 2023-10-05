@@ -1,7 +1,9 @@
 const std = @import("std");
 const Allocator = std.mem.Allocator;
 
+const tests = @import("test.zig");
 const impls = @import("impls.zig").impls;
+
 pub const locale = @import("locale.zig");
 pub const module = @import("module.zig");
 
@@ -66,4 +68,8 @@ pub fn main() !void {
     std.debug.print("{}\n", .{f.dummy(std.BoundedArrayAligned(u8, 32, 12))});
     std.debug.print("{}\n", .{f.dummy(std.BufMap)});
     std.debug.print("{}\n", .{f.dummy(std.BufSet)});
+}
+
+test {
+    std.testing.refAllDeclsRecursive(@This());
 }

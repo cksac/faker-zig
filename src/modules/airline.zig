@@ -5,7 +5,7 @@ pub const Airline = struct {
 
 pub const Airplane = struct {
     name: []const u8,
-    iata_code: []const u8,
+    iata_type_code: []const u8,
 };
 
 pub const Airport = struct {
