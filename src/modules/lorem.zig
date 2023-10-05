@@ -2,7 +2,7 @@ const std = @import("std");
 const Allocator = std.mem.Allocator;
 const locale = @import("../locale.zig");
 
-pub fn Lorem(comptime locales: anytype) type {
+pub fn LoremModule(comptime locales: anytype) type {
     const WordsOptions = struct {
         min: usize = 3,
         max: usize = 10,

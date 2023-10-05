@@ -1,7 +1,7 @@
 const std = @import("std");
 const locale = @import("../locale.zig");
 
-pub fn Color(comptime locales: anytype) type {
+pub fn ColorModule(comptime locales: anytype) type {
     return struct {
         const Self = @This();
         data: locale.Data(locales),

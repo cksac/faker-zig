@@ -14,13 +14,13 @@ pub fn Faker(comptime opt: anytype) type {
         data: locale.Data(opt.locales),
 
         // modules
-        color: module.Color(opt.locales),
-        lorem: module.Lorem(opt.locales),
+        color: module.ColorModule(opt.locales),
+        lorem: module.LoremModule(opt.locales),
 
         pub fn init(allocator: Allocator, random: std.rand.Random) Self {
             const data = locale.Data(opt.locales).init(allocator, random);
-            const color = module.Color(opt.locales).init(data);
-            const lorem = module.Lorem(opt.locales).init(data);
+            const color = module.ColorModule(opt.locales).init(data);
+            const lorem = module.LoremModule(opt.locales).init(data);
             return Self{
                 .allocator = allocator,
                 .random = random,
