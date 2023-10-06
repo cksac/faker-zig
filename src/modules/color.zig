@@ -1,21 +1,21 @@
 const std = @import("std");
-const locale = @import("../locale.zig");
+const Helper = @import("../helper.zig").Helper;
 
 pub fn ColorModule(comptime locales: anytype) type {
     return struct {
         const Self = @This();
-        data: locale.Data(locales),
+        helper: Helper(locales),
 
-        pub fn init(data: locale.Data(locales)) Self {
-            return Self{ .data = data };
+        pub fn init(helper: Helper(locales)) Self {
+            return Self{ .helper = helper };
         }
 
         pub fn human(self: Self) []const u8 {
-            return self.data.oneOfStr("color", "human");
+            return self.helper.oneOfStr("color", "human");
         }
 
         pub fn space(self: Self) []const u8 {
-            return self.data.oneOfStr("color", "space");
+            return self.helper.oneOfStr("color", "space");
         }
     };
 }

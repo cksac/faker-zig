@@ -2,6 +2,7 @@ const std = @import("std");
 const Allocator = std.mem.Allocator;
 
 const impls = @import("impls.zig").impls;
+const Helper = @import("helper.zig").Helper;
 
 pub const locale = @import("locale.zig");
 pub const module = @import("module.zig");
@@ -12,20 +13,20 @@ pub fn Faker(comptime opt: anytype) type {
 
         allocator: Allocator,
         random: std.rand.Random,
-        data: locale.Data(opt.locales),
+        helper: Helper(opt.locales),
 
         // modules
         color: module.ColorModule(opt.locales),
         lorem: module.LoremModule(opt.locales),
 
         pub fn init(allocator: Allocator, random: std.rand.Random) Self {
-            const data = locale.Data(opt.locales).init(allocator, random);
-            const color = module.ColorModule(opt.locales).init(data);
-            const lorem = module.LoremModule(opt.locales).init(data);
+            const helper = Helper(opt.locales).init(allocator, random);
+            const color = module.ColorModule(opt.locales).init(helper);
+            const lorem = module.LoremModule(opt.locales).init(helper);
             return Self{
                 .allocator = allocator,
                 .random = random,
-                .data = data,
+                .helper = helper,
                 .color = color,
                 .lorem = lorem,
             };
