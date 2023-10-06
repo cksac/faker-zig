@@ -3,19 +3,8 @@ const std = @import("std");
 const package_name = "faker";
 const package_path = "src/faker.zig";
 
-// Although this function looks imperative, note that its job is to
-// declaratively construct a build graph that will be executed by an external
-// runner.
 pub fn build(b: *std.Build) void {
-    // Standard target options allows the person running `zig build` to choose
-    // what target to build for. Here we do not override the defaults, which
-    // means any target is allowed, and the default is native. Other options
-    // for restricting supported target set are available.
     const target = b.standardTargetOptions(.{});
-
-    // Standard optimization options allow the person running `zig build` to select
-    // between Debug, ReleaseSafe, ReleaseFast, and ReleaseSmall. Here we do not
-    // set a preferred release mode, allowing the user to decide how to optimize.
     const optimize = b.standardOptimizeOption(.{});
 
     _ = b.addModule(package_name, .{
@@ -23,34 +12,20 @@ pub fn build(b: *std.Build) void {
         .dependencies = &[_]std.Build.ModuleDependency{},
     });
 
-    // Creates a step for unit testing. This only builds the test executable
-    // but does not run it.
-    const main_tests = b.addTest(.{
-        .root_source_file = .{ .path = "src/test.zig" },
-        .target = target,
-        .optimize = optimize,
-        .main_pkg_path = .{ .path = "src/" },
-    });
-
-    const run_main_tests = b.addRunArtifact(main_tests);
-
-    // This creates a build step. It will be visible in the `zig build --help` menu,
-    // and can be selected like this: `zig build test`
-    // This will evaluate the `test` step rather than the default, which is "install".
-    const test_step = b.step("test", "Run library tests");
-    test_step.dependOn(&run_main_tests.step);
-
-    const faker = b.addObject(.{
-        .name = "faker",
+    const tests = b.addTest(.{
         .root_source_file = .{ .path = "src/faker.zig" },
         .target = target,
         .optimize = optimize,
         .main_pkg_path = .{ .path = "src/" },
     });
+    const run_tests = b.addRunArtifact(tests);
+
+    const test_step = b.step("test", "Run library tests");
+    test_step.dependOn(&run_tests.step);
 
     const install_docs = b.addInstallDirectory(.{
-        .source_dir = faker.getEmittedDocs(),
-        .install_dir = std.build.InstallDir{ .custom = "../docs" },
+        .source_dir = tests.getEmittedDocs(),
+        .install_dir = std.build.InstallDir{ .custom = "../docs" }, // custom relative to ./zig-out
         .install_subdir = "",
     });
     const docs_step = b.step("docs", "Generate API docs");

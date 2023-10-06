@@ -1,7 +1,6 @@
 const std = @import("std");
 const Allocator = std.mem.Allocator;
 
-const tests = @import("test.zig");
 const impls = @import("impls.zig").impls;
 
 pub const locale = @import("locale.zig");
@@ -56,20 +55,8 @@ pub fn Faker(comptime opt: anytype) type {
     };
 }
 
-pub fn main() !void {
-    const allocator = std.heap.page_allocator;
-    var rng = std.rand.DefaultPrng.init(0);
-    const f = Faker(.{ .locales = .{ locale.en, locale.base } }).init(allocator, rng.random());
-
-    std.debug.print("{s}\n", .{@typeName(std.AutoArrayHashMap(u8, u32))});
-    std.debug.print("{s}\n", .{@typeName(std.BoundedArray(u8, 10))});
-    //_ = f;
-    std.debug.print("{}\n", .{f.dummy(std.BoundedArray(u8, 10))});
-    std.debug.print("{}\n", .{f.dummy(std.BoundedArrayAligned(u8, 32, 12))});
-    std.debug.print("{}\n", .{f.dummy(std.BufMap)});
-    std.debug.print("{}\n", .{f.dummy(std.BufSet)});
-}
-
 test {
-    std.testing.refAllDeclsRecursive(@This());
+    const tests = @import("test.zig");
+    _ = tests;
+    // std.testing.refAllDeclsRecursive(@This());
 }
