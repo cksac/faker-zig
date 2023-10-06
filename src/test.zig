@@ -395,7 +395,15 @@ test "lorem" {
     const v1 = FAKER.lorem.word();
     std.debug.print("lorem.word() = {s}\n", .{v1});
 
-    const v2 = FAKER.lorem.words(.{ .min = 5 });
+    const v2 = FAKER.lorem.words(.{});
     defer FAKER.allocator.free(v2);
-    std.debug.print("lorem.words = {s}\n", .{v2});
+    std.debug.print("lorem.words(.{{}}) = {s}\n", .{v2});
+
+    const v3 = FAKER.lorem.words(.{ .min = 10, .max = 15 });
+    defer FAKER.allocator.free(v3);
+    std.debug.print("lorem.words(.{{ .min = 10, .max = 15 }}) = {s}\n", .{v3});
+
+    const v4 = FAKER.lorem.words(.{ .separator = "-" });
+    defer FAKER.allocator.free(v4);
+    std.debug.print("lorem.words(.{{ .separator = \"-\" }}) = {s}\n", .{v4});
 }

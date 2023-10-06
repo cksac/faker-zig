@@ -123,7 +123,7 @@
 <span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">dummy</span>(<span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>, <span class="tok-kw">comptime</span> opt: <span class="tok-kw">anytype</span>, faker: Faker(opt)) T {</span>
 <span class="line" id="L10">    <span class="tok-kw">const</span> info = <span class="tok-builtin">@typeInfo</span>(T).Struct;</span>
 <span class="line" id="L11">    <span class="tok-kw">var</span> item: T = <span class="tok-null">undefined</span>;</span>
-<span class="line" id="L12">    <span class="tok-kw">const</span> customization: ?<span class="tok-type">type</span> = <span class="tok-kw">if</span> (<span class="tok-kw">comptime</span> <span class="tok-builtin">@hasDecl</span>(T, <span class="tok-str">&quot;faker.dummy&quot;</span>)) T.@&quot;faker.dummy&quot; <span class="tok-kw">else</span> <span class="tok-null">null</span>;</span>
+<span class="line" id="L12">    <span class="tok-kw">const</span> customization: ?<span class="tok-type">type</span> = <span class="tok-kw">if</span> (<span class="tok-kw">comptime</span> <span class="tok-builtin">@hasDecl</span>(T, <span class="tok-str">&quot;faker.fields&quot;</span>)) T.@&quot;faker.fields&quot; <span class="tok-kw">else</span> <span class="tok-null">null</span>;</span>
 <span class="line" id="L13"></span>
 <span class="line" id="L14">    <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (info.fields) |field| {</span>
 <span class="line" id="L15">        <span class="tok-kw">if</span> (customization) |cfg| {</span>

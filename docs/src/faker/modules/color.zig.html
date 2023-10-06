@@ -113,23 +113,23 @@
 </head>
 <body>
 <pre><code><span class="line" id="L1"><span class="tok-kw">const</span> std = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;std&quot;</span>);</span>
-<span class="line" id="L2"><span class="tok-kw">const</span> locale = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../locale.zig&quot;</span>);</span>
+<span class="line" id="L2"><span class="tok-kw">const</span> Helper = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../helper.zig&quot;</span>).Helper;</span>
 <span class="line" id="L3"></span>
 <span class="line" id="L4"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">ColorModule</span>(<span class="tok-kw">comptime</span> locales: <span class="tok-kw">anytype</span>) <span class="tok-type">type</span> {</span>
 <span class="line" id="L5">    <span class="tok-kw">return</span> <span class="tok-kw">struct</span> {</span>
 <span class="line" id="L6">        <span class="tok-kw">const</span> Self = <span class="tok-builtin">@This</span>();</span>
-<span class="line" id="L7">        data: locale.Data(locales),</span>
+<span class="line" id="L7">        helper: Helper(locales),</span>
 <span class="line" id="L8"></span>
-<span class="line" id="L9">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">init</span>(data: locale.Data(locales)) Self {</span>
-<span class="line" id="L10">            <span class="tok-kw">return</span> Self{ .data = data };</span>
+<span class="line" id="L9">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">init</span>(helper: Helper(locales)) Self {</span>
+<span class="line" id="L10">            <span class="tok-kw">return</span> Self{ .helper = helper };</span>
 <span class="line" id="L11">        }</span>
 <span class="line" id="L12"></span>
 <span class="line" id="L13">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">human</span>(self: Self) []<span class="tok-kw">const</span> <span class="tok-type">u8</span> {</span>
-<span class="line" id="L14">            <span class="tok-kw">return</span> self.data.oneOfStr(<span class="tok-str">&quot;color&quot;</span>, <span class="tok-str">&quot;human&quot;</span>);</span>
+<span class="line" id="L14">            <span class="tok-kw">return</span> self.helper.oneOfStr(<span class="tok-str">&quot;color&quot;</span>, <span class="tok-str">&quot;human&quot;</span>);</span>
 <span class="line" id="L15">        }</span>
 <span class="line" id="L16"></span>
 <span class="line" id="L17">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">space</span>(self: Self) []<span class="tok-kw">const</span> <span class="tok-type">u8</span> {</span>
-<span class="line" id="L18">            <span class="tok-kw">return</span> self.data.oneOfStr(<span class="tok-str">&quot;color&quot;</span>, <span class="tok-str">&quot;space&quot;</span>);</span>
+<span class="line" id="L18">            <span class="tok-kw">return</span> self.helper.oneOfStr(<span class="tok-str">&quot;color&quot;</span>, <span class="tok-str">&quot;space&quot;</span>);</span>
 <span class="line" id="L19">        }</span>
 <span class="line" id="L20">    };</span>
 <span class="line" id="L21">}</span>

@@ -115,103 +115,73 @@
 <pre><code><span class="line" id="L1"><span class="tok-kw">const</span> std = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;std&quot;</span>);</span>
 <span class="line" id="L2"><span class="tok-kw">const</span> Allocator = std.mem.Allocator;</span>
 <span class="line" id="L3"></span>
-<span class="line" id="L4"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">Data</span>(<span class="tok-kw">comptime</span> locales: <span class="tok-kw">anytype</span>) <span class="tok-type">type</span> {</span>
-<span class="line" id="L5">    <span class="tok-kw">return</span> <span class="tok-kw">struct</span> {</span>
-<span class="line" id="L6">        <span class="tok-kw">const</span> Self = <span class="tok-builtin">@This</span>();</span>
-<span class="line" id="L7">        allocator: Allocator,</span>
-<span class="line" id="L8">        random: std.rand.Random,</span>
-<span class="line" id="L9"></span>
-<span class="line" id="L10">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">init</span>(allocator: Allocator, random: std.rand.Random) Self {</span>
-<span class="line" id="L11">            <span class="tok-kw">return</span> Self{ .allocator = allocator, .random = random };</span>
-<span class="line" id="L12">        }</span>
-<span class="line" id="L13">        <span class="tok-kw">pub</span> <span class="tok-kw">inline</span> <span class="tok-kw">fn</span> <span class="tok-fn">oneOfStr</span>(self: Self, <span class="tok-kw">comptime</span> module: []<span class="tok-kw">const</span> <span class="tok-type">u8</span>, <span class="tok-kw">comptime</span> field: []<span class="tok-kw">const</span> <span class="tok-type">u8</span>) []<span class="tok-kw">const</span> <span class="tok-type">u8</span> {</span>
-<span class="line" id="L14">            <span class="tok-kw">return</span> self.oneOf([]<span class="tok-kw">const</span> <span class="tok-type">u8</span>, module, field);</span>
-<span class="line" id="L15">        }</span>
-<span class="line" id="L16">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">oneOf</span>(self: Self, <span class="tok-kw">comptime</span> Output: <span class="tok-type">type</span>, <span class="tok-kw">comptime</span> module: []<span class="tok-kw">const</span> <span class="tok-type">u8</span>, <span class="tok-kw">comptime</span> field: []<span class="tok-kw">const</span> <span class="tok-type">u8</span>) Output {</span>
-<span class="line" id="L17">            <span class="tok-kw">const</span> data_field = <span class="tok-kw">comptime</span> blk: {</span>
-<span class="line" id="L18">                <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (locales) |locale| {</span>
-<span class="line" id="L19">                    <span class="tok-kw">if</span> (<span class="tok-builtin">@hasDecl</span>(locale, module)) {</span>
-<span class="line" id="L20">                        <span class="tok-kw">const</span> m = <span class="tok-builtin">@field</span>(locale, module);</span>
-<span class="line" id="L21">                        <span class="tok-kw">if</span> (<span class="tok-builtin">@hasDecl</span>(m, field)) {</span>
-<span class="line" id="L22">                            <span class="tok-kw">break</span> :blk <span class="tok-builtin">@field</span>(m, field);</span>
-<span class="line" id="L23">                        }</span>
-<span class="line" id="L24">                    }</span>
-<span class="line" id="L25">                }</span>
-<span class="line" id="L26">                <span class="tok-builtin">@compileError</span>(std.fmt.comptimePrint(<span class="tok-str">&quot;{s}.{s} does not defined in {any}&quot;</span>, .{ module, field, locales }));</span>
-<span class="line" id="L27">            };</span>
-<span class="line" id="L28">            <span class="tok-kw">const</span> idx = self.random.uintLessThan(<span class="tok-type">usize</span>, data_field.len);</span>
-<span class="line" id="L29">            <span class="tok-kw">return</span> data_field[idx];</span>
-<span class="line" id="L30">        }</span>
-<span class="line" id="L31">    };</span>
-<span class="line" id="L32">}</span>
-<span class="line" id="L33"></span>
-<span class="line" id="L34"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> af_ZA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/af_ZA.zig&quot;</span>);</span>
-<span class="line" id="L35"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ar = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ar.zig&quot;</span>);</span>
-<span class="line" id="L36"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> az = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/az.zig&quot;</span>);</span>
-<span class="line" id="L37"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> base = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/base.zig&quot;</span>);</span>
-<span class="line" id="L38"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> cs_CZ = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/cs_CZ.zig&quot;</span>);</span>
-<span class="line" id="L39"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> da = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/da.zig&quot;</span>);</span>
-<span class="line" id="L40"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> de = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/de.zig&quot;</span>);</span>
-<span class="line" id="L41"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> de_AT = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/de_AT.zig&quot;</span>);</span>
-<span class="line" id="L42"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> de_CH = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/de_CH.zig&quot;</span>);</span>
-<span class="line" id="L43"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> dv = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/dv.zig&quot;</span>);</span>
-<span class="line" id="L44"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> el = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/el.zig&quot;</span>);</span>
-<span class="line" id="L45"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en.zig&quot;</span>);</span>
-<span class="line" id="L46"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_AU = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_AU.zig&quot;</span>);</span>
-<span class="line" id="L47"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_AU_ocker = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_AU_ocker.zig&quot;</span>);</span>
-<span class="line" id="L48"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_BORK = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_BORK.zig&quot;</span>);</span>
-<span class="line" id="L49"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_CA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_CA.zig&quot;</span>);</span>
-<span class="line" id="L50"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_GB = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_GB.zig&quot;</span>);</span>
-<span class="line" id="L51"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_GH = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_GH.zig&quot;</span>);</span>
-<span class="line" id="L52"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_HK = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_HK.zig&quot;</span>);</span>
-<span class="line" id="L53"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_IE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_IE.zig&quot;</span>);</span>
-<span class="line" id="L54"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_IN = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_IN.zig&quot;</span>);</span>
-<span class="line" id="L55"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_NG = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_NG.zig&quot;</span>);</span>
-<span class="line" id="L56"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_US = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_US.zig&quot;</span>);</span>
-<span class="line" id="L57"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_ZA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_ZA.zig&quot;</span>);</span>
-<span class="line" id="L58"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> eo = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/eo.zig&quot;</span>);</span>
-<span class="line" id="L59"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> es = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/es.zig&quot;</span>);</span>
-<span class="line" id="L60"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> es_MX = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/es_MX.zig&quot;</span>);</span>
-<span class="line" id="L61"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fa = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fa.zig&quot;</span>);</span>
-<span class="line" id="L62"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fi = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fi.zig&quot;</span>);</span>
-<span class="line" id="L63"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr.zig&quot;</span>);</span>
-<span class="line" id="L64"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_BE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_BE.zig&quot;</span>);</span>
-<span class="line" id="L65"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_CA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_CA.zig&quot;</span>);</span>
-<span class="line" id="L66"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_CH = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_CH.zig&quot;</span>);</span>
-<span class="line" id="L67"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_LU = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_LU.zig&quot;</span>);</span>
-<span class="line" id="L68"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> he = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/he.zig&quot;</span>);</span>
-<span class="line" id="L69"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> hr = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/hr.zig&quot;</span>);</span>
-<span class="line" id="L70"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> hu = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/hu.zig&quot;</span>);</span>
-<span class="line" id="L71"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> hy = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/hy.zig&quot;</span>);</span>
-<span class="line" id="L72"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> id_ID = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/id_ID.zig&quot;</span>);</span>
-<span class="line" id="L73"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> it = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/it.zig&quot;</span>);</span>
-<span class="line" id="L74"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ja = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ja.zig&quot;</span>);</span>
-<span class="line" id="L75"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ka_GE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ka_GE.zig&quot;</span>);</span>
-<span class="line" id="L76"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ko = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ko.zig&quot;</span>);</span>
-<span class="line" id="L77"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> lv = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/lv.zig&quot;</span>);</span>
-<span class="line" id="L78"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> mk = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/mk.zig&quot;</span>);</span>
-<span class="line" id="L79"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> nb_NO = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/nb_NO.zig&quot;</span>);</span>
-<span class="line" id="L80"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ne = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ne.zig&quot;</span>);</span>
-<span class="line" id="L81"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> nl = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/nl.zig&quot;</span>);</span>
-<span class="line" id="L82"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> nl_BE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/nl_BE.zig&quot;</span>);</span>
-<span class="line" id="L83"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> pl = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/pl.zig&quot;</span>);</span>
-<span class="line" id="L84"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> pt_BR = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/pt_BR.zig&quot;</span>);</span>
-<span class="line" id="L85"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> pt_PT = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/pt_PT.zig&quot;</span>);</span>
-<span class="line" id="L86"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ro = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ro.zig&quot;</span>);</span>
-<span class="line" id="L87"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ro_MD = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ro_MD.zig&quot;</span>);</span>
-<span class="line" id="L88"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ru = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ru.zig&quot;</span>);</span>
-<span class="line" id="L89"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> sk = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/sk.zig&quot;</span>);</span>
-<span class="line" id="L90"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> sr_RS_latin = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/sr_RS_latin.zig&quot;</span>);</span>
-<span class="line" id="L91"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> sv = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/sv.zig&quot;</span>);</span>
-<span class="line" id="L92"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> th = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/th.zig&quot;</span>);</span>
-<span class="line" id="L93"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> tr = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/tr.zig&quot;</span>);</span>
-<span class="line" id="L94"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> uk = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/uk.zig&quot;</span>);</span>
-<span class="line" id="L95"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ur = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ur.zig&quot;</span>);</span>
-<span class="line" id="L96"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> vi = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/vi.zig&quot;</span>);</span>
-<span class="line" id="L97"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> yo_NG = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/yo_NG.zig&quot;</span>);</span>
-<span class="line" id="L98"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> zh_CN = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/zh_CN.zig&quot;</span>);</span>
-<span class="line" id="L99"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> zh_TW = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/zh_TW.zig&quot;</span>);</span>
-<span class="line" id="L100"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> zu_ZA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/zu_ZA.zig&quot;</span>);</span>
-<span class="line" id="L101"></span>
+<span class="line" id="L4"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> af_ZA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/af_ZA.zig&quot;</span>);</span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ar = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ar.zig&quot;</span>);</span>
+<span class="line" id="L6"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> az = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/az.zig&quot;</span>);</span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> base = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/base.zig&quot;</span>);</span>
+<span class="line" id="L8"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> cs_CZ = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/cs_CZ.zig&quot;</span>);</span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> da = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/da.zig&quot;</span>);</span>
+<span class="line" id="L10"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> de = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/de.zig&quot;</span>);</span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> de_AT = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/de_AT.zig&quot;</span>);</span>
+<span class="line" id="L12"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> de_CH = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/de_CH.zig&quot;</span>);</span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> dv = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/dv.zig&quot;</span>);</span>
+<span class="line" id="L14"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> el = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/el.zig&quot;</span>);</span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en.zig&quot;</span>);</span>
+<span class="line" id="L16"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_AU = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_AU.zig&quot;</span>);</span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_AU_ocker = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_AU_ocker.zig&quot;</span>);</span>
+<span class="line" id="L18"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_BORK = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_BORK.zig&quot;</span>);</span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_CA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_CA.zig&quot;</span>);</span>
+<span class="line" id="L20"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_GB = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_GB.zig&quot;</span>);</span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_GH = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_GH.zig&quot;</span>);</span>
+<span class="line" id="L22"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_HK = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_HK.zig&quot;</span>);</span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_IE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_IE.zig&quot;</span>);</span>
+<span class="line" id="L24"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_IN = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_IN.zig&quot;</span>);</span>
+<span class="line" id="L25"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_NG = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_NG.zig&quot;</span>);</span>
+<span class="line" id="L26"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_US = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_US.zig&quot;</span>);</span>
+<span class="line" id="L27"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> en_ZA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/en_ZA.zig&quot;</span>);</span>
+<span class="line" id="L28"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> eo = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/eo.zig&quot;</span>);</span>
+<span class="line" id="L29"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> es = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/es.zig&quot;</span>);</span>
+<span class="line" id="L30"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> es_MX = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/es_MX.zig&quot;</span>);</span>
+<span class="line" id="L31"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fa = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fa.zig&quot;</span>);</span>
+<span class="line" id="L32"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fi = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fi.zig&quot;</span>);</span>
+<span class="line" id="L33"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr.zig&quot;</span>);</span>
+<span class="line" id="L34"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_BE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_BE.zig&quot;</span>);</span>
+<span class="line" id="L35"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_CA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_CA.zig&quot;</span>);</span>
+<span class="line" id="L36"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_CH = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_CH.zig&quot;</span>);</span>
+<span class="line" id="L37"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fr_LU = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/fr_LU.zig&quot;</span>);</span>
+<span class="line" id="L38"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> he = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/he.zig&quot;</span>);</span>
+<span class="line" id="L39"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> hr = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/hr.zig&quot;</span>);</span>
+<span class="line" id="L40"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> hu = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/hu.zig&quot;</span>);</span>
+<span class="line" id="L41"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> hy = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/hy.zig&quot;</span>);</span>
+<span class="line" id="L42"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> id_ID = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/id_ID.zig&quot;</span>);</span>
+<span class="line" id="L43"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> it = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/it.zig&quot;</span>);</span>
+<span class="line" id="L44"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ja = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ja.zig&quot;</span>);</span>
+<span class="line" id="L45"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ka_GE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ka_GE.zig&quot;</span>);</span>
+<span class="line" id="L46"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ko = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ko.zig&quot;</span>);</span>
+<span class="line" id="L47"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> lv = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/lv.zig&quot;</span>);</span>
+<span class="line" id="L48"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> mk = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/mk.zig&quot;</span>);</span>
+<span class="line" id="L49"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> nb_NO = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/nb_NO.zig&quot;</span>);</span>
+<span class="line" id="L50"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ne = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ne.zig&quot;</span>);</span>
+<span class="line" id="L51"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> nl = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/nl.zig&quot;</span>);</span>
+<span class="line" id="L52"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> nl_BE = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/nl_BE.zig&quot;</span>);</span>
+<span class="line" id="L53"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> pl = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/pl.zig&quot;</span>);</span>
+<span class="line" id="L54"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> pt_BR = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/pt_BR.zig&quot;</span>);</span>
+<span class="line" id="L55"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> pt_PT = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/pt_PT.zig&quot;</span>);</span>
+<span class="line" id="L56"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ro = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ro.zig&quot;</span>);</span>
+<span class="line" id="L57"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ro_MD = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ro_MD.zig&quot;</span>);</span>
+<span class="line" id="L58"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ru = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ru.zig&quot;</span>);</span>
+<span class="line" id="L59"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> sk = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/sk.zig&quot;</span>);</span>
+<span class="line" id="L60"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> sr_RS_latin = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/sr_RS_latin.zig&quot;</span>);</span>
+<span class="line" id="L61"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> sv = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/sv.zig&quot;</span>);</span>
+<span class="line" id="L62"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> th = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/th.zig&quot;</span>);</span>
+<span class="line" id="L63"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> tr = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/tr.zig&quot;</span>);</span>
+<span class="line" id="L64"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> uk = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/uk.zig&quot;</span>);</span>
+<span class="line" id="L65"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ur = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/ur.zig&quot;</span>);</span>
+<span class="line" id="L66"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> vi = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/vi.zig&quot;</span>);</span>
+<span class="line" id="L67"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> yo_NG = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/yo_NG.zig&quot;</span>);</span>
+<span class="line" id="L68"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> zh_CN = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/zh_CN.zig&quot;</span>);</span>
+<span class="line" id="L69"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> zh_TW = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/zh_TW.zig&quot;</span>);</span>
+<span class="line" id="L70"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> zu_ZA = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;locale/zu_ZA.zig&quot;</span>);</span>
+<span class="line" id="L71"></span>
 </code></pre></body>
 </html>
