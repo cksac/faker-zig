@@ -9,7 +9,7 @@ pub fn is(
 pub fn dummy(comptime T: type, comptime opt: anytype, faker: Faker(opt)) T {
     const info = @typeInfo(T).Struct;
     var item: T = undefined;
-    const customization: ?type = if (comptime @hasDecl(T, "faker.dummy")) T.@"faker.dummy" else null;
+    const customization: ?type = if (comptime @hasDecl(T, "faker.fields")) T.@"faker.fields" else null;
 
     inline for (info.fields) |field| {
         if (customization) |cfg| {
