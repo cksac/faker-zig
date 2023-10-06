@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\el\person.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> NamePattern = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/person.zig&quot;</span>).NamePattern;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Μαρια&quot;</span>, <span class="tok-str">&quot;Ελενη&quot;</span>, <span class="tok-str">&quot;Αικατερινη&quot;</span>, <span class="tok-str">&quot;Ιωαννα&quot;</span>, <span class="tok-str">&quot;Δημητρα&quot;</span>, <span class="tok-str">&quot;Ευαγγελια&quot;</span>, <span class="tok-str">&quot;Γεωργια&quot;</span>, <span class="tok-str">&quot;Αναστασια&quot;</span>, <span class="tok-str">&quot;Παναγιωτα&quot;</span>, <span class="tok-str">&quot;Σοφια&quot;</span>, <span class="tok-str">&quot;Κωνσταντινα&quot;</span>, <span class="tok-str">&quot;Παρασκευη&quot;</span>, <span class="tok-str">&quot;Αννα&quot;</span>, <span class="tok-str">&quot;Χριστινα&quot;</span>, <span class="tok-str">&quot;Αθανασια&quot;</span>, <span class="tok-str">&quot;Δεσποινα&quot;</span>, <span class="tok-str">&quot;Χρυσουλα&quot;</span>, <span class="tok-str">&quot;Αλεξανδρα&quot;</span>, <span class="tok-str">&quot;Σταυρουλα&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Κυρία&quot;</span>, <span class="tok-str">&quot;Δόκτορ&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Άγγελος&quot;</span>, <span class="tok-str">&quot;Αθανάσιος&quot;</span>, <span class="tok-str">&quot;Αθανασια&quot;</span>, <span class="tok-str">&quot;Αικατερινη&quot;</span>, <span class="tok-str">&quot;Αλέξανδρος&quot;</span>, <span class="tok-str">&quot;Αλεξανδρα&quot;</span>, <span class="tok-str">&quot;Αναστάσιος&quot;</span>, <span class="tok-str">&quot;Αναστασια&quot;</span>, <span class="tok-str">&quot;Ανδρέας&quot;</span>, <span class="tok-str">&quot;Αννα&quot;</span>, <span class="tok-str">&quot;Αντώνης&quot;</span>, <span class="tok-str">&quot;Απόστολος&quot;</span>, <span class="tok-str">&quot;Αριστείδης&quot;</span>, <span class="tok-str">&quot;Βασίλης&quot;</span>, <span class="tok-str">&quot;Γεωργια&quot;</span>, <span class="tok-str">&quot;Γεώργιος&quot;</span>, <span class="tok-str">&quot;Γρηγόριος&quot;</span>, <span class="tok-str">&quot;Δεσποινα&quot;</span>, <span class="tok-str">&quot;Δημήτρης&quot;</span>, <span class="tok-str">&quot;Δημητρα&quot;</span>, <span class="tok-str">&quot;Διονύσιος&quot;</span>, <span class="tok-str">&quot;Ελενη&quot;</span>, <span class="tok-str">&quot;Ελευθέριος&quot;</span>, <span class="tok-str">&quot;Εμμανουήλ&quot;</span>, <span class="tok-str">&quot;Ευάγγελος&quot;</span>, <span class="tok-str">&quot;Ευαγγελια&quot;</span>, <span class="tok-str">&quot;Ευστάθιος&quot;</span>, <span class="tok-str">&quot;Ηλίας&quot;</span>, <span class="tok-str">&quot;Θεόδωρος&quot;</span>, <span class="tok-str">&quot;Ιωάννης&quot;</span>, <span class="tok-str">&quot;Ιωαννα&quot;</span>, <span class="tok-str">&quot;Κωνσταντινα&quot;</span>, <span class="tok-str">&quot;Κώστας&quot;</span>, <span class="tok-str">&quot;Λεωνίδας&quot;</span>, <span class="tok-str">&quot;Μαρια&quot;</span>, <span class="tok-str">&quot;Μιχαήλ&quot;</span>, <span class="tok-str">&quot;Νικόλαος&quot;</span>, <span class="tok-str">&quot;Πέτρος&quot;</span>, <span class="tok-str">&quot;Παναγιωτα&quot;</span>, <span class="tok-str">&quot;Παναγιώτης&quot;</span>, <span class="tok-str">&quot;Παρασκευάς&quot;</span>, <span class="tok-str">&quot;Παρασκευη&quot;</span>, <span class="tok-str">&quot;Παύλος&quot;</span>, <span class="tok-str">&quot;Σοφια&quot;</span>, <span class="tok-str">&quot;Σπύρος&quot;</span>, <span class="tok-str">&quot;Στέφανος&quot;</span>, <span class="tok-str">&quot;Σταυρουλα&quot;</span>, <span class="tok-str">&quot;Σταύρος&quot;</span>, <span class="tok-str">&quot;Στυλιανός&quot;</span>, <span class="tok-str">&quot;Σωτήριος&quot;</span>, <span class="tok-str">&quot;Φώτιος&quot;</span>, <span class="tok-str">&quot;Χαράλαμπος&quot;</span>, <span class="tok-str">&quot;Χρήστος&quot;</span>, <span class="tok-str">&quot;Χριστινα&quot;</span>, <span class="tok-str">&quot;Χρυσουλα&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Αβραμίδης&quot;</span>, <span class="tok-str">&quot;Αγγελίδης&quot;</span>, <span class="tok-str">&quot;Αγγελίδου&quot;</span>, <span class="tok-str">&quot;Αγγελόπουλος&quot;</span>, <span class="tok-str">&quot;Αγγελοπούλου&quot;</span>, <span class="tok-str">&quot;Αθανασιάδης&quot;</span>, <span class="tok-str">&quot;Αθανασίου&quot;</span>, <span class="tok-str">&quot;Ακρίδας&quot;</span>, <span class="tok-str">&quot;Αλαβάνος&quot;</span>, <span class="tok-str">&quot;Αλαφούζος&quot;</span>, <span class="tok-str">&quot;Αλεβιζόπουλος&quot;</span>, <span class="tok-str">&quot;Αλεβίζος&quot;</span>, <span class="tok-str">&quot;Αλεξάκης&quot;</span>, <span class="tok-str">&quot;Αλεξίου&quot;</span>, <span class="tok-str">&quot;Αλεξόπουλος&quot;</span>, <span class="tok-str">&quot;Αλεξανδρίδης&quot;</span>, <span class="tok-str">&quot;Αλεξάνδρου&quot;</span>, <span class="tok-str">&quot;Αλεξιάδης&quot;</span>, <span class="tok-str">&quot;Αλιβιζάτος&quot;</span>, <span class="tok-str">&quot;Αναγνωστάκης&quot;</span>, <span class="tok-str">&quot;Αναγνώστου&quot;</span>, <span class="tok-str">&quot;Αναστασιάδης&quot;</span>, <span class="tok-str">&quot;Ανδρεάδης&quot;</span>, <span class="tok-str">&quot;Ανδρέου&quot;</span>, <span class="tok-str">&quot;Αντωνιάδης&quot;</span>, <span class="tok-str">&quot;Αντωνόπουλος&quot;</span>, <span class="tok-str">&quot;Αντωνοπούλου&quot;</span>, <span class="tok-str">&quot;Αξιώτης&quot;</span>, <span class="tok-str">&quot;Αποστόλου&quot;</span>, <span class="tok-str">&quot;Αποστολίδης&quot;</span>, <span class="tok-str">&quot;Αρβανίτης&quot;</span>, <span class="tok-str">&quot;Αργυριάδης&quot;</span>, <span class="tok-str">&quot;Ασπάσιος&quot;</span>, <span class="tok-str">&quot;Αυγερινός&quot;</span>, <span class="tok-str">&quot;Βάμβας&quot;</span>, <span class="tok-str">&quot;Βαμβακάς&quot;</span>, <span class="tok-str">&quot;Βαρνακιώτης&quot;</span>, <span class="tok-str">&quot;Βαρουξής&quot;</span>, <span class="tok-str">&quot;Βασιλόπουλος&quot;</span>, <span class="tok-str">&quot;Βασιλείου&quot;</span>, <span class="tok-str">&quot;Βασιλειάδης&quot;</span>, <span class="tok-str">&quot;Βασιλικός&quot;</span>, <span class="tok-str">&quot;Βενιζέλος&quot;</span>, <span class="tok-str">&quot;Βέργας&quot;</span>, <span class="tok-str">&quot;Βικελίδης&quot;</span>, <span class="tok-str">&quot;Βιλαέτης&quot;</span>, <span class="tok-str">&quot;Βιτάλη&quot;</span>, <span class="tok-str">&quot;Βιτάλης&quot;</span>, <span class="tok-str">&quot;Βλαβιανός&quot;</span>, <span class="tok-str">&quot;Βλαστός&quot;</span>, <span class="tok-str">&quot;Βλαχόπουλος&quot;</span>, <span class="tok-str">&quot;Βούλγαρης&quot;</span>, <span class="tok-str">&quot;Βονόρτας&quot;</span>, <span class="tok-str">&quot;Βουγιουκλάκης&quot;</span>, <span class="tok-str">&quot;Βουρδουμπάς&quot;</span>, <span class="tok-str">&quot;Βυζάντιος&quot;</span>, <span class="tok-str">&quot;Γαλάνη&quot;</span>, <span class="tok-str">&quot;Γαλάνης&quot;</span>, <span class="tok-str">&quot;Γεννάδιος&quot;</span>, <span class="tok-str">&quot;Γερμανός&quot;</span>, <span class="tok-str">&quot;Γερμανού&quot;</span>, <span class="tok-str">&quot;Γεωργίου&quot;</span>, <span class="tok-str">&quot;Γεωργιάδης&quot;</span>, <span class="tok-str">&quot;Γιάγκος&quot;</span>, <span class="tok-str">&quot;Γιαννόπουλος&quot;</span>, <span class="tok-str">&quot;Γιαννακόπουλος&quot;</span>, <span class="tok-str">&quot;Γιάνναρης&quot;</span>, <span class="tok-str">&quot;Γκόφας&quot;</span>, <span class="tok-str">&quot;Γλυκύς&quot;</span>, <span class="tok-str">&quot;Γούναρης&quot;</span>, <span class="tok-str">&quot;Γούσιος&quot;</span>, <span class="tok-str">&quot;Δάβης&quot;</span>, <span class="tok-str">&quot;Δαγκλής&quot;</span>, <span class="tok-str">&quot;Δαμασκηνός&quot;</span>, <span class="tok-str">&quot;Δασκαλόπουλος&quot;</span>, <span class="tok-str">&quot;Δασκαλοπούλου&quot;</span>, <span class="tok-str">&quot;Δελή&quot;</span>, <span class="tok-str">&quot;Δεσποτόπουλος&quot;</span>, <span class="tok-str">&quot;Δημαράς&quot;</span>, <span class="tok-str">&quot;Δημητρίου&quot;</span>, <span class="tok-str">&quot;Δημητρακόπουλος&quot;</span>, <span class="tok-str">&quot;Διαμαντόπουλος&quot;</span>, <span class="tok-str">&quot;Διδασκάλου&quot;</span>, <span class="tok-str">&quot;Δοξαράς&quot;</span>, <span class="tok-str">&quot;Δουμπιώτης&quot;</span>, <span class="tok-str">&quot;Δουρέντης&quot;</span>, <span class="tok-str">&quot;Δράκος&quot;</span>, <span class="tok-str">&quot;Δραγούμης&quot;</span>, <span class="tok-str">&quot;Δυοβουνιώτης&quot;</span>, <span class="tok-str">&quot;Ελευθερόπουλος&quot;</span>, <span class="tok-str">&quot;Ελευθεριάδης&quot;</span>, <span class="tok-str">&quot;Ελευθερίου&quot;</span>, <span class="tok-str">&quot;Ευταξίας&quot;</span>, <span class="tok-str">&quot;Ζάνος&quot;</span>, <span class="tok-str">&quot;Ζάππας&quot;</span>, <span class="tok-str">&quot;Ζάρκος&quot;</span>, <span class="tok-str">&quot;Ζάχος&quot;</span>, <span class="tok-str">&quot;Ζέρβας&quot;</span>, <span class="tok-str">&quot;Ζαΐμης&quot;</span>, <span class="tok-str">&quot;Ζαφειρόπουλος&quot;</span>, <span class="tok-str">&quot;Ζαχαρίου&quot;</span>, <span class="tok-str">&quot;Ζερβός&quot;</span>, <span class="tok-str">&quot;Ζυγομαλάς&quot;</span>, <span class="tok-str">&quot;Ζωγράφος&quot;</span>, <span class="tok-str">&quot;Ζωγράφου&quot;</span>, <span class="tok-str">&quot;Ηλιόπουλος&quot;</span>, <span class="tok-str">&quot;Θεοδοσίου&quot;</span>, <span class="tok-str">&quot;Θεοδωρίδης&quot;</span>, <span class="tok-str">&quot;Θεοτόκης&quot;</span>, <span class="tok-str">&quot;Ιωαννίδης&quot;</span>, <span class="tok-str">&quot;Ιωάννου&quot;</span>, <span class="tok-str">&quot;Καζαντζής&quot;</span>, <span class="tok-str">&quot;Κακριδής&quot;</span>, <span class="tok-str">&quot;Καλάρης&quot;</span>, <span class="tok-str">&quot;Καλύβας&quot;</span>, <span class="tok-str">&quot;Καλαμογδάρτης&quot;</span>, <span class="tok-str">&quot;Καλλιγάς&quot;</span>, <span class="tok-str">&quot;Καλογιάννης&quot;</span>, <span class="tok-str">&quot;Κανακάρης-Ρούφος&quot;</span>, <span class="tok-str">&quot;Καραβίας&quot;</span>, <span class="tok-str">&quot;Καραμήτσος&quot;</span>, <span class="tok-str">&quot;Καραμανλής&quot;</span>, <span class="tok-str">&quot;Καρράς&quot;</span>, <span class="tok-str">&quot;Κασιδιάρης&quot;</span>, <span class="tok-str">&quot;Καψής&quot;</span>, <span class="tok-str">&quot;Κεδίκογλου&quot;</span>, <span class="tok-str">&quot;Κούνδουρος&quot;</span>, <span class="tok-str">&quot;Κολιάτσος&quot;</span>, <span class="tok-str">&quot;Κομνηνός&quot;</span>, <span class="tok-str">&quot;Κοντολέων&quot;</span>, <span class="tok-str">&quot;Κοντόσταυλος&quot;</span>, <span class="tok-str">&quot;Κόρακας&quot;</span>, <span class="tok-str">&quot;Κορνάρος&quot;</span>, <span class="tok-str">&quot;Κορομηλάς&quot;</span>, <span class="tok-str">&quot;Κορωναίος&quot;</span>, <span class="tok-str">&quot;Κοσμόπουλος&quot;</span>, <span class="tok-str">&quot;Κοτζιάς&quot;</span>, <span class="tok-str">&quot;Κουβέλης&quot;</span>, <span class="tok-str">&quot;Κουντουριώτης&quot;</span>, <span class="tok-str">&quot;Κουρμούλης&quot;</span>, <span class="tok-str">&quot;Κουταλιανός&quot;</span>, <span class="tok-str">&quot;Κρεστενίτης&quot;</span>, <span class="tok-str">&quot;Κυπραίος&quot;</span>, <span class="tok-str">&quot;Κωνσταντίνου&quot;</span>, <span class="tok-str">&quot;Κωνσταντόπουλος&quot;</span>, <span class="tok-str">&quot;Λόντος&quot;</span>, <span class="tok-str">&quot;Λύτρας&quot;</span>, <span class="tok-str">&quot;Λαγός&quot;</span>, <span class="tok-str">&quot;Λαιμός&quot;</span>, <span class="tok-str">&quot;Λαμέρας&quot;</span>, <span class="tok-str">&quot;Λαμπρόπουλος&quot;</span>, <span class="tok-str">&quot;Λειβαδάς&quot;</span>, <span class="tok-str">&quot;Λιάπης&quot;</span>, <span class="tok-str">&quot;Λιακόπουλος&quot;</span>, <span class="tok-str">&quot;Λούλης&quot;</span>, <span class="tok-str">&quot;Λούπης&quot;</span>, <span class="tok-str">&quot;Λύκος&quot;</span>, <span class="tok-str">&quot;Μάγκας&quot;</span>, <span class="tok-str">&quot;Μήτζου&quot;</span>, <span class="tok-str">&quot;Μαγγίνας&quot;</span>, <span class="tok-str">&quot;Μακρή&quot;</span>, <span class="tok-str">&quot;Μακρής&quot;</span>, <span class="tok-str">&quot;Μαλαξός&quot;</span>, <span class="tok-str">&quot;Μανιάκης&quot;</span>, <span class="tok-str">&quot;Μανωλάς&quot;</span>, <span class="tok-str">&quot;Μαρής&quot;</span>, <span class="tok-str">&quot;Μαρκόπουλος&quot;</span>, <span class="tok-str">&quot;Μαυρίδης&quot;</span>, <span class="tok-str">&quot;Μαυρογένης&quot;</span>, <span class="tok-str">&quot;Μελετόπουλος&quot;</span>, <span class="tok-str">&quot;Μέλιοι&quot;</span>, <span class="tok-str">&quot;Μεσσηνέζης&quot;</span>, <span class="tok-str">&quot;Μεταξάς&quot;</span>, <span class="tok-str">&quot;Μητσοτάκης&quot;</span>, <span class="tok-str">&quot;Μιαούλης&quot;</span>, <span class="tok-str">&quot;Μιχαηλίδης&quot;</span>, <span class="tok-str">&quot;Μιχαλολιάκος&quot;</span>, <span class="tok-str">&quot;Μοσχοβάκης&quot;</span>, <span class="tok-str">&quot;Μπότσαρης&quot;</span>, <span class="tok-str">&quot;Μπλέτσας&quot;</span>, <span class="tok-str">&quot;Μπουκουβαλαίοι&quot;</span>, <span class="tok-str">&quot;Νικολαΐδης&quot;</span>, <span class="tok-str">&quot;Νικολάκος&quot;</span>, <span class="tok-str">&quot;Οικονόμου&quot;</span>, <span class="tok-str">&quot;Ουζουνίδης&quot;</span>, <span class="tok-str">&quot;Πανταζής&quot;</span>, <span class="tok-str">&quot;Παπαγεωργίου&quot;</span>, <span class="tok-str">&quot;Παπάγος&quot;</span>, <span class="tok-str">&quot;Παπαδάκης&quot;</span>, <span class="tok-str">&quot;Παπαδόπουλος&quot;</span>, <span class="tok-str">&quot;Παπάζογλου&quot;</span>, <span class="tok-str">&quot;Παπακώστας&quot;</span>, <span class="tok-str">&quot;Παπακωνσταντίνου&quot;</span>, <span class="tok-str">&quot;Παπανδρέου&quot;</span>, <span class="tok-str">&quot;Παπανικολάου&quot;</span>, <span class="tok-str">&quot;Παπαντωνίου&quot;</span>, <span class="tok-str">&quot;Παπαστεφάνου&quot;</span>, <span class="tok-str">&quot;Παπαφιλίππου&quot;</span>, <span class="tok-str">&quot;Παπαϊωάννου&quot;</span>, <span class="tok-str">&quot;Παππάς&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name_pattern = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Γεώργιος&quot;</span>, <span class="tok-str">&quot;Ιωάννης&quot;</span>, <span class="tok-str">&quot;Κώστας&quot;</span>, <span class="tok-str">&quot;Δημήτρης&quot;</span>, <span class="tok-str">&quot;Νικόλαος&quot;</span>, <span class="tok-str">&quot;Παναγιώτης&quot;</span>, <span class="tok-str">&quot;Βασίλης&quot;</span>, <span class="tok-str">&quot;Χρήστος&quot;</span>, <span class="tok-str">&quot;Αθανάσιος&quot;</span>, <span class="tok-str">&quot;Μιχαήλ&quot;</span>, <span class="tok-str">&quot;Ευάγγελος&quot;</span>, <span class="tok-str">&quot;Σπύρος&quot;</span>, <span class="tok-str">&quot;Αντώνης&quot;</span>, <span class="tok-str">&quot;Αναστάσιος&quot;</span>, <span class="tok-str">&quot;Θεόδωρος&quot;</span>, <span class="tok-str">&quot;Ανδρέας&quot;</span>, <span class="tok-str">&quot;Χαράλαμπος&quot;</span>, <span class="tok-str">&quot;Αλέξανδρος&quot;</span>, <span class="tok-str">&quot;Εμμανουήλ&quot;</span>, <span class="tok-str">&quot;Ηλίας&quot;</span>, <span class="tok-str">&quot;Σταύρος&quot;</span>, <span class="tok-str">&quot;Πέτρος&quot;</span>, <span class="tok-str">&quot;Σωτήριος&quot;</span>, <span class="tok-str">&quot;Στυλιανός&quot;</span>, <span class="tok-str">&quot;Ελευθέριος&quot;</span>, <span class="tok-str">&quot;Απόστολος&quot;</span>, <span class="tok-str">&quot;Φώτιος&quot;</span>, <span class="tok-str">&quot;Διονύσιος&quot;</span>, <span class="tok-str">&quot;Γρηγόριος&quot;</span>, <span class="tok-str">&quot;Άγγελος&quot;</span>, <span class="tok-str">&quot;Στέφανος&quot;</span>, <span class="tok-str">&quot;Ευστάθιος&quot;</span>, <span class="tok-str">&quot;Παύλος&quot;</span>, <span class="tok-str">&quot;Παρασκευάς&quot;</span>, <span class="tok-str">&quot;Αριστείδης&quot;</span>, <span class="tok-str">&quot;Λεωνίδας&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Κύριος&quot;</span>, <span class="tok-str">&quot;Δόκτορ&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> name = [_]NamePattern{ .{ .value = <span class="tok-str">&quot;{{person.prefix}} {{person.firstName}} {{person.lastName}}&quot;</span>, .weight = <span class="tok-number">1</span> }, .{ .value = <span class="tok-str">&quot;{{person.firstName}} {{person.lastName}} {{person.suffix}}&quot;</span>, .weight = <span class="tok-number">1</span> }, .{ .value = <span class="tok-str">&quot;{{person.firstName}} {{person.lastName}}&quot;</span>, .weight = <span class="tok-number">8</span> } };</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Δόκτορ&quot;</span>, <span class="tok-str">&quot;Κυρία&quot;</span>, <span class="tok-str">&quot;Κύριος&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> title = .{ .descriptor = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Senior&quot;</span>, <span class="tok-str">&quot;Εταιρείες&quot;</span>, <span class="tok-str">&quot;Πελάτης&quot;</span>, <span class="tok-str">&quot;Επενδυτής&quot;</span>, <span class="tok-str">&quot;Εσωτερικό&quot;</span>, <span class="tok-str">&quot;Κύριος&quot;</span> }, .level = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Λύσεις&quot;</span>, <span class="tok-str">&quot;Πρόγραμμα&quot;</span>, <span class="tok-str">&quot;Μάρκα&quot;</span>, <span class="tok-str">&quot;Ασφάλεια&quot;</span>, <span class="tok-str">&quot;Έρευνα&quot;</span>, <span class="tok-str">&quot;Μάρκετινγκ&quot;</span>, <span class="tok-str">&quot;Οδηγιών&quot;</span>, <span class="tok-str">&quot;Εφαρμογή&quot;</span>, <span class="tok-str">&quot;Ενσωμάτωση&quot;</span>, <span class="tok-str">&quot;Λειτουργικότητα&quot;</span>, <span class="tok-str">&quot;Τακτική&quot;</span>, <span class="tok-str">&quot;Ταυτότητα&quot;</span>, <span class="tok-str">&quot;Αγορές&quot;</span>, <span class="tok-str">&quot;Όμιλος&quot;</span>, <span class="tok-str">&quot;Εφαρμογές&quot;</span>, <span class="tok-str">&quot;Βελτιστοποίηση&quot;</span>, <span class="tok-str">&quot;Δραστηριότητες&quot;</span>, <span class="tok-str">&quot;Υποδομή&quot;</span>, <span class="tok-str">&quot;Intranet&quot;</span>, <span class="tok-str">&quot;Επικοινωνίες&quot;</span>, <span class="tok-str">&quot;Web&quot;</span>, <span class="tok-str">&quot;Branding&quot;</span>, <span class="tok-str">&quot;Ποιότητα&quot;</span>, <span class="tok-str">&quot;Διασφάλιση&quot;</span>, <span class="tok-str">&quot;Κινητικότητα&quot;</span>, <span class="tok-str">&quot;Λογαριασμοί&quot;</span>, <span class="tok-str">&quot;Δεδομένα&quot;</span>, <span class="tok-str">&quot;Δημιουργική&quot;</span>, <span class="tok-str">&quot;Διαμόρφωση&quot;</span>, <span class="tok-str">&quot;Μετρήσεις&quot;</span> }, .job = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Επόπτης&quot;</span>, <span class="tok-str">&quot;Συνεργάτης&quot;</span>, <span class="tok-str">&quot;Σύμβουλος&quot;</span>, <span class="tok-str">&quot;Διευθυντής&quot;</span>, <span class="tok-str">&quot;Μηχανικός&quot;</span>, <span class="tok-str">&quot;Ειδικός&quot;</span>, <span class="tok-str">&quot;Συντονιστή&quot;</span>, <span class="tok-str">&quot;Διαχειριστής&quot;</span>, <span class="tok-str">&quot;Αναλυτής&quot;</span>, <span class="tok-str">&quot;Designer&quot;</span>, <span class="tok-str">&quot;Τεχνικός&quot;</span>, <span class="tok-str">&quot;Προγραμματιστής&quot;</span>, <span class="tok-str">&quot;Παραγωγός&quot;</span>, <span class="tok-str">&quot;Βοηθός&quot;</span>, <span class="tok-str">&quot;Συντονιστής&quot;</span>, <span class="tok-str">&quot;Εκπρόσωπος&quot;</span>, <span class="tok-str">&quot;Αντιπρόσωπος&quot;</span> } };</span>
+<span class="line" id="L22"></span>
+</code></pre></body>
+</html>

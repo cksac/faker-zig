@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\hy\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;###&quot;</span>, <span class="tok-str">&quot;###/#&quot;</span>, <span class="tok-str">&quot;##&quot;</span>, <span class="tok-str">&quot;##/#&quot;</span>, <span class="tok-str">&quot;#&quot;</span>, <span class="tok-str">&quot;#/#&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.city_prefix}} {{person.last_name}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.city_suffix}}&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Հյուսիսային&quot;</span>, <span class="tok-str">&quot;Արևելյան&quot;</span>, <span class="tok-str">&quot;Արևմտյան&quot;</span>, <span class="tok-str">&quot;Հարավային&quot;</span>, <span class="tok-str">&quot;Նոր&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ակերտ&quot;</span>, <span class="tok-str">&quot;աշեն&quot;</span>, <span class="tok-str">&quot;աշատ&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ԱՄՆ&quot;</span>, <span class="tok-str">&quot;Ադրբեջան&quot;</span>, <span class="tok-str">&quot;Ալբանիա&quot;</span>, <span class="tok-str">&quot;Ալժիր&quot;</span>, <span class="tok-str">&quot;Ամերիկյան Սամոա&quot;</span>, <span class="tok-str">&quot;Ամերիկյան Վիրջինյան կղզիներ&quot;</span>, <span class="tok-str">&quot;Անգիլիա&quot;</span>, <span class="tok-str">&quot;Անգոլա&quot;</span>, <span class="tok-str">&quot;Անդորրա&quot;</span>, <span class="tok-str">&quot;Անտիգուա և Բարբուդա&quot;</span>, <span class="tok-str">&quot;Ավստրալիա&quot;</span>, <span class="tok-str">&quot;Ավստրիա&quot;</span>, <span class="tok-str">&quot;Արգենտինա&quot;</span>, <span class="tok-str">&quot;Արուբա&quot;</span>, <span class="tok-str">&quot;Արցախի Հանրապետություն&quot;</span>, <span class="tok-str">&quot;Արևելյան Թիմոր&quot;</span>, <span class="tok-str">&quot;Աֆղանստան&quot;</span>, <span class="tok-str">&quot;Բահամներ&quot;</span>, <span class="tok-str">&quot;Բահրեյն&quot;</span>, <span class="tok-str">&quot;Բանգլադեշ&quot;</span>, <span class="tok-str">&quot;Բարբադոս&quot;</span>, <span class="tok-str">&quot;Բելառուս&quot;</span>, <span class="tok-str">&quot;Բելիզ&quot;</span>, <span class="tok-str">&quot;Բենին&quot;</span>, <span class="tok-str">&quot;Բերմուդա&quot;</span>, <span class="tok-str">&quot;Բոլիվիա&quot;</span>, <span class="tok-str">&quot;Բոսնիա և Հերցեգովինա&quot;</span>, <span class="tok-str">&quot;Բոտսվանա&quot;</span>, <span class="tok-str">&quot;Բութան&quot;</span>, <span class="tok-str">&quot;Բուլղարիա&quot;</span>, <span class="tok-str">&quot;Բուրկինա Ֆասո&quot;</span>, <span class="tok-str">&quot;Բուրունդի&quot;</span>, <span class="tok-str">&quot;Բրազիլիա&quot;</span>, <span class="tok-str">&quot;Բրիտանական Վիրջինյան Կղզիներ&quot;</span>, <span class="tok-str">&quot;Բրունեյ&quot;</span>, <span class="tok-str">&quot;Գաբոն&quot;</span>, <span class="tok-str">&quot;Գամբիա&quot;</span>, <span class="tok-str">&quot;Գայանա&quot;</span>, <span class="tok-str">&quot;Գերմանիա&quot;</span>, <span class="tok-str">&quot;Գերնսի&quot;</span>, <span class="tok-str">&quot;Գուամ&quot;</span>, <span class="tok-str">&quot;Գվատեմալա&quot;</span>, <span class="tok-str">&quot;Գվինեա&quot;</span>, <span class="tok-str">&quot;Գվինեա-Բիսաու&quot;</span>, <span class="tok-str">&quot;Գրենադա&quot;</span>, <span class="tok-str">&quot;Դանիա&quot;</span>, <span class="tok-str">&quot;Դոմինիկա&quot;</span>, <span class="tok-str">&quot;Դոմինիկյան Հանրապետություն&quot;</span>, <span class="tok-str">&quot;Եգիպտոս&quot;</span>, <span class="tok-str">&quot;Եթովպիա&quot;</span>, <span class="tok-str">&quot;Եմեն&quot;</span>, <span class="tok-str">&quot;Զամբիա&quot;</span>, <span class="tok-str">&quot;Զիմբաբվե&quot;</span>, <span class="tok-str">&quot;Էկվադոր&quot;</span>, <span class="tok-str">&quot;Էստոնիա&quot;</span>, <span class="tok-str">&quot;Էրիտրեա&quot;</span>, <span class="tok-str">&quot;Թաիլանդ&quot;</span>, <span class="tok-str">&quot;Թայվան&quot;</span>, <span class="tok-str">&quot;Թըրքս և Կայկոս կղզիներ&quot;</span>, <span class="tok-str">&quot;Թունիս&quot;</span>, <span class="tok-str">&quot;Թուրքիա&quot;</span>, <span class="tok-str">&quot;Թուրքմենստան&quot;</span>, <span class="tok-str">&quot;Ինդոնեզիա&quot;</span>, <span class="tok-str">&quot;Իռլանդիա&quot;</span>, <span class="tok-str">&quot;Իսլանդիա&quot;</span>, <span class="tok-str">&quot;Իսպանիա&quot;</span>, <span class="tok-str">&quot;Իսրայել&quot;</span>, <span class="tok-str">&quot;Իտալիա&quot;</span>, <span class="tok-str">&quot;Իրան&quot;</span>, <span class="tok-str">&quot;Իրաք&quot;</span>, <span class="tok-str">&quot;Լաոս&quot;</span>, <span class="tok-str">&quot;Լատվիա&quot;</span>, <span class="tok-str">&quot;Լեհաստան&quot;</span>, <span class="tok-str">&quot;Լեսոթո&quot;</span>, <span class="tok-str">&quot;Լիբանան&quot;</span>, <span class="tok-str">&quot;Լիբերիա&quot;</span>, <span class="tok-str">&quot;Լիբիա&quot;</span>, <span class="tok-str">&quot;Լիխտենշտայն&quot;</span>, <span class="tok-str">&quot;Լիտվա&quot;</span>, <span class="tok-str">&quot;Լյուքսեմբուրգ&quot;</span>, <span class="tok-str">&quot;Խորվաթիա&quot;</span>, <span class="tok-str">&quot;Կաբո Վերդե&quot;</span>, <span class="tok-str">&quot;Կամբոջա&quot;</span>, <span class="tok-str">&quot;Կամերուն&quot;</span>, <span class="tok-str">&quot;Կայմանյան կղզիներ&quot;</span>, <span class="tok-str">&quot;Կանադա&quot;</span>, <span class="tok-str">&quot;Կատար&quot;</span>, <span class="tok-str">&quot;Կենտրոնաաֆրիկյան Հանրապետություն&quot;</span>, <span class="tok-str">&quot;Կիպրոս&quot;</span>, <span class="tok-str">&quot;Կիրիբատի&quot;</span>, <span class="tok-str">&quot;Կոլումբիա&quot;</span>, <span class="tok-str">&quot;Կոմորներ&quot;</span>, <span class="tok-str">&quot;Կոնգոյի Հանրապետություն&quot;</span>, <span class="tok-str">&quot;ԿոնգոյիԴեմոկրատական Հանրապետություն ԿԴՀ&quot;</span>, <span class="tok-str">&quot;Կոստա Ռիկա&quot;</span>, <span class="tok-str">&quot;Կոտ դ'Իվուար&quot;</span>, <span class="tok-str">&quot;Կուբա&quot;</span>, <span class="tok-str">&quot;Կուկի կղզիներ&quot;</span>, <span class="tok-str">&quot;Հայաստան&quot;</span>, <span class="tok-str">&quot;Հայիթի&quot;</span>, <span class="tok-str">&quot;Հասարակածային Գվինեա&quot;</span>, <span class="tok-str">&quot;Հարավային Կորեա&quot;</span>, <span class="tok-str">&quot;Հարավաֆրիկյան Հանրապետություն&quot;</span>, <span class="tok-str">&quot;Հյուսիսային Կորեա&quot;</span>, <span class="tok-str">&quot;Հյուսիսային Մակեդոնիա&quot;</span>, <span class="tok-str">&quot;Հյուսիսային Մարիանյան կղզիներ&quot;</span>, <span class="tok-str">&quot;Հնդկաստան&quot;</span>, <span class="tok-str">&quot;Հոնդուրաս&quot;</span>, <span class="tok-str">&quot;Հոնկոնգ&quot;</span>, <span class="tok-str">&quot;Հորդանան&quot;</span>, <span class="tok-str">&quot;Հունաստան&quot;</span>, <span class="tok-str">&quot;Հունգարիա&quot;</span>, <span class="tok-str">&quot;Ղազախստան&quot;</span>, <span class="tok-str">&quot;Ղրղզստան&quot;</span>, <span class="tok-str">&quot;Ճամայկա&quot;</span>, <span class="tok-str">&quot;Ճապոնիա&quot;</span>, <span class="tok-str">&quot;ՄԱԷ&quot;</span>, <span class="tok-str">&quot;ՄԹ&quot;</span>, <span class="tok-str">&quot;Մադագասկար&quot;</span>, <span class="tok-str">&quot;Մալայզիա&quot;</span>, <span class="tok-str">&quot;Մալավի&quot;</span>, <span class="tok-str">&quot;Մալդիվներ&quot;</span>, <span class="tok-str">&quot;Մալթա&quot;</span>, <span class="tok-str">&quot;Մալի&quot;</span>, <span class="tok-str">&quot;Մակաու&quot;</span>, <span class="tok-str">&quot;Մայոտ&quot;</span>, <span class="tok-str">&quot;Մավրիկիոս&quot;</span>, <span class="tok-str">&quot;Մավրիտանիա&quot;</span>, <span class="tok-str">&quot;Մարշալյան կղզիներ&quot;</span>, <span class="tok-str">&quot;Մարոկկո&quot;</span>, <span class="tok-str">&quot;Մեն կղզի&quot;</span>, <span class="tok-str">&quot;Մեքսիկա&quot;</span>, <span class="tok-str">&quot;Միկրոնեզիա&quot;</span>, <span class="tok-str">&quot;Մյանմա&quot;</span>, <span class="tok-str">&quot;Մոզամբիկ&quot;</span>, <span class="tok-str">&quot;Մոլդովա&quot;</span>, <span class="tok-str">&quot;Մոնակո&quot;</span>, <span class="tok-str">&quot;Մոնղոլիա&quot;</span>, <span class="tok-str">&quot;Մոնտսերատ&quot;</span>, <span class="tok-str">&quot;Նամիբիա&quot;</span>, <span class="tok-str">&quot;Նաուրու&quot;</span>, <span class="tok-str">&quot;Նեպալ&quot;</span>, <span class="tok-str">&quot;Նիգեր&quot;</span>, <span class="tok-str">&quot;Նիգերիա&quot;</span>, <span class="tok-str">&quot;Նիդերլանդյան Անտիլներ&quot;</span>, <span class="tok-str">&quot;Նիդերլանդներ&quot;</span>, <span class="tok-str">&quot;Նիկարագուա&quot;</span>, <span class="tok-str">&quot;Նիուե&quot;</span>, <span class="tok-str">&quot;Նոր Զելանդիա&quot;</span>, <span class="tok-str">&quot;Նոր Կալեդոնիա&quot;</span>, <span class="tok-str">&quot;Նորվեգիա&quot;</span>, <span class="tok-str">&quot;Նորֆոլք կղզի&quot;</span>, <span class="tok-str">&quot;Շվեդիա&quot;</span>, <span class="tok-str">&quot;Շվեյցարիա&quot;</span>, <span class="tok-str">&quot;Շրի Լանկա&quot;</span>, <span class="tok-str">&quot;Ուգանդա&quot;</span>, <span class="tok-str">&quot;Ուզբեկստան&quot;</span>, <span class="tok-str">&quot;Ուկրաինա&quot;</span>, <span class="tok-str">&quot;Ուոլիս և Ֆուտունա&quot;</span>, <span class="tok-str">&quot;Ուրուգվայ&quot;</span>, <span class="tok-str">&quot;Չադ&quot;</span>, <span class="tok-str">&quot;Չեխիա&quot;</span>, <span class="tok-str">&quot;Չեռնոգորիա&quot;</span>, <span class="tok-str">&quot;Չիլի&quot;</span>, <span class="tok-str">&quot;Չինաստան&quot;</span>, <span class="tok-str">&quot;Պալաու&quot;</span>, <span class="tok-str">&quot;Պակիստան&quot;</span>, <span class="tok-str">&quot;Պաղեստին&quot;</span>, <span class="tok-str">&quot;Պանամա&quot;</span>, <span class="tok-str">&quot;Պապուա Նոր Գվինեա&quot;</span>, <span class="tok-str">&quot;Պարագվայ&quot;</span>, <span class="tok-str">&quot;Պերու&quot;</span>, <span class="tok-str">&quot;Պորտուգալիա&quot;</span>, <span class="tok-str">&quot;Պուերտո Ռիկո&quot;</span>, <span class="tok-str">&quot;Ջերսի&quot;</span>, <span class="tok-str">&quot;Ջիբութի&quot;</span>, <span class="tok-str">&quot;Ջիբրալթար&quot;</span>, <span class="tok-str">&quot;Ռուանդա&quot;</span>, <span class="tok-str">&quot;Ռումինիա&quot;</span>, <span class="tok-str">&quot;Ռուսաստան&quot;</span>, <span class="tok-str">&quot;Սալվադոր&quot;</span>, <span class="tok-str">&quot;Սահրավիա&quot;</span>, <span class="tok-str">&quot;Սամոա&quot;</span>, <span class="tok-str">&quot;Սան Մարինո&quot;</span>, <span class="tok-str">&quot;Սան Տոմե և Պրինսիպի&quot;</span>, <span class="tok-str">&quot;Սաուդյան Արաբիա&quot;</span>, <span class="tok-str">&quot;Սեյշելներ&quot;</span>, <span class="tok-str">&quot;Սեն Մարտեն (Ֆրանսիական Անտիլներ)&quot;</span>, <span class="tok-str">&quot;Սենեգալ&quot;</span>, <span class="tok-str">&quot;Սենտ Լյուսիա&quot;</span>, <span class="tok-str">&quot;Սենտ Կիտս և Նևիս&quot;</span>, <span class="tok-str">&quot;Սենտ Պիեռ և Միկելոն&quot;</span>, <span class="tok-str">&quot;Սենտ Վինսենտ և Գրենադիներ&quot;</span>, <span class="tok-str">&quot;Սերբիա&quot;</span>, <span class="tok-str">&quot;Սիեռա Լեոնե&quot;</span>, <span class="tok-str">&quot;Սինգապուր&quot;</span>, <span class="tok-str">&quot;Սիրիա&quot;</span>, <span class="tok-str">&quot;Սլովակիա&quot;</span>, <span class="tok-str">&quot;Սլովենիա&quot;</span>, <span class="tok-str">&quot;Սողոմոնյան Կղզիներ&quot;</span>, <span class="tok-str">&quot;Սոմալիա&quot;</span>, <span class="tok-str">&quot;Սուդան&quot;</span>, <span class="tok-str">&quot;Սուրբ Բարդուղիմեոսի կղզի&quot;</span>, <span class="tok-str">&quot;Սուրբ Հեղինեի կղզի&quot;</span>, <span class="tok-str">&quot;Սուրինամ&quot;</span>, <span class="tok-str">&quot;Սվազիլենդ&quot;</span>, <span class="tok-str">&quot;Վանուատու&quot;</span>, <span class="tok-str">&quot;Վատիկան&quot;</span>, <span class="tok-str">&quot;Վենեսուելա&quot;</span>, <span class="tok-str">&quot;Վիետնամ&quot;</span>, <span class="tok-str">&quot;Վրաստան&quot;</span>, <span class="tok-str">&quot;Տանզանիա&quot;</span>, <span class="tok-str">&quot;Տաջիկստան&quot;</span>, <span class="tok-str">&quot;Տոգո&quot;</span>, <span class="tok-str">&quot;Տոկելաու&quot;</span>, <span class="tok-str">&quot;Տոնգա&quot;</span>, <span class="tok-str">&quot;Տուվալու&quot;</span>, <span class="tok-str">&quot;Տրինիդադ Տոբագո&quot;</span>, <span class="tok-str">&quot;Փիթքերն կղզիներ&quot;</span>, <span class="tok-str">&quot;Քենիա&quot;</span>, <span class="tok-str">&quot;Քուվեյթ&quot;</span>, <span class="tok-str">&quot;Օման&quot;</span>, <span class="tok-str">&quot;Ֆարերյան կղզիներ&quot;</span>, <span class="tok-str">&quot;Ֆիլիպիններ&quot;</span>, <span class="tok-str">&quot;Ֆինլանդիա&quot;</span>, <span class="tok-str">&quot;Ֆիջի&quot;</span>, <span class="tok-str">&quot;Ֆոլկլենդյան կղզիներ&quot;</span>, <span class="tok-str">&quot;Ֆրանսիա&quot;</span>, <span class="tok-str">&quot;Ֆրանսիական Պոլինեզիա&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Արցախի Հանրապետություն&quot;</span>};</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> direction = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Հյուսիսային&quot;</span>, <span class="tok-str">&quot;Արևելյան&quot;</span>, <span class="tok-str">&quot;Հարավային&quot;</span>, <span class="tok-str">&quot;Արևմտյան&quot;</span>, <span class="tok-str">&quot;Հյուսիսարևելյան&quot;</span>, <span class="tok-str">&quot;Հյուսիսարևմտյան&quot;</span>, <span class="tok-str">&quot;Հարավարևելյան&quot;</span>, <span class="tok-str">&quot;Հարավարևմտյան&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> secondary_address = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Բն. ###&quot;</span>, <span class="tok-str">&quot;Տուն ###&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Արագածոտն&quot;</span>, <span class="tok-str">&quot;Արարատ&quot;</span>, <span class="tok-str">&quot;Արմավիր&quot;</span>, <span class="tok-str">&quot;Գեղարքունիք&quot;</span>, <span class="tok-str">&quot;Կոտայք&quot;</span>, <span class="tok-str">&quot;Լոռի&quot;</span>, <span class="tok-str">&quot;Շիրակ&quot;</span>, <span class="tok-str">&quot;Սյունիք&quot;</span>, <span class="tok-str">&quot;Տավուշ&quot;</span>, <span class="tok-str">&quot;Վայոց ձոր&quot;</span>, <span class="tok-str">&quot;Երևան&quot;</span>, <span class="tok-str">&quot;Ստեփանակերտ&quot;</span>, <span class="tok-str">&quot;Ասկերան&quot;</span>, <span class="tok-str">&quot;Հադրութ&quot;</span>, <span class="tok-str">&quot;Մարտակերտ&quot;</span>, <span class="tok-str">&quot;Մարտունի&quot;</span>, <span class="tok-str">&quot;Շահումյան&quot;</span>, <span class="tok-str">&quot;Շուշի&quot;</span>, <span class="tok-str">&quot;Քաշաթաղ&quot;</span> };</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}} {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{person.last_name}} {{location.street_suffix}}&quot;</span>};</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot; փողոց&quot;</span>, <span class="tok-str">&quot; պողոտա&quot;</span> };</span>
+<span class="line" id="L24"></span>
+</code></pre></body>
+</html>

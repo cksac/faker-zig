@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fr_CH\commerce.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> department = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Livres&quot;</span>, <span class="tok-str">&quot;Films&quot;</span>, <span class="tok-str">&quot;Musique&quot;</span>, <span class="tok-str">&quot;Jeux&quot;</span>, <span class="tok-str">&quot;Electronique&quot;</span>, <span class="tok-str">&quot;Ordinateurs&quot;</span>, <span class="tok-str">&quot;Maison&quot;</span>, <span class="tok-str">&quot;Jardin&quot;</span>, <span class="tok-str">&quot;Outils&quot;</span>, <span class="tok-str">&quot;Épicerie&quot;</span>, <span class="tok-str">&quot;Santé&quot;</span>, <span class="tok-str">&quot;Beauté&quot;</span>, <span class="tok-str">&quot;Jouets&quot;</span>, <span class="tok-str">&quot;Enfants&quot;</span>, <span class="tok-str">&quot;Bébé&quot;</span>, <span class="tok-str">&quot;Vêtements&quot;</span>, <span class="tok-str">&quot;Chaussures&quot;</span>, <span class="tok-str">&quot;Bijoux&quot;</span>, <span class="tok-str">&quot;Sports&quot;</span>, <span class="tok-str">&quot;Plein air&quot;</span>, <span class="tok-str">&quot;Automobile&quot;</span>, <span class="tok-str">&quot;Industrie&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_description = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Ces médailles et épingles sont en argent avec patine artistique. Elles ont été composées et frappées spécialement dans les ateliers de l'État pour la Société l'Hirondelle.&quot;</span>, <span class="tok-str">&quot;Cadre raccord brasé de 53 ou 58 %. Jantes en acier émaillées. Pneus “Hiron” 700 x 35, garantis 12 mois. Pignon roue libre à emboitement hexagonal. Frein “Hirondelle” sur jante arrière. Garde-boue métal.&quot;</span>, <span class="tok-str">&quot;Montre-bracelet, dite “d'Aviateur”, métal inaltérable, diam. 435ym. Mouvement de précision chronographe, cadran avec grande aiguille trotteuse, permettant la lecture 1/25de seconde.&quot;</span>, <span class="tok-str">&quot;Lanterne cuivre fort, finement nickelé, chute d'eau réglable, suspension antivibratrice, projecteur diamètre cm2, avec verre bombé. Durée d'éclairage 3 heures. Poids 395 grammes.&quot;</span>, <span class="tok-str">&quot;Lunettes étanches, monture caoutchouc moulé de 1re qual. glaces rondes de 55 mm de diam. en verre clair. Les lunettes protègent les yeux contre les poussières, fumées et gaz industriels et se portent av. nos masques 5862-5864. Pds 60 gr.&quot;</span>, <span class="tok-str">&quot;Carrosserie en tôle d'acier laqué blanc montée sur roues pour faciliter le déplacement, couvercle laqué blanc, dessus et cuve en métal émaille marron, inaltérable a l'eau de lessive et a la chaleur,&quot;</span>, <span class="tok-str">&quot;Bicyclette à 1 vitesse, pneus 1/2 ballon. Cadre de 52cm. Jantes chromées. Roue Hore.  Moyeux indéréglables. 2 freins sur jantes. Guidon trials. Garde-boue et couvre chaine en acier émaillé. Porte-bagages. Gardejupes. Pédales à blocs caoutchouc. Émail couleur. Selle route cuir. Sacoche avec outillage. Pompe de cadre. Timbre avertisseur.&quot;</span>, <span class="tok-str">&quot;Petite griffe à sarcler. 5 dents en acier, largeur 8 cm. poignée estampée, longueur 26 cm. poids 150 gr. Pour ameublir le sol, arracher les herbes entre les plantes ou fleurs cultivées en lignes rapprochées.&quot;</span>, <span class="tok-str">&quot;Moteur Villiers. Puissance au frein : 7 HP, 3 vitesses, lancement au pied, éclairage électrique, carrosserie 2 places, coffre à outils, outillage complet, capote et pare-brise.&quot;</span>, <span class="tok-str">&quot;Maillot en coton fin à rayures se boutonnant devant pour enfants.&quot;</span>, <span class="tok-str">&quot;Rasoir de sûreté “Prima” tout en laiton massif nickelé chromé, manche moleté bien en main. Peigne et contre-peigne galbés tenant tout d'une pièce, fermeture à charnière, blocage instantané de la lame.&quot;</span>, <span class="tok-str">&quot;Ce magnifique radio-phono comprend un excellent récepteur radioL'ensemble, dans une belle ébénisterie teintée palissandre, forme un très phonique 6 lampes et un tourne-disque de vitesses placé sous le couvercle. Beau meuble. Ce modèle, dont le montage particulièrement soigne assure un très bon rendement aussi bien en radio qu'en phono, est garanti mn an.&quot;</span>, <span class="tok-str">&quot;Récepteurs de télévision à haute définition 819 lignes, donnant une image très nette et d'un contraste agréable ne fatiguant pas la vue, le montage de la partie radio donne un son absolument remarquable.&quot;</span>, <span class="tok-str">&quot;Tous nos appareils sont blindés pour que leur rayonnement ne trouble pas les récepteurs radiophoniques, et ils fonctionnent sur courant alternatif 50 riodes 110 et 220 volts. Ils sont garantis pendant 1 an; toutefois, suivant la règle, le tube cathodique est garanti pour 6 mois seulement.&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_name = .{ .adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Petit&quot;</span>, <span class="tok-str">&quot;Ergonomique&quot;</span>, <span class="tok-str">&quot;Électronique&quot;</span>, <span class="tok-str">&quot;Rustique&quot;</span>, <span class="tok-str">&quot;Intelligent&quot;</span>, <span class="tok-str">&quot;Magnifique&quot;</span>, <span class="tok-str">&quot;Incroyable&quot;</span>, <span class="tok-str">&quot;Élégant&quot;</span>, <span class="tok-str">&quot;Fantastique&quot;</span>, <span class="tok-str">&quot;Pratique&quot;</span>, <span class="tok-str">&quot;Moderne&quot;</span>, <span class="tok-str">&quot;Recyclé&quot;</span>, <span class="tok-str">&quot;Sur mesure&quot;</span>, <span class="tok-str">&quot;Génial&quot;</span>, <span class="tok-str">&quot;Générique&quot;</span>, <span class="tok-str">&quot;Artisanal&quot;</span>, <span class="tok-str">&quot;Fait main&quot;</span>, <span class="tok-str">&quot;Oriental&quot;</span>, <span class="tok-str">&quot;Licencié&quot;</span>, <span class="tok-str">&quot;Luxueux&quot;</span>, <span class="tok-str">&quot;Raffiné&quot;</span>, <span class="tok-str">&quot;Sans marque&quot;</span>, <span class="tok-str">&quot;Savoureux&quot;</span> }, .material = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Acier&quot;</span>, <span class="tok-str">&quot;Bronze&quot;</span>, <span class="tok-str">&quot;Bois&quot;</span>, <span class="tok-str">&quot;Béton&quot;</span>, <span class="tok-str">&quot;Plastique&quot;</span>, <span class="tok-str">&quot;Coton&quot;</span>, <span class="tok-str">&quot;Granit&quot;</span>, <span class="tok-str">&quot;Caoutchouc&quot;</span>, <span class="tok-str">&quot;Métal&quot;</span>, <span class="tok-str">&quot;Doux&quot;</span>, <span class="tok-str">&quot;Frais&quot;</span>, <span class="tok-str">&quot;Congelé&quot;</span> }, .product = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Chaise&quot;</span>, <span class="tok-str">&quot;Voiture&quot;</span>, <span class="tok-str">&quot;Ordinateur&quot;</span>, <span class="tok-str">&quot;Clavier&quot;</span>, <span class="tok-str">&quot;Souris&quot;</span>, <span class="tok-str">&quot;Vélo&quot;</span>, <span class="tok-str">&quot;Boule&quot;</span>, <span class="tok-str">&quot;Gants&quot;</span>, <span class="tok-str">&quot;Pantalon&quot;</span>, <span class="tok-str">&quot;Chemise&quot;</span>, <span class="tok-str">&quot;Table&quot;</span>, <span class="tok-str">&quot;Chaussures&quot;</span>, <span class="tok-str">&quot;Chapeau&quot;</span>, <span class="tok-str">&quot;Serviettes&quot;</span>, <span class="tok-str">&quot;Savon&quot;</span>, <span class="tok-str">&quot;Thon&quot;</span>, <span class="tok-str">&quot;Poulet&quot;</span>, <span class="tok-str">&quot;Poisson&quot;</span>, <span class="tok-str">&quot;Fromage&quot;</span>, <span class="tok-str">&quot;Lard&quot;</span>, <span class="tok-str">&quot;Pizza&quot;</span>, <span class="tok-str">&quot;Salade&quot;</span>, <span class="tok-str">&quot;Saucisses&quot;</span>, <span class="tok-str">&quot;Frites&quot;</span> } };</span>
+<span class="line" id="L6"></span>
+</code></pre></body>
+</html>

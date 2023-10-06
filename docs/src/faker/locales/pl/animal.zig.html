@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\pl\animal.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> horse = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aegidienberger&quot;</span>, <span class="tok-str">&quot;Albino&quot;</span>, <span class="tok-str">&quot;Altér real&quot;</span>, <span class="tok-str">&quot;American Paint Horse&quot;</span>, <span class="tok-str">&quot;American Saddlebred&quot;</span>, <span class="tok-str">&quot;amerykański kuc szetlandzki&quot;</span>, <span class="tok-str">&quot;angloarab sardyński&quot;</span>, <span class="tok-str">&quot;Angloarab Shagya&quot;</span>, <span class="tok-str">&quot;Angloarab&quot;</span>, <span class="tok-str">&quot;Appaloosa&quot;</span>, <span class="tok-str">&quot;Australian Stock Horse&quot;</span>, <span class="tok-str">&quot;Austriacki koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;Bali&quot;</span>, <span class="tok-str">&quot;bawarski koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;belgijski koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;Brumby&quot;</span>, <span class="tok-str">&quot;brytyjski koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;Caballo Chilen&quot;</span>, <span class="tok-str">&quot;Camargue&quot;</span>, <span class="tok-str">&quot;Campolina&quot;</span>, <span class="tok-str">&quot;Canadian cutting horse&quot;</span>, <span class="tok-str">&quot;Cavallino della Giara&quot;</span>, <span class="tok-str">&quot;ciężki saksoński koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;Cimarron&quot;</span>, <span class="tok-str">&quot;Cleveland Bay&quot;</span>, <span class="tok-str">&quot;Clydesdale&quot;</span>, <span class="tok-str">&quot;Cob&quot;</span>, <span class="tok-str">&quot;Colorado Ranger&quot;</span>, <span class="tok-str">&quot;Comtois&quot;</span>, <span class="tok-str">&quot;Criollo&quot;</span>, <span class="tok-str">&quot;Crioulo&quot;</span>, <span class="tok-str">&quot;czechosłowacki koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;czechosłowacki koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Döle Gudbrandsdal&quot;</span>, <span class="tok-str">&quot;Einsiedle&quot;</span>, <span class="tok-str">&quot;Falabella&quot;</span>, <span class="tok-str">&quot;Freiberger&quot;</span>, <span class="tok-str">&quot;Furioso&quot;</span>, <span class="tok-str">&quot;Gelderländer&quot;</span>, <span class="tok-str">&quot;Gidran&quot;</span>, <span class="tok-str">&quot;górski konik bośniacki&quot;</span>, <span class="tok-str">&quot;Groningery&quot;</span>, <span class="tok-str">&quot;Hack&quot;</span>, <span class="tok-str">&quot;Hackney&quot;</span>, <span class="tok-str">&quot;Haflinger&quot;</span>, <span class="tok-str">&quot;Highland&quot;</span>, <span class="tok-str">&quot;hispano&quot;</span>, <span class="tok-str">&quot;holenderski koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;holenderski koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Hunter&quot;</span>, <span class="tok-str">&quot;indyjski koń wojskowy&quot;</span>, <span class="tok-str">&quot;Irish Draught&quot;</span>, <span class="tok-str">&quot;Jaf&quot;</span>, <span class="tok-str">&quot;jugosłowiański koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Jutland&quot;</span>, <span class="tok-str">&quot;karacabey&quot;</span>, <span class="tok-str">&quot;Kasztanowy koń szwarcwaldzki&quot;</span>, <span class="tok-str">&quot;kathiawari&quot;</span>, <span class="tok-str">&quot;kleppery estońskie&quot;</span>, <span class="tok-str">&quot;kleppery łotewskie i litewskie&quot;</span>, <span class="tok-str">&quot;Knabstrub&quot;</span>, <span class="tok-str">&quot;koń abisyński&quot;</span>, <span class="tok-str">&quot;koń achał-tekiński&quot;</span>, <span class="tok-str">&quot;koń afgański i pakistański&quot;</span>, <span class="tok-str">&quot;koń andaluzyjski&quot;</span>, <span class="tok-str">&quot;koń ardeński&quot;</span>, <span class="tok-str">&quot;koń aztecki&quot;</span>, <span class="tok-str">&quot;koń badeńsko-wirtemberski&quot;</span>, <span class="tok-str">&quot;koń belgijski&quot;</span>, <span class="tok-str">&quot;koń berberyjski&quot;</span>, <span class="tok-str">&quot;koń bretoński&quot;</span>, <span class="tok-str">&quot;koń budionnowski&quot;</span>, <span class="tok-str">&quot;Koń buloński&quot;</span>, <span class="tok-str">&quot;koń burgundzki&quot;</span>, <span class="tok-str">&quot;koń czystej krwi arabskiej&quot;</span>, <span class="tok-str">&quot;koń Dongolavi&quot;</span>, <span class="tok-str">&quot;koń doński&quot;</span>, <span class="tok-str">&quot;koń dunajski&quot;</span>, <span class="tok-str">&quot;koń fiński&quot;</span>, <span class="tok-str">&quot;koń fiordzki&quot;</span>, <span class="tok-str">&quot;koń fryderyksborski&quot;</span>, <span class="tok-str">&quot;koń fryzyjski&quot;</span>, <span class="tok-str">&quot;koń hanowerski&quot;</span>, <span class="tok-str">&quot;koń heski&quot;</span>, <span class="tok-str">&quot;koń holsztyński&quot;</span>, <span class="tok-str">&quot;koń huculski&quot;</span>, <span class="tok-str">&quot;koń islandzki&quot;</span>, <span class="tok-str">&quot;koń jomudzki&quot;</span>, <span class="tok-str">&quot;koń Jonaguni&quot;</span>, <span class="tok-str">&quot;koń kabardyński&quot;</span>, <span class="tok-str">&quot;koń kalabryjski&quot;</span>, <span class="tok-str">&quot;koń karabachski&quot;</span>, <span class="tok-str">&quot;koń kazachski&quot;</span>, <span class="tok-str">&quot;koń kiński&quot;</span>, <span class="tok-str">&quot;koń kiwlendzki&quot;</span>, <span class="tok-str">&quot;koń kladrubski&quot;</span>, <span class="tok-str">&quot;koń kuzniecki&quot;</span>, <span class="tok-str">&quot;koń lipicańsk&quot;</span>, <span class="tok-str">&quot;koń lokajski&quot;</span>, <span class="tok-str">&quot;koń małopolski&quot;</span>, <span class="tok-str">&quot;koń meklemburski&quot;</span>, <span class="tok-str">&quot;koń meseński&quot;</span>, <span class="tok-str">&quot;koń norycki (Pinzgauer)&quot;</span>, <span class="tok-str">&quot;koń nowokirgiski&quot;</span>, <span class="tok-str">&quot;koń oldenburski&quot;</span>, <span class="tok-str">&quot;koń peczorski&quot;</span>, <span class="tok-str">&quot;koń pełnej krwi angielskiej&quot;</span>, <span class="tok-str">&quot;koń pleweński&quot;</span>, <span class="tok-str">&quot;koń poleski&quot;</span>, <span class="tok-str">&quot;koń poznański&quot;</span>, <span class="tok-str">&quot;koń północnoszwedzki&quot;</span>, <span class="tok-str">&quot;koń Przewalskiego&quot;</span>, <span class="tok-str">&quot;koń sokólski&quot;</span>, <span class="tok-str">&quot;koń szlachetny półkrwi&quot;</span>, <span class="tok-str">&quot;koń szwajcarski&quot;</span>, <span class="tok-str">&quot;koń śląski&quot;</span>, <span class="tok-str">&quot;koń terski&quot;</span>, <span class="tok-str">&quot;koń toryjski&quot;</span>, <span class="tok-str">&quot;koń trakeński&quot;</span>, <span class="tok-str">&quot;koń turkmeński&quot;</span>, <span class="tok-str">&quot;koń ukraiński&quot;</span>, <span class="tok-str">&quot;koń westfalski&quot;</span>, <span class="tok-str">&quot;koń wielkopolski&quot;</span>, <span class="tok-str">&quot;koń włodzimierski&quot;</span>, <span class="tok-str">&quot;koń woroneski&quot;</span>, <span class="tok-str">&quot;koń wschodniobułgarski&quot;</span>, <span class="tok-str">&quot;koń wschodniofryzyjski&quot;</span>, <span class="tok-str">&quot;konie kaimanawa&quot;</span>, <span class="tok-str">&quot;konik dulmeński&quot;</span>, <span class="tok-str">&quot;konik polski&quot;</span>, <span class="tok-str">&quot;konik żmudzki&quot;</span>, <span class="tok-str">&quot;kuc amerykański-Americas&quot;</span>, <span class="tok-str">&quot;kuc australijski&quot;</span>, <span class="tok-str">&quot;kuc Bardigiano&quot;</span>, <span class="tok-str">&quot;kuc Belearów&quot;</span>, <span class="tok-str">&quot;kuc Connemara&quot;</span>, <span class="tok-str">&quot;kuc Dales&quot;</span>, <span class="tok-str">&quot;kuc Dartmoor&quot;</span>, <span class="tok-str">&quot;Kuc Exmoor&quot;</span>, <span class="tok-str">&quot;kuc feliński&quot;</span>, <span class="tok-str">&quot;kuc Fell&quot;</span>, <span class="tok-str">&quot;kuc Fulani&quot;</span>, <span class="tok-str">&quot;kuc Galiceno&quot;</span>, <span class="tok-str">&quot;kuc galla&quot;</span>, <span class="tok-str">&quot;kuc Garrano&quot;</span>, <span class="tok-str">&quot;kuc Gharbaui&quot;</span>, <span class="tok-str">&quot;kuc gotlandzki&quot;</span>, <span class="tok-str">&quot;kuc Hackney&quot;</span>, <span class="tok-str">&quot;kuc indyjski&quot;</span>, <span class="tok-str">&quot;kuc jakucki&quot;</span>, <span class="tok-str">&quot;kuc jawajski&quot;</span>, <span class="tok-str">&quot;kuc kaspijski&quot;</span>, <span class="tok-str">&quot;kuc kenijski&quot;</span>, <span class="tok-str">&quot;kuc korsykański&quot;</span>, <span class="tok-str">&quot;kuc Landais&quot;</span>, <span class="tok-str">&quot;kuc Lewitzer&quot;</span>, <span class="tok-str">&quot;kuc Merens&quot;</span>, <span class="tok-str">&quot;kuc mongolski&quot;</span>, <span class="tok-str">&quot;kuc New Forest&quot;</span>, <span class="tok-str">&quot;kuc nigeryjski&quot;</span>, <span class="tok-str">&quot;kuc Pindos&quot;</span>, <span class="tok-str">&quot;kuc Pottok&quot;</span>, <span class="tok-str">&quot;kuc Rocky Mountain&quot;</span>, <span class="tok-str">&quot;kuc Sable Island&quot;</span>, <span class="tok-str">&quot;kuc sardyński (Achetta)&quot;</span>, <span class="tok-str">&quot;kuc Skyrian&quot;</span>, <span class="tok-str">&quot;kuc Skyros&quot;</span>, <span class="tok-str">&quot;kuc somalijski&quot;</span>, <span class="tok-str">&quot;kuc Sorraia&quot;</span>, <span class="tok-str">&quot;kuc sycylijski&quot;</span>, <span class="tok-str">&quot;kuc szetlandzki&quot;</span>, <span class="tok-str">&quot;kuc Togo&quot;</span>, <span class="tok-str">&quot;kuc tybetański&quot;</span>, <span class="tok-str">&quot;kuc Zaniskari&quot;</span>, <span class="tok-str">&quot;kuc żemajtuka&quot;</span>, <span class="tok-str">&quot;kurdyjski&quot;</span>, <span class="tok-str">&quot;kłusak (i inochodziec) gorącokrwisty – Standardbred&quot;</span>, <span class="tok-str">&quot;Kłusak amerykański&quot;</span>, <span class="tok-str">&quot;kłusak orłowsk&quot;</span>, <span class="tok-str">&quot;kłusak rosyjsk&quot;</span>, <span class="tok-str">&quot;litewski koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Llareno&quot;</span>, <span class="tok-str">&quot;Lusitano&quot;</span>, <span class="tok-str">&quot;Łotewski koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;Mangalarga Marchador&quot;</span>, <span class="tok-str">&quot;Mangalarga&quot;</span>, <span class="tok-str">&quot;Maremmano&quot;</span>, <span class="tok-str">&quot;Missouri Fox Trotter&quot;</span>, <span class="tok-str">&quot;Morgan&quot;</span>, <span class="tok-str">&quot;Murakozi&quot;</span>, <span class="tok-str">&quot;murgese&quot;</span>, <span class="tok-str">&quot;Mustang&quot;</span>, <span class="tok-str">&quot;niemiecki kuc wierzchowy&quot;</span>, <span class="tok-str">&quot;Nonius&quot;</span>, <span class="tok-str">&quot;Noriker&quot;</span>, <span class="tok-str">&quot;normandzki cob&quot;</span>, <span class="tok-str">&quot;Paso Fino&quot;</span>, <span class="tok-str">&quot;Paso Peruano&quot;</span>, <span class="tok-str">&quot;perski koń arabski&quot;</span>, <span class="tok-str">&quot;Perszeron&quot;</span>, <span class="tok-str">&quot;Pinto&quot;</span>, <span class="tok-str">&quot;Poitevin&quot;</span>, <span class="tok-str">&quot;polski koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Quarter Horse&quot;</span>, <span class="tok-str">&quot;radziecki ciężki koń pociągowy&quot;</span>, <span class="tok-str">&quot;reński koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;reński koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Rosyjski koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Salernitano&quot;</span>, <span class="tok-str">&quot;Sanfratellano&quot;</span>, <span class="tok-str">&quot;Schweike&quot;</span>, <span class="tok-str">&quot;Selle français&quot;</span>, <span class="tok-str">&quot;Shiraz (Darashoori)&quot;</span>, <span class="tok-str">&quot;Shire&quot;</span>, <span class="tok-str">&quot;Siciliano&quot;</span>, <span class="tok-str">&quot;Suffolk Punch&quot;</span>, <span class="tok-str">&quot;syryjski koń arabski&quot;</span>, <span class="tok-str">&quot;szlezwicki koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Szwedzki koń gorącokrwisty&quot;</span>, <span class="tok-str">&quot;Tarpan&quot;</span>, <span class="tok-str">&quot;Tchenerani&quot;</span>, <span class="tok-str">&quot;Tennessee Walker&quot;</span>, <span class="tok-str">&quot;Tinker – Gypsy Vanner&quot;</span>, <span class="tok-str">&quot;Waler&quot;</span>, <span class="tok-str">&quot;Walijski kuc górski&quot;</span>, <span class="tok-str">&quot;walijski kuc górski&quot;</span>, <span class="tok-str">&quot;węgierski koń sportowy&quot;</span>, <span class="tok-str">&quot;Welsh Cob&quot;</span>, <span class="tok-str">&quot;westfalski koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Wiatka&quot;</span>, <span class="tok-str">&quot;włoski koń zimnokrwisty&quot;</span>, <span class="tok-str">&quot;Zweibrücker&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

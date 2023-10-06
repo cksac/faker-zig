@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fa\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;##&quot;</span>, <span class="tok-str">&quot;#&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;تهران&quot;</span>, <span class="tok-str">&quot;مشهد&quot;</span>, <span class="tok-str">&quot;اصفهان&quot;</span>, <span class="tok-str">&quot;کرج&quot;</span>, <span class="tok-str">&quot;تبریز&quot;</span>, <span class="tok-str">&quot;شیراز&quot;</span>, <span class="tok-str">&quot;اهواز&quot;</span>, <span class="tok-str">&quot;قم&quot;</span>, <span class="tok-str">&quot;کرمانشاه&quot;</span>, <span class="tok-str">&quot;ارومیه&quot;</span>, <span class="tok-str">&quot;رشت&quot;</span>, <span class="tok-str">&quot;زاهدان&quot;</span>, <span class="tok-str">&quot;کرمان&quot;</span>, <span class="tok-str">&quot;اراک&quot;</span>, <span class="tok-str">&quot;همدان&quot;</span>, <span class="tok-str">&quot;یزد&quot;</span>, <span class="tok-str">&quot;اردبیل&quot;</span>, <span class="tok-str">&quot;بندرعباس&quot;</span>, <span class="tok-str">&quot;اسلام‌شهر&quot;</span>, <span class="tok-str">&quot;زنجان&quot;</span>, <span class="tok-str">&quot;قزوین&quot;</span>, <span class="tok-str">&quot;سنندج&quot;</span>, <span class="tok-str">&quot;خرم‌آباد&quot;</span>, <span class="tok-str">&quot;گرگان&quot;</span>, <span class="tok-str">&quot;ساری&quot;</span>, <span class="tok-str">&quot;ملارد&quot;</span>, <span class="tok-str">&quot;قدس&quot;</span>, <span class="tok-str">&quot;کاشان&quot;</span>, <span class="tok-str">&quot;گلستان&quot;</span>, <span class="tok-str">&quot;شهریار&quot;</span>, <span class="tok-str">&quot;دزفول&quot;</span>, <span class="tok-str">&quot;خمینی‌شهر&quot;</span>, <span class="tok-str">&quot;بروجرد&quot;</span>, <span class="tok-str">&quot;نیشابور&quot;</span>, <span class="tok-str">&quot;سبزوار&quot;</span>, <span class="tok-str">&quot;نجف‌آباد&quot;</span>, <span class="tok-str">&quot;آمل&quot;</span>, <span class="tok-str">&quot;بابل&quot;</span>, <span class="tok-str">&quot;ورامین&quot;</span>, <span class="tok-str">&quot;آبادان&quot;</span>, <span class="tok-str">&quot;پاکدشت&quot;</span>, <span class="tok-str">&quot;خوی&quot;</span>, <span class="tok-str">&quot;ساوه&quot;</span>, <span class="tok-str">&quot;بجنورد&quot;</span>, <span class="tok-str">&quot;قائم‌شهر&quot;</span>, <span class="tok-str">&quot;بوشهر&quot;</span>, <span class="tok-str">&quot;قرچک&quot;</span>, <span class="tok-str">&quot;سیرجان&quot;</span>, <span class="tok-str">&quot;بیرجند&quot;</span>, <span class="tok-str">&quot;ایلام&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_name}}&quot;</span>};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;شمال&quot;</span>, <span class="tok-str">&quot;شرق&quot;</span>, <span class="tok-str">&quot;غرب&quot;</span>, <span class="tok-str">&quot;جنوب&quot;</span>, <span class="tok-str">&quot;جدید&quot;</span>, <span class="tok-str">&quot;جزیره&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;روستا&quot;</span>, <span class="tok-str">&quot;شهر&quot;</span>, <span class="tok-str">&quot;دهکده&quot;</span>, <span class="tok-str">&quot;بندر&quot;</span>, <span class="tok-str">&quot;دژ&quot;</span>, <span class="tok-str">&quot;بندرگاه&quot;</span>, <span class="tok-str">&quot;ناحیه&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;چین&quot;</span>, <span class="tok-str">&quot;هند&quot;</span>, <span class="tok-str">&quot;ایالات متحده آمریکا&quot;</span>, <span class="tok-str">&quot;اندونزی&quot;</span>, <span class="tok-str">&quot;برزیل&quot;</span>, <span class="tok-str">&quot;بنگلادش&quot;</span>, <span class="tok-str">&quot;روسیه&quot;</span>, <span class="tok-str">&quot;ژاپن&quot;</span>, <span class="tok-str">&quot;پاکستان&quot;</span>, <span class="tok-str">&quot;ویتنام&quot;</span>, <span class="tok-str">&quot;نیجریه&quot;</span>, <span class="tok-str">&quot;مکزیک&quot;</span>, <span class="tok-str">&quot;اتیوپی&quot;</span>, <span class="tok-str">&quot;آلمان&quot;</span>, <span class="tok-str">&quot;فیلیپین&quot;</span>, <span class="tok-str">&quot;تایلند&quot;</span>, <span class="tok-str">&quot;جمهوری دموکراتیک کنگو&quot;</span>, <span class="tok-str">&quot;میانمار&quot;</span>, <span class="tok-str">&quot;بریتانیا&quot;</span>, <span class="tok-str">&quot;فرانسه&quot;</span>, <span class="tok-str">&quot;ترکیه&quot;</span>, <span class="tok-str">&quot;ایران&quot;</span>, <span class="tok-str">&quot;مصر&quot;</span>, <span class="tok-str">&quot;کره جنوبی&quot;</span>, <span class="tok-str">&quot;ایتالیا&quot;</span>, <span class="tok-str">&quot;تانزانیا&quot;</span>, <span class="tok-str">&quot;کلمبیا&quot;</span>, <span class="tok-str">&quot;اسپانیا&quot;</span>, <span class="tok-str">&quot;اوکراین&quot;</span>, <span class="tok-str">&quot;کنیا&quot;</span>, <span class="tok-str">&quot;کانادا&quot;</span>, <span class="tok-str">&quot;آفریقای جنوبی&quot;</span>, <span class="tok-str">&quot;لهستان&quot;</span>, <span class="tok-str">&quot;اوگاندا&quot;</span>, <span class="tok-str">&quot;آرژانتین&quot;</span>, <span class="tok-str">&quot;ازبکستان&quot;</span>, <span class="tok-str">&quot;پرو&quot;</span>, <span class="tok-str">&quot;نپال&quot;</span>, <span class="tok-str">&quot;ونزوئلا&quot;</span>, <span class="tok-str">&quot;مالزی&quot;</span>, <span class="tok-str">&quot;کره شمالی&quot;</span>, <span class="tok-str">&quot;استرالیا&quot;</span>, <span class="tok-str">&quot;غنا&quot;</span>, <span class="tok-str">&quot;سودان&quot;</span>, <span class="tok-str">&quot;مراکش&quot;</span>, <span class="tok-str">&quot;تایوان&quot;</span>, <span class="tok-str">&quot;الجزایر&quot;</span>, <span class="tok-str">&quot;موزامبیک&quot;</span>, <span class="tok-str">&quot;ماداگاسکار&quot;</span>, <span class="tok-str">&quot;رومانی&quot;</span>, <span class="tok-str">&quot;قزاقستان&quot;</span>, <span class="tok-str">&quot;آنگولا&quot;</span>, <span class="tok-str">&quot;عراق&quot;</span>, <span class="tok-str">&quot;سریلانکا&quot;</span>, <span class="tok-str">&quot;کامرون&quot;</span>, <span class="tok-str">&quot;عربستان سعودی&quot;</span>, <span class="tok-str">&quot;شیلی&quot;</span>, <span class="tok-str">&quot;هلند&quot;</span>, <span class="tok-str">&quot;ساحل عاج&quot;</span>, <span class="tok-str">&quot;کامبوج&quot;</span>, <span class="tok-str">&quot;افغانستان&quot;</span>, <span class="tok-str">&quot;یمن&quot;</span>, <span class="tok-str">&quot;اکوادور&quot;</span>, <span class="tok-str">&quot;بورکینافاسو&quot;</span>, <span class="tok-str">&quot;زامبیا&quot;</span>, <span class="tok-str">&quot;سنگال&quot;</span>, <span class="tok-str">&quot;مالاوی&quot;</span>, <span class="tok-str">&quot;گینه&quot;</span>, <span class="tok-str">&quot;پرتغال&quot;</span>, <span class="tok-str">&quot;جمهوری چک&quot;</span>, <span class="tok-str">&quot;کوبا&quot;</span>, <span class="tok-str">&quot;بلژیک&quot;</span>, <span class="tok-str">&quot;سوئد&quot;</span>, <span class="tok-str">&quot;سوریه&quot;</span>, <span class="tok-str">&quot;بلاروس&quot;</span>, <span class="tok-str">&quot;سوئیس&quot;</span>, <span class="tok-str">&quot;بولیوی&quot;</span>, <span class="tok-str">&quot;یونان&quot;</span>, <span class="tok-str">&quot;جمهوری دومینیکن&quot;</span>, <span class="tok-str">&quot;هائیتی&quot;</span>, <span class="tok-str">&quot;نیجر&quot;</span>, <span class="tok-str">&quot;جمهوری آذربایجان&quot;</span>, <span class="tok-str">&quot;امارات متحده عربی&quot;</span>, <span class="tok-str">&quot;گواتمالا&quot;</span>, <span class="tok-str">&quot;رواندا&quot;</span>, <span class="tok-str">&quot;چاد&quot;</span>, <span class="tok-str">&quot;مجارستان&quot;</span>, <span class="tok-str">&quot;بوروندی&quot;</span>, <span class="tok-str">&quot;پاپوآ گینه نو&quot;</span>, <span class="tok-str">&quot;تونس&quot;</span>, <span class="tok-str">&quot;زیمبابوه&quot;</span>, <span class="tok-str">&quot;هنگ کنگ&quot;</span>, <span class="tok-str">&quot;اتریش&quot;</span>, <span class="tok-str">&quot;بنین&quot;</span>, <span class="tok-str">&quot;هندوراس&quot;</span>, <span class="tok-str">&quot;اسرائیل&quot;</span>, <span class="tok-str">&quot;سومالی&quot;</span>, <span class="tok-str">&quot;سنگاپور&quot;</span>, <span class="tok-str">&quot;لائوس&quot;</span>, <span class="tok-str">&quot;مالی&quot;</span>, <span class="tok-str">&quot;پاراگوئه&quot;</span>, <span class="tok-str">&quot;نیکاراگوئه&quot;</span>, <span class="tok-str">&quot;اریتره&quot;</span>, <span class="tok-str">&quot;جمهوری کنگو&quot;</span>, <span class="tok-str">&quot;دانمارک&quot;</span>, <span class="tok-str">&quot;السالوادور&quot;</span>, <span class="tok-str">&quot;اسلواکی&quot;</span>, <span class="tok-str">&quot;نروژ&quot;</span>, <span class="tok-str">&quot;فنلاند&quot;</span>, <span class="tok-str">&quot;توگو&quot;</span>, <span class="tok-str">&quot;بلغارستان&quot;</span>, <span class="tok-str">&quot;نیوزیلند&quot;</span>, <span class="tok-str">&quot;کویت&quot;</span>, <span class="tok-str">&quot;قرقیزستان&quot;</span>, <span class="tok-str">&quot;ترکمنستان&quot;</span>, <span class="tok-str">&quot;کاستاریکا&quot;</span>, <span class="tok-str">&quot;تاجیکستان&quot;</span>, <span class="tok-str">&quot;سیرالئون&quot;</span>, <span class="tok-str">&quot;جمهوری ایرلند&quot;</span>, <span class="tok-str">&quot;جمهوری آفریقای مرکزی&quot;</span>, <span class="tok-str">&quot;گرجستان&quot;</span>, <span class="tok-str">&quot;اردن&quot;</span>, <span class="tok-str">&quot;کرواسی&quot;</span>, <span class="tok-str">&quot;صربستان&quot;</span>, <span class="tok-str">&quot;اروگوئه&quot;</span>, <span class="tok-str">&quot;لیبی&quot;</span>, <span class="tok-str">&quot;پاناما&quot;</span>, <span class="tok-str">&quot;بوسنی و هرزگوین&quot;</span>, <span class="tok-str">&quot;لبنان&quot;</span>, <span class="tok-str">&quot;لیتوانی&quot;</span>, <span class="tok-str">&quot;قطر&quot;</span>, <span class="tok-str">&quot;ارمنستان&quot;</span>, <span class="tok-str">&quot;لیبریا&quot;</span>, <span class="tok-str">&quot;موریتانی&quot;</span>, <span class="tok-str">&quot;بوتسوانا&quot;</span>, <span class="tok-str">&quot;پورتوریکو&quot;</span>, <span class="tok-str">&quot;جامائیکا&quot;</span>, <span class="tok-str">&quot;مولداوی&quot;</span>, <span class="tok-str">&quot;آلبانی&quot;</span>, <span class="tok-str">&quot;مغولستان&quot;</span>, <span class="tok-str">&quot;لتونی&quot;</span>, <span class="tok-str">&quot;عمان&quot;</span>, <span class="tok-str">&quot;جمهوری مقدونیه&quot;</span>, <span class="tok-str">&quot;اسلوونی&quot;</span>, <span class="tok-str">&quot;نامیبیا&quot;</span>, <span class="tok-str">&quot;لسوتو&quot;</span>, <span class="tok-str">&quot;کوزوو&quot;</span>, <span class="tok-str">&quot;گامبیا&quot;</span>, <span class="tok-str">&quot;بحرین&quot;</span>, <span class="tok-str">&quot;استونی&quot;</span>, <span class="tok-str">&quot;موریس&quot;</span>, <span class="tok-str">&quot;گینه بیسائو&quot;</span>, <span class="tok-str">&quot;گابن&quot;</span>, <span class="tok-str">&quot;ترینیداد و توباگو&quot;</span>, <span class="tok-str">&quot;قبرس&quot;</span>, <span class="tok-str">&quot;اسواتینی&quot;</span>, <span class="tok-str">&quot;تیمور شرقی&quot;</span>, <span class="tok-str">&quot;ماکائو&quot;</span>, <span class="tok-str">&quot;نوار غزه&quot;</span>, <span class="tok-str">&quot;پادشاهی بوتان&quot;</span>, <span class="tok-str">&quot;فیجی&quot;</span>, <span class="tok-str">&quot;گویان&quot;</span>, <span class="tok-str">&quot;جیبوتی&quot;</span>, <span class="tok-str">&quot;مونتهنگرو&quot;</span>, <span class="tok-str">&quot;کومور&quot;</span>, <span class="tok-str">&quot;لوکزامبورگ&quot;</span>, <span class="tok-str">&quot;برونئی&quot;</span>, <span class="tok-str">&quot;جزایر سلیمان&quot;</span>, <span class="tok-str">&quot;باهاما&quot;</span>, <span class="tok-str">&quot;کیپ ورد&quot;</span>, <span class="tok-str">&quot;گینه استوایی&quot;</span>, <span class="tok-str">&quot;مالت&quot;</span>, <span class="tok-str">&quot;ایسلند&quot;</span>, <span class="tok-str">&quot;سورینام&quot;</span>, <span class="tok-str">&quot;مالدیو&quot;</span>, <span class="tok-str">&quot;صحرای غربی&quot;</span>, <span class="tok-str">&quot;باربادوس&quot;</span>, <span class="tok-str">&quot;بلیز&quot;</span>, <span class="tok-str">&quot;پلینزی فرانسه&quot;</span>, <span class="tok-str">&quot;وانواتو&quot;</span>, <span class="tok-str">&quot;کالدونیای جدید&quot;</span>, <span class="tok-str">&quot;سنت لوسیا&quot;</span>, <span class="tok-str">&quot;کوراسائو&quot;</span>, <span class="tok-str">&quot;گوآم&quot;</span>, <span class="tok-str">&quot;گرنادا&quot;</span>, <span class="tok-str">&quot;سنت وینسنت و گرنادینها&quot;</span>, <span class="tok-str">&quot;جرسی&quot;</span>, <span class="tok-str">&quot;سائوتومه و پرنسیپ&quot;</span>, <span class="tok-str">&quot;موناکو&quot;</span>, <span class="tok-str">&quot;آروبا&quot;</span>, <span class="tok-str">&quot;جزایر ویرجین ایالات متحده&quot;</span>, <span class="tok-str">&quot;ساموآ&quot;</span>, <span class="tok-str">&quot;جزیره من&quot;</span>, <span class="tok-str">&quot;تونگا&quot;</span>, <span class="tok-str">&quot;سیشل&quot;</span>, <span class="tok-str">&quot;جزایر کیمن&quot;</span>, <span class="tok-str">&quot;جزایر ماریانای شمالی&quot;</span>, <span class="tok-str">&quot;برمودا&quot;</span>, <span class="tok-str">&quot;آندورا&quot;</span>, <span class="tok-str">&quot;لیختناشتاین&quot;</span>, <span class="tok-str">&quot;جزایر فارو&quot;</span>, <span class="tok-str">&quot;گرنزی&quot;</span>, <span class="tok-str">&quot;آنتیگوا و باربودا&quot;</span>, <span class="tok-str">&quot;گرینلند&quot;</span>, <span class="tok-str">&quot;دومینیکا&quot;</span>, <span class="tok-str">&quot;سنت مارتین&quot;</span>, <span class="tok-str">&quot;سان مارینو&quot;</span>, <span class="tok-str">&quot;سنت کیتس و نویس&quot;</span>, <span class="tok-str">&quot;ساموای آمریکا&quot;</span>, <span class="tok-str">&quot;ایالات فدرال میکرونزی&quot;</span>, <span class="tok-str">&quot;جزایر ویرجین انگلستان&quot;</span>, <span class="tok-str">&quot;جبل طارق&quot;</span>, <span class="tok-str">&quot;جزایر مارشال&quot;</span>, <span class="tok-str">&quot;پالائو&quot;</span>, <span class="tok-str">&quot;کیریباتی&quot;</span>, <span class="tok-str">&quot;جزایر کوک&quot;</span>, <span class="tok-str">&quot;آنگویلا&quot;</span>, <span class="tok-str">&quot;جزایر فالکلند&quot;</span>, <span class="tok-str">&quot;جزایر تورکس و کایکوس&quot;</span>, <span class="tok-str">&quot;مونتسرات&quot;</span>, <span class="tok-str">&quot;تووالو&quot;</span>, <span class="tok-str">&quot;سنت پیر و ماژلان&quot;</span>, <span class="tok-str">&quot;والیس و فوتونا&quot;</span>, <span class="tok-str">&quot;واتیکان&quot;</span>, <span class="tok-str">&quot;سینت هلینا&quot;</span>, <span class="tok-str">&quot;سوالبارد&quot;</span>, <span class="tok-str">&quot;جزیره نورفولک&quot;</span>, <span class="tok-str">&quot;نیووی&quot;</span>, <span class="tok-str">&quot;توکلائو&quot;</span>, <span class="tok-str">&quot;جزایر پیتکرن&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;ایران&quot;</span>};</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> direction = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;شمال&quot;</span>, <span class="tok-str">&quot;شرق&quot;</span>, <span class="tok-str">&quot;جنوب&quot;</span>, <span class="tok-str">&quot;غرب&quot;</span>, <span class="tok-str">&quot;شمال شرق&quot;</span>, <span class="tok-str">&quot;شمال غرب&quot;</span>, <span class="tok-str">&quot;جنوب شرق&quot;</span>, <span class="tok-str">&quot;جنوب غرب&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;#####-#####&quot;</span>};</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> secondary_address = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;واحد #&quot;</span>, <span class="tok-str">&quot;# طبقه&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;آذربایجان شرقی&quot;</span>, <span class="tok-str">&quot;آذربایجان غربی&quot;</span>, <span class="tok-str">&quot;اردبیل&quot;</span>, <span class="tok-str">&quot;اصفهان&quot;</span>, <span class="tok-str">&quot;البرز&quot;</span>, <span class="tok-str">&quot;ایلام&quot;</span>, <span class="tok-str">&quot;بوشهر&quot;</span>, <span class="tok-str">&quot;تهران&quot;</span>, <span class="tok-str">&quot;چهارمحال و بختیاری&quot;</span>, <span class="tok-str">&quot;خراسان جنوبی&quot;</span>, <span class="tok-str">&quot;خراسان رضوی&quot;</span>, <span class="tok-str">&quot;خراسان شمالی&quot;</span>, <span class="tok-str">&quot;خوزستان&quot;</span>, <span class="tok-str">&quot;زنجان&quot;</span>, <span class="tok-str">&quot;سمنان&quot;</span>, <span class="tok-str">&quot;سیستان و بلوچستان&quot;</span>, <span class="tok-str">&quot;فارس&quot;</span>, <span class="tok-str">&quot;قزوین&quot;</span>, <span class="tok-str">&quot;قم&quot;</span>, <span class="tok-str">&quot;کردستان&quot;</span>, <span class="tok-str">&quot;کرمان&quot;</span>, <span class="tok-str">&quot;کرمانشاه&quot;</span>, <span class="tok-str">&quot;کهگیلویه و بویراحمد&quot;</span>, <span class="tok-str">&quot;گلستان&quot;</span>, <span class="tok-str">&quot;گیلان&quot;</span>, <span class="tok-str">&quot;لرستان&quot;</span>, <span class="tok-str">&quot;مازندران&quot;</span>, <span class="tok-str">&quot;مرکزی&quot;</span>, <span class="tok-str">&quot;هرمزگان&quot;</span>, <span class="tok-str">&quot;همدان&quot;</span>, <span class="tok-str">&quot;یزد&quot;</span> };</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.street}}, پلاک {{location.buildingNumber}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.street}}, پلاک {{location.buildingNumber}}  {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L24"></span>
+<span class="line" id="L25"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.street_prefix}} {{location.street_suffix}}&quot;</span>};</span>
+<span class="line" id="L26"></span>
+<span class="line" id="L27"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;خیابان&quot;</span>, <span class="tok-str">&quot;کوچه&quot;</span>, <span class="tok-str">&quot;بن بست&quot;</span>, <span class="tok-str">&quot;بلوار&quot;</span> };</span>
+<span class="line" id="L28"></span>
+<span class="line" id="L29"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;آزادی&quot;</span>, <span class="tok-str">&quot;آفریقا&quot;</span>, <span class="tok-str">&quot;آذربایجان&quot;</span>, <span class="tok-str">&quot;حقانی&quot;</span>, <span class="tok-str">&quot;امیرکبیر&quot;</span>, <span class="tok-str">&quot;اجاره دار&quot;</span>, <span class="tok-str">&quot;اقبال لاهوری&quot;</span>, <span class="tok-str">&quot;ابوذر&quot;</span>, <span class="tok-str">&quot;قدس&quot;</span>, <span class="tok-str">&quot;سباری&quot;</span>, <span class="tok-str">&quot;فاطمی&quot;</span>, <span class="tok-str">&quot;مالک اشتر&quot;</span>, <span class="tok-str">&quot;نیایش&quot;</span>, <span class="tok-str">&quot;دیباجی&quot;</span>, <span class="tok-str">&quot;واعظی&quot;</span>, <span class="tok-str">&quot;دستغیب&quot;</span>, <span class="tok-str">&quot;موحد دانش&quot;</span>, <span class="tok-str">&quot;کارگر شمالی&quot;</span>, <span class="tok-str">&quot;استاد قریب&quot;</span>, <span class="tok-str">&quot;یادگار امام&quot;</span>, <span class="tok-str">&quot;دکتر چمران&quot;</span>, <span class="tok-str">&quot;رسالت&quot;</span>, <span class="tok-str">&quot;سمیه&quot;</span>, <span class="tok-str">&quot;شهید مطهری&quot;</span>, <span class="tok-str">&quot;هویزه&quot;</span>, <span class="tok-str">&quot;دماوند&quot;</span>, <span class="tok-str">&quot;توحید&quot;</span>, <span class="tok-str">&quot;ستارخان&quot;</span>, <span class="tok-str">&quot;کارون&quot;</span>, <span class="tok-str">&quot;استادمعین&quot;</span>, <span class="tok-str">&quot;رامین&quot;</span>, <span class="tok-str">&quot;اندرزگو&quot;</span> };</span>
+<span class="line" id="L30"></span>
+</code></pre></body>
+</html>

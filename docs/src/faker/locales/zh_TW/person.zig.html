@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\zh_TW\person.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> NamePattern = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/person.zig&quot;</span>).NamePattern;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;俊馳&quot;</span>, <span class="tok-str">&quot;凱瑞&quot;</span>, <span class="tok-str">&quot;博濤&quot;</span>, <span class="tok-str">&quot;嘉懿&quot;</span>, <span class="tok-str">&quot;子涵&quot;</span>, <span class="tok-str">&quot;子騫&quot;</span>, <span class="tok-str">&quot;子默&quot;</span>, <span class="tok-str">&quot;思淼&quot;</span>, <span class="tok-str">&quot;懿軒&quot;</span>, <span class="tok-str">&quot;擎蒼&quot;</span>, <span class="tok-str">&quot;旭堯&quot;</span>, <span class="tok-str">&quot;昊焱&quot;</span>, <span class="tok-str">&quot;晟睿&quot;</span>, <span class="tok-str">&quot;智宸&quot;</span>, <span class="tok-str">&quot;智淵&quot;</span>, <span class="tok-str">&quot;曉博&quot;</span>, <span class="tok-str">&quot;曉嘯&quot;</span>, <span class="tok-str">&quot;楷瑞&quot;</span>, <span class="tok-str">&quot;樂駒&quot;</span>, <span class="tok-str">&quot;瀟然&quot;</span>, <span class="tok-str">&quot;炫明&quot;</span>, <span class="tok-str">&quot;煜城&quot;</span>, <span class="tok-str">&quot;煜祺&quot;</span>, <span class="tok-str">&quot;熠彤&quot;</span>, <span class="tok-str">&quot;燁磊&quot;</span>, <span class="tok-str">&quot;燁華&quot;</span>, <span class="tok-str">&quot;燁霖&quot;</span>, <span class="tok-str">&quot;瑾瑜&quot;</span>, <span class="tok-str">&quot;睿淵&quot;</span>, <span class="tok-str">&quot;立軒&quot;</span>, <span class="tok-str">&quot;笑愚&quot;</span>, <span class="tok-str">&quot;聰健&quot;</span>, <span class="tok-str">&quot;苑博&quot;</span>, <span class="tok-str">&quot;越彬&quot;</span>, <span class="tok-str">&quot;鈺軒&quot;</span>, <span class="tok-str">&quot;錦程&quot;</span>, <span class="tok-str">&quot;靖琪&quot;</span>, <span class="tok-str">&quot;風華&quot;</span>, <span class="tok-str">&quot;鶴軒&quot;</span>, <span class="tok-str">&quot;鷺洋&quot;</span>, <span class="tok-str">&quot;黎昕&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_prefix = .{};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;俊馳&quot;</span>, <span class="tok-str">&quot;修傑&quot;</span>, <span class="tok-str">&quot;修潔&quot;</span>, <span class="tok-str">&quot;偉宸&quot;</span>, <span class="tok-str">&quot;偉澤&quot;</span>, <span class="tok-str">&quot;偉祺&quot;</span>, <span class="tok-str">&quot;偉誠&quot;</span>, <span class="tok-str">&quot;健柏&quot;</span>, <span class="tok-str">&quot;健雄&quot;</span>, <span class="tok-str">&quot;凱瑞&quot;</span>, <span class="tok-str">&quot;博文&quot;</span>, <span class="tok-str">&quot;博濤&quot;</span>, <span class="tok-str">&quot;博超&quot;</span>, <span class="tok-str">&quot;君浩&quot;</span>, <span class="tok-str">&quot;哲瀚&quot;</span>, <span class="tok-str">&quot;嘉懿&quot;</span>, <span class="tok-str">&quot;嘉熙&quot;</span>, <span class="tok-str">&quot;天宇&quot;</span>, <span class="tok-str">&quot;天磊&quot;</span>, <span class="tok-str">&quot;天翊&quot;</span>, <span class="tok-str">&quot;子涵&quot;</span>, <span class="tok-str">&quot;子軒&quot;</span>, <span class="tok-str">&quot;子騫&quot;</span>, <span class="tok-str">&quot;子默&quot;</span>, <span class="tok-str">&quot;展鵬&quot;</span>, <span class="tok-str">&quot;峻熙&quot;</span>, <span class="tok-str">&quot;建輝&quot;</span>, <span class="tok-str">&quot;弘文&quot;</span>, <span class="tok-str">&quot;志強&quot;</span>, <span class="tok-str">&quot;志澤&quot;</span>, <span class="tok-str">&quot;思淼&quot;</span>, <span class="tok-str">&quot;思源&quot;</span>, <span class="tok-str">&quot;思聰&quot;</span>, <span class="tok-str">&quot;思遠&quot;</span>, <span class="tok-str">&quot;懿軒&quot;</span>, <span class="tok-str">&quot;振家&quot;</span>, <span class="tok-str">&quot;擎宇&quot;</span>, <span class="tok-str">&quot;擎蒼&quot;</span>, <span class="tok-str">&quot;文博&quot;</span>, <span class="tok-str">&quot;文昊&quot;</span>, <span class="tok-str">&quot;文軒&quot;</span>, <span class="tok-str">&quot;旭堯&quot;</span>, <span class="tok-str">&quot;昊天&quot;</span>, <span class="tok-str">&quot;昊強&quot;</span>, <span class="tok-str">&quot;昊焱&quot;</span>, <span class="tok-str">&quot;昊然&quot;</span>, <span class="tok-str">&quot;明哲&quot;</span>, <span class="tok-str">&quot;明杰&quot;</span>, <span class="tok-str">&quot;明軒&quot;</span>, <span class="tok-str">&quot;明輝&quot;</span>, <span class="tok-str">&quot;晉鵬&quot;</span>, <span class="tok-str">&quot;晟睿&quot;</span>, <span class="tok-str">&quot;智宸&quot;</span>, <span class="tok-str">&quot;智淵&quot;</span>, <span class="tok-str">&quot;智輝&quot;</span>, <span class="tok-str">&quot;曉博&quot;</span>, <span class="tok-str">&quot;曉嘯&quot;</span>, <span class="tok-str">&quot;梓晨&quot;</span>, <span class="tok-str">&quot;楷瑞&quot;</span>, <span class="tok-str">&quot;榮軒&quot;</span>, <span class="tok-str">&quot;樂駒&quot;</span>, <span class="tok-str">&quot;正豪&quot;</span>, <span class="tok-str">&quot;浩宇&quot;</span>, <span class="tok-str">&quot;浩然&quot;</span>, <span class="tok-str">&quot;浩軒&quot;</span>, <span class="tok-str">&quot;澤洋&quot;</span>, <span class="tok-str">&quot;瀟然&quot;</span>, <span class="tok-str">&quot;炎彬&quot;</span>, <span class="tok-str">&quot;炫明&quot;</span>, <span class="tok-str">&quot;煜城&quot;</span>, <span class="tok-str">&quot;煜祺&quot;</span>, <span class="tok-str">&quot;熠彤&quot;</span>, <span class="tok-str">&quot;燁偉&quot;</span>, <span class="tok-str">&quot;燁磊&quot;</span>, <span class="tok-str">&quot;燁華&quot;</span>, <span class="tok-str">&quot;燁霖&quot;</span>, <span class="tok-str">&quot;瑞霖&quot;</span>, <span class="tok-str">&quot;瑾瑜&quot;</span>, <span class="tok-str">&quot;皓軒&quot;</span>, <span class="tok-str">&quot;睿淵&quot;</span>, <span class="tok-str">&quot;立果&quot;</span>, <span class="tok-str">&quot;立誠&quot;</span>, <span class="tok-str">&quot;立軒&quot;</span>, <span class="tok-str">&quot;立輝&quot;</span>, <span class="tok-str">&quot;笑愚&quot;</span>, <span class="tok-str">&quot;紹輝&quot;</span>, <span class="tok-str">&quot;紹齊&quot;</span>, <span class="tok-str">&quot;耀傑&quot;</span>, <span class="tok-str">&quot;聰健&quot;</span>, <span class="tok-str">&quot;胤祥&quot;</span>, <span class="tok-str">&quot;致遠&quot;</span>, <span class="tok-str">&quot;苑博&quot;</span>, <span class="tok-str">&quot;語堂&quot;</span>, <span class="tok-str">&quot;越彬&quot;</span>, <span class="tok-str">&quot;越澤&quot;</span>, <span class="tok-str">&quot;遠航&quot;</span>, <span class="tok-str">&quot;金鑫&quot;</span>, <span class="tok-str">&quot;鈺軒&quot;</span>, <span class="tok-str">&quot;錦程&quot;</span>, <span class="tok-str">&quot;鑫磊&quot;</span>, <span class="tok-str">&quot;鑫鵬&quot;</span>, <span class="tok-str">&quot;雨澤&quot;</span>, <span class="tok-str">&quot;雪松&quot;</span>, <span class="tok-str">&quot;靖琪&quot;</span>, <span class="tok-str">&quot;風華&quot;</span>, <span class="tok-str">&quot;鴻濤&quot;</span>, <span class="tok-str">&quot;鴻煊&quot;</span>, <span class="tok-str">&quot;鵬濤&quot;</span>, <span class="tok-str">&quot;鵬煊&quot;</span>, <span class="tok-str">&quot;鵬飛&quot;</span>, <span class="tok-str">&quot;鶴軒&quot;</span>, <span class="tok-str">&quot;鷺洋&quot;</span>, <span class="tok-str">&quot;黎昕&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;王&quot;</span>, <span class="tok-str">&quot;李&quot;</span>, <span class="tok-str">&quot;張&quot;</span>, <span class="tok-str">&quot;劉&quot;</span>, <span class="tok-str">&quot;陳&quot;</span>, <span class="tok-str">&quot;楊&quot;</span>, <span class="tok-str">&quot;黃&quot;</span>, <span class="tok-str">&quot;吳&quot;</span>, <span class="tok-str">&quot;趙&quot;</span>, <span class="tok-str">&quot;週&quot;</span>, <span class="tok-str">&quot;徐&quot;</span>, <span class="tok-str">&quot;孫&quot;</span>, <span class="tok-str">&quot;馬&quot;</span>, <span class="tok-str">&quot;朱&quot;</span>, <span class="tok-str">&quot;胡&quot;</span>, <span class="tok-str">&quot;林&quot;</span>, <span class="tok-str">&quot;郭&quot;</span>, <span class="tok-str">&quot;何&quot;</span>, <span class="tok-str">&quot;高&quot;</span>, <span class="tok-str">&quot;羅&quot;</span>, <span class="tok-str">&quot;鄭&quot;</span>, <span class="tok-str">&quot;梁&quot;</span>, <span class="tok-str">&quot;謝&quot;</span>, <span class="tok-str">&quot;宋&quot;</span>, <span class="tok-str">&quot;唐&quot;</span>, <span class="tok-str">&quot;許&quot;</span>, <span class="tok-str">&quot;鄧&quot;</span>, <span class="tok-str">&quot;馮&quot;</span>, <span class="tok-str">&quot;韓&quot;</span>, <span class="tok-str">&quot;曹&quot;</span>, <span class="tok-str">&quot;曾&quot;</span>, <span class="tok-str">&quot;彭&quot;</span>, <span class="tok-str">&quot;蕭&quot;</span>, <span class="tok-str">&quot;蔡&quot;</span>, <span class="tok-str">&quot;潘&quot;</span>, <span class="tok-str">&quot;田&quot;</span>, <span class="tok-str">&quot;董&quot;</span>, <span class="tok-str">&quot;袁&quot;</span>, <span class="tok-str">&quot;於&quot;</span>, <span class="tok-str">&quot;餘&quot;</span>, <span class="tok-str">&quot;葉&quot;</span>, <span class="tok-str">&quot;蔣&quot;</span>, <span class="tok-str">&quot;杜&quot;</span>, <span class="tok-str">&quot;蘇&quot;</span>, <span class="tok-str">&quot;魏&quot;</span>, <span class="tok-str">&quot;程&quot;</span>, <span class="tok-str">&quot;呂&quot;</span>, <span class="tok-str">&quot;丁&quot;</span>, <span class="tok-str">&quot;沈&quot;</span>, <span class="tok-str">&quot;任&quot;</span>, <span class="tok-str">&quot;姚&quot;</span>, <span class="tok-str">&quot;盧&quot;</span>, <span class="tok-str">&quot;傅&quot;</span>, <span class="tok-str">&quot;鐘&quot;</span>, <span class="tok-str">&quot;姜&quot;</span>, <span class="tok-str">&quot;崔&quot;</span>, <span class="tok-str">&quot;譚&quot;</span>, <span class="tok-str">&quot;廖&quot;</span>, <span class="tok-str">&quot;範&quot;</span>, <span class="tok-str">&quot;汪&quot;</span>, <span class="tok-str">&quot;陸&quot;</span>, <span class="tok-str">&quot;金&quot;</span>, <span class="tok-str">&quot;石&quot;</span>, <span class="tok-str">&quot;戴&quot;</span>, <span class="tok-str">&quot;賈&quot;</span>, <span class="tok-str">&quot;韋&quot;</span>, <span class="tok-str">&quot;夏&quot;</span>, <span class="tok-str">&quot;邱&quot;</span>, <span class="tok-str">&quot;方&quot;</span>, <span class="tok-str">&quot;侯&quot;</span>, <span class="tok-str">&quot;鄒&quot;</span>, <span class="tok-str">&quot;熊&quot;</span>, <span class="tok-str">&quot;孟&quot;</span>, <span class="tok-str">&quot;秦&quot;</span>, <span class="tok-str">&quot;白&quot;</span>, <span class="tok-str">&quot;江&quot;</span>, <span class="tok-str">&quot;閻&quot;</span>, <span class="tok-str">&quot;薛&quot;</span>, <span class="tok-str">&quot;尹&quot;</span>, <span class="tok-str">&quot;段&quot;</span>, <span class="tok-str">&quot;雷&quot;</span>, <span class="tok-str">&quot;黎&quot;</span>, <span class="tok-str">&quot;史&quot;</span>, <span class="tok-str">&quot;龍&quot;</span>, <span class="tok-str">&quot;陶&quot;</span>, <span class="tok-str">&quot;賀&quot;</span>, <span class="tok-str">&quot;顧&quot;</span>, <span class="tok-str">&quot;毛&quot;</span>, <span class="tok-str">&quot;郝&quot;</span>, <span class="tok-str">&quot;龔&quot;</span>, <span class="tok-str">&quot;邵&quot;</span>, <span class="tok-str">&quot;萬&quot;</span>, <span class="tok-str">&quot;錢&quot;</span>, <span class="tok-str">&quot;嚴&quot;</span>, <span class="tok-str">&quot;賴&quot;</span>, <span class="tok-str">&quot;覃&quot;</span>, <span class="tok-str">&quot;洪&quot;</span>, <span class="tok-str">&quot;武&quot;</span>, <span class="tok-str">&quot;莫&quot;</span>, <span class="tok-str">&quot;孔&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name_pattern = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;修傑&quot;</span>, <span class="tok-str">&quot;修潔&quot;</span>, <span class="tok-str">&quot;偉宸&quot;</span>, <span class="tok-str">&quot;偉澤&quot;</span>, <span class="tok-str">&quot;偉祺&quot;</span>, <span class="tok-str">&quot;偉誠&quot;</span>, <span class="tok-str">&quot;健柏&quot;</span>, <span class="tok-str">&quot;健雄&quot;</span>, <span class="tok-str">&quot;博文&quot;</span>, <span class="tok-str">&quot;博超&quot;</span>, <span class="tok-str">&quot;君浩&quot;</span>, <span class="tok-str">&quot;哲瀚&quot;</span>, <span class="tok-str">&quot;嘉熙&quot;</span>, <span class="tok-str">&quot;天宇&quot;</span>, <span class="tok-str">&quot;天磊&quot;</span>, <span class="tok-str">&quot;天翊&quot;</span>, <span class="tok-str">&quot;子軒&quot;</span>, <span class="tok-str">&quot;展鵬&quot;</span>, <span class="tok-str">&quot;峻熙&quot;</span>, <span class="tok-str">&quot;建輝&quot;</span>, <span class="tok-str">&quot;弘文&quot;</span>, <span class="tok-str">&quot;志強&quot;</span>, <span class="tok-str">&quot;志澤&quot;</span>, <span class="tok-str">&quot;思源&quot;</span>, <span class="tok-str">&quot;思聰&quot;</span>, <span class="tok-str">&quot;思遠&quot;</span>, <span class="tok-str">&quot;振家&quot;</span>, <span class="tok-str">&quot;擎宇&quot;</span>, <span class="tok-str">&quot;文博&quot;</span>, <span class="tok-str">&quot;文昊&quot;</span>, <span class="tok-str">&quot;文軒&quot;</span>, <span class="tok-str">&quot;昊天&quot;</span>, <span class="tok-str">&quot;昊強&quot;</span>, <span class="tok-str">&quot;昊然&quot;</span>, <span class="tok-str">&quot;明哲&quot;</span>, <span class="tok-str">&quot;明杰&quot;</span>, <span class="tok-str">&quot;明軒&quot;</span>, <span class="tok-str">&quot;明輝&quot;</span>, <span class="tok-str">&quot;晉鵬&quot;</span>, <span class="tok-str">&quot;智輝&quot;</span>, <span class="tok-str">&quot;梓晨&quot;</span>, <span class="tok-str">&quot;榮軒&quot;</span>, <span class="tok-str">&quot;正豪&quot;</span>, <span class="tok-str">&quot;浩宇&quot;</span>, <span class="tok-str">&quot;浩然&quot;</span>, <span class="tok-str">&quot;浩軒&quot;</span>, <span class="tok-str">&quot;澤洋&quot;</span>, <span class="tok-str">&quot;炎彬&quot;</span>, <span class="tok-str">&quot;燁偉&quot;</span>, <span class="tok-str">&quot;瑞霖&quot;</span>, <span class="tok-str">&quot;皓軒&quot;</span>, <span class="tok-str">&quot;立果&quot;</span>, <span class="tok-str">&quot;立誠&quot;</span>, <span class="tok-str">&quot;立輝&quot;</span>, <span class="tok-str">&quot;紹輝&quot;</span>, <span class="tok-str">&quot;紹齊&quot;</span>, <span class="tok-str">&quot;耀傑&quot;</span>, <span class="tok-str">&quot;胤祥&quot;</span>, <span class="tok-str">&quot;致遠&quot;</span>, <span class="tok-str">&quot;語堂&quot;</span>, <span class="tok-str">&quot;越澤&quot;</span>, <span class="tok-str">&quot;遠航&quot;</span>, <span class="tok-str">&quot;金鑫&quot;</span>, <span class="tok-str">&quot;鑫磊&quot;</span>, <span class="tok-str">&quot;鑫鵬&quot;</span>, <span class="tok-str">&quot;雨澤&quot;</span>, <span class="tok-str">&quot;雪松&quot;</span>, <span class="tok-str">&quot;鴻濤&quot;</span>, <span class="tok-str">&quot;鴻煊&quot;</span>, <span class="tok-str">&quot;鵬濤&quot;</span>, <span class="tok-str">&quot;鵬煊&quot;</span>, <span class="tok-str">&quot;鵬飛&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_prefix = .{};</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> name = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.lastName}}{{person.firstName}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> prefix = .{};</span>
+<span class="line" id="L20"></span>
+</code></pre></body>
+</html>

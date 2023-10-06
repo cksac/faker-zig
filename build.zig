@@ -50,8 +50,8 @@ pub fn build(b: *std.Build) void {
 
     const install_docs = b.addInstallDirectory(.{
         .source_dir = faker.getEmittedDocs(),
-        .install_dir = .prefix, // default build output prefix, ./zig-out
-        .install_subdir = "docs",
+        .install_dir = std.build.InstallDir{ .custom = "../docs" },
+        .install_subdir = "",
     });
     const docs_step = b.step("docs", "Generate API docs");
     docs_step.dependOn(&install_docs.step);

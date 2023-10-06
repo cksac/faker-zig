@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\da\commerce.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> department = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Baby&quot;</span>, <span class="tok-str">&quot;Bil&quot;</span>, <span class="tok-str">&quot;Bolig&quot;</span>, <span class="tok-str">&quot;Bøger&quot;</span>, <span class="tok-str">&quot;Dagligvarer&quot;</span>, <span class="tok-str">&quot;Elektronik&quot;</span>, <span class="tok-str">&quot;Film&quot;</span>, <span class="tok-str">&quot;Fritid&quot;</span>, <span class="tok-str">&quot;Have&quot;</span>, <span class="tok-str">&quot;Hvidevarer&quot;</span>, <span class="tok-str">&quot;Legetøj&quot;</span>, <span class="tok-str">&quot;Musik&quot;</span>, <span class="tok-str">&quot;Personlig pleje&quot;</span>, <span class="tok-str">&quot;Sko&quot;</span>, <span class="tok-str">&quot;Smykker&quot;</span>, <span class="tok-str">&quot;Spil&quot;</span>, <span class="tok-str">&quot;Sport&quot;</span>, <span class="tok-str">&quot;Sundhed&quot;</span>, <span class="tok-str">&quot;Tasker&quot;</span>, <span class="tok-str">&quot;Tøj&quot;</span>, <span class="tok-str">&quot;Værktøj&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_description = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Apollotech B340 er en prisbillig trådløs mus med pålidelig forbindelse, 12 måneders batterilevetid og moderne design&quot;</span>, <span class="tok-str">&quot;Bilens design består af aerodynamiske linjer og moderne detaljer, der kombinerer stilfuld æstetik med effektiv brændstoføkonomi&quot;</span>, <span class="tok-str">&quot;Bogen \&quot;Eventyrets Veje\&quot; er en medrivende roman, der væver magi og virkelighed sammen i en tankevækkende fortælling, som appellerer til læsere på tværs af aldre&quot;</span>, <span class="tok-str">&quot;Denne klassiske og tidløse ring er en perfekt tilføjelse til enhver smykkesamling og kan bæres til enhver lejlighed&quot;</span>, <span class="tok-str">&quot;Denne smukke og elegante halskæde er designet med en enkelt, glitrende diamant, der er indkapslet i en klassisk 18 karat guldfatning&quot;</span>, <span class="tok-str">&quot;Det slanke og enkle Maple Gaming Keyboard byder på responsiv mekanisk feedback, RGB-belysning og en robust konstruktion, der sikrer en optimal spiloplevelse&quot;</span>, <span class="tok-str">&quot;Dobbeltsengen er konstrueret med robust træramme og en blød, støttende madras, der sikrer en behagelig nattesøvn, og dens elegante design passer perfekt ind i ethvert moderne soveværelse&quot;</span>, <span class="tok-str">&quot;Ergonomisk ledersæde polstret med luksuriøs hukommelsesskum giver optimal støtte og komfort gennem hele arbejdsdagen&quot;</span>, <span class="tok-str">&quot;Fodbolden er designet til professionel spil med dens holdbare materialer, optimal vægtfordeling og præcise syninger, der sikrer en ensartet ydeevne på alle typer spilleflader&quot;</span>, <span class="tok-str">&quot;Målmandshandskerne er udstyret med en skridsikker polstring og fleksibel pasform, der giver en exceptionel greb og bevægelsesfrihed, hvilket gør dem til et uundværligt redskab for enhver seriøs målmand&quot;</span>, <span class="tok-str">&quot;Nagasaki Lander er en motorcykel designet med en kraftfuld motor, slanke linjer og avancerede sikkerhedsfunktioner, der tilbyder en spændende og samtidig sikker køreoplevelse&quot;</span>, <span class="tok-str">&quot;Ny ABC 13 tommer bærbar computer leverer imponerende ydeevne med sin nyeste generation processor, højopløselig skærm og slankt, letvægtsdesign, ideel til både arbejde og underholdning&quot;</span>, <span class="tok-str">&quot;Ny kollektion af formelle skjorter er designet med dig i tankerne. Med pasform og styling, der vil få dig til at skille dig ud&quot;</span>, <span class="tok-str">&quot;Osten Gamle Morten er kendt for sin skarpe og markante smag, en rig tekstur, og dens unikke modningsproces, der gør den til et yndet valg blandt feinschmeckere og ostekendere&quot;</span>, <span class="tok-str">&quot;Papirflyet er et simpelt og fascinerende legetøj, der kombinerer let tilgængelige materialer med aerodynamiske principper, og som kan bringe timevis af kreativ underholdning for børn og voksne&quot;</span>, <span class="tok-str">&quot;Perfumen er sammensat af en unik blanding af blomster-, citrus- og trænoter, der resulterer i en sofistikeret og forførende duft, som appellerer til både daglig brug og specielle lejligheder&quot;</span>, <span class="tok-str">&quot;Sejlbåden Molly er en smukt håndbygget fartøj, udstyret med avancerede navigationsinstrumenter og et rummeligt dæk, der kombinerer klassisk elegance med moderne bekvemmeligheder for en uforglemmelig sejladsoplevelse&quot;</span>, <span class="tok-str">&quot;Skarp er en køkkenkniv fremstillet af høj-kvalitets stål, designet med en ergonomisk håndtag og præcisions-slebet blad, der garanterer en uovertruffen skæreoplevelse i madlavningen&quot;</span>, <span class="tok-str">&quot;Super Sandaler er behagelige og stilfulde fodtøj, designet med en polstret sål og justerbare stropper, der passer til enhver fodform og giver ultimativ komfort gennem hele dagen&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_name = .{ .adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Elegant&quot;</span>, <span class="tok-str">&quot;Elektronisk&quot;</span>, <span class="tok-str">&quot;Ergonomisk&quot;</span>, <span class="tok-str">&quot;Fantastisk&quot;</span>, <span class="tok-str">&quot;Forfinet&quot;</span>, <span class="tok-str">&quot;Genbrugt&quot;</span>, <span class="tok-str">&quot;Generisk&quot;</span>, <span class="tok-str">&quot;Hjemmelavet&quot;</span>, <span class="tok-str">&quot;Håndlavet&quot;</span>, <span class="tok-str">&quot;Intelligent&quot;</span>, <span class="tok-str">&quot;Licenseret&quot;</span>, <span class="tok-str">&quot;Lille&quot;</span>, <span class="tok-str">&quot;Luksuriøs&quot;</span>, <span class="tok-str">&quot;Lækker&quot;</span>, <span class="tok-str">&quot;Moderne&quot;</span>, <span class="tok-str">&quot;Orientalsk&quot;</span>, <span class="tok-str">&quot;Praktisk&quot;</span>, <span class="tok-str">&quot;Primitiv&quot;</span>, <span class="tok-str">&quot;Skræddersyet&quot;</span>, <span class="tok-str">&quot;Slank&quot;</span>, <span class="tok-str">&quot;Smuk&quot;</span>, <span class="tok-str">&quot;Ubranded&quot;</span>, <span class="tok-str">&quot;Utrolig&quot;</span> }, .material = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Beton&quot;</span>, <span class="tok-str">&quot;Blød&quot;</span>, <span class="tok-str">&quot;Bomuld&quot;</span>, <span class="tok-str">&quot;Bronze&quot;</span>, <span class="tok-str">&quot;Fersk&quot;</span>, <span class="tok-str">&quot;Frossen&quot;</span>, <span class="tok-str">&quot;Granit&quot;</span>, <span class="tok-str">&quot;Gummi&quot;</span>, <span class="tok-str">&quot;Metal&quot;</span>, <span class="tok-str">&quot;Plastik&quot;</span>, <span class="tok-str">&quot;Stål&quot;</span>, <span class="tok-str">&quot;Træ&quot;</span> }, .product = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Bacon&quot;</span>, <span class="tok-str">&quot;Bil&quot;</span>, <span class="tok-str">&quot;Bold&quot;</span>, <span class="tok-str">&quot;Bord&quot;</span>, <span class="tok-str">&quot;Computer&quot;</span>, <span class="tok-str">&quot;Cykel&quot;</span>, <span class="tok-str">&quot;Fisk&quot;</span>, <span class="tok-str">&quot;Handske&quot;</span>, <span class="tok-str">&quot;Hat&quot;</span>, <span class="tok-str">&quot;Håndklæde&quot;</span>, <span class="tok-str">&quot;Kylling&quot;</span>, <span class="tok-str">&quot;Lysestage&quot;</span>, <span class="tok-str">&quot;Mus&quot;</span>, <span class="tok-str">&quot;Ost&quot;</span>, <span class="tok-str">&quot;Pizza&quot;</span>, <span class="tok-str">&quot;Pølse&quot;</span>, <span class="tok-str">&quot;Salat&quot;</span>, <span class="tok-str">&quot;Skjorte&quot;</span>, <span class="tok-str">&quot;Sko&quot;</span>, <span class="tok-str">&quot;Slips&quot;</span>, <span class="tok-str">&quot;Stol&quot;</span>, <span class="tok-str">&quot;Sæbe&quot;</span>, <span class="tok-str">&quot;Tastatur&quot;</span>, <span class="tok-str">&quot;Tun&quot;</span> } };</span>
+<span class="line" id="L6"></span>
+</code></pre></body>
+</html>

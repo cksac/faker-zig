@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en_CA\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Argentia&quot;</span>, <span class="tok-str">&quot;Asbestos&quot;</span>, <span class="tok-str">&quot;Baddeck&quot;</span>, <span class="tok-str">&quot;Baie-Comeau&quot;</span>, <span class="tok-str">&quot;Bancroft&quot;</span>, <span class="tok-str">&quot;Banff&quot;</span>, <span class="tok-str">&quot;Barkerville&quot;</span>, <span class="tok-str">&quot;Barrie&quot;</span>, <span class="tok-str">&quot;Bathurst&quot;</span>, <span class="tok-str">&quot;Batoche&quot;</span>, <span class="tok-str">&quot;Belleville&quot;</span>, <span class="tok-str">&quot;Beloeil&quot;</span>, <span class="tok-str">&quot;Bonavista&quot;</span>, <span class="tok-str">&quot;Borden&quot;</span>, <span class="tok-str">&quot;Brampton&quot;</span>, <span class="tok-str">&quot;Brandon&quot;</span>, <span class="tok-str">&quot;Brantford&quot;</span>, <span class="tok-str">&quot;Brockville&quot;</span>, <span class="tok-str">&quot;Brooks&quot;</span>, <span class="tok-str">&quot;Burlington&quot;</span>, <span class="tok-str">&quot;Burnaby&quot;</span>, <span class="tok-str">&quot;Calgary&quot;</span>, <span class="tok-str">&quot;Cambridge&quot;</span>, <span class="tok-str">&quot;Campbell River&quot;</span>, <span class="tok-str">&quot;Cap-de-la-Madeleine&quot;</span>, <span class="tok-str">&quot;Caraquet&quot;</span>, <span class="tok-str">&quot;Cavendish&quot;</span>, <span class="tok-str">&quot;Chambly&quot;</span>, <span class="tok-str">&quot;Channel-Port aux Basques&quot;</span>, <span class="tok-str">&quot;Charlesbourg&quot;</span>, <span class="tok-str">&quot;Charlottetown&quot;</span>, <span class="tok-str">&quot;Châteauguay&quot;</span>, <span class="tok-str">&quot;Chatham&quot;</span>, <span class="tok-str">&quot;Chatham-Kent&quot;</span>, <span class="tok-str">&quot;Chibougamau&quot;</span>, <span class="tok-str">&quot;Chilliwack&quot;</span>, <span class="tok-str">&quot;Churchill&quot;</span>, <span class="tok-str">&quot;Corner Brook&quot;</span>, <span class="tok-str">&quot;Cornwall&quot;</span>, <span class="tok-str">&quot;Côte-Saint-Luc&quot;</span>, <span class="tok-str">&quot;Courtenay&quot;</span>, <span class="tok-str">&quot;Cranbrook&quot;</span>, <span class="tok-str">&quot;Cumberland House&quot;</span>, <span class="tok-str">&quot;Dalhousie&quot;</span>, <span class="tok-str">&quot;Dauphin&quot;</span>, <span class="tok-str">&quot;Dawson&quot;</span>, <span class="tok-str">&quot;Dawson Creek&quot;</span>, <span class="tok-str">&quot;Delta&quot;</span>, <span class="tok-str">&quot;Digby&quot;</span>, <span class="tok-str">&quot;Dorval&quot;</span>, <span class="tok-str">&quot;Edmonton&quot;</span>, <span class="tok-str">&quot;Elliot Lake&quot;</span>, <span class="tok-str">&quot;Esquimalt&quot;</span>, <span class="tok-str">&quot;Estevan&quot;</span>, <span class="tok-str">&quot;Etobicoke&quot;</span>, <span class="tok-str">&quot;Ferryland&quot;</span>, <span class="tok-str">&quot;Flin Flon&quot;</span>, <span class="tok-str">&quot;Fort Erie&quot;</span>, <span class="tok-str">&quot;Fort Frances&quot;</span>, <span class="tok-str">&quot;Fort McMurray&quot;</span>, <span class="tok-str">&quot;Fort Saint James&quot;</span>, <span class="tok-str">&quot;Fort Saint John&quot;</span>, <span class="tok-str">&quot;Fort Smith&quot;</span>, <span class="tok-str">&quot;Fredericton&quot;</span>, <span class="tok-str">&quot;Gananoque&quot;</span>, <span class="tok-str">&quot;Gander&quot;</span>, <span class="tok-str">&quot;Gaspé&quot;</span>, <span class="tok-str">&quot;Gatineau&quot;</span>, <span class="tok-str">&quot;Glace Bay&quot;</span>, <span class="tok-str">&quot;Granby&quot;</span>, <span class="tok-str">&quot;Grand Falls–Windsor&quot;</span>, <span class="tok-str">&quot;Grande Prairie&quot;</span>, <span class="tok-str">&quot;Guelph&quot;</span>, <span class="tok-str">&quot;Halifax&quot;</span>, <span class="tok-str">&quot;Hamilton&quot;</span>, <span class="tok-str">&quot;Happy Valley–Goose Bay&quot;</span>, <span class="tok-str">&quot;Harbour Grace&quot;</span>, <span class="tok-str">&quot;Havre-Saint-Pierre&quot;</span>, <span class="tok-str">&quot;Hay River&quot;</span>, <span class="tok-str">&quot;Hope&quot;</span>, <span class="tok-str">&quot;Hull&quot;</span>, <span class="tok-str">&quot;Inuvik&quot;</span>, <span class="tok-str">&quot;Iqaluit&quot;</span>, <span class="tok-str">&quot;Iroquois Falls&quot;</span>, <span class="tok-str">&quot;Jasper&quot;</span>, <span class="tok-str">&quot;Jonquière&quot;</span>, <span class="tok-str">&quot;Kamloops&quot;</span>, <span class="tok-str">&quot;Kapuskasing&quot;</span>, <span class="tok-str">&quot;Kawartha Lakes&quot;</span>, <span class="tok-str">&quot;Kelowna&quot;</span>, <span class="tok-str">&quot;Kenora&quot;</span>, <span class="tok-str">&quot;Kildonan&quot;</span>, <span class="tok-str">&quot;Kimberley&quot;</span>, <span class="tok-str">&quot;Kingston&quot;</span>, <span class="tok-str">&quot;Kirkland Lake&quot;</span>, <span class="tok-str">&quot;Kitchener&quot;</span>, <span class="tok-str">&quot;Kitimat&quot;</span>, <span class="tok-str">&quot;Kuujjuaq&quot;</span>, <span class="tok-str">&quot;La Salle&quot;</span>, <span class="tok-str">&quot;La Tuque&quot;</span>, <span class="tok-str">&quot;Labrador City&quot;</span>, <span class="tok-str">&quot;Lachine&quot;</span>, <span class="tok-str">&quot;Lake Louise&quot;</span>, <span class="tok-str">&quot;Langley&quot;</span>, <span class="tok-str">&quot;Laurentian Hills&quot;</span>, <span class="tok-str">&quot;Laval&quot;</span>, <span class="tok-str">&quot;Lethbridge&quot;</span>, <span class="tok-str">&quot;Lévis&quot;</span>, <span class="tok-str">&quot;Liverpool&quot;</span>, <span class="tok-str">&quot;London&quot;</span>, <span class="tok-str">&quot;Longueuil&quot;</span>, <span class="tok-str">&quot;Louisbourg&quot;</span>, <span class="tok-str">&quot;Lunenburg&quot;</span>, <span class="tok-str">&quot;Magog&quot;</span>, <span class="tok-str">&quot;Matane&quot;</span>, <span class="tok-str">&quot;Medicine Hat&quot;</span>, <span class="tok-str">&quot;Midland&quot;</span>, <span class="tok-str">&quot;Miramichi&quot;</span>, <span class="tok-str">&quot;Mississauga&quot;</span>, <span class="tok-str">&quot;Moncton&quot;</span>, <span class="tok-str">&quot;Montreal&quot;</span>, <span class="tok-str">&quot;Montréal-Nord&quot;</span>, <span class="tok-str">&quot;Moose Factory&quot;</span>, <span class="tok-str">&quot;Moose Jaw&quot;</span>, <span class="tok-str">&quot;Moosonee&quot;</span>, <span class="tok-str">&quot;Nanaimo&quot;</span>, <span class="tok-str">&quot;Nelson&quot;</span>, <span class="tok-str">&quot;New Westminster&quot;</span>, <span class="tok-str">&quot;Niagara Falls&quot;</span>, <span class="tok-str">&quot;Niagara-on-the-Lake&quot;</span>, <span class="tok-str">&quot;North Bay&quot;</span>, <span class="tok-str">&quot;North Vancouver&quot;</span>, <span class="tok-str">&quot;North York&quot;</span>, <span class="tok-str">&quot;Oak Bay&quot;</span>, <span class="tok-str">&quot;Oakville&quot;</span>, <span class="tok-str">&quot;Orillia&quot;</span>, <span class="tok-str">&quot;Oshawa&quot;</span>, <span class="tok-str">&quot;Ottawa&quot;</span>, <span class="tok-str">&quot;Parry Sound&quot;</span>, <span class="tok-str">&quot;Penticton&quot;</span>, <span class="tok-str">&quot;Percé&quot;</span>, <span class="tok-str">&quot;Perth&quot;</span>, <span class="tok-str">&quot;Peterborough&quot;</span>, <span class="tok-str">&quot;Picton&quot;</span>, <span class="tok-str">&quot;Pictou&quot;</span>, <span class="tok-str">&quot;Placentia&quot;</span>, <span class="tok-str">&quot;Port Colborne&quot;</span>, <span class="tok-str">&quot;Port Hawkesbury&quot;</span>, <span class="tok-str">&quot;Port-Cartier&quot;</span>, <span class="tok-str">&quot;Powell River&quot;</span>, <span class="tok-str">&quot;Prince Albert&quot;</span>, <span class="tok-str">&quot;Prince George&quot;</span>, <span class="tok-str">&quot;Prince Rupert&quot;</span>, <span class="tok-str">&quot;Quebec&quot;</span>, <span class="tok-str">&quot;Quesnel&quot;</span>, <span class="tok-str">&quot;Red Deer&quot;</span>, <span class="tok-str">&quot;Regina&quot;</span>, <span class="tok-str">&quot;Revelstoke&quot;</span>, <span class="tok-str">&quot;Rimouski&quot;</span>, <span class="tok-str">&quot;Rossland&quot;</span>, <span class="tok-str">&quot;Rouyn-Noranda&quot;</span>, <span class="tok-str">&quot;Saguenay&quot;</span>, <span class="tok-str">&quot;Saint Albert&quot;</span>, <span class="tok-str">&quot;Saint Anthony&quot;</span>, <span class="tok-str">&quot;Saint Boniface&quot;</span>, <span class="tok-str">&quot;Saint Catharines&quot;</span>, <span class="tok-str">&quot;Saint John&quot;</span>, <span class="tok-str">&quot;Saint Thomas&quot;</span>, <span class="tok-str">&quot;Saint-Eustache&quot;</span>, <span class="tok-str">&quot;Saint-Hubert&quot;</span>, <span class="tok-str">&quot;Sainte-Anne-de-Beaupré&quot;</span>, <span class="tok-str">&quot;Sainte-Foy&quot;</span>, <span class="tok-str">&quot;Sainte-Thérèse&quot;</span>, <span class="tok-str">&quot;Sarnia-Clearwater&quot;</span>, <span class="tok-str">&quot;Saskatoon&quot;</span>, <span class="tok-str">&quot;Sault Sainte Marie&quot;</span>, <span class="tok-str">&quot;Scarborough&quot;</span>, <span class="tok-str">&quot;Sept-Îles&quot;</span>, <span class="tok-str">&quot;Sherbrooke&quot;</span>, <span class="tok-str">&quot;Simcoe&quot;</span>, <span class="tok-str">&quot;Sorel-Tracy&quot;</span>, <span class="tok-str">&quot;Souris&quot;</span>, <span class="tok-str">&quot;Springhill&quot;</span>, <span class="tok-str">&quot;St. John’s&quot;</span>, <span class="tok-str">&quot;Stratford&quot;</span>, <span class="tok-str">&quot;Sudbury&quot;</span>, <span class="tok-str">&quot;Summerside&quot;</span>, <span class="tok-str">&quot;Swan River&quot;</span>, <span class="tok-str">&quot;Sydney&quot;</span>, <span class="tok-str">&quot;Temiskaming Shores&quot;</span>, <span class="tok-str">&quot;Thompson&quot;</span>, <span class="tok-str">&quot;Thorold&quot;</span>, <span class="tok-str">&quot;Thunder Bay&quot;</span>, <span class="tok-str">&quot;Timmins&quot;</span>, <span class="tok-str">&quot;Toronto&quot;</span>, <span class="tok-str">&quot;Trail&quot;</span>, <span class="tok-str">&quot;Trenton&quot;</span>, <span class="tok-str">&quot;Trois-Rivières&quot;</span>, <span class="tok-str">&quot;Tuktoyaktuk&quot;</span>, <span class="tok-str">&quot;Uranium City&quot;</span>, <span class="tok-str">&quot;Val-d’Or&quot;</span>, <span class="tok-str">&quot;Vancouver&quot;</span>, <span class="tok-str">&quot;Vernon&quot;</span>, <span class="tok-str">&quot;Victoria&quot;</span>, <span class="tok-str">&quot;Wabana&quot;</span>, <span class="tok-str">&quot;Waskaganish&quot;</span>, <span class="tok-str">&quot;Waterloo&quot;</span>, <span class="tok-str">&quot;Watson Lake&quot;</span>, <span class="tok-str">&quot;Welland&quot;</span>, <span class="tok-str">&quot;West Nipissing&quot;</span>, <span class="tok-str">&quot;West Vancouver&quot;</span>, <span class="tok-str">&quot;White Rock&quot;</span>, <span class="tok-str">&quot;Whitehorse&quot;</span>, <span class="tok-str">&quot;Windsor&quot;</span>, <span class="tok-str">&quot;Winnipeg&quot;</span>, <span class="tok-str">&quot;Woodstock&quot;</span>, <span class="tok-str">&quot;Yarmouth&quot;</span>, <span class="tok-str">&quot;Yellowknife&quot;</span>, <span class="tok-str">&quot;York&quot;</span>, <span class="tok-str">&quot;York Factory&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.city_prefix}} {{person.firstName}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.city_prefix}} {{person.firstName}}&quot;</span>, <span class="tok-str">&quot;{{person.firstName}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.city_name}}&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Canada&quot;</span>};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;A#? #?#&quot;</span>, <span class="tok-str">&quot;B#? #?#&quot;</span>, <span class="tok-str">&quot;C#? #?#&quot;</span>, <span class="tok-str">&quot;E#? #?#&quot;</span>, <span class="tok-str">&quot;G#? #?#&quot;</span>, <span class="tok-str">&quot;H#? #?#&quot;</span>, <span class="tok-str">&quot;J#? #?#&quot;</span>, <span class="tok-str">&quot;K#? #?#&quot;</span>, <span class="tok-str">&quot;L#? #?#&quot;</span>, <span class="tok-str">&quot;M#? #?#&quot;</span>, <span class="tok-str">&quot;N#? #?#&quot;</span>, <span class="tok-str">&quot;P#? #?#&quot;</span>, <span class="tok-str">&quot;R#? #?#&quot;</span>, <span class="tok-str">&quot;S#? #?#&quot;</span>, <span class="tok-str">&quot;T#? #?#&quot;</span>, <span class="tok-str">&quot;V#? #?#&quot;</span>, <span class="tok-str">&quot;X#? #?#&quot;</span>, <span class="tok-str">&quot;Y#? #?#&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Alberta&quot;</span>, <span class="tok-str">&quot;British Columbia&quot;</span>, <span class="tok-str">&quot;Manitoba&quot;</span>, <span class="tok-str">&quot;New Brunswick&quot;</span>, <span class="tok-str">&quot;Newfoundland and Labrador&quot;</span>, <span class="tok-str">&quot;Nova Scotia&quot;</span>, <span class="tok-str">&quot;Northwest Territories&quot;</span>, <span class="tok-str">&quot;Nunavut&quot;</span>, <span class="tok-str">&quot;Ontario&quot;</span>, <span class="tok-str">&quot;Prince Edward Island&quot;</span>, <span class="tok-str">&quot;Quebec&quot;</span>, <span class="tok-str">&quot;Saskatchewan&quot;</span>, <span class="tok-str">&quot;Yukon&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state_abbr = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;AB&quot;</span>, <span class="tok-str">&quot;BC&quot;</span>, <span class="tok-str">&quot;MB&quot;</span>, <span class="tok-str">&quot;NB&quot;</span>, <span class="tok-str">&quot;NL&quot;</span>, <span class="tok-str">&quot;NS&quot;</span>, <span class="tok-str">&quot;NU&quot;</span>, <span class="tok-str">&quot;NT&quot;</span>, <span class="tok-str">&quot;ON&quot;</span>, <span class="tok-str">&quot;PE&quot;</span>, <span class="tok-str">&quot;QC&quot;</span>, <span class="tok-str">&quot;SK&quot;</span>, <span class="tok-str">&quot;YT&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.firstName}} {{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.lastName}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L14"></span>
+</code></pre></body>
+</html>

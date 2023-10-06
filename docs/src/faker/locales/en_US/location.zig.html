@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en_US\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.city_prefix}} {{person.firstName}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.city_prefix}} {{person.firstName}}&quot;</span>, <span class="tok-str">&quot;{{person.firstName}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.city_suffix}}&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> county = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Adams County&quot;</span>, <span class="tok-str">&quot;Calhoun County&quot;</span>, <span class="tok-str">&quot;Carroll County&quot;</span>, <span class="tok-str">&quot;Clark County&quot;</span>, <span class="tok-str">&quot;Clay County&quot;</span>, <span class="tok-str">&quot;Crawford County&quot;</span>, <span class="tok-str">&quot;Douglas County&quot;</span>, <span class="tok-str">&quot;Fayette County&quot;</span>, <span class="tok-str">&quot;Franklin County&quot;</span>, <span class="tok-str">&quot;Grant County&quot;</span>, <span class="tok-str">&quot;Greene County&quot;</span>, <span class="tok-str">&quot;Hamilton County&quot;</span>, <span class="tok-str">&quot;Hancock County&quot;</span>, <span class="tok-str">&quot;Henry County&quot;</span>, <span class="tok-str">&quot;Jackson County&quot;</span>, <span class="tok-str">&quot;Jefferson County&quot;</span>, <span class="tok-str">&quot;Johnson County&quot;</span>, <span class="tok-str">&quot;Lake County&quot;</span>, <span class="tok-str">&quot;Lawrence County&quot;</span>, <span class="tok-str">&quot;Lee County&quot;</span>, <span class="tok-str">&quot;Lincoln County&quot;</span>, <span class="tok-str">&quot;Logan County&quot;</span>, <span class="tok-str">&quot;Madison County&quot;</span>, <span class="tok-str">&quot;Marion County&quot;</span>, <span class="tok-str">&quot;Marshall County&quot;</span>, <span class="tok-str">&quot;Monroe County&quot;</span>, <span class="tok-str">&quot;Montgomery County&quot;</span>, <span class="tok-str">&quot;Morgan County&quot;</span>, <span class="tok-str">&quot;Perry County&quot;</span>, <span class="tok-str">&quot;Pike County&quot;</span>, <span class="tok-str">&quot;Polk County&quot;</span>, <span class="tok-str">&quot;Scott County&quot;</span>, <span class="tok-str">&quot;Union County&quot;</span>, <span class="tok-str">&quot;Warren County&quot;</span>, <span class="tok-str">&quot;Washington County&quot;</span>, <span class="tok-str">&quot;Wayne County&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;United States&quot;</span>, <span class="tok-str">&quot;United States of America&quot;</span>, <span class="tok-str">&quot;USA&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode_by_state = .{ .ak = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 99501,\&quot;max\&quot;: 99950})}}&quot;</span>, .al = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 35004,\&quot;max\&quot;: 36925})}}&quot;</span>, .ar = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 71601,\&quot;max\&quot;: 72959})}}&quot;</span>, .az = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 85001,\&quot;max\&quot;: 86556})}}&quot;</span>, .ca = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 90001,\&quot;max\&quot;: 96162})}}&quot;</span>, .co = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 80001,\&quot;max\&quot;: 81658})}}&quot;</span>, .ct = <span class="tok-str">&quot;0{{number.int({\&quot;min\&quot;: 6001,\&quot;max\&quot;: 6389})}}&quot;</span>, .dc = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 20001,\&quot;max\&quot;: 20039})}}&quot;</span>, .de = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 19701,\&quot;max\&quot;: 19980})}}&quot;</span>, .fl = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 32004,\&quot;max\&quot;: 34997})}}&quot;</span>, .ga = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 30001,\&quot;max\&quot;: 31999})}}&quot;</span>, .hi = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 96701,\&quot;max\&quot;: 96898})}}&quot;</span>, .ia = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 50001,\&quot;max\&quot;: 52809})}}&quot;</span>, .id = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 83201,\&quot;max\&quot;: 83876})}}&quot;</span>, .il = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 60001,\&quot;max\&quot;: 62999})}}&quot;</span>, .in = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 46001,\&quot;max\&quot;: 47997})}}&quot;</span>, .ks = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 66002,\&quot;max\&quot;: 67954})}}&quot;</span>, .ky = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 40003,\&quot;max\&quot;: 42788})}}&quot;</span>, .la = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 70001,\&quot;max\&quot;: 71232})}}&quot;</span>, .ma = <span class="tok-str">&quot;0{{number.int(,\&quot;min\&quot;: 1001,\&quot;max\&quot;: 2791})}}&quot;</span>, .md = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 20899,\&quot;max\&quot;: 20908})}}&quot;</span>, .me = <span class="tok-str">&quot;0{{number.int(,\&quot;min\&quot;: 3901,\&quot;max\&quot;: 4992})}}&quot;</span>, .mi = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 48001,\&quot;max\&quot;: 49971})}}&quot;</span>, .mn = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 55001,\&quot;max\&quot;: 56763})}}&quot;</span>, .mo = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 63001,\&quot;max\&quot;: 65899})}}&quot;</span>, .ms = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 38601,\&quot;max\&quot;: 39776})}}&quot;</span>, .mt = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 59001,\&quot;max\&quot;: 59937})}}&quot;</span>, .nc = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 27006,\&quot;max\&quot;: 28909})}}&quot;</span>, .nd = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 58001,\&quot;max\&quot;: 58856})}}&quot;</span>, .ne = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 68001,\&quot;max\&quot;: 68118})}}&quot;</span>, .nh = <span class="tok-str">&quot;0{{number.int(,\&quot;min\&quot;: 3031,\&quot;max\&quot;: 3897})}}&quot;</span>, .nj = <span class="tok-str">&quot;0{{number.int(,\&quot;min\&quot;: 7001,\&quot;max\&quot;: 8989})}}&quot;</span>, .nm = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 87001,\&quot;max\&quot;: 88441})}}&quot;</span>, .nv = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 88901,\&quot;max\&quot;: 89883})}}&quot;</span>, .ny = <span class="tok-str">&quot;0{{number.int(,\&quot;min\&quot;: 6390,\&quot;max\&quot;: 6390})}}&quot;</span>, .oh = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 43001,\&quot;max\&quot;: 45999})}}&quot;</span>, .ok = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 73001,\&quot;max\&quot;: 73199})}}&quot;</span>, .@&quot;or&quot; = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 97001,\&quot;max\&quot;: 97920})}}&quot;</span>, .pa = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 15001,\&quot;max\&quot;: 19640})}}&quot;</span>, .pr = <span class="tok-str">&quot;00{{number.int(,\&quot;min\&quot;: 601,\&quot;max\&quot;: 988})}}&quot;</span>, .ri = <span class="tok-str">&quot;0{{number.int(,\&quot;min\&quot;: 2801,\&quot;max\&quot;: 2940})}}&quot;</span>, .sc = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 29001,\&quot;max\&quot;: 29948})}}&quot;</span>, .sd = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 57001,\&quot;max\&quot;: 57799})}}&quot;</span>, .tn = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 37010,\&quot;max\&quot;: 38589})}}&quot;</span>, .tx = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 75503,\&quot;max\&quot;: 79999})}}&quot;</span>, .ut = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 84001,\&quot;max\&quot;: 84784})}}&quot;</span>, .va = <span class="tok-str">&quot;{{number.int(,\&quot;min\&quot;: 20040,\&quot;max\&quot;: 20041})}}&quot;</span>, .vt = <span class="tok-str">&quot;0{{number.int({\&quot;min\&quot;: 5001,\&quot;max\&quot;: 5495})}}&quot;</span>, .wa = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 98001,\&quot;max\&quot;: 99403})}}&quot;</span>, .wi = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 53001,\&quot;max\&quot;: 54990})}}&quot;</span>, .wv = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 24701,\&quot;max\&quot;: 26886})}}&quot;</span>, .wy = <span class="tok-str">&quot;{{number.int({\&quot;min\&quot;: 82001,\&quot;max\&quot;: 83128})}}&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.firstName}} {{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.lastName}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L10"></span>
+</code></pre></body>
+</html>

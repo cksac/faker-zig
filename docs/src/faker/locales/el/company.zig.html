@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\el\company.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Για προχωρημένους&quot;</span>, <span class="tok-str">&quot;Αυτοματοποιημένη&quot;</span>, <span class="tok-str">&quot;Ισορροπημένη&quot;</span>, <span class="tok-str">&quot;Συγκεντρωτική&quot;</span>, <span class="tok-str">&quot;Κλωνοποιημένα&quot;</span>, <span class="tok-str">&quot;Συμβατές&quot;</span>, <span class="tok-str">&quot;Παραμετρικές&quot;</span>, <span class="tok-str">&quot;Προσαρμόσιμα&quot;</span>, <span class="tok-str">&quot;Αποκεντρωμένη&quot;</span>, <span class="tok-str">&quot;Ψηφιακές&quot;</span>, <span class="tok-str">&quot;Κατανεμημένα&quot;</span>, <span class="tok-str">&quot;Διαφορετικές&quot;</span>, <span class="tok-str">&quot;Ενισχυμένη&quot;</span>, <span class="tok-str">&quot;Εργονομία&quot;</span>, <span class="tok-str">&quot;Διευρυμένη&quot;</span>, <span class="tok-str">&quot;Επέκταση&quot;</span>, <span class="tok-str">&quot;Ειδικός&quot;</span>, <span class="tok-str">&quot;Πρώτης γραμμής&quot;</span>, <span class="tok-str">&quot;Πλήρως παραμετροποιήσιμο&quot;</span>, <span class="tok-str">&quot;Θεμελιώδη&quot;</span>, <span class="tok-str">&quot;Λαϊκά&quot;</span>, <span class="tok-str">&quot;Οριζόντια&quot;</span>, <span class="tok-str">&quot;Καινοτόμες&quot;</span>, <span class="tok-str">&quot;ολοκληρωμένη&quot;</span>, <span class="tok-str">&quot;Έξυπνο&quot;</span>, <span class="tok-str">&quot;Αντιστροφή&quot;</span>, <span class="tok-str">&quot;Υπεύθυνη για τη διαχείριση&quot;</span>, <span class="tok-str">&quot;Υποχρεωτικά&quot;</span>, <span class="tok-str">&quot;Πολυμερής&quot;</span>, <span class="tok-str">&quot;Πολυεπίπεδη&quot;</span>, <span class="tok-str">&quot;Δικτυωμένες&quot;</span>, <span class="tok-str">&quot;Ανοιχτή πηγή&quot;</span>, <span class="tok-str">&quot;Λειτουργικής&quot;</span>, <span class="tok-str">&quot;Βελτιστοποιημένη&quot;</span>, <span class="tok-str">&quot;Προαιρετικό&quot;</span>, <span class="tok-str">&quot;Βιολογικά&quot;</span>, <span class="tok-str">&quot;Οργανωμένες&quot;</span>, <span class="tok-str">&quot;Μένοντας&quot;</span>, <span class="tok-str">&quot;Επίμονη&quot;</span>, <span class="tok-str">&quot;Σταδιακή&quot;</span>, <span class="tok-str">&quot;Προληπτική&quot;</span>, <span class="tok-str">&quot;Ριζική&quot;</span>, <span class="tok-str">&quot;Προοδευτική&quot;</span>, <span class="tok-str">&quot;Αντιδραστική&quot;</span>, <span class="tok-str">&quot;Ευθυγραμμισμένο&quot;</span>, <span class="tok-str">&quot;Μειωμένη&quot;</span>, <span class="tok-str">&quot;Αντίστροφης μηχανικής&quot;</span>, <span class="tok-str">&quot;Ανθεκτική&quot;</span>, <span class="tok-str">&quot;Αδιάλειπτη&quot;</span>, <span class="tok-str">&quot;Ασφαλής&quot;</span>, <span class="tok-str">&quot;Κοινόχρηστο&quot;</span>, <span class="tok-str">&quot;Βελτιωμένη&quot;</span>, <span class="tok-str">&quot;Εναλλαγή&quot;</span>, <span class="tok-str">&quot;Σύγχρονη&quot;</span>, <span class="tok-str">&quot;Αναβαθμίσιμα&quot;</span>, <span class="tok-str">&quot;Χρηστοκεντρικών&quot;</span>, <span class="tok-str">&quot;Φιλική προς το χρήστη&quot;</span>, <span class="tok-str">&quot;Ευέλικτο&quot;</span>, <span class="tok-str">&quot;Εικονική&quot;</span>, <span class="tok-str">&quot;Οραματιστής&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> buzz_adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Προστιθέμενη αξία&quot;</span>, <span class="tok-str">&quot;Κάθετη&quot;</span>, <span class="tok-str">&quot;Προληπτική&quot;</span>, <span class="tok-str">&quot;Εύρωστο&quot;</span>, <span class="tok-str">&quot;Επαναστατικό&quot;</span>, <span class="tok-str">&quot;Κλιμακούμενες&quot;</span>, <span class="tok-str">&quot;Προβάδισμα&quot;</span>, <span class="tok-str">&quot;Καινοτόμες&quot;</span>, <span class="tok-str">&quot;Διαισθητική&quot;</span>, <span class="tok-str">&quot;Στρατηγικών&quot;</span>, <span class="tok-str">&quot;E-business&quot;</span>, <span class="tok-str">&quot;Κρίσιμης σημασίας&quot;</span>, <span class="tok-str">&quot;Κολλάει&quot;</span>, <span class="tok-str">&quot;Ένα προς ένα&quot;</span>, <span class="tok-str">&quot;24/7&quot;</span>, <span class="tok-str">&quot;Παγκόσμια&quot;</span>, <span class="tok-str">&quot;B2B&quot;</span>, <span class="tok-str">&quot;B2C&quot;</span>, <span class="tok-str">&quot;Κοκκώδη&quot;</span>, <span class="tok-str">&quot;Τριβές&quot;</span>, <span class="tok-str">&quot;Εικονική&quot;</span>, <span class="tok-str">&quot;Ιογενείς&quot;</span>, <span class="tok-str">&quot;Δυναμική&quot;</span>, <span class="tok-str">&quot;24/365&quot;</span>, <span class="tok-str">&quot;Δολοφόνος&quot;</span>, <span class="tok-str">&quot;Μαγνητικά&quot;</span>, <span class="tok-str">&quot;Διαδραστικό&quot;</span>, <span class="tok-str">&quot;Σέξι&quot;</span>, <span class="tok-str">&quot;Πραγματικός χρόνος&quot;</span>, <span class="tok-str">&quot;Αποτελεσματικό&quot;</span>, <span class="tok-str">&quot;Κατανεμημένες&quot;</span>, <span class="tok-str">&quot;Επεκτάσιμο&quot;</span>, <span class="tok-str">&quot;Κλειδί στο χέρι&quot;</span>, <span class="tok-str">&quot;Παγκόσμιας κλάσης&quot;</span>, <span class="tok-str">&quot;Ανοιχτή πηγή&quot;</span>, <span class="tok-str">&quot;Συνεργιστική&quot;</span>, <span class="tok-str">&quot;Επιχείρηση&quot;</span>, <span class="tok-str">&quot;Ολοκληρωμένη&quot;</span>, <span class="tok-str">&quot;Εύστοχος&quot;</span>, <span class="tok-str">&quot;Ασύρματο&quot;</span>, <span class="tok-str">&quot;Διαφανής&quot;</span>, <span class="tok-str">&quot;Επόμενη γενιά&quot;</span>, <span class="tok-str">&quot;Αιχμής&quot;</span>, <span class="tok-str">&quot;Επίκεντρο τον χρήστη&quot;</span>, <span class="tok-str">&quot;Οραματιστής&quot;</span>, <span class="tok-str">&quot;Προσαρμοσμένη&quot;</span>, <span class="tok-str">&quot;Πανταχού παρούσα&quot;</span>, <span class="tok-str">&quot;Plug-and-play&quot;</span>, <span class="tok-str">&quot;Συνεργατική&quot;</span>, <span class="tok-str">&quot;Συναρπαστικό&quot;</span>, <span class="tok-str">&quot;Ολιστική&quot;</span>, <span class="tok-str">&quot;Πλούσια&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> buzz_noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;συνέργειες&quot;</span>, <span class="tok-str">&quot;παραδείγματα&quot;</span>, <span class="tok-str">&quot;αγορές&quot;</span>, <span class="tok-str">&quot;συνεργασίες&quot;</span>, <span class="tok-str">&quot;υποδομές&quot;</span>, <span class="tok-str">&quot;πλατφόρμες&quot;</span>, <span class="tok-str">&quot;πρωτοβουλίες&quot;</span>, <span class="tok-str">&quot;κανάλια&quot;</span>, <span class="tok-str">&quot;μάτια&quot;</span>, <span class="tok-str">&quot;κοινότητες&quot;</span>, <span class="tok-str">&quot;λύσεις&quot;</span>, <span class="tok-str">&quot;δράση-αντικείμενα&quot;</span>, <span class="tok-str">&quot;πύλες&quot;</span>, <span class="tok-str">&quot;θέσεις&quot;</span>, <span class="tok-str">&quot;τεχνολογίες&quot;</span>, <span class="tok-str">&quot;περιεχόμενο&quot;</span>, <span class="tok-str">&quot;αλυσίδες προμηθειών&quot;</span>, <span class="tok-str">&quot;σύγκλιση&quot;</span>, <span class="tok-str">&quot;σχέσεις&quot;</span>, <span class="tok-str">&quot;αρχιτεκτονικές&quot;</span>, <span class="tok-str">&quot;διασυνδέσεις&quot;</span>, <span class="tok-str">&quot;e-αγορές&quot;</span>, <span class="tok-str">&quot;ηλεκτρονικό εμπόριο&quot;</span>, <span class="tok-str">&quot;συστήματα&quot;</span>, <span class="tok-str">&quot;μοντέλα&quot;</span>, <span class="tok-str">&quot;παραδοτέα&quot;</span>, <span class="tok-str">&quot;χρήστες&quot;</span>, <span class="tok-str">&quot;σχήματα&quot;</span>, <span class="tok-str">&quot;δίκτυα&quot;</span>, <span class="tok-str">&quot;εφαρμογές&quot;</span>, <span class="tok-str">&quot;μετρήσεις&quot;</span>, <span class="tok-str">&quot;e-business&quot;</span>, <span class="tok-str">&quot;λειτουργίες&quot;</span>, <span class="tok-str">&quot;εμπειρίες&quot;</span>, <span class="tok-str">&quot;διαδικτυακές υπηρεσίες&quot;</span>, <span class="tok-str">&quot;μεθοδολογίες&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> buzz_verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;χρησιμοποιούν&quot;</span>, <span class="tok-str">&quot;ενσωμάτωση&quot;</span>, <span class="tok-str">&quot;βελτιστοποιήσουν&quot;</span>, <span class="tok-str">&quot;εξελιχθεί&quot;</span>, <span class="tok-str">&quot;μεταμορφώσει&quot;</span>, <span class="tok-str">&quot;αγκαλιάζουν&quot;</span>, <span class="tok-str">&quot;επιτρέψει&quot;</span>, <span class="tok-str">&quot;ενορχηστρώσει&quot;</span>, <span class="tok-str">&quot;επανεφεύρουμε&quot;</span>, <span class="tok-str">&quot;ενισχύσουν&quot;</span>, <span class="tok-str">&quot;διευκολύνουν&quot;</span>, <span class="tok-str">&quot;αδράξουν&quot;</span>, <span class="tok-str">&quot;συνεργούν&quot;</span>, <span class="tok-str">&quot;μεγαλώνουν&quot;</span>, <span class="tok-str">&quot;συνθέσει&quot;</span>, <span class="tok-str">&quot;παραδώσει&quot;</span>, <span class="tok-str">&quot;αναλάβουν&quot;</span>, <span class="tok-str">&quot;επιταχύνει&quot;</span>, <span class="tok-str">&quot;απεικονίσει&quot;</span>, <span class="tok-str">&quot;επαναπροσδιορίσουν&quot;</span>, <span class="tok-str">&quot;καινοτομία&quot;</span>, <span class="tok-str">&quot;απελευθερώσουν&quot;</span>, <span class="tok-str">&quot;επεκτείνει&quot;</span>, <span class="tok-str">&quot;δημιουργούν&quot;</span>, <span class="tok-str">&quot;εκμεταλλεύονται&quot;</span>, <span class="tok-str">&quot;επαναλάβει&quot;</span>, <span class="tok-str">&quot;καλλιεργούν&quot;</span>, <span class="tok-str">&quot;επαναπροσδιορίσει&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> descriptor = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;24 ώρες το 24ώρο&quot;</span>, <span class="tok-str">&quot;24/7&quot;</span>, <span class="tok-str">&quot;3η γενιά&quot;</span>, <span class="tok-str">&quot;4η γενικά&quot;</span>, <span class="tok-str">&quot;5η γενιά&quot;</span>, <span class="tok-str">&quot;6η γενιά&quot;</span>, <span class="tok-str">&quot;asymmetric&quot;</span>, <span class="tok-str">&quot;ασύγχρονο&quot;</span>, <span class="tok-str">&quot;συνεχής&quot;</span>, <span class="tok-str">&quot;αφιερωμένο&quot;</span>, <span class="tok-str">&quot;διαδακτικό&quot;</span>, <span class="tok-str">&quot;διακριτό&quot;</span>, <span class="tok-str">&quot;δυναμικό&quot;</span>, <span class="tok-str">&quot;παγκόσμιο&quot;</span>, <span class="tok-str">&quot;υβριδικό&quot;</span>, <span class="tok-str">&quot;δριαδραστικό&quot;</span>, <span class="tok-str">&quot;τοπικό&quot;</span>, <span class="tok-str">&quot;πολυμεσικό&quot;</span>, <span class="tok-str">&quot;διεθνές&quot;</span>, <span class="tok-str">&quot;επόμενης γενιάς&quot;</span>, <span class="tok-str">&quot;αντικειμενοστραφή&quot;</span>, <span class="tok-str">&quot;ιδανικό&quot;</span>, <span class="tok-str">&quot;πραγματικού χρόνου&quot;</span>, <span class="tok-str">&quot;δευτερεύων&quot;</span>, <span class="tok-str">&quot;σταθερό&quot;</span>, <span class="tok-str">&quot;στατικό&quot;</span>, <span class="tok-str">&quot;προστιθέμενης αξίας&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> name_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.last_name}} {{company.suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}-{{person.last_name}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}, {{person.last_name}} and {{person.last_name}}&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ικανότητα&quot;</span>, <span class="tok-str">&quot;πρόσβαση&quot;</span>, <span class="tok-str">&quot;αλγόριθμος&quot;</span>, <span class="tok-str">&quot;αναλυτής&quot;</span>, <span class="tok-str">&quot;εφαρμογή&quot;</span>, <span class="tok-str">&quot;προσέγγιση&quot;</span>, <span class="tok-str">&quot;αρχιτεκτονική&quot;</span>, <span class="tok-str">&quot;αρχείο&quot;</span>, <span class="tok-str">&quot;τεχνητή νοημοσύνη&quot;</span>, <span class="tok-str">&quot;χωρητικότητα&quot;</span>, <span class="tok-str">&quot;πρόκληση&quot;</span>, <span class="tok-str">&quot;συνεργασία&quot;</span>, <span class="tok-str">&quot;περιπλοκότητα&quot;</span>, <span class="tok-str">&quot;πυρήνας&quot;</span>, <span class="tok-str">&quot;βάση δεδομένων&quot;</span>, <span class="tok-str">&quot;ορισμός&quot;</span>, <span class="tok-str">&quot;συνάρτηση&quot;</span>, <span class="tok-str">&quot;Διεπαφή Χρήστη&quot;</span>, <span class="tok-str">&quot;υλικό&quot;</span>, <span class="tok-str">&quot;υλοποίηση&quot;</span>, <span class="tok-str">&quot;εγκατάσταση&quot;</span>, <span class="tok-str">&quot;εγχειρίδιο χρήστη&quot;</span>, <span class="tok-str">&quot;διεπαφή&quot;</span>, <span class="tok-str">&quot;υπηρεσίες internet&quot;</span>, <span class="tok-str">&quot;γνωσιακή βάση&quot;</span>, <span class="tok-str">&quot;τοπικό δίκτυο&quot;</span>, <span class="tok-str">&quot;μετρικές&quot;</span>, <span class="tok-str">&quot;μεθοδολογία&quot;</span>, <span class="tok-str">&quot;μοντέλο&quot;</span>, <span class="tok-str">&quot;ανοιχτή αρχιτεκτονική&quot;</span>, <span class="tok-str">&quot;ενορχήστρωση&quot;</span>, <span class="tok-str">&quot;προϊόν&quot;</span>, <span class="tok-str">&quot;παραγωγικότητα&quot;</span>, <span class="tok-str">&quot;πρωτόκολο&quot;</span>, <span class="tok-str">&quot;ασφαλής γραμμή&quot;</span>, <span class="tok-str">&quot;λογισμικό&quot;</span>, <span class="tok-str">&quot;στρατηγική&quot;</span>, <span class="tok-str">&quot;επιτυχία&quot;</span>, <span class="tok-str">&quot;υποστήρυξη&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Ε.Π.Ε.&quot;</span>, <span class="tok-str">&quot;Α.Ε.&quot;</span>, <span class="tok-str">&quot;και Υιοί&quot;</span>, <span class="tok-str">&quot;Όμιλος&quot;</span> };</span>
+<span class="line" id="L16"></span>
+</code></pre></body>
+</html>

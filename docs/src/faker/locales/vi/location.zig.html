@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\vi\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;An Nhơn&quot;</span>, <span class="tok-str">&quot;Biên Hòa&quot;</span>, <span class="tok-str">&quot;Buôn Ma Thuột&quot;</span>, <span class="tok-str">&quot;Bắc Ninh&quot;</span>, <span class="tok-str">&quot;Cà Mau&quot;</span>, <span class="tok-str">&quot;Cần Thơ&quot;</span>, <span class="tok-str">&quot;Haiphong&quot;</span>, <span class="tok-str">&quot;Hanoi&quot;</span>, <span class="tok-str">&quot;Ho Chi Minh City&quot;</span>, <span class="tok-str">&quot;Huế&quot;</span>, <span class="tok-str">&quot;Hải Dương&quot;</span>, <span class="tok-str">&quot;Long Xuyên&quot;</span>, <span class="tok-str">&quot;Mỹ Tho&quot;</span>, <span class="tok-str">&quot;Nam Định&quot;</span>, <span class="tok-str">&quot;Nghi Sơn&quot;</span>, <span class="tok-str">&quot;Nha Trang&quot;</span>, <span class="tok-str">&quot;Phan Thiết&quot;</span>, <span class="tok-str">&quot;Quy Nhơn&quot;</span>, <span class="tok-str">&quot;Quảng Hà&quot;</span>, <span class="tok-str">&quot;Sóc Trăng&quot;</span>, <span class="tok-str">&quot;Thanh Hóa&quot;</span>, <span class="tok-str">&quot;Thái Bình&quot;</span>, <span class="tok-str">&quot;Thái Nguyên&quot;</span>, <span class="tok-str">&quot;Thủ Dầu Một&quot;</span>, <span class="tok-str">&quot;Thủ Đức&quot;</span>, <span class="tok-str">&quot;Tân An&quot;</span>, <span class="tok-str">&quot;Tân Uyên&quot;</span>, <span class="tok-str">&quot;Vinh&quot;</span>, <span class="tok-str">&quot;Việt Trì&quot;</span>, <span class="tok-str">&quot;Vũng Tàu&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_name}}&quot;</span>};</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Afghanistan&quot;</span>, <span class="tok-str">&quot;Ai Cập&quot;</span>, <span class="tok-str">&quot;Albania&quot;</span>, <span class="tok-str">&quot;Algérie&quot;</span>, <span class="tok-str">&quot;Andorra&quot;</span>, <span class="tok-str">&quot;Angola&quot;</span>, <span class="tok-str">&quot;Vương quốc Liên hiệp Anh và Bắc Ireland&quot;</span>, <span class="tok-str">&quot;Antigua và Barbuda&quot;</span>, <span class="tok-str">&quot;Áo&quot;</span>, <span class="tok-str">&quot;Ả Rập Xê Út&quot;</span>, <span class="tok-str">&quot;Argentina&quot;</span>, <span class="tok-str">&quot;Armenia&quot;</span>, <span class="tok-str">&quot;Azerbaijan&quot;</span>, <span class="tok-str">&quot;Ấn Độ&quot;</span>, <span class="tok-str">&quot;Bahamas&quot;</span>, <span class="tok-str">&quot;Bahrain&quot;</span>, <span class="tok-str">&quot;Bangladesh&quot;</span>, <span class="tok-str">&quot;Barbados&quot;</span>, <span class="tok-str">&quot;Belarus&quot;</span>, <span class="tok-str">&quot;Belize&quot;</span>, <span class="tok-str">&quot;Bénin&quot;</span>, <span class="tok-str">&quot;Bhutan&quot;</span>, <span class="tok-str">&quot;Bỉ&quot;</span>, <span class="tok-str">&quot;Bolivia&quot;</span>, <span class="tok-str">&quot;Bosna và Hercegovina&quot;</span>, <span class="tok-str">&quot;Botswana&quot;</span>, <span class="tok-str">&quot;Bồ Đào Nha&quot;</span>, <span class="tok-str">&quot;Bờ Biển Ngà&quot;</span>, <span class="tok-str">&quot;Brasil&quot;</span>, <span class="tok-str">&quot;Brunei&quot;</span>, <span class="tok-str">&quot;Bulgaria&quot;</span>, <span class="tok-str">&quot;Burkina Faso&quot;</span>, <span class="tok-str">&quot;Burundi&quot;</span>, <span class="tok-str">&quot;Cabo Verde&quot;</span>, <span class="tok-str">&quot;Các Tiểu Vương quốc Ả Rập Thống nhất&quot;</span>, <span class="tok-str">&quot;Cameroon&quot;</span>, <span class="tok-str">&quot;Campuchia&quot;</span>, <span class="tok-str">&quot;Canada&quot;</span>, <span class="tok-str">&quot;Chile&quot;</span>, <span class="tok-str">&quot;Colombia&quot;</span>, <span class="tok-str">&quot;Comoros&quot;</span>, <span class="tok-str">&quot;Cộng hòa Congo&quot;</span>, <span class="tok-str">&quot;Cộng hòa Dân chủ Congo&quot;</span>, <span class="tok-str">&quot;Costa Rica&quot;</span>, <span class="tok-str">&quot;Croatia&quot;</span>, <span class="tok-str">&quot;Cuba&quot;</span>, <span class="tok-str">&quot;Djibouti&quot;</span>, <span class="tok-str">&quot;Dominica&quot;</span>, <span class="tok-str">&quot;Cộng hòa Dominica&quot;</span>, <span class="tok-str">&quot;Đan Mạch&quot;</span>, <span class="tok-str">&quot;Đông Timor&quot;</span>, <span class="tok-str">&quot;Đức&quot;</span>, <span class="tok-str">&quot;Ecuador&quot;</span>, <span class="tok-str">&quot;El Salvador&quot;</span>, <span class="tok-str">&quot;Eritrea&quot;</span>, <span class="tok-str">&quot;Estonia&quot;</span>, <span class="tok-str">&quot;Ethiopia&quot;</span>, <span class="tok-str">&quot;Fiji&quot;</span>, <span class="tok-str">&quot;Gabon&quot;</span>, <span class="tok-str">&quot;Gambia&quot;</span>, <span class="tok-str">&quot;Ghana&quot;</span>, <span class="tok-str">&quot;Grenada&quot;</span>, <span class="tok-str">&quot;Gruzia&quot;</span>, <span class="tok-str">&quot;Guatemala&quot;</span>, <span class="tok-str">&quot;Guiné-Bissau&quot;</span>, <span class="tok-str">&quot;Guinea Xích Đạo&quot;</span>, <span class="tok-str">&quot;Guinée&quot;</span>, <span class="tok-str">&quot;Guyana&quot;</span>, <span class="tok-str">&quot;Haiti&quot;</span>, <span class="tok-str">&quot;Hà Lan&quot;</span>, <span class="tok-str">&quot;Hàn Quốc&quot;</span>, <span class="tok-str">&quot;Hoa Kỳ&quot;</span>, <span class="tok-str">&quot;Honduras&quot;</span>, <span class="tok-str">&quot;Hungary&quot;</span>, <span class="tok-str">&quot;Hy Lạp&quot;</span>, <span class="tok-str">&quot;Iceland&quot;</span>, <span class="tok-str">&quot;Indonesia&quot;</span>, <span class="tok-str">&quot;Iran&quot;</span>, <span class="tok-str">&quot;Iraq&quot;</span>, <span class="tok-str">&quot;Ireland&quot;</span>, <span class="tok-str">&quot;Israel&quot;</span>, <span class="tok-str">&quot;Jamaica&quot;</span>, <span class="tok-str">&quot;Jordan&quot;</span>, <span class="tok-str">&quot;Kazakhstan&quot;</span>, <span class="tok-str">&quot;Kenya&quot;</span>, <span class="tok-str">&quot;Kiribati&quot;</span>, <span class="tok-str">&quot;Kosovo&quot;</span>, <span class="tok-str">&quot;Kuwait&quot;</span>, <span class="tok-str">&quot;Kyrgyzstan&quot;</span>, <span class="tok-str">&quot;Lào&quot;</span>, <span class="tok-str">&quot;Latvia&quot;</span>, <span class="tok-str">&quot;Lesotho&quot;</span>, <span class="tok-str">&quot;Liban&quot;</span>, <span class="tok-str">&quot;Liberia&quot;</span>, <span class="tok-str">&quot;Libya&quot;</span>, <span class="tok-str">&quot;Liechtenstein&quot;</span>, <span class="tok-str">&quot;Litva&quot;</span>, <span class="tok-str">&quot;Luxembourg&quot;</span>, <span class="tok-str">&quot;Macedonia&quot;</span>, <span class="tok-str">&quot;Madagascar&quot;</span>, <span class="tok-str">&quot;Malaysia&quot;</span>, <span class="tok-str">&quot;Mali&quot;</span>, <span class="tok-str">&quot;Malta&quot;</span>, <span class="tok-str">&quot;Maroc&quot;</span>, <span class="tok-str">&quot;Quần đảo Marshall&quot;</span>, <span class="tok-str">&quot;Mauritanie&quot;</span>, <span class="tok-str">&quot;Mauritius&quot;</span>, <span class="tok-str">&quot;México&quot;</span>, <span class="tok-str">&quot;Micronesia&quot;</span>, <span class="tok-str">&quot;Moldova&quot;</span>, <span class="tok-str">&quot;Monaco&quot;</span>, <span class="tok-str">&quot;Mông Cổ&quot;</span>, <span class="tok-str">&quot;Montenegro&quot;</span>, <span class="tok-str">&quot;Mozambique&quot;</span>, <span class="tok-str">&quot;Myanmar&quot;</span>, <span class="tok-str">&quot;Namibia&quot;</span>, <span class="tok-str">&quot;Nam Sudan&quot;</span>, <span class="tok-str">&quot;Nam Phi&quot;</span>, <span class="tok-str">&quot;Nauru&quot;</span>, <span class="tok-str">&quot;Na Uy&quot;</span>, <span class="tok-str">&quot;Nepal&quot;</span>, <span class="tok-str">&quot;New Zealand&quot;</span>, <span class="tok-str">&quot;Nicaragua&quot;</span>, <span class="tok-str">&quot;Niger&quot;</span>, <span class="tok-str">&quot;Nigeria&quot;</span>, <span class="tok-str">&quot;Nga&quot;</span>, <span class="tok-str">&quot;Nhật Bản&quot;</span>, <span class="tok-str">&quot;Oman&quot;</span>, <span class="tok-str">&quot;Pakistan&quot;</span>, <span class="tok-str">&quot;Palau&quot;</span>, <span class="tok-str">&quot;Palestine&quot;</span>, <span class="tok-str">&quot;Panama&quot;</span>, <span class="tok-str">&quot;Papua New Guinea&quot;</span>, <span class="tok-str">&quot;Paraguay&quot;</span>, <span class="tok-str">&quot;Peru&quot;</span>, <span class="tok-str">&quot;Pháp&quot;</span>, <span class="tok-str">&quot;Phần Lan&quot;</span>, <span class="tok-str">&quot;Philippines&quot;</span>, <span class="tok-str">&quot;Qatar&quot;</span>, <span class="tok-str">&quot;România&quot;</span>, <span class="tok-str">&quot;Rwanda&quot;</span>, <span class="tok-str">&quot;Saint Kitts và Nevis&quot;</span>, <span class="tok-str">&quot;Saint Lucia&quot;</span>, <span class="tok-str">&quot;Saint Vincent và Grenadines&quot;</span>, <span class="tok-str">&quot;Samoa&quot;</span>, <span class="tok-str">&quot;San Marino&quot;</span>, <span class="tok-str">&quot;São Tomé và Príncipe&quot;</span>, <span class="tok-str">&quot;Séc&quot;</span>, <span class="tok-str">&quot;Sénégal&quot;</span>, <span class="tok-str">&quot;Serbia&quot;</span>, <span class="tok-str">&quot;Seychelles&quot;</span>, <span class="tok-str">&quot;Sierra Leone&quot;</span>, <span class="tok-str">&quot;Singapore&quot;</span>, <span class="tok-str">&quot;Síp&quot;</span>, <span class="tok-str">&quot;Slovakia&quot;</span>, <span class="tok-str">&quot;Slovenia&quot;</span>, <span class="tok-str">&quot;Solomon&quot;</span>, <span class="tok-str">&quot;Somalia&quot;</span>, <span class="tok-str">&quot;Sri Lanka&quot;</span>, <span class="tok-str">&quot;Sudan&quot;</span>, <span class="tok-str">&quot;Suriname&quot;</span>, <span class="tok-str">&quot;Swaziland&quot;</span>, <span class="tok-str">&quot;Syria&quot;</span>, <span class="tok-str">&quot;Tajikistan&quot;</span>, <span class="tok-str">&quot;Tanzania&quot;</span>, <span class="tok-str">&quot;Tây Ban Nha&quot;</span>, <span class="tok-str">&quot;Tchad&quot;</span>, <span class="tok-str">&quot;Thái Lan&quot;</span>, <span class="tok-str">&quot;Thổ Nhĩ Kỳ&quot;</span>, <span class="tok-str">&quot;Thụy Điển&quot;</span>, <span class="tok-str">&quot;Thụy Sĩ&quot;</span>, <span class="tok-str">&quot;Togo&quot;</span>, <span class="tok-str">&quot;Tonga&quot;</span>, <span class="tok-str">&quot;Triều Tiên&quot;</span>, <span class="tok-str">&quot;Trinidad và Tobago&quot;</span>, <span class="tok-str">&quot;Trung Quốc&quot;</span>, <span class="tok-str">&quot;Trung Phi&quot;</span>, <span class="tok-str">&quot;Tunisia&quot;</span>, <span class="tok-str">&quot;Turkmenistan&quot;</span>, <span class="tok-str">&quot;Tuvalu&quot;</span>, <span class="tok-str">&quot;Úc&quot;</span>, <span class="tok-str">&quot;Uganda&quot;</span>, <span class="tok-str">&quot;Ukraina&quot;</span>, <span class="tok-str">&quot;Uruguay&quot;</span>, <span class="tok-str">&quot;Uzbekistan&quot;</span>, <span class="tok-str">&quot;Vanuatu&quot;</span>, <span class="tok-str">&quot;Vatican&quot;</span>, <span class="tok-str">&quot;Venezuela&quot;</span>, <span class="tok-str">&quot;Việt Nam&quot;</span>, <span class="tok-str">&quot;Ý&quot;</span>, <span class="tok-str">&quot;Yemen&quot;</span>, <span class="tok-str">&quot;Zambia&quot;</span>, <span class="tok-str">&quot;Zimbabwe&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Việt Nam&quot;</span>};</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;#####&quot;</span>};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;An Giang&quot;</span>, <span class="tok-str">&quot;Bà Rịa-Vũng Tàu&quot;</span>, <span class="tok-str">&quot;Bắc Giang&quot;</span>, <span class="tok-str">&quot;Bắc Kạn&quot;</span>, <span class="tok-str">&quot;Bạc Liêu&quot;</span>, <span class="tok-str">&quot;Bắc Ninh&quot;</span>, <span class="tok-str">&quot;Bến Tre&quot;</span>, <span class="tok-str">&quot;Bình Định&quot;</span>, <span class="tok-str">&quot;Bình Dương&quot;</span>, <span class="tok-str">&quot;Bình Phước&quot;</span>, <span class="tok-str">&quot;Bình Thuận&quot;</span>, <span class="tok-str">&quot;Cà Mau&quot;</span>, <span class="tok-str">&quot;Cần Thơ&quot;</span>, <span class="tok-str">&quot;Cao Bằng&quot;</span>, <span class="tok-str">&quot;Đà Nẵng&quot;</span>, <span class="tok-str">&quot;Đắk Lắk&quot;</span>, <span class="tok-str">&quot;Đắk Nông&quot;</span>, <span class="tok-str">&quot;Điện Biên&quot;</span>, <span class="tok-str">&quot;Đồng Nai&quot;</span>, <span class="tok-str">&quot;Đồng Tháp&quot;</span>, <span class="tok-str">&quot;Gia Lai&quot;</span>, <span class="tok-str">&quot;Hà Giang&quot;</span>, <span class="tok-str">&quot;Hà Nam&quot;</span>, <span class="tok-str">&quot;Hà Tây&quot;</span>, <span class="tok-str">&quot;Hà Tĩnh&quot;</span>, <span class="tok-str">&quot;Hải Dương&quot;</span>, <span class="tok-str">&quot;Hải Phòng&quot;</span>, <span class="tok-str">&quot;Hà Nội&quot;</span>, <span class="tok-str">&quot;Hậu Giang&quot;</span>, <span class="tok-str">&quot;Hồ Chí Minh&quot;</span>, <span class="tok-str">&quot;Hòa Bình&quot;</span>, <span class="tok-str">&quot;Hưng Yên&quot;</span>, <span class="tok-str">&quot;Khánh Hòa&quot;</span>, <span class="tok-str">&quot;Kiên Giang&quot;</span>, <span class="tok-str">&quot;Kon Tum&quot;</span>, <span class="tok-str">&quot;Lai Châu&quot;</span>, <span class="tok-str">&quot;Lâm Đồng&quot;</span>, <span class="tok-str">&quot;Lạng Sơn&quot;</span>, <span class="tok-str">&quot;Lào Cai&quot;</span>, <span class="tok-str">&quot;Long An&quot;</span>, <span class="tok-str">&quot;Nam Định&quot;</span>, <span class="tok-str">&quot;Nghệ An&quot;</span>, <span class="tok-str">&quot;Ninh Bình&quot;</span>, <span class="tok-str">&quot;Ninh Thuận&quot;</span>, <span class="tok-str">&quot;Phú Thọ&quot;</span>, <span class="tok-str">&quot;Phú Yên&quot;</span>, <span class="tok-str">&quot;Quảng Bình&quot;</span>, <span class="tok-str">&quot;Quảng Nam&quot;</span>, <span class="tok-str">&quot;Quảng Ngãi&quot;</span>, <span class="tok-str">&quot;Quảng Ninh&quot;</span>, <span class="tok-str">&quot;Quảng Trị&quot;</span>, <span class="tok-str">&quot;Sóc Trăng&quot;</span>, <span class="tok-str">&quot;Sơn La&quot;</span>, <span class="tok-str">&quot;Tây Ninh&quot;</span>, <span class="tok-str">&quot;Thái Bình&quot;</span>, <span class="tok-str">&quot;Thái Nguyên&quot;</span>, <span class="tok-str">&quot;Thanh Hóa&quot;</span>, <span class="tok-str">&quot;Thừa Thiên-Huế&quot;</span>, <span class="tok-str">&quot;Tiền Giang&quot;</span>, <span class="tok-str">&quot;Trà Vinh&quot;</span>, <span class="tok-str">&quot;Tuyên Quang&quot;</span>, <span class="tok-str">&quot;Vĩnh Long&quot;</span>, <span class="tok-str">&quot;Vĩnh Phúc&quot;</span>, <span class="tok-str">&quot;Yên Bái&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.firstName}} {{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.lastName}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L14"></span>
+</code></pre></body>
+</html>

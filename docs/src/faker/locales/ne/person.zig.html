@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\ne\person.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> NamePattern = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/person.zig&quot;</span>).NamePattern;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Ajita&quot;</span>, <span class="tok-str">&quot;Amita&quot;</span>, <span class="tok-str">&quot;Ashmi&quot;</span>, <span class="tok-str">&quot;Asmita&quot;</span>, <span class="tok-str">&quot;Bina&quot;</span>, <span class="tok-str">&quot;Deepika&quot;</span>, <span class="tok-str">&quot;Laxmi&quot;</span>, <span class="tok-str">&quot;Manisha&quot;</span>, <span class="tok-str">&quot;Nikita&quot;</span>, <span class="tok-str">&quot;Pooja&quot;</span>, <span class="tok-str">&quot;Rajina&quot;</span>, <span class="tok-str">&quot;Ratna&quot;</span>, <span class="tok-str">&quot;Sarita&quot;</span>, <span class="tok-str">&quot;Shilpa&quot;</span>, <span class="tok-str">&quot;Shirisha&quot;</span>, <span class="tok-str">&quot;Shristi&quot;</span>, <span class="tok-str">&quot;Sunita&quot;</span>, <span class="tok-str">&quot;Susan&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aarav&quot;</span>, <span class="tok-str">&quot;Ajita&quot;</span>, <span class="tok-str">&quot;Amit&quot;</span>, <span class="tok-str">&quot;Amita&quot;</span>, <span class="tok-str">&quot;Amrit&quot;</span>, <span class="tok-str">&quot;Arijit&quot;</span>, <span class="tok-str">&quot;Ashmi&quot;</span>, <span class="tok-str">&quot;Asmita&quot;</span>, <span class="tok-str">&quot;Bibek&quot;</span>, <span class="tok-str">&quot;Bijay&quot;</span>, <span class="tok-str">&quot;Bikash&quot;</span>, <span class="tok-str">&quot;Bina&quot;</span>, <span class="tok-str">&quot;Bishal&quot;</span>, <span class="tok-str">&quot;Bishnu&quot;</span>, <span class="tok-str">&quot;Buddha&quot;</span>, <span class="tok-str">&quot;Deepika&quot;</span>, <span class="tok-str">&quot;Dipendra&quot;</span>, <span class="tok-str">&quot;Gagan&quot;</span>, <span class="tok-str">&quot;Ganesh&quot;</span>, <span class="tok-str">&quot;Khem&quot;</span>, <span class="tok-str">&quot;Krishna&quot;</span>, <span class="tok-str">&quot;Laxmi&quot;</span>, <span class="tok-str">&quot;Manisha&quot;</span>, <span class="tok-str">&quot;Nabin&quot;</span>, <span class="tok-str">&quot;Nikita&quot;</span>, <span class="tok-str">&quot;Niraj&quot;</span>, <span class="tok-str">&quot;Nischal&quot;</span>, <span class="tok-str">&quot;Padam&quot;</span>, <span class="tok-str">&quot;Pooja&quot;</span>, <span class="tok-str">&quot;Prabin&quot;</span>, <span class="tok-str">&quot;Prakash&quot;</span>, <span class="tok-str">&quot;Prashant&quot;</span>, <span class="tok-str">&quot;Prem&quot;</span>, <span class="tok-str">&quot;Purna&quot;</span>, <span class="tok-str">&quot;Rajendra&quot;</span>, <span class="tok-str">&quot;Rajina&quot;</span>, <span class="tok-str">&quot;Raju&quot;</span>, <span class="tok-str">&quot;Rakesh&quot;</span>, <span class="tok-str">&quot;Ranjan&quot;</span>, <span class="tok-str">&quot;Ratna&quot;</span>, <span class="tok-str">&quot;Sagar&quot;</span>, <span class="tok-str">&quot;Sandeep&quot;</span>, <span class="tok-str">&quot;Sanjay&quot;</span>, <span class="tok-str">&quot;Santosh&quot;</span>, <span class="tok-str">&quot;Sarita&quot;</span>, <span class="tok-str">&quot;Shilpa&quot;</span>, <span class="tok-str">&quot;Shirisha&quot;</span>, <span class="tok-str">&quot;Shristi&quot;</span>, <span class="tok-str">&quot;Siddhartha&quot;</span>, <span class="tok-str">&quot;Subash&quot;</span>, <span class="tok-str">&quot;Sumeet&quot;</span>, <span class="tok-str">&quot;Sunita&quot;</span>, <span class="tok-str">&quot;Suraj&quot;</span>, <span class="tok-str">&quot;Susan&quot;</span>, <span class="tok-str">&quot;Sushant&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Adhikari&quot;</span>, <span class="tok-str">&quot;Aryal&quot;</span>, <span class="tok-str">&quot;Baral&quot;</span>, <span class="tok-str">&quot;Basnet&quot;</span>, <span class="tok-str">&quot;Bastola&quot;</span>, <span class="tok-str">&quot;Basynat&quot;</span>, <span class="tok-str">&quot;Bhandari&quot;</span>, <span class="tok-str">&quot;Bhattarai&quot;</span>, <span class="tok-str">&quot;Chettri&quot;</span>, <span class="tok-str">&quot;Devkota&quot;</span>, <span class="tok-str">&quot;Dhakal&quot;</span>, <span class="tok-str">&quot;Dongol&quot;</span>, <span class="tok-str">&quot;Ghale&quot;</span>, <span class="tok-str">&quot;Gurung&quot;</span>, <span class="tok-str">&quot;Gyawali&quot;</span>, <span class="tok-str">&quot;Hamal&quot;</span>, <span class="tok-str">&quot;Jung&quot;</span>, <span class="tok-str">&quot;KC&quot;</span>, <span class="tok-str">&quot;Kafle&quot;</span>, <span class="tok-str">&quot;Karki&quot;</span>, <span class="tok-str">&quot;Khadka&quot;</span>, <span class="tok-str">&quot;Koirala&quot;</span>, <span class="tok-str">&quot;Lama&quot;</span>, <span class="tok-str">&quot;Limbu&quot;</span>, <span class="tok-str">&quot;Magar&quot;</span>, <span class="tok-str">&quot;Maharjan&quot;</span>, <span class="tok-str">&quot;Niroula&quot;</span>, <span class="tok-str">&quot;Pandey&quot;</span>, <span class="tok-str">&quot;Pradhan&quot;</span>, <span class="tok-str">&quot;Rana&quot;</span>, <span class="tok-str">&quot;Raut&quot;</span>, <span class="tok-str">&quot;Sai&quot;</span>, <span class="tok-str">&quot;Shai&quot;</span>, <span class="tok-str">&quot;Shakya&quot;</span>, <span class="tok-str">&quot;Sherpa&quot;</span>, <span class="tok-str">&quot;Shrestha&quot;</span>, <span class="tok-str">&quot;Subedi&quot;</span>, <span class="tok-str">&quot;Tamang&quot;</span>, <span class="tok-str">&quot;Thapa&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name_pattern = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aarav&quot;</span>, <span class="tok-str">&quot;Amit&quot;</span>, <span class="tok-str">&quot;Amrit&quot;</span>, <span class="tok-str">&quot;Arijit&quot;</span>, <span class="tok-str">&quot;Bibek&quot;</span>, <span class="tok-str">&quot;Bijay&quot;</span>, <span class="tok-str">&quot;Bikash&quot;</span>, <span class="tok-str">&quot;Bishal&quot;</span>, <span class="tok-str">&quot;Bishnu&quot;</span>, <span class="tok-str">&quot;Buddha&quot;</span>, <span class="tok-str">&quot;Dipendra&quot;</span>, <span class="tok-str">&quot;Gagan&quot;</span>, <span class="tok-str">&quot;Ganesh&quot;</span>, <span class="tok-str">&quot;Khem&quot;</span>, <span class="tok-str">&quot;Krishna&quot;</span>, <span class="tok-str">&quot;Nabin&quot;</span>, <span class="tok-str">&quot;Niraj&quot;</span>, <span class="tok-str">&quot;Nischal&quot;</span>, <span class="tok-str">&quot;Padam&quot;</span>, <span class="tok-str">&quot;Prabin&quot;</span>, <span class="tok-str">&quot;Prakash&quot;</span>, <span class="tok-str">&quot;Prashant&quot;</span>, <span class="tok-str">&quot;Prem&quot;</span>, <span class="tok-str">&quot;Purna&quot;</span>, <span class="tok-str">&quot;Rajendra&quot;</span>, <span class="tok-str">&quot;Raju&quot;</span>, <span class="tok-str">&quot;Rakesh&quot;</span>, <span class="tok-str">&quot;Ranjan&quot;</span>, <span class="tok-str">&quot;Sagar&quot;</span>, <span class="tok-str">&quot;Sandeep&quot;</span>, <span class="tok-str">&quot;Sanjay&quot;</span>, <span class="tok-str">&quot;Santosh&quot;</span>, <span class="tok-str">&quot;Siddhartha&quot;</span>, <span class="tok-str">&quot;Subash&quot;</span>, <span class="tok-str">&quot;Sumeet&quot;</span>, <span class="tok-str">&quot;Suraj&quot;</span>, <span class="tok-str">&quot;Sushant&quot;</span> };</span>
+<span class="line" id="L12"></span>
+</code></pre></body>
+</html>

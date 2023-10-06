@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\he\lorem.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> words = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;לורם&quot;</span>, <span class="tok-str">&quot;איפסום&quot;</span>, <span class="tok-str">&quot;דולור&quot;</span>, <span class="tok-str">&quot;סיט&quot;</span>, <span class="tok-str">&quot;אמט&quot;</span>, <span class="tok-str">&quot;קונסקטורר&quot;</span>, <span class="tok-str">&quot;אדיפיסינג&quot;</span>, <span class="tok-str">&quot;אלית&quot;</span>, <span class="tok-str">&quot;צש&quot;</span>, <span class="tok-str">&quot;בליא&quot;</span>, <span class="tok-str">&quot;מנסוטו&quot;</span>, <span class="tok-str">&quot;צמלח&quot;</span>, <span class="tok-str">&quot;לביקו&quot;</span>, <span class="tok-str">&quot;ננבי&quot;</span>, <span class="tok-str">&quot;צמוקו&quot;</span>, <span class="tok-str">&quot;בלוקריה&quot;</span>, <span class="tok-str">&quot;שיצמה&quot;</span>, <span class="tok-str">&quot;ברורק&quot;</span>, <span class="tok-str">&quot;נולום&quot;</span>, <span class="tok-str">&quot;ארווס&quot;</span>, <span class="tok-str">&quot;סאפיאן&quot;</span>, <span class="tok-str">&quot;פוסיליס&quot;</span>, <span class="tok-str">&quot;קוויס&quot;</span>, <span class="tok-str">&quot;אקווזמן&quot;</span>, <span class="tok-str">&quot;קוואזי&quot;</span>, <span class="tok-str">&quot;במר&quot;</span>, <span class="tok-str">&quot;מודוף&quot;</span>, <span class="tok-str">&quot;אודיפו&quot;</span>, <span class="tok-str">&quot;בלאסטיק&quot;</span>, <span class="tok-str">&quot;מונופץ&quot;</span>, <span class="tok-str">&quot;קליר&quot;</span>, <span class="tok-str">&quot;בנפת&quot;</span>, <span class="tok-str">&quot;נפקט&quot;</span>, <span class="tok-str">&quot;למסון&quot;</span>, <span class="tok-str">&quot;בלרק&quot;</span>, <span class="tok-str">&quot;וענוף&quot;</span>, <span class="tok-str">&quot;לפרומי&quot;</span>, <span class="tok-str">&quot;בלוף&quot;</span>, <span class="tok-str">&quot;קינץ&quot;</span>, <span class="tok-str">&quot;תתיח&quot;</span>, <span class="tok-str">&quot;לרעח&quot;</span>, <span class="tok-str">&quot;לת&quot;</span>, <span class="tok-str">&quot;צשחמי&quot;</span>, <span class="tok-str">&quot;סחטיר&quot;</span>, <span class="tok-str">&quot;בלובק&quot;</span>, <span class="tok-str">&quot;תצטנפל&quot;</span>, <span class="tok-str">&quot;בלינדו&quot;</span>, <span class="tok-str">&quot;למרקל&quot;</span>, <span class="tok-str">&quot;אס&quot;</span>, <span class="tok-str">&quot;לכימפו&quot;</span>, <span class="tok-str">&quot;דול&quot;</span>, <span class="tok-str">&quot;צוט&quot;</span>, <span class="tok-str">&quot;ומעיוט&quot;</span>, <span class="tok-str">&quot;לפתיעם&quot;</span>, <span class="tok-str">&quot;ברשג&quot;</span>, <span class="tok-str">&quot;ולתיעם&quot;</span>, <span class="tok-str">&quot;גדדיש&quot;</span>, <span class="tok-str">&quot;קוויז&quot;</span>, <span class="tok-str">&quot;דומור&quot;</span>, <span class="tok-str">&quot;ליאמום&quot;</span>, <span class="tok-str">&quot;בלינך&quot;</span>, <span class="tok-str">&quot;רוגצה&quot;</span>, <span class="tok-str">&quot;לפמעט&quot;</span>, <span class="tok-str">&quot;מוסן&quot;</span>, <span class="tok-str">&quot;מנת&quot;</span>, <span class="tok-str">&quot;הועניב&quot;</span>, <span class="tok-str">&quot;היושבב&quot;</span>, <span class="tok-str">&quot;שערש&quot;</span>, <span class="tok-str">&quot;שמחויט&quot;</span>, <span class="tok-str">&quot;שלושע&quot;</span>, <span class="tok-str">&quot;ותלברו&quot;</span>, <span class="tok-str">&quot;חשלו&quot;</span>, <span class="tok-str">&quot;שעותלשך&quot;</span>, <span class="tok-str">&quot;וחאית&quot;</span>, <span class="tok-str">&quot;נובש&quot;</span>, <span class="tok-str">&quot;ערששף&quot;</span>, <span class="tok-str">&quot;זותה&quot;</span>, <span class="tok-str">&quot;מנק&quot;</span>, <span class="tok-str">&quot;הבקיץ&quot;</span>, <span class="tok-str">&quot;אפאח&quot;</span>, <span class="tok-str">&quot;דלאמת&quot;</span>, <span class="tok-str">&quot;יבש&quot;</span>, <span class="tok-str">&quot;כאנה&quot;</span>, <span class="tok-str">&quot;ניצאחו&quot;</span>, <span class="tok-str">&quot;נמרגי&quot;</span>, <span class="tok-str">&quot;שהכים&quot;</span>, <span class="tok-str">&quot;תוק&quot;</span>, <span class="tok-str">&quot;הדש&quot;</span>, <span class="tok-str">&quot;שנרא&quot;</span>, <span class="tok-str">&quot;התידם&quot;</span>, <span class="tok-str">&quot;הכייר&quot;</span>, <span class="tok-str">&quot;וק&quot;</span>, <span class="tok-str">&quot;קולהע&quot;</span>, <span class="tok-str">&quot;צופעט&quot;</span>, <span class="tok-str">&quot;למרקוח&quot;</span>, <span class="tok-str">&quot;איבן&quot;</span>, <span class="tok-str">&quot;איף&quot;</span>, <span class="tok-str">&quot;ברומץ&quot;</span>, <span class="tok-str">&quot;כלרשט&quot;</span>, <span class="tok-str">&quot;מיחוצים&quot;</span>, <span class="tok-str">&quot;קלאצי&quot;</span>, <span class="tok-str">&quot;&quot;</span>, <span class="tok-str">&quot;סת&quot;</span>, <span class="tok-str">&quot;אלמנקום&quot;</span>, <span class="tok-str">&quot;ניסי&quot;</span>, <span class="tok-str">&quot;נון&quot;</span>, <span class="tok-str">&quot;ניבאה&quot;</span>, <span class="tok-str">&quot;דס&quot;</span>, <span class="tok-str">&quot;איאקוליס&quot;</span>, <span class="tok-str">&quot;וולופטה&quot;</span>, <span class="tok-str">&quot;דיאם&quot;</span>, <span class="tok-str">&quot;וסטיבולום&quot;</span>, <span class="tok-str">&quot;אט&quot;</span>, <span class="tok-str">&quot;קראס&quot;</span>, <span class="tok-str">&quot;אגת&quot;</span>, <span class="tok-str">&quot;לקטוס&quot;</span>, <span class="tok-str">&quot;וואל&quot;</span>, <span class="tok-str">&quot;אאוגו&quot;</span>, <span class="tok-str">&quot;סוליסי&quot;</span>, <span class="tok-str">&quot;טידום&quot;</span>, <span class="tok-str">&quot;בעליק&quot;</span>, <span class="tok-str">&quot;קונדימנטום&quot;</span>, <span class="tok-str">&quot;קורוס&quot;</span>, <span class="tok-str">&quot;בליקרה&quot;</span>, <span class="tok-str">&quot;נונסטי&quot;</span>, <span class="tok-str">&quot;קלובר&quot;</span>, <span class="tok-str">&quot;בריקנה&quot;</span>, <span class="tok-str">&quot;סטום&quot;</span>, <span class="tok-str">&quot;לפריקך&quot;</span>, <span class="tok-str">&quot;תצטריק&quot;</span>, <span class="tok-str">&quot;לרטי&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

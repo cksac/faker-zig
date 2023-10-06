@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en_GH\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;###&quot;</span>, <span class="tok-str">&quot;##&quot;</span>, <span class="tok-str">&quot;#&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Goaso&quot;</span>, <span class="tok-str">&quot;Hwidiem&quot;</span>, <span class="tok-str">&quot;Kenyasi&quot;</span>, <span class="tok-str">&quot;Kukuom&quot;</span>, <span class="tok-str">&quot;Abrepo Junction&quot;</span>, <span class="tok-str">&quot;Abuakwa&quot;</span>, <span class="tok-str">&quot;Adum&quot;</span>, <span class="tok-str">&quot;Afrancho&quot;</span>, <span class="tok-str">&quot;Agogo&quot;</span>, <span class="tok-str">&quot;Agona&quot;</span>, <span class="tok-str">&quot;Ahodwo&quot;</span>, <span class="tok-str">&quot;Airport&quot;</span>, <span class="tok-str">&quot;Akumadan&quot;</span>, <span class="tok-str">&quot;Amakom&quot;</span>, <span class="tok-str">&quot;Aputuogya&quot;</span>, <span class="tok-str">&quot;Asafo&quot;</span>, <span class="tok-str">&quot;Ash-Town&quot;</span>, <span class="tok-str">&quot;Asokore Mampong&quot;</span>, <span class="tok-str">&quot;Asokwa&quot;</span>, <span class="tok-str">&quot;Asuofia&quot;</span>, <span class="tok-str">&quot;Atonsu&quot;</span>, <span class="tok-str">&quot;Ayeduasi&quot;</span>, <span class="tok-str">&quot;Ayigya&quot;</span>, <span class="tok-str">&quot;Bantama&quot;</span>, <span class="tok-str">&quot;Barekese&quot;</span>, <span class="tok-str">&quot;Bekwai&quot;</span>, <span class="tok-str">&quot;Boadi&quot;</span>, <span class="tok-str">&quot;Bomso&quot;</span>, <span class="tok-str">&quot;Breman&quot;</span>, <span class="tok-str">&quot;Brewery&quot;</span>, <span class="tok-str">&quot;Buoho&quot;</span>, <span class="tok-str">&quot;Buokrom Estate&quot;</span>, <span class="tok-str">&quot;Daban&quot;</span>, <span class="tok-str">&quot;Dakwadwom&quot;</span>, <span class="tok-str">&quot;Deduako&quot;</span>, <span class="tok-str">&quot;Denyame&quot;</span>, <span class="tok-str">&quot;Effiduase&quot;</span>, <span class="tok-str">&quot;Ejisu&quot;</span>, <span class="tok-str">&quot;Ejura&quot;</span>, <span class="tok-str">&quot;Emina&quot;</span>, <span class="tok-str">&quot;Esreso&quot;</span>, <span class="tok-str">&quot;Fawode&quot;</span>, <span class="tok-str">&quot;Gyinyasi&quot;</span>, <span class="tok-str">&quot;Jachie Pramso&quot;</span>, <span class="tok-str">&quot;Kaasi&quot;</span>, <span class="tok-str">&quot;KNUST&quot;</span>, <span class="tok-str">&quot;Kodie&quot;</span>, <span class="tok-str">&quot;Komfo Anokye&quot;</span>, <span class="tok-str">&quot;Konongo&quot;</span>, <span class="tok-str">&quot;Kotei&quot;</span>, <span class="tok-str">&quot;Krofrom&quot;</span>, <span class="tok-str">&quot;Kumasi&quot;</span>, <span class="tok-str">&quot;Maakro&quot;</span>, <span class="tok-str">&quot;Mampong&quot;</span>, <span class="tok-str">&quot;Mankranso&quot;</span>, <span class="tok-str">&quot;Manso Nkwanta&quot;</span>, <span class="tok-str">&quot;Nkawie&quot;</span>, <span class="tok-str">&quot;North Suntreso&quot;</span>, <span class="tok-str">&quot;Nyinahin&quot;</span>, <span class="tok-str">&quot;Obuasi&quot;</span>, <span class="tok-str">&quot;Oforikrom&quot;</span>, <span class="tok-str">&quot;Pankrono&quot;</span>, <span class="tok-str">&quot;Santasi&quot;</span>, <span class="tok-str">&quot;Sokoban&quot;</span>, <span class="tok-str">&quot;South Suntreso&quot;</span>, <span class="tok-str">&quot;Suame&quot;</span>, <span class="tok-str">&quot;Tafo&quot;</span>, <span class="tok-str">&quot;Takwa-Maakro&quot;</span>, <span class="tok-str">&quot;Tanoso&quot;</span>, <span class="tok-str">&quot;Tepa&quot;</span>, <span class="tok-str">&quot;TUC&quot;</span>, <span class="tok-str">&quot;Banda Ahenkro&quot;</span>, <span class="tok-str">&quot;Brekum&quot;</span>, <span class="tok-str">&quot;Dormaa Ahenkro&quot;</span>, <span class="tok-str">&quot;New Drobo&quot;</span>, <span class="tok-str">&quot;Nsawkaw&quot;</span>, <span class="tok-str">&quot;Sampa&quot;</span>, <span class="tok-str">&quot;Sunyani&quot;</span>, <span class="tok-str">&quot;Atebubu&quot;</span>, <span class="tok-str">&quot;Buipe&quot;</span>, <span class="tok-str">&quot;Jema&quot;</span>, <span class="tok-str">&quot;Kintampo&quot;</span>, <span class="tok-str">&quot;Kwame Danso&quot;</span>, <span class="tok-str">&quot;Nkoranza&quot;</span>, <span class="tok-str">&quot;Prang&quot;</span>, <span class="tok-str">&quot;Techiman&quot;</span>, <span class="tok-str">&quot;Wenchi&quot;</span>, <span class="tok-str">&quot;Yeji&quot;</span>, <span class="tok-str">&quot;Agona Swedru&quot;</span>, <span class="tok-str">&quot;Amanfrom&quot;</span>, <span class="tok-str">&quot;Anomabu&quot;</span>, <span class="tok-str">&quot;Apam&quot;</span>, <span class="tok-str">&quot;Bawjiase&quot;</span>, <span class="tok-str">&quot;Breman Asikuma&quot;</span>, <span class="tok-str">&quot;Budumburam&quot;</span>, <span class="tok-str">&quot;Cape Coast&quot;</span>, <span class="tok-str">&quot;Domeabra&quot;</span>, <span class="tok-str">&quot;Elmina&quot;</span>, <span class="tok-str">&quot;Foso&quot;</span>, <span class="tok-str">&quot;Kasoa Ofaakor&quot;</span>, <span class="tok-str">&quot;Kasoa Zongo&quot;</span>, <span class="tok-str">&quot;Liberia Camp&quot;</span>, <span class="tok-str">&quot;Mankessim&quot;</span>, <span class="tok-str">&quot;Millennium City&quot;</span>, <span class="tok-str">&quot;Mumford&quot;</span>, <span class="tok-str">&quot;Nyakrom&quot;</span>, <span class="tok-str">&quot;Nyananor&quot;</span>, <span class="tok-str">&quot;Nyanyano&quot;</span>, <span class="tok-str">&quot;Oduponkpehe&quot;</span>, <span class="tok-str">&quot;Opeikuma&quot;</span>, <span class="tok-str">&quot;Pentecost Seminary&quot;</span>, <span class="tok-str">&quot;Saltpond&quot;</span>, <span class="tok-str">&quot;Winneba&quot;</span>, <span class="tok-str">&quot;Abetifi&quot;</span>, <span class="tok-str">&quot;Abompe&quot;</span>, <span class="tok-str">&quot;Aburi&quot;</span>, <span class="tok-str">&quot;Adeiso&quot;</span>, <span class="tok-str">&quot;Adjeiikrom&quot;</span>, <span class="tok-str">&quot;Adukrom&quot;</span>, <span class="tok-str">&quot;Ahwerease&quot;</span>, <span class="tok-str">&quot;Akim Oda&quot;</span>, <span class="tok-str">&quot;Akim Swedru&quot;</span>, <span class="tok-str">&quot;Akosombo&quot;</span>, <span class="tok-str">&quot;Akropong&quot;</span>, <span class="tok-str">&quot;Akwatia&quot;</span>, <span class="tok-str">&quot;Akyem Hemang&quot;</span>, <span class="tok-str">&quot;Amanokrom&quot;</span>, <span class="tok-str">&quot;Apirede&quot;</span>, <span class="tok-str">&quot;Asamankese&quot;</span>, <span class="tok-str">&quot;Asesewa&quot;</span>, <span class="tok-str">&quot;Atimpoku&quot;</span>, <span class="tok-str">&quot;Ayiensu&quot;</span>, <span class="tok-str">&quot;Begoro&quot;</span>, <span class="tok-str">&quot;Bepoase&quot;</span>, <span class="tok-str">&quot;Bisibom&quot;</span>, <span class="tok-str">&quot;Bososo&quot;</span>, <span class="tok-str">&quot;Brekusu&quot;</span>, <span class="tok-str">&quot;Coaltar&quot;</span>, <span class="tok-str">&quot;Dawu&quot;</span>, <span class="tok-str">&quot;Dedesoworako&quot;</span>, <span class="tok-str">&quot;Donkorkrom&quot;</span>, <span class="tok-str">&quot;Dwenase&quot;</span>, <span class="tok-str">&quot;Gyankama&quot;</span>, <span class="tok-str">&quot;Juaso&quot;</span>, <span class="tok-str">&quot;Kade&quot;</span>, <span class="tok-str">&quot;Kibi&quot;</span>, <span class="tok-str">&quot;Kitase&quot;</span>, <span class="tok-str">&quot;Koforidua&quot;</span>, <span class="tok-str">&quot;Kwabeng&quot;</span>, <span class="tok-str">&quot;Mamfe&quot;</span>, <span class="tok-str">&quot;Mpraeso&quot;</span>, <span class="tok-str">&quot;New Abirem&quot;</span>, <span class="tok-str">&quot;Nkawkaw&quot;</span>, <span class="tok-str">&quot;Nsawam&quot;</span>, <span class="tok-str">&quot;Nsutam&quot;</span>, <span class="tok-str">&quot;Obooho&quot;</span>, <span class="tok-str">&quot;Obosomase&quot;</span>, <span class="tok-str">&quot;Odumase Krobo&quot;</span>, <span class="tok-str">&quot;Ofoase&quot;</span>, <span class="tok-str">&quot;Osino&quot;</span>, <span class="tok-str">&quot;Peduase&quot;</span>, <span class="tok-str">&quot;Saaman&quot;</span>, <span class="tok-str">&quot;Somanya&quot;</span>, <span class="tok-str">&quot;Summer&quot;</span>, <span class="tok-str">&quot;Suhum&quot;</span>, <span class="tok-str">&quot;Tease&quot;</span>, <span class="tok-str">&quot;Tutu&quot;</span>, <span class="tok-str">&quot;Abelemkpe&quot;</span>, <span class="tok-str">&quot;Ablekuma&quot;</span>, <span class="tok-str">&quot;Abokobi&quot;</span>, <span class="tok-str">&quot;Abossey Okai&quot;</span>, <span class="tok-str">&quot;Accra Newtown&quot;</span>, <span class="tok-str">&quot;Achimota&quot;</span>, <span class="tok-str">&quot;Adabraka&quot;</span>, <span class="tok-str">&quot;Adenta&quot;</span>, <span class="tok-str">&quot;Afienya&quot;</span>, <span class="tok-str">&quot;Agbogba&quot;</span>, <span class="tok-str">&quot;Amasaman&quot;</span>, <span class="tok-str">&quot;Ashiaman&quot;</span>, <span class="tok-str">&quot;Ashongman&quot;</span>, <span class="tok-str">&quot;Aslyum Down&quot;</span>, <span class="tok-str">&quot;Baatsona - Spintex&quot;</span>, <span class="tok-str">&quot;Bortianor&quot;</span>, <span class="tok-str">&quot;Cantonment&quot;</span>, <span class="tok-str">&quot;Dansoman&quot;</span>, <span class="tok-str">&quot;Darkuman&quot;</span>, <span class="tok-str">&quot;Dawhenya&quot;</span>, <span class="tok-str">&quot;Dodowa&quot;</span>, <span class="tok-str">&quot;Dome&quot;</span>, <span class="tok-str">&quot;Dzorwulu&quot;</span>, <span class="tok-str">&quot;East Legon&quot;</span>, <span class="tok-str">&quot;Gbawe&quot;</span>, <span class="tok-str">&quot;Haatso&quot;</span>, <span class="tok-str">&quot;James Town&quot;</span>, <span class="tok-str">&quot;Kanda&quot;</span>, <span class="tok-str">&quot;Kaneshie&quot;</span>, <span class="tok-str">&quot;Kasoa&quot;</span>, <span class="tok-str">&quot;Kissieman&quot;</span>, <span class="tok-str">&quot;Kokrobite&quot;</span>, <span class="tok-str">&quot;Korle Bu&quot;</span>, <span class="tok-str">&quot;Kpone&quot;</span>, <span class="tok-str">&quot;Kwabenya&quot;</span>, <span class="tok-str">&quot;Kwashieman&quot;</span>, <span class="tok-str">&quot;Labadi&quot;</span>, <span class="tok-str">&quot;Labone&quot;</span>, <span class="tok-str">&quot;Lapaz&quot;</span>, <span class="tok-str">&quot;Lartebiokorshie&quot;</span>, <span class="tok-str">&quot;Lashibi&quot;</span>, <span class="tok-str">&quot;Legon&quot;</span>, <span class="tok-str">&quot;Madina&quot;</span>, <span class="tok-str">&quot;Makola&quot;</span>, <span class="tok-str">&quot;Mallam&quot;</span>, <span class="tok-str">&quot;McCarthy Hill&quot;</span>, <span class="tok-str">&quot;Michel Camp&quot;</span>, <span class="tok-str">&quot;Nima&quot;</span>, <span class="tok-str">&quot;Nungua&quot;</span>, <span class="tok-str">&quot;Oblogo Mallam&quot;</span>, <span class="tok-str">&quot;Odoponkpehe&quot;</span>, <span class="tok-str">&quot;Odorkor&quot;</span>, <span class="tok-str">&quot;Osu&quot;</span>, <span class="tok-str">&quot;Oyarifa&quot;</span>, <span class="tok-str">&quot;Patang&quot;</span>, <span class="tok-str">&quot;Prampram&quot;</span>, <span class="tok-str">&quot;Ridge&quot;</span>, <span class="tok-str">&quot;Roman Ridge&quot;</span>, <span class="tok-str">&quot;Sakumono&quot;</span>, <span class="tok-str">&quot;Santa Maria&quot;</span>, <span class="tok-str">&quot;Sowutuom&quot;</span>, <span class="tok-str">&quot;Taifa&quot;</span>, <span class="tok-str">&quot;Tema&quot;</span>, <span class="tok-str">&quot;Tema New Town&quot;</span>, <span class="tok-str">&quot;Tesano&quot;</span>, <span class="tok-str">&quot;Teshie&quot;</span>, <span class="tok-str">&quot;Tetegu&quot;</span>, <span class="tok-str">&quot;Tieman&quot;</span>, <span class="tok-str">&quot;Tudu&quot;</span>, <span class="tok-str">&quot;Weija&quot;</span>, <span class="tok-str">&quot;Westhills&quot;</span>, <span class="tok-str">&quot;Chinderi&quot;</span>, <span class="tok-str">&quot;Jasikan&quot;</span>, <span class="tok-str">&quot;Kadjebi&quot;</span>, <span class="tok-str">&quot;Kete Krachi&quot;</span>, <span class="tok-str">&quot;Kpassa&quot;</span>, <span class="tok-str">&quot;Nkonya&quot;</span>, <span class="tok-str">&quot;Bole&quot;</span>, <span class="tok-str">&quot;Damango&quot;</span>, <span class="tok-str">&quot;Salaga&quot;</span>, <span class="tok-str">&quot;Sawla&quot;</span>, <span class="tok-str">&quot;Tolon&quot;</span>, <span class="tok-str">&quot;Bawku&quot;</span>, <span class="tok-str">&quot;Bolgatanga&quot;</span>, <span class="tok-str">&quot;Bongo&quot;</span>, <span class="tok-str">&quot;Navrongo&quot;</span>, <span class="tok-str">&quot;Paga&quot;</span>, <span class="tok-str">&quot;Tongo&quot;</span>, <span class="tok-str">&quot;Funsi&quot;</span>, <span class="tok-str">&quot;Gwollu&quot;</span>, <span class="tok-str">&quot;Issa&quot;</span>, <span class="tok-str">&quot;Jirapa&quot;</span>, <span class="tok-str">&quot;Kaleo&quot;</span>, <span class="tok-str">&quot;Lambussie&quot;</span>, <span class="tok-str">&quot;Lawra&quot;</span>, <span class="tok-str">&quot;Nadowli&quot;</span>, <span class="tok-str">&quot;Nandom&quot;</span>, <span class="tok-str">&quot;Tumu&quot;</span>, <span class="tok-str">&quot;Wa&quot;</span>, <span class="tok-str">&quot;Wechiau&quot;</span>, <span class="tok-str">&quot;Adaklu Waya&quot;</span>, <span class="tok-str">&quot;Adidome&quot;</span>, <span class="tok-str">&quot;Aflao&quot;</span>, <span class="tok-str">&quot;Akatsi&quot;</span>, <span class="tok-str">&quot;Ave Dakpa&quot;</span>, <span class="tok-str">&quot;Ho.&quot;</span>, <span class="tok-str">&quot;Hohoe&quot;</span>, <span class="tok-str">&quot;Keta&quot;</span>, <span class="tok-str">&quot;Kpando&quot;</span>, <span class="tok-str">&quot;Kpetoe&quot;</span>, <span class="tok-str">&quot;Kpeve&quot;</span>, <span class="tok-str">&quot;Sogakope&quot;</span>, <span class="tok-str">&quot;Abase&quot;</span>, <span class="tok-str">&quot;Aboso&quot;</span>, <span class="tok-str">&quot;Adiawoso&quot;</span>, <span class="tok-str">&quot;Adiembra&quot;</span>, <span class="tok-str">&quot;Adwowa&quot;</span>, <span class="tok-str">&quot;Agona Nkwanta&quot;</span>, <span class="tok-str">&quot;Agufo&quot;</span>, <span class="tok-str">&quot;Ahonozo&quot;</span>, <span class="tok-str">&quot;Akatachi&quot;</span>, <span class="tok-str">&quot;Alabokazo&quot;</span>, <span class="tok-str">&quot;Anaji&quot;</span>, <span class="tok-str">&quot;Apowa&quot;</span>, <span class="tok-str">&quot;Apremodo&quot;</span>, <span class="tok-str">&quot;Asankragua&quot;</span>, <span class="tok-str">&quot;Awukyere&quot;</span>, <span class="tok-str">&quot;Axim&quot;</span>, <span class="tok-str">&quot;Beahu&quot;</span>, <span class="tok-str">&quot;Bogoso&quot;</span>, <span class="tok-str">&quot;Busua&quot;</span>, <span class="tok-str">&quot;Daboase&quot;</span>, <span class="tok-str">&quot;Dadwen&quot;</span>, <span class="tok-str">&quot;Diabene&quot;</span>, <span class="tok-str">&quot;Dixcove&quot;</span>, <span class="tok-str">&quot;East Tanokrom&quot;</span>, <span class="tok-str">&quot;Effiakuma&quot;</span>, <span class="tok-str">&quot;Eikwe&quot;</span>, <span class="tok-str">&quot;Elubo&quot;</span>, <span class="tok-str">&quot;Essiama&quot;</span>, <span class="tok-str">&quot;Essikado&quot;</span>, <span class="tok-str">&quot;Essipong&quot;</span>, <span class="tok-str">&quot;Ewusiejo&quot;</span>, <span class="tok-str">&quot;Fijai&quot;</span>, <span class="tok-str">&quot;Funko&quot;</span>, <span class="tok-str">&quot;Half Assini&quot;</span>, <span class="tok-str">&quot;Hotopo&quot;</span>, <span class="tok-str">&quot;Inchaban&quot;</span>, <span class="tok-str">&quot;kansaworado&quot;</span>, <span class="tok-str">&quot;Kejabil&quot;</span>, <span class="tok-str">&quot;Kojokrom&quot;</span>, <span class="tok-str">&quot;Kwawkrom&quot;</span>, <span class="tok-str">&quot;Kweikuma&quot;</span>, <span class="tok-str">&quot;kwesimintsim&quot;</span>, <span class="tok-str">&quot;Manso&quot;</span>, <span class="tok-str">&quot;Miemia&quot;</span>, <span class="tok-str">&quot;Mpintsin&quot;</span>, <span class="tok-str">&quot;New Akwidaa&quot;</span>, <span class="tok-str">&quot;New Amanfu&quot;</span>, <span class="tok-str">&quot;New Takoradi&quot;</span>, <span class="tok-str">&quot;Ngyiresia&quot;</span>, <span class="tok-str">&quot;Nkroful&quot;</span>, <span class="tok-str">&quot;Nsein&quot;</span>, <span class="tok-str">&quot;Ntankoful&quot;</span>, <span class="tok-str">&quot;Nzulezo&quot;</span>, <span class="tok-str">&quot;Old Akwidaa&quot;</span>, <span class="tok-str">&quot;Prestea&quot;</span>, <span class="tok-str">&quot;Princess Town&quot;</span>, <span class="tok-str">&quot;Samreboi&quot;</span>, <span class="tok-str">&quot;Sekondi&quot;</span>, <span class="tok-str">&quot;Shama&quot;</span>, <span class="tok-str">&quot;Takoradi&quot;</span>, <span class="tok-str">&quot;Tarkwa&quot;</span>, <span class="tok-str">&quot;Tikobo No.1&quot;</span>, <span class="tok-str">&quot;Tikobo No.2&quot;</span>, <span class="tok-str">&quot;West Tanokrom&quot;</span>, <span class="tok-str">&quot;Windy Ridge&quot;</span>, <span class="tok-str">&quot;Akontombra&quot;</span>, <span class="tok-str">&quot;Bibiani&quot;</span>, <span class="tok-str">&quot;Dadieso&quot;</span>, <span class="tok-str">&quot;Enchi&quot;</span>, <span class="tok-str">&quot;Juaboso&quot;</span>, <span class="tok-str">&quot;Sewhi Anhwiaso&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_name}}&quot;</span>};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Ghana&quot;</span>};</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;??-###-####&quot;</span>, <span class="tok-str">&quot;??-####-####&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Ashanti&quot;</span>, <span class="tok-str">&quot;Brong Ahafo&quot;</span>, <span class="tok-str">&quot;Bono East&quot;</span>, <span class="tok-str">&quot;Ahafo&quot;</span>, <span class="tok-str">&quot;Central&quot;</span>, <span class="tok-str">&quot;Eastern&quot;</span>, <span class="tok-str">&quot;Greater Accra&quot;</span>, <span class="tok-str">&quot;Northern&quot;</span>, <span class="tok-str">&quot;Savannah&quot;</span>, <span class="tok-str">&quot;North East&quot;</span>, <span class="tok-str">&quot;Upper East&quot;</span>, <span class="tok-str">&quot;Upper West&quot;</span>, <span class="tok-str">&quot;Volta&quot;</span>, <span class="tok-str">&quot;Oti&quot;</span>, <span class="tok-str">&quot;Western&quot;</span>, <span class="tok-str">&quot;Western North&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.buildingNumber}} {{location.street}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.buildingNumber}} {{location.street}} {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.last_name}} {{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.street_prefix}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Boame&quot;</span>};</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Link&quot;</span>, <span class="tok-str">&quot;Lane&quot;</span>, <span class="tok-str">&quot;Road&quot;</span>, <span class="tok-str">&quot;Street&quot;</span>, <span class="tok-str">&quot;Lk&quot;</span>, <span class="tok-str">&quot;Ln&quot;</span>, <span class="tok-str">&quot;Rd&quot;</span>, <span class="tok-str">&quot;St&quot;</span> };</span>
+<span class="line" id="L20"></span>
+</code></pre></body>
+</html>

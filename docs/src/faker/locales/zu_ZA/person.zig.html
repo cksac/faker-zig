@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\zu_ZA\person.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> NamePattern = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/person.zig&quot;</span>).NamePattern;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Amahle&quot;</span>, <span class="tok-str">&quot;Ayanda&quot;</span>, <span class="tok-str">&quot;Ayize&quot;</span>, <span class="tok-str">&quot;Buhle&quot;</span>, <span class="tok-str">&quot;Busisiwe&quot;</span>, <span class="tok-str">&quot;Duduzile&quot;</span>, <span class="tok-str">&quot;Hlengiwe&quot;</span>, <span class="tok-str">&quot;Inyoni&quot;</span>, <span class="tok-str">&quot;Isisa&quot;</span>, <span class="tok-str">&quot;Jabulile&quot;</span>, <span class="tok-str">&quot;Khanyisile&quot;</span>, <span class="tok-str">&quot;Khethiwe&quot;</span>, <span class="tok-str">&quot;Khulekani&quot;</span>, <span class="tok-str">&quot;Lerato&quot;</span>, <span class="tok-str">&quot;Liyana&quot;</span>, <span class="tok-str">&quot;Lukhona&quot;</span>, <span class="tok-str">&quot;Mbalienhle&quot;</span>, <span class="tok-str">&quot;Mhambi&quot;</span>, <span class="tok-str">&quot;Mthunzi&quot;</span>, <span class="tok-str">&quot;Nandi&quot;</span>, <span class="tok-str">&quot;Ndondoloza&quot;</span>, <span class="tok-str">&quot;Nhlakanipho&quot;</span>, <span class="tok-str">&quot;Nkosingiphile&quot;</span>, <span class="tok-str">&quot;Nofoto&quot;</span>, <span class="tok-str">&quot;Nokuthula&quot;</span>, <span class="tok-str">&quot;Nolwazi&quot;</span>, <span class="tok-str">&quot;Nomvula&quot;</span>, <span class="tok-str">&quot;Nonhlanhla&quot;</span>, <span class="tok-str">&quot;Nonjabulo&quot;</span>, <span class="tok-str">&quot;Nonkululeko&quot;</span>, <span class="tok-str">&quot;Nozipho&quot;</span>, <span class="tok-str">&quot;Ntokozo&quot;</span>, <span class="tok-str">&quot;Ntombizodwa&quot;</span>, <span class="tok-str">&quot;Samukelisiwe&quot;</span>, <span class="tok-str">&quot;Sibongile&quot;</span>, <span class="tok-str">&quot;Sindisiwe&quot;</span>, <span class="tok-str">&quot;Sinenhlanhla&quot;</span>, <span class="tok-str">&quot;Siphephelo&quot;</span>, <span class="tok-str">&quot;Sizakele&quot;</span>, <span class="tok-str">&quot;Sizani&quot;</span>, <span class="tok-str">&quot;Thabisa&quot;</span>, <span class="tok-str">&quot;Thadie&quot;</span>, <span class="tok-str">&quot;Thobeka&quot;</span>, <span class="tok-str">&quot;Thulisile&quot;</span>, <span class="tok-str">&quot;Uluthando&quot;</span>, <span class="tok-str">&quot;Ulwazi&quot;</span>, <span class="tok-str">&quot;Yibanathi&quot;</span>, <span class="tok-str">&quot;Zanele&quot;</span>, <span class="tok-str">&quot;Zobuhle&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Amahle&quot;</span>, <span class="tok-str">&quot;Anele&quot;</span>, <span class="tok-str">&quot;Ayanda&quot;</span>, <span class="tok-str">&quot;Ayize&quot;</span>, <span class="tok-str">&quot;Bafana&quot;</span>, <span class="tok-str">&quot;Bangizwe&quot;</span>, <span class="tok-str">&quot;Bhekimuzi&quot;</span>, <span class="tok-str">&quot;Bhekizizwe&quot;</span>, <span class="tok-str">&quot;Bhekumbuso&quot;</span>, <span class="tok-str">&quot;Bonginkosi&quot;</span>, <span class="tok-str">&quot;Buhle&quot;</span>, <span class="tok-str">&quot;Busisiwe&quot;</span>, <span class="tok-str">&quot;Duduzile&quot;</span>, <span class="tok-str">&quot;Dumisani&quot;</span>, <span class="tok-str">&quot;Fanyana&quot;</span>, <span class="tok-str">&quot;Funani&quot;</span>, <span class="tok-str">&quot;Gatsha&quot;</span>, <span class="tok-str">&quot;Hlengiwe&quot;</span>, <span class="tok-str">&quot;Inyoni&quot;</span>, <span class="tok-str">&quot;Isisa&quot;</span>, <span class="tok-str">&quot;Jabulile&quot;</span>, <span class="tok-str">&quot;Kagiso&quot;</span>, <span class="tok-str">&quot;Kgabu&quot;</span>, <span class="tok-str">&quot;Khanyisile&quot;</span>, <span class="tok-str">&quot;Khethiwe&quot;</span>, <span class="tok-str">&quot;Khulekani&quot;</span>, <span class="tok-str">&quot;Langa&quot;</span>, <span class="tok-str">&quot;Lerato&quot;</span>, <span class="tok-str">&quot;Linda&quot;</span>, <span class="tok-str">&quot;Liyana&quot;</span>, <span class="tok-str">&quot;Lukhona&quot;</span>, <span class="tok-str">&quot;Lungelo&quot;</span>, <span class="tok-str">&quot;Lwandle&quot;</span>, <span class="tok-str">&quot;Mandla&quot;</span>, <span class="tok-str">&quot;Maphikelela&quot;</span>, <span class="tok-str">&quot;Mbalienhle&quot;</span>, <span class="tok-str">&quot;Mhambi&quot;</span>, <span class="tok-str">&quot;Mpilo&quot;</span>, <span class="tok-str">&quot;Mpumelelo&quot;</span>, <span class="tok-str">&quot;Msizi&quot;</span>, <span class="tok-str">&quot;Mthunzi&quot;</span>, <span class="tok-str">&quot;Musawenkosi&quot;</span>, <span class="tok-str">&quot;Nandi&quot;</span>, <span class="tok-str">&quot;Ndleleni&quot;</span>, <span class="tok-str">&quot;Ndondoloza&quot;</span>, <span class="tok-str">&quot;Nhlakanipho&quot;</span>, <span class="tok-str">&quot;Nkanyezi&quot;</span>, <span class="tok-str">&quot;Nkosenye&quot;</span>, <span class="tok-str">&quot;Nkosingiphile&quot;</span>, <span class="tok-str">&quot;Nkosinhle&quot;</span>, <span class="tok-str">&quot;Nkosiyabo&quot;</span>, <span class="tok-str">&quot;Nofoto&quot;</span>, <span class="tok-str">&quot;Nokuthula&quot;</span>, <span class="tok-str">&quot;Nolwazi&quot;</span>, <span class="tok-str">&quot;Nomvula&quot;</span>, <span class="tok-str">&quot;Nonhlanhla&quot;</span>, <span class="tok-str">&quot;Nonjabulo&quot;</span>, <span class="tok-str">&quot;Nonkululeko&quot;</span>, <span class="tok-str">&quot;Nozipho&quot;</span>, <span class="tok-str">&quot;Ntokozo&quot;</span>, <span class="tok-str">&quot;Ntombizodwa&quot;</span>, <span class="tok-str">&quot;Phila&quot;</span>, <span class="tok-str">&quot;Philani&quot;</span>, <span class="tok-str">&quot;Phiwokwakhe&quot;</span>, <span class="tok-str">&quot;Samukelisiwe&quot;</span>, <span class="tok-str">&quot;Sanele&quot;</span>, <span class="tok-str">&quot;Sfiso&quot;</span>, <span class="tok-str">&quot;Shaka&quot;</span>, <span class="tok-str">&quot;Sibongile&quot;</span>, <span class="tok-str">&quot;Sibusiso&quot;</span>, <span class="tok-str">&quot;Sifiso&quot;</span>, <span class="tok-str">&quot;Sindisiwe&quot;</span>, <span class="tok-str">&quot;Sinenhlanhla&quot;</span>, <span class="tok-str">&quot;Siphephelo&quot;</span>, <span class="tok-str">&quot;Siphiwe&quot;</span>, <span class="tok-str">&quot;Sipho&quot;</span>, <span class="tok-str">&quot;Sithembiso&quot;</span>, <span class="tok-str">&quot;Siyanda&quot;</span>, <span class="tok-str">&quot;Sizakele&quot;</span>, <span class="tok-str">&quot;Sizani&quot;</span>, <span class="tok-str">&quot;Solomon&quot;</span>, <span class="tok-str">&quot;Thabisa&quot;</span>, <span class="tok-str">&quot;Thadie&quot;</span>, <span class="tok-str">&quot;Thamsanqa&quot;</span>, <span class="tok-str">&quot;Thando&quot;</span>, <span class="tok-str">&quot;Themba&quot;</span>, <span class="tok-str">&quot;Thobeka&quot;</span>, <span class="tok-str">&quot;Thulani&quot;</span>, <span class="tok-str">&quot;Thulisile&quot;</span>, <span class="tok-str">&quot;Uluthando&quot;</span>, <span class="tok-str">&quot;Ulwazi&quot;</span>, <span class="tok-str">&quot;Velaphi&quot;</span>, <span class="tok-str">&quot;Vusumuzi&quot;</span>, <span class="tok-str">&quot;Yibanathi&quot;</span>, <span class="tok-str">&quot;Zanele&quot;</span>, <span class="tok-str">&quot;Zenzele&quot;</span>, <span class="tok-str">&quot;Zithulele&quot;</span>, <span class="tok-str">&quot;Zobuhle&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Bayeni&quot;</span>, <span class="tok-str">&quot;Bengu&quot;</span>, <span class="tok-str">&quot;Bhembe&quot;</span>, <span class="tok-str">&quot;Bhengani&quot;</span>, <span class="tok-str">&quot;Bhengu&quot;</span>, <span class="tok-str">&quot;Bhuyeni&quot;</span>, <span class="tok-str">&quot;Biyela&quot;</span>, <span class="tok-str">&quot;Buthelezi&quot;</span>, <span class="tok-str">&quot;Cebekhulu&quot;</span>, <span class="tok-str">&quot;Cele&quot;</span>, <span class="tok-str">&quot;Chiliza&quot;</span>, <span class="tok-str">&quot;Delazy&quot;</span>, <span class="tok-str">&quot;Dhlomo&quot;</span>, <span class="tok-str">&quot;Dingiswayo&quot;</span>, <span class="tok-str">&quot;Dlamini&quot;</span>, <span class="tok-str">&quot;Dube&quot;</span>, <span class="tok-str">&quot;Fuze&quot;</span>, <span class="tok-str">&quot;Gabhezi&quot;</span>, <span class="tok-str">&quot;Gama&quot;</span>, <span class="tok-str">&quot;Gigaba&quot;</span>, <span class="tok-str">&quot;Guliwe&quot;</span>, <span class="tok-str">&quot;Gumede&quot;</span>, <span class="tok-str">&quot;Gwacela&quot;</span>, <span class="tok-str">&quot;Gwala&quot;</span>, <span class="tok-str">&quot;Hlongwa&quot;</span>, <span class="tok-str">&quot;Khawula&quot;</span>, <span class="tok-str">&quot;Khumalo&quot;</span>, <span class="tok-str">&quot;Khuzwayo&quot;</span>, <span class="tok-str">&quot;Kunene&quot;</span>, <span class="tok-str">&quot;Lamula&quot;</span>, <span class="tok-str">&quot;Lembede&quot;</span>, <span class="tok-str">&quot;Luthuli&quot;</span>, <span class="tok-str">&quot;Mabhida&quot;</span>, <span class="tok-str">&quot;Mabizela&quot;</span>, <span class="tok-str">&quot;Maduma&quot;</span>, <span class="tok-str">&quot;Magoza&quot;</span>, <span class="tok-str">&quot;Malinga&quot;</span>, <span class="tok-str">&quot;Maphisa&quot;</span>, <span class="tok-str">&quot;Mashinini&quot;</span>, <span class="tok-str">&quot;Mavundla&quot;</span>, <span class="tok-str">&quot;Mbatha&quot;</span>, <span class="tok-str">&quot;Mbende&quot;</span>, <span class="tok-str">&quot;Mbuso&quot;</span>, <span class="tok-str">&quot;Mehloluhlaza&quot;</span>, <span class="tok-str">&quot;Mfeka&quot;</span>, <span class="tok-str">&quot;Mfumu&quot;</span>, <span class="tok-str">&quot;Mgenge&quot;</span>, <span class="tok-str">&quot;Mkhatshwa&quot;</span>, <span class="tok-str">&quot;Moseley&quot;</span>, <span class="tok-str">&quot;Mqwebu&quot;</span>, <span class="tok-str">&quot;Msibi&quot;</span>, <span class="tok-str">&quot;Mthembu&quot;</span>, <span class="tok-str">&quot;Mthethwa&quot;</span>, <span class="tok-str">&quot;Mtolo&quot;</span>, <span class="tok-str">&quot;Musi&quot;</span>, <span class="tok-str">&quot;Ncusi&quot;</span>, <span class="tok-str">&quot;Ndandali&quot;</span>, <span class="tok-str">&quot;Ndebele&quot;</span>, <span class="tok-str">&quot;Ngcolosi&quot;</span>, <span class="tok-str">&quot;Ngema&quot;</span>, <span class="tok-str">&quot;Ngubane&quot;</span>, <span class="tok-str">&quot;Ngwazi&quot;</span>, <span class="tok-str">&quot;Nhleko&quot;</span>, <span class="tok-str">&quot;Nomvethe&quot;</span>, <span class="tok-str">&quot;Nondlela&quot;</span>, <span class="tok-str">&quot;Nonyana&quot;</span>, <span class="tok-str">&quot;Nozulu&quot;</span>, <span class="tok-str">&quot;Nsele&quot;</span>, <span class="tok-str">&quot;Ntanzi&quot;</span>, <span class="tok-str">&quot;Ntombela&quot;</span>, <span class="tok-str">&quot;Nyanda&quot;</span>, <span class="tok-str">&quot;Nzimande&quot;</span>, <span class="tok-str">&quot;Radebe&quot;</span>, <span class="tok-str">&quot;Seme&quot;</span>, <span class="tok-str">&quot;Senzangakhona&quot;</span>, <span class="tok-str">&quot;Shezi&quot;</span>, <span class="tok-str">&quot;Sibiya&quot;</span>, <span class="tok-str">&quot;Sithuli&quot;</span>, <span class="tok-str">&quot;Siwele&quot;</span>, <span class="tok-str">&quot;Siyaya&quot;</span>, <span class="tok-str">&quot;Sokhela&quot;</span>, <span class="tok-str">&quot;Sondisa&quot;</span>, <span class="tok-str">&quot;Sothole&quot;</span>, <span class="tok-str">&quot;Thoyana&quot;</span>, <span class="tok-str">&quot;Thumbeza&quot;</span>, <span class="tok-str">&quot;Thusi&quot;</span>, <span class="tok-str">&quot;Tshabalala&quot;</span>, <span class="tok-str">&quot;Vezi&quot;</span>, <span class="tok-str">&quot;Vilakazi&quot;</span>, <span class="tok-str">&quot;Wosiyane&quot;</span>, <span class="tok-str">&quot;Yengwa&quot;</span>, <span class="tok-str">&quot;Zondi&quot;</span>, <span class="tok-str">&quot;Zondo&quot;</span>, <span class="tok-str">&quot;Zubane&quot;</span>, <span class="tok-str">&quot;Zuma&quot;</span>, <span class="tok-str">&quot;Zungu&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name_pattern = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Bonginkosi&quot;</span>, <span class="tok-str">&quot;Kagiso&quot;</span>, <span class="tok-str">&quot;Bhekizizwe&quot;</span>, <span class="tok-str">&quot;Bhekumbuso&quot;</span>, <span class="tok-str">&quot;Shaka&quot;</span>, <span class="tok-str">&quot;Funani&quot;</span>, <span class="tok-str">&quot;Kgabu&quot;</span>, <span class="tok-str">&quot;Solomon&quot;</span>, <span class="tok-str">&quot;Gatsha&quot;</span>, <span class="tok-str">&quot;Langa&quot;</span>, <span class="tok-str">&quot;Phila&quot;</span>, <span class="tok-str">&quot;Msizi&quot;</span>, <span class="tok-str">&quot;Nkosiyabo&quot;</span>, <span class="tok-str">&quot;Linda&quot;</span>, <span class="tok-str">&quot;Mpilo&quot;</span>, <span class="tok-str">&quot;Siyanda&quot;</span>, <span class="tok-str">&quot;Nkanyezi&quot;</span>, <span class="tok-str">&quot;Bafana&quot;</span>, <span class="tok-str">&quot;Lwandle&quot;</span>, <span class="tok-str">&quot;Sfiso&quot;</span>, <span class="tok-str">&quot;Thulani&quot;</span>, <span class="tok-str">&quot;Thando&quot;</span>, <span class="tok-str">&quot;Sanele&quot;</span>, <span class="tok-str">&quot;Anele&quot;</span>, <span class="tok-str">&quot;Lungelo&quot;</span>, <span class="tok-str">&quot;Dumisani&quot;</span>, <span class="tok-str">&quot;Bangizwe&quot;</span>, <span class="tok-str">&quot;Fanyana&quot;</span>, <span class="tok-str">&quot;Bhekimuzi&quot;</span>, <span class="tok-str">&quot;Mandla&quot;</span>, <span class="tok-str">&quot;Maphikelela&quot;</span>, <span class="tok-str">&quot;Mpumelelo&quot;</span>, <span class="tok-str">&quot;Mthunzi&quot;</span>, <span class="tok-str">&quot;Philani&quot;</span>, <span class="tok-str">&quot;Musawenkosi&quot;</span>, <span class="tok-str">&quot;Nkosenye&quot;</span>, <span class="tok-str">&quot;Nkosinhle&quot;</span>, <span class="tok-str">&quot;Phiwokwakhe&quot;</span>, <span class="tok-str">&quot;Sifiso&quot;</span>, <span class="tok-str">&quot;Zithulele&quot;</span>, <span class="tok-str">&quot;Sithembiso&quot;</span>, <span class="tok-str">&quot;Sipho&quot;</span>, <span class="tok-str">&quot;Siphiwe&quot;</span>, <span class="tok-str">&quot;Sibusiso&quot;</span>, <span class="tok-str">&quot;Velaphi&quot;</span>, <span class="tok-str">&quot;Thamsanqa&quot;</span>, <span class="tok-str">&quot;Vusumuzi&quot;</span>, <span class="tok-str">&quot;Themba&quot;</span>, <span class="tok-str">&quot;Zenzele&quot;</span>, <span class="tok-str">&quot;Ndleleni&quot;</span> };</span>
+<span class="line" id="L12"></span>
+</code></pre></body>
+</html>

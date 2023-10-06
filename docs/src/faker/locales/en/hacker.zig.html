@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en\hacker.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;auxiliary&quot;</span>, <span class="tok-str">&quot;primary&quot;</span>, <span class="tok-str">&quot;back-end&quot;</span>, <span class="tok-str">&quot;digital&quot;</span>, <span class="tok-str">&quot;open-source&quot;</span>, <span class="tok-str">&quot;virtual&quot;</span>, <span class="tok-str">&quot;cross-platform&quot;</span>, <span class="tok-str">&quot;redundant&quot;</span>, <span class="tok-str">&quot;online&quot;</span>, <span class="tok-str">&quot;haptic&quot;</span>, <span class="tok-str">&quot;multi-byte&quot;</span>, <span class="tok-str">&quot;bluetooth&quot;</span>, <span class="tok-str">&quot;wireless&quot;</span>, <span class="tok-str">&quot;1080p&quot;</span>, <span class="tok-str">&quot;neural&quot;</span>, <span class="tok-str">&quot;optical&quot;</span>, <span class="tok-str">&quot;solid state&quot;</span>, <span class="tok-str">&quot;mobile&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ingverb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;backing up&quot;</span>, <span class="tok-str">&quot;bypassing&quot;</span>, <span class="tok-str">&quot;hacking&quot;</span>, <span class="tok-str">&quot;overriding&quot;</span>, <span class="tok-str">&quot;compressing&quot;</span>, <span class="tok-str">&quot;copying&quot;</span>, <span class="tok-str">&quot;navigating&quot;</span>, <span class="tok-str">&quot;indexing&quot;</span>, <span class="tok-str">&quot;connecting&quot;</span>, <span class="tok-str">&quot;generating&quot;</span>, <span class="tok-str">&quot;quantifying&quot;</span>, <span class="tok-str">&quot;calculating&quot;</span>, <span class="tok-str">&quot;synthesizing&quot;</span>, <span class="tok-str">&quot;transmitting&quot;</span>, <span class="tok-str">&quot;programming&quot;</span>, <span class="tok-str">&quot;parsing&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;driver&quot;</span>, <span class="tok-str">&quot;protocol&quot;</span>, <span class="tok-str">&quot;bandwidth&quot;</span>, <span class="tok-str">&quot;panel&quot;</span>, <span class="tok-str">&quot;microchip&quot;</span>, <span class="tok-str">&quot;program&quot;</span>, <span class="tok-str">&quot;port&quot;</span>, <span class="tok-str">&quot;card&quot;</span>, <span class="tok-str">&quot;array&quot;</span>, <span class="tok-str">&quot;interface&quot;</span>, <span class="tok-str">&quot;system&quot;</span>, <span class="tok-str">&quot;sensor&quot;</span>, <span class="tok-str">&quot;firewall&quot;</span>, <span class="tok-str">&quot;hard drive&quot;</span>, <span class="tok-str">&quot;pixel&quot;</span>, <span class="tok-str">&quot;alarm&quot;</span>, <span class="tok-str">&quot;feed&quot;</span>, <span class="tok-str">&quot;monitor&quot;</span>, <span class="tok-str">&quot;application&quot;</span>, <span class="tok-str">&quot;transmitter&quot;</span>, <span class="tok-str">&quot;bus&quot;</span>, <span class="tok-str">&quot;circuit&quot;</span>, <span class="tok-str">&quot;capacitor&quot;</span>, <span class="tok-str">&quot;matrix&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> phrase = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;If we {{verb}} the {{noun}}, we can get to the {{abbreviation}} {{noun}} through the {{adjective}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;We need to {{verb}} the {{adjective}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;Try to {{verb}} the {{abbreviation}} {{noun}}, maybe it will {{verb}} the {{adjective}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;You can't {{verb}} the {{noun}} without {{ingverb}} the {{adjective}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;Use the {{adjective}} {{abbreviation}} {{noun}}, then you can {{verb}} the {{adjective}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;The {{abbreviation}} {{noun}} is down, {{verb}} the {{adjective}} {{noun}} so we can {{verb}} the {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;{{ingverb}} the {{noun}} won't do anything, we need to {{verb}} the {{adjective}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;I'll {{verb}} the {{adjective}} {{abbreviation}} {{noun}}, that should {{noun}} the {{abbreviation}} {{noun}}!&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;back up&quot;</span>, <span class="tok-str">&quot;bypass&quot;</span>, <span class="tok-str">&quot;hack&quot;</span>, <span class="tok-str">&quot;override&quot;</span>, <span class="tok-str">&quot;compress&quot;</span>, <span class="tok-str">&quot;copy&quot;</span>, <span class="tok-str">&quot;navigate&quot;</span>, <span class="tok-str">&quot;index&quot;</span>, <span class="tok-str">&quot;connect&quot;</span>, <span class="tok-str">&quot;generate&quot;</span>, <span class="tok-str">&quot;quantify&quot;</span>, <span class="tok-str">&quot;calculate&quot;</span>, <span class="tok-str">&quot;synthesize&quot;</span>, <span class="tok-str">&quot;input&quot;</span>, <span class="tok-str">&quot;transmit&quot;</span>, <span class="tok-str">&quot;program&quot;</span>, <span class="tok-str">&quot;reboot&quot;</span>, <span class="tok-str">&quot;parse&quot;</span> };</span>
+<span class="line" id="L10"></span>
+</code></pre></body>
+</html>

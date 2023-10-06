@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\he\commerce.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> department = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ספרים&quot;</span>, <span class="tok-str">&quot;סרטים&quot;</span>, <span class="tok-str">&quot;מוסיקה&quot;</span>, <span class="tok-str">&quot;משחקים&quot;</span>, <span class="tok-str">&quot;מכשירי חשמל&quot;</span>, <span class="tok-str">&quot;מחשבים&quot;</span>, <span class="tok-str">&quot;בית&quot;</span>, <span class="tok-str">&quot;גן&quot;</span>, <span class="tok-str">&quot;כלים&quot;</span>, <span class="tok-str">&quot;מכולת&quot;</span>, <span class="tok-str">&quot;בריאות&quot;</span>, <span class="tok-str">&quot;יופי&quot;</span>, <span class="tok-str">&quot;צעצועים&quot;</span>, <span class="tok-str">&quot;ילדים&quot;</span>, <span class="tok-str">&quot;תִינוֹק&quot;</span>, <span class="tok-str">&quot;ביגוד&quot;</span>, <span class="tok-str">&quot;נעליים&quot;</span>, <span class="tok-str">&quot;תכשיטים&quot;</span>, <span class="tok-str">&quot;ספורט&quot;</span>, <span class="tok-str">&quot;מחוץ לבית&quot;</span>, <span class="tok-str">&quot;רכב&quot;</span>, <span class="tok-str">&quot;תעשייתי&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_description = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;כסא מנהלים ארגונומי מרופד בעור שחור מלוכדות ובמושב ובגב מרופד PVC לנוחות ותמיכה לאורך כל היום&quot;</span>, <span class="tok-str">&quot;מערך הרכב מורכב מעיצוב מנוע קדמי, עם תיבות הילוכים מסוג ציר טרנסוולר המותקנות בחלק האחורי של המנוע והנעה עם ארבעה גלגלים&quot;</span>, <span class="tok-str">&quot;חדש ABC 13 9370, 13.3, דור 5 CoreA5-8250U, 8GB RAM, 256GB SSD, כוח UHD גרפיקה, OS 10 Home, OS Office A &amp; J 2016&quot;</span>, <span class="tok-str">&quot;מקלדת מייפל גיימינג דקה ופשוטה מבית Dev Byte מגיעה עם גוף אלגנטי ותאורת RGB LED בגוון 7 צבעים לפונקציונליות חכמה&quot;</span>, <span class="tok-str">&quot;אפולוטק B340 הוא עכבר אלחוטי במחיר סביר עם קישוריות אמינה, חיי סוללה של 12 חודשים ועיצוב מודרני&quot;</span>, <span class="tok-str">&quot;נאגסאקי לנדר הוא השם המסחרי המסחרי של מספר סדרות של אופני ספורט נגסאקי, שהחלו ב- ABC800J משנת 1984&quot;</span>, <span class="tok-str">&quot;הכדורגל טוב לאימונים ולמטרות פנאי&quot;</span>, <span class="tok-str">&quot;כפפות שוער רשת קרבוניט מעוצבות באופן ארגונומי בכדי להעניק התאמה קלה&quot;</span>, <span class="tok-str">&quot;טכנולוגיית שחיקת הדחיסה המתקדמת ביותר של בוסטון מגבירה את החמצון בשרירים, מייצבת שרירים פעילים&quot;</span>, <span class="tok-str">&quot;מגוון חדש של חולצות רשמיות מעוצבות תוך התחשבות בך. עם התאמות ועיצוב שיגרמו לך להתבלט&quot;</span>, <span class="tok-str">&quot;המגוון היפה של תפוח נטורל שיש בו שילוב מרגש של מרכיבים טבעיים. עם הטוב של 100% מרכיבים טבעיים&quot;</span>, <span class="tok-str">&quot;נעלי אנדי נועדו לזכור עמידות כמו גם טרנדים, מגוון הנעליים והסנדלים המסוגננים ביותר&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_name = .{ .adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;קטן&quot;</span>, <span class="tok-str">&quot;ארגונומי&quot;</span>, <span class="tok-str">&quot;כפרי&quot;</span>, <span class="tok-str">&quot;אינטליגנטי&quot;</span>, <span class="tok-str">&quot;מאוד יפה&quot;</span>, <span class="tok-str">&quot;מדהים&quot;</span>, <span class="tok-str">&quot;פנטסטי&quot;</span>, <span class="tok-str">&quot;מעשי&quot;</span>, <span class="tok-str">&quot;מלוטש&quot;</span>, <span class="tok-str">&quot;גנרית&quot;</span>, <span class="tok-str">&quot;עבודת יד&quot;</span>, <span class="tok-str">&quot;מורשה&quot;</span>, <span class="tok-str">&quot;מְזוּקָק&quot;</span>, <span class="tok-str">&quot;לא ממותג&quot;</span>, <span class="tok-str">&quot;טעים&quot;</span> }, .material = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;פלדה&quot;</span>, <span class="tok-str">&quot;עץ&quot;</span>, <span class="tok-str">&quot;בטון&quot;</span>, <span class="tok-str">&quot;פלסטי&quot;</span>, <span class="tok-str">&quot;כותנה&quot;</span>, <span class="tok-str">&quot;גרניט&quot;</span>, <span class="tok-str">&quot;גומי&quot;</span>, <span class="tok-str">&quot;מתכת&quot;</span>, <span class="tok-str">&quot;רך&quot;</span>, <span class="tok-str">&quot;צַח&quot;</span>, <span class="tok-str">&quot;קפוא&quot;</span> }, .product = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;כיסא&quot;</span>, <span class="tok-str">&quot;אוטו&quot;</span>, <span class="tok-str">&quot;מחשב&quot;</span>, <span class="tok-str">&quot;מקלדת&quot;</span>, <span class="tok-str">&quot;עכבר&quot;</span>, <span class="tok-str">&quot;אופניים&quot;</span>, <span class="tok-str">&quot;כדור&quot;</span>, <span class="tok-str">&quot;כפפות&quot;</span>, <span class="tok-str">&quot;מכנסיים&quot;</span>, <span class="tok-str">&quot;חולצה&quot;</span>, <span class="tok-str">&quot;שולחן&quot;</span>, <span class="tok-str">&quot;נעליים&quot;</span>, <span class="tok-str">&quot;כובע&quot;</span>, <span class="tok-str">&quot;מגבות&quot;</span>, <span class="tok-str">&quot;סבון&quot;</span>, <span class="tok-str">&quot;טונה&quot;</span>, <span class="tok-str">&quot;עוף&quot;</span>, <span class="tok-str">&quot;דג&quot;</span>, <span class="tok-str">&quot;גבינה&quot;</span>, <span class="tok-str">&quot;בייקון&quot;</span>, <span class="tok-str">&quot;פיצה&quot;</span>, <span class="tok-str">&quot;סלט&quot;</span>, <span class="tok-str">&quot;נקניקיות&quot;</span>, <span class="tok-str">&quot;צ'יפס&quot;</span> } };</span>
+<span class="line" id="L6"></span>
+</code></pre></body>
+</html>

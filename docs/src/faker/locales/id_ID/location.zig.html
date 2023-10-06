@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\id_ID\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;##&quot;</span>, <span class="tok-str">&quot;#&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Airmadidi&quot;</span>, <span class="tok-str">&quot;Ampana&quot;</span>, <span class="tok-str">&quot;Amurang&quot;</span>, <span class="tok-str">&quot;Andolo&quot;</span>, <span class="tok-str">&quot;Banggai&quot;</span>, <span class="tok-str">&quot;Bantaeng&quot;</span>, <span class="tok-str">&quot;Barru&quot;</span>, <span class="tok-str">&quot;Bau-Bau&quot;</span>, <span class="tok-str">&quot;Benteng&quot;</span>, <span class="tok-str">&quot;Bitung&quot;</span>, <span class="tok-str">&quot;Bolaang Uki&quot;</span>, <span class="tok-str">&quot;Boroko&quot;</span>, <span class="tok-str">&quot;Bulukumba&quot;</span>, <span class="tok-str">&quot;Bungku&quot;</span>, <span class="tok-str">&quot;Buol&quot;</span>, <span class="tok-str">&quot;Buranga&quot;</span>, <span class="tok-str">&quot;Donggala&quot;</span>, <span class="tok-str">&quot;Enrekang&quot;</span>, <span class="tok-str">&quot;Gorontalo&quot;</span>, <span class="tok-str">&quot;Jeneponto&quot;</span>, <span class="tok-str">&quot;Kawangkoan&quot;</span>, <span class="tok-str">&quot;Kendari&quot;</span>, <span class="tok-str">&quot;Kolaka&quot;</span>, <span class="tok-str">&quot;Kotamobagu&quot;</span>, <span class="tok-str">&quot;Kota Raha&quot;</span>, <span class="tok-str">&quot;Kwandang&quot;</span>, <span class="tok-str">&quot;Lasusua&quot;</span>, <span class="tok-str">&quot;Luwuk&quot;</span>, <span class="tok-str">&quot;Majene&quot;</span>, <span class="tok-str">&quot;Makale&quot;</span>, <span class="tok-str">&quot;Makassar&quot;</span>, <span class="tok-str">&quot;Malili&quot;</span>, <span class="tok-str">&quot;Mamasa&quot;</span>, <span class="tok-str">&quot;Mamuju&quot;</span>, <span class="tok-str">&quot;Manado&quot;</span>, <span class="tok-str">&quot;Marisa&quot;</span>, <span class="tok-str">&quot;Maros&quot;</span>, <span class="tok-str">&quot;Masamba&quot;</span>, <span class="tok-str">&quot;Melonguane&quot;</span>, <span class="tok-str">&quot;Ondong Siau&quot;</span>, <span class="tok-str">&quot;Palopo&quot;</span>, <span class="tok-str">&quot;Palu&quot;</span>, <span class="tok-str">&quot;Pangkajene&quot;</span>, <span class="tok-str">&quot;Pare-Pare&quot;</span>, <span class="tok-str">&quot;Parigi&quot;</span>, <span class="tok-str">&quot;Pasangkayu&quot;</span>, <span class="tok-str">&quot;Pinrang&quot;</span>, <span class="tok-str">&quot;Polewali&quot;</span>, <span class="tok-str">&quot;Poso&quot;</span>, <span class="tok-str">&quot;Rantepao&quot;</span>, <span class="tok-str">&quot;Ratahan&quot;</span>, <span class="tok-str">&quot;Rumbia&quot;</span>, <span class="tok-str">&quot;Sengkang&quot;</span>, <span class="tok-str">&quot;Sidenreng&quot;</span>, <span class="tok-str">&quot;Sigi Biromaru&quot;</span>, <span class="tok-str">&quot;Sinjai&quot;</span>, <span class="tok-str">&quot;Sunggu Minasa&quot;</span>, <span class="tok-str">&quot;Suwawa&quot;</span>, <span class="tok-str">&quot;Tahuna&quot;</span>, <span class="tok-str">&quot;Takalar&quot;</span>, <span class="tok-str">&quot;Tilamuta&quot;</span>, <span class="tok-str">&quot;Toli Toli&quot;</span>, <span class="tok-str">&quot;Tomohon&quot;</span>, <span class="tok-str">&quot;Tondano&quot;</span>, <span class="tok-str">&quot;Tutuyan&quot;</span>, <span class="tok-str">&quot;Unaaha&quot;</span>, <span class="tok-str">&quot;Wangi Wangi&quot;</span>, <span class="tok-str">&quot;Wanggudu&quot;</span>, <span class="tok-str">&quot;Watampone&quot;</span>, <span class="tok-str">&quot;Watan Soppeng&quot;</span>, <span class="tok-str">&quot;Ambarawa&quot;</span>, <span class="tok-str">&quot;Anyer&quot;</span>, <span class="tok-str">&quot;Bandung&quot;</span>, <span class="tok-str">&quot;Bangil&quot;</span>, <span class="tok-str">&quot;Banjar (Jawa Barat)&quot;</span>, <span class="tok-str">&quot;Banjarnegara&quot;</span>, <span class="tok-str">&quot;Bangkalan&quot;</span>, <span class="tok-str">&quot;Bantul&quot;</span>, <span class="tok-str">&quot;Banyumas&quot;</span>, <span class="tok-str">&quot;Banyuwangi&quot;</span>, <span class="tok-str">&quot;Batang&quot;</span>, <span class="tok-str">&quot;Batu&quot;</span>, <span class="tok-str">&quot;Bekasi&quot;</span>, <span class="tok-str">&quot;Blitar&quot;</span>, <span class="tok-str">&quot;Blora&quot;</span>, <span class="tok-str">&quot;Bogor&quot;</span>, <span class="tok-str">&quot;Bojonegoro&quot;</span>, <span class="tok-str">&quot;Bondowoso&quot;</span>, <span class="tok-str">&quot;Boyolali&quot;</span>, <span class="tok-str">&quot;Bumiayu&quot;</span>, <span class="tok-str">&quot;Brebes&quot;</span>, <span class="tok-str">&quot;Caruban&quot;</span>, <span class="tok-str">&quot;Cianjur&quot;</span>, <span class="tok-str">&quot;Ciamis&quot;</span>, <span class="tok-str">&quot;Cibinong&quot;</span>, <span class="tok-str">&quot;Cikampek&quot;</span>, <span class="tok-str">&quot;Cikarang&quot;</span>, <span class="tok-str">&quot;Cilacap&quot;</span>, <span class="tok-str">&quot;Cilegon&quot;</span>, <span class="tok-str">&quot;Cirebon&quot;</span>, <span class="tok-str">&quot;Demak&quot;</span>, <span class="tok-str">&quot;Depok&quot;</span>, <span class="tok-str">&quot;Garut&quot;</span>, <span class="tok-str">&quot;Gresik&quot;</span>, <span class="tok-str">&quot;Indramayu&quot;</span>, <span class="tok-str">&quot;Jakarta&quot;</span>, <span class="tok-str">&quot;Jember&quot;</span>, <span class="tok-str">&quot;Jepara&quot;</span>, <span class="tok-str">&quot;Jombang&quot;</span>, <span class="tok-str">&quot;Kajen&quot;</span>, <span class="tok-str">&quot;Karanganyar&quot;</span>, <span class="tok-str">&quot;Kebumen&quot;</span>, <span class="tok-str">&quot;Kediri&quot;</span>, <span class="tok-str">&quot;Kendal&quot;</span>, <span class="tok-str">&quot;Kepanjen&quot;</span>, <span class="tok-str">&quot;Klaten&quot;</span>, <span class="tok-str">&quot;Pelabuhan Ratu&quot;</span>, <span class="tok-str">&quot;Kraksaan&quot;</span>, <span class="tok-str">&quot;Kudus&quot;</span>, <span class="tok-str">&quot;Kuningan&quot;</span>, <span class="tok-str">&quot;Lamongan&quot;</span>, <span class="tok-str">&quot;Lumajang&quot;</span>, <span class="tok-str">&quot;Madiun&quot;</span>, <span class="tok-str">&quot;Magelang&quot;</span>, <span class="tok-str">&quot;Magetan&quot;</span>, <span class="tok-str">&quot;Majalengka&quot;</span>, <span class="tok-str">&quot;Malang&quot;</span>, <span class="tok-str">&quot;Mojokerto&quot;</span>, <span class="tok-str">&quot;Mojosari&quot;</span>, <span class="tok-str">&quot;Mungkid&quot;</span>, <span class="tok-str">&quot;Ngamprah&quot;</span>, <span class="tok-str">&quot;Nganjuk&quot;</span>, <span class="tok-str">&quot;Ngawi&quot;</span>, <span class="tok-str">&quot;Pacitan&quot;</span>, <span class="tok-str">&quot;Pamekasan&quot;</span>, <span class="tok-str">&quot;Pandeglang&quot;</span>, <span class="tok-str">&quot;Pare&quot;</span>, <span class="tok-str">&quot;Pati&quot;</span>, <span class="tok-str">&quot;Pasuruan&quot;</span>, <span class="tok-str">&quot;Pekalongan&quot;</span>, <span class="tok-str">&quot;Pemalang&quot;</span>, <span class="tok-str">&quot;Ponorogo&quot;</span>, <span class="tok-str">&quot;Probolinggo&quot;</span>, <span class="tok-str">&quot;Purbalingga&quot;</span>, <span class="tok-str">&quot;Purwakarta&quot;</span>, <span class="tok-str">&quot;Purwodadi&quot;</span>, <span class="tok-str">&quot;Purwokerto&quot;</span>, <span class="tok-str">&quot;Purworejo&quot;</span>, <span class="tok-str">&quot;Rangkasbitung&quot;</span>, <span class="tok-str">&quot;Rembang&quot;</span>, <span class="tok-str">&quot;Salatiga&quot;</span>, <span class="tok-str">&quot;Sampang&quot;</span>, <span class="tok-str">&quot;Semarang&quot;</span>, <span class="tok-str">&quot;Serang&quot;</span>, <span class="tok-str">&quot;Sidayu&quot;</span>, <span class="tok-str">&quot;Sidoarjo&quot;</span>, <span class="tok-str">&quot;Singaparna&quot;</span>, <span class="tok-str">&quot;Situbondo&quot;</span>, <span class="tok-str">&quot;Slawi&quot;</span>, <span class="tok-str">&quot;Sleman&quot;</span>, <span class="tok-str">&quot;Soreang&quot;</span>, <span class="tok-str">&quot;Sragen&quot;</span>, <span class="tok-str">&quot;Subang&quot;</span>, <span class="tok-str">&quot;Sukabumi&quot;</span>, <span class="tok-str">&quot;Sukoharjo&quot;</span>, <span class="tok-str">&quot;Sumber&quot;</span>, <span class="tok-str">&quot;Sumedang&quot;</span>, <span class="tok-str">&quot;Sumenep&quot;</span>, <span class="tok-str">&quot;Surabaya&quot;</span>, <span class="tok-str">&quot;Surakarta&quot;</span>, <span class="tok-str">&quot;Tasikmalaya&quot;</span>, <span class="tok-str">&quot;Tangerang&quot;</span>, <span class="tok-str">&quot;Tangerang Selatan&quot;</span>, <span class="tok-str">&quot;Tegal&quot;</span>, <span class="tok-str">&quot;Temanggung&quot;</span>, <span class="tok-str">&quot;Tigaraksa&quot;</span>, <span class="tok-str">&quot;Trenggalek&quot;</span>, <span class="tok-str">&quot;Tuban&quot;</span>, <span class="tok-str">&quot;Tulungagung&quot;</span>, <span class="tok-str">&quot;Ungaran&quot;</span>, <span class="tok-str">&quot;Wates&quot;</span>, <span class="tok-str">&quot;Wlingi&quot;</span>, <span class="tok-str">&quot;Wonogiri&quot;</span>, <span class="tok-str">&quot;Wonosari&quot;</span>, <span class="tok-str">&quot;Wonosobo&quot;</span>, <span class="tok-str">&quot;Yogyakarta&quot;</span>, <span class="tok-str">&quot;Atambua&quot;</span>, <span class="tok-str">&quot;Baa&quot;</span>, <span class="tok-str">&quot;Badung&quot;</span>, <span class="tok-str">&quot;Bajawa&quot;</span>, <span class="tok-str">&quot;Bangli&quot;</span>, <span class="tok-str">&quot;Bima&quot;</span>, <span class="tok-str">&quot;Denpasar&quot;</span>, <span class="tok-str">&quot;Dompu&quot;</span>, <span class="tok-str">&quot;Ende&quot;</span>, <span class="tok-str">&quot;Gianyar&quot;</span>, <span class="tok-str">&quot;Kalabahi&quot;</span>, <span class="tok-str">&quot;Karangasem&quot;</span>, <span class="tok-str">&quot;Kefamenanu&quot;</span>, <span class="tok-str">&quot;Klungkung&quot;</span>, <span class="tok-str">&quot;Kupang&quot;</span>, <span class="tok-str">&quot;Labuhan Bajo&quot;</span>, <span class="tok-str">&quot;Larantuka&quot;</span>, <span class="tok-str">&quot;Lewoleba&quot;</span>, <span class="tok-str">&quot;Maumere&quot;</span>, <span class="tok-str">&quot;Mataram&quot;</span>, <span class="tok-str">&quot;Mbay&quot;</span>, <span class="tok-str">&quot;Negara&quot;</span>, <span class="tok-str">&quot;Praya&quot;</span>, <span class="tok-str">&quot;Raba&quot;</span>, <span class="tok-str">&quot;Ruteng&quot;</span>, <span class="tok-str">&quot;Selong&quot;</span>, <span class="tok-str">&quot;Singaraja&quot;</span>, <span class="tok-str">&quot;Soe&quot;</span>, <span class="tok-str">&quot;Sumbawa Besar&quot;</span>, <span class="tok-str">&quot;Tabanan&quot;</span>, <span class="tok-str">&quot;Taliwang&quot;</span>, <span class="tok-str">&quot;Tambolaka&quot;</span>, <span class="tok-str">&quot;Tanjung&quot;</span>, <span class="tok-str">&quot;Waibakul&quot;</span>, <span class="tok-str">&quot;Waikabubak&quot;</span>, <span class="tok-str">&quot;Waingapu&quot;</span>, <span class="tok-str">&quot;Negara,Bali&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_name}}&quot;</span>};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Indonesia&quot;</span>};</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;#####&quot;</span>};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aceh&quot;</span>, <span class="tok-str">&quot;Sumatera Utara&quot;</span>, <span class="tok-str">&quot;Sumatera Barat&quot;</span>, <span class="tok-str">&quot;Jambi&quot;</span>, <span class="tok-str">&quot;Bangka Belitung&quot;</span>, <span class="tok-str">&quot;Riau&quot;</span>, <span class="tok-str">&quot;Kepulauan Riau&quot;</span>, <span class="tok-str">&quot;Bengkulu&quot;</span>, <span class="tok-str">&quot;Sumatera Selatan&quot;</span>, <span class="tok-str">&quot;Lampung&quot;</span>, <span class="tok-str">&quot;Banten&quot;</span>, <span class="tok-str">&quot;DKI Jakarta&quot;</span>, <span class="tok-str">&quot;Jawa Barat&quot;</span>, <span class="tok-str">&quot;Jawa Tengah&quot;</span>, <span class="tok-str">&quot;Jawa Timur&quot;</span>, <span class="tok-str">&quot;Nusa Tenggara Timur&quot;</span>, <span class="tok-str">&quot;DI Yogyakarta&quot;</span>, <span class="tok-str">&quot;Bali&quot;</span>, <span class="tok-str">&quot;Nusa Tenggara Barat&quot;</span>, <span class="tok-str">&quot;Kalimantan Barat&quot;</span>, <span class="tok-str">&quot;Kalimantan Tengah&quot;</span>, <span class="tok-str">&quot;Kalimantan Selatan&quot;</span>, <span class="tok-str">&quot;Kalimantan Timur&quot;</span>, <span class="tok-str">&quot;Kalimantan Utara&quot;</span>, <span class="tok-str">&quot;Sulawesi Selatan&quot;</span>, <span class="tok-str">&quot;Sulawesi Utara&quot;</span>, <span class="tok-str">&quot;Gorontalo&quot;</span>, <span class="tok-str">&quot;Sulawesi Tengah&quot;</span>, <span class="tok-str">&quot;Sulawesi Barat&quot;</span>, <span class="tok-str">&quot;Sulawesi Tenggara&quot;</span>, <span class="tok-str">&quot;Maluku&quot;</span>, <span class="tok-str">&quot;Maluku Utara&quot;</span>, <span class="tok-str">&quot;Papua Barat&quot;</span>, <span class="tok-str">&quot;Papua&quot;</span>, <span class="tok-str">&quot;Papua Tengah&quot;</span>, <span class="tok-str">&quot;Papua Pegunungan&quot;</span>, <span class="tok-str">&quot;Papua Selatan&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.street}} no {{location.buildingNumber}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.street}} no {{location.buildingNumber}} {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.street_prefix}} {{person.first_name}}&quot;</span>, <span class="tok-str">&quot;{{location.street_prefix}} {{person.last_name}}&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Ds.&quot;</span>, <span class="tok-str">&quot;Dk.&quot;</span>, <span class="tok-str">&quot;Gg.&quot;</span>, <span class="tok-str">&quot;Jln.&quot;</span>, <span class="tok-str">&quot;Jr.&quot;</span>, <span class="tok-str">&quot;Kpg.&quot;</span>, <span class="tok-str">&quot;Ki.&quot;</span>, <span class="tok-str">&quot;Psr.&quot;</span> };</span>
+<span class="line" id="L18"></span>
+</code></pre></body>
+</html>

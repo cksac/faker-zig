@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fa\word.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;زیبا&quot;</span>, <span class="tok-str">&quot;بزرگ&quot;</span>, <span class="tok-str">&quot;کوچک&quot;</span>, <span class="tok-str">&quot;قدیمی&quot;</span>, <span class="tok-str">&quot;جدید&quot;</span>, <span class="tok-str">&quot;خوب&quot;</span>, <span class="tok-str">&quot;بد&quot;</span>, <span class="tok-str">&quot;داغ&quot;</span>, <span class="tok-str">&quot;سریع&quot;</span>, <span class="tok-str">&quot;کند&quot;</span>, <span class="tok-str">&quot;پر&quot;</span>, <span class="tok-str">&quot;خالی&quot;</span>, <span class="tok-str">&quot;پرت&quot;</span>, <span class="tok-str">&quot;خوشحال&quot;</span>, <span class="tok-str">&quot;غمگین&quot;</span>, <span class="tok-str">&quot;خسته&quot;</span>, <span class="tok-str">&quot;شاد&quot;</span>, <span class="tok-str">&quot;تاریک&quot;</span>, <span class="tok-str">&quot;روشن&quot;</span>, <span class="tok-str">&quot;نرم&quot;</span>, <span class="tok-str">&quot;سخت&quot;</span>, <span class="tok-str">&quot;دشوار&quot;</span>, <span class="tok-str">&quot;آسان&quot;</span>, <span class="tok-str">&quot;پایین&quot;</span>, <span class="tok-str">&quot;بالا&quot;</span>, <span class="tok-str">&quot;ضعیف&quot;</span>, <span class="tok-str">&quot;قوی&quot;</span>, <span class="tok-str">&quot;نازک&quot;</span>, <span class="tok-str">&quot;ضخیم&quot;</span>, <span class="tok-str">&quot;تنگ&quot;</span>, <span class="tok-str">&quot;گشاد&quot;</span>, <span class="tok-str">&quot;بارانی&quot;</span>, <span class="tok-str">&quot;خشک&quot;</span>, <span class="tok-str">&quot;زنده&quot;</span>, <span class="tok-str">&quot;مرده&quot;</span>, <span class="tok-str">&quot;نزدیک&quot;</span>, <span class="tok-str">&quot;دور&quot;</span>, <span class="tok-str">&quot;ساده&quot;</span>, <span class="tok-str">&quot;پیچیده&quot;</span>, <span class="tok-str">&quot;فوق‌العاده&quot;</span>, <span class="tok-str">&quot;عادی&quot;</span>, <span class="tok-str">&quot;گرم&quot;</span>, <span class="tok-str">&quot;سرد&quot;</span>, <span class="tok-str">&quot;پوشیده&quot;</span>, <span class="tok-str">&quot;باز&quot;</span>, <span class="tok-str">&quot;بسته&quot;</span>, <span class="tok-str">&quot;بلند&quot;</span>, <span class="tok-str">&quot;کوتاه&quot;</span>, <span class="tok-str">&quot;دقیق&quot;</span>, <span class="tok-str">&quot;نامرئی&quot;</span>, <span class="tok-str">&quot;مشهور&quot;</span>, <span class="tok-str">&quot;ناشناخته&quot;</span>, <span class="tok-str">&quot;پرنده&quot;</span>, <span class="tok-str">&quot;خیابانی&quot;</span>, <span class="tok-str">&quot;روستایی&quot;</span>, <span class="tok-str">&quot;شهری&quot;</span>, <span class="tok-str">&quot;دانشجویی&quot;</span>, <span class="tok-str">&quot;کارمندی&quot;</span>, <span class="tok-str">&quot;تولیدی&quot;</span>, <span class="tok-str">&quot;ساحلی&quot;</span>, <span class="tok-str">&quot;کوهستانی&quot;</span>, <span class="tok-str">&quot;کشاورزی&quot;</span>, <span class="tok-str">&quot;فنی&quot;</span>, <span class="tok-str">&quot;علمی&quot;</span>, <span class="tok-str">&quot;خبری&quot;</span>, <span class="tok-str">&quot;ورزشی&quot;</span>, <span class="tok-str">&quot;هنری&quot;</span>, <span class="tok-str">&quot;شیرین&quot;</span>, <span class="tok-str">&quot;تلخ&quot;</span>, <span class="tok-str">&quot;شور&quot;</span>, <span class="tok-str">&quot;بوییده&quot;</span>, <span class="tok-str">&quot;بی‌بو&quot;</span>, <span class="tok-str">&quot;تازه&quot;</span>, <span class="tok-str">&quot;خراب&quot;</span>, <span class="tok-str">&quot;شکسته&quot;</span>, <span class="tok-str">&quot;مناسب&quot;</span>, <span class="tok-str">&quot;نامناسب&quot;</span>, <span class="tok-str">&quot;عالی&quot;</span>, <span class="tok-str">&quot;خام&quot;</span>, <span class="tok-str">&quot;کامل&quot;</span>, <span class="tok-str">&quot;ناقص&quot;</span>, <span class="tok-str">&quot;موفق&quot;</span>, <span class="tok-str">&quot;ناموفق&quot;</span>, <span class="tok-str">&quot;سرگرم‌کننده&quot;</span>, <span class="tok-str">&quot;خسته‌کننده&quot;</span>, <span class="tok-str">&quot;آشنا&quot;</span>, <span class="tok-str">&quot;ناشنا&quot;</span>, <span class="tok-str">&quot;اصلی&quot;</span>, <span class="tok-str">&quot;ثانوی&quot;</span>, <span class="tok-str">&quot;محلی&quot;</span>, <span class="tok-str">&quot;بین‌المللی&quot;</span>, <span class="tok-str">&quot;فارسی&quot;</span>, <span class="tok-str">&quot;انگلیسی&quot;</span>, <span class="tok-str">&quot;مفید&quot;</span>, <span class="tok-str">&quot;بی‌فایده&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> conjunction = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;و&quot;</span>, <span class="tok-str">&quot;یا&quot;</span>, <span class="tok-str">&quot;اما&quot;</span>, <span class="tok-str">&quot;بلکه&quot;</span>, <span class="tok-str">&quot;لیکن&quot;</span>, <span class="tok-str">&quot;زیرا&quot;</span>, <span class="tok-str">&quot;چون&quot;</span>, <span class="tok-str">&quot;هر چند&quot;</span>, <span class="tok-str">&quot;تا&quot;</span>, <span class="tok-str">&quot;همچنین&quot;</span>, <span class="tok-str">&quot;بنابراین&quot;</span>, <span class="tok-str">&quot;اگرچه&quot;</span>, <span class="tok-str">&quot;همچون&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> interjection = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;آه&quot;</span>, <span class="tok-str">&quot;وای&quot;</span>, <span class="tok-str">&quot;اوه&quot;</span>, <span class="tok-str">&quot;اوف&quot;</span>, <span class="tok-str">&quot;اَخ&quot;</span>, <span class="tok-str">&quot;آهان&quot;</span>, <span class="tok-str">&quot;اِی وای&quot;</span>, <span class="tok-str">&quot;وایسا&quot;</span>, <span class="tok-str">&quot;آفرین&quot;</span>, <span class="tok-str">&quot;هورا&quot;</span>, <span class="tok-str">&quot;واو&quot;</span>, <span class="tok-str">&quot;یاالله&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;میوه&quot;</span>, <span class="tok-str">&quot;گل&quot;</span>, <span class="tok-str">&quot;کتاب&quot;</span>, <span class="tok-str">&quot;خانه&quot;</span>, <span class="tok-str">&quot;ماشین&quot;</span>, <span class="tok-str">&quot;دست&quot;</span>, <span class="tok-str">&quot;پدر&quot;</span>, <span class="tok-str">&quot;مادر&quot;</span>, <span class="tok-str">&quot;بچه&quot;</span>, <span class="tok-str">&quot;دختر&quot;</span>, <span class="tok-str">&quot;پسر&quot;</span>, <span class="tok-str">&quot;مرد&quot;</span>, <span class="tok-str">&quot;زن&quot;</span>, <span class="tok-str">&quot;دوست&quot;</span>, <span class="tok-str">&quot;خواب&quot;</span>, <span class="tok-str">&quot;آسمان&quot;</span>, <span class="tok-str">&quot;دریا&quot;</span>, <span class="tok-str">&quot;شیر&quot;</span>, <span class="tok-str">&quot;گربه&quot;</span>, <span class="tok-str">&quot;سگ&quot;</span>, <span class="tok-str">&quot;میز&quot;</span>, <span class="tok-str">&quot;صندلی&quot;</span>, <span class="tok-str">&quot;پنجره&quot;</span>, <span class="tok-str">&quot;در&quot;</span>, <span class="tok-str">&quot;روز&quot;</span>, <span class="tok-str">&quot;ماه&quot;</span>, <span class="tok-str">&quot;سال&quot;</span>, <span class="tok-str">&quot;صبح&quot;</span>, <span class="tok-str">&quot;شب&quot;</span>, <span class="tok-str">&quot;کوه&quot;</span>, <span class="tok-str">&quot;درخت&quot;</span>, <span class="tok-str">&quot;باغ&quot;</span>, <span class="tok-str">&quot;رنگ&quot;</span>, <span class="tok-str">&quot;آب&quot;</span>, <span class="tok-str">&quot;آتش&quot;</span>, <span class="tok-str">&quot;خورشید&quot;</span>, <span class="tok-str">&quot;ماهی&quot;</span>, <span class="tok-str">&quot;پرنده&quot;</span>, <span class="tok-str">&quot;حیوان&quot;</span>, <span class="tok-str">&quot;مرغ&quot;</span>, <span class="tok-str">&quot;میمون&quot;</span>, <span class="tok-str">&quot;گوش&quot;</span>, <span class="tok-str">&quot;چشم&quot;</span>, <span class="tok-str">&quot;زبان&quot;</span>, <span class="tok-str">&quot;دندان&quot;</span>, <span class="tok-str">&quot;صدا&quot;</span>, <span class="tok-str">&quot;خنده&quot;</span>, <span class="tok-str">&quot;گریه&quot;</span>, <span class="tok-str">&quot;خیابان&quot;</span>, <span class="tok-str">&quot;شهر&quot;</span>, <span class="tok-str">&quot;روستا&quot;</span>, <span class="tok-str">&quot;مدرسه&quot;</span>, <span class="tok-str">&quot;دانشگاه&quot;</span>, <span class="tok-str">&quot;پزشک&quot;</span>, <span class="tok-str">&quot;دندانپزشک&quot;</span>, <span class="tok-str">&quot;مهندس&quot;</span>, <span class="tok-str">&quot;آهنگ&quot;</span>, <span class="tok-str">&quot;فیلم&quot;</span>, <span class="tok-str">&quot;تئاتر&quot;</span>, <span class="tok-str">&quot;نقاشی&quot;</span>, <span class="tok-str">&quot;عکس&quot;</span>, <span class="tok-str">&quot;خبر&quot;</span>, <span class="tok-str">&quot;روزنامه&quot;</span>, <span class="tok-str">&quot;مجله&quot;</span>, <span class="tok-str">&quot;تلویزیون&quot;</span>, <span class="tok-str">&quot;رادیو&quot;</span>, <span class="tok-str">&quot;موسیقی&quot;</span>, <span class="tok-str">&quot;رقص&quot;</span>, <span class="tok-str">&quot;ورزش&quot;</span>, <span class="tok-str">&quot;فوتبال&quot;</span>, <span class="tok-str">&quot;بسکتبال&quot;</span>, <span class="tok-str">&quot;والیبال&quot;</span>, <span class="tok-str">&quot;شنا&quot;</span>, <span class="tok-str">&quot;تنیس&quot;</span>, <span class="tok-str">&quot;بیسبال&quot;</span>, <span class="tok-str">&quot;هنر&quot;</span>, <span class="tok-str">&quot;نقش&quot;</span>, <span class="tok-str">&quot;خواننده&quot;</span>, <span class="tok-str">&quot;هنرمند&quot;</span>, <span class="tok-str">&quot;نویسنده&quot;</span>, <span class="tok-str">&quot;شاعر&quot;</span>, <span class="tok-str">&quot;کارگر&quot;</span>, <span class="tok-str">&quot;مدیر&quot;</span>, <span class="tok-str">&quot;رئیس&quot;</span>, <span class="tok-str">&quot;کشاورز&quot;</span>, <span class="tok-str">&quot;فروشنده&quot;</span>, <span class="tok-str">&quot;مشتری&quot;</span>, <span class="tok-str">&quot;کامپیوتر&quot;</span>, <span class="tok-str">&quot;تلفن&quot;</span>, <span class="tok-str">&quot;اینترنت&quot;</span>, <span class="tok-str">&quot;موبایل&quot;</span>, <span class="tok-str">&quot;تبلت&quot;</span>, <span class="tok-str">&quot;دوربین&quot;</span>, <span class="tok-str">&quot;نظارت&quot;</span>, <span class="tok-str">&quot;ساعت&quot;</span>, <span class="tok-str">&quot;کیف&quot;</span>, <span class="tok-str">&quot;کفش&quot;</span>, <span class="tok-str">&quot;لباس&quot;</span>, <span class="tok-str">&quot;شلوار&quot;</span>, <span class="tok-str">&quot;پیراهن&quot;</span>, <span class="tok-str">&quot;دستکش&quot;</span>, <span class="tok-str">&quot;شال&quot;</span>, <span class="tok-str">&quot;کلاه&quot;</span>, <span class="tok-str">&quot;عینک&quot;</span>, <span class="tok-str">&quot;شامپو&quot;</span>, <span class="tok-str">&quot;صابون&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> preposition = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;با&quot;</span>, <span class="tok-str">&quot;بدون&quot;</span>, <span class="tok-str">&quot;برای&quot;</span>, <span class="tok-str">&quot;درباره&quot;</span>, <span class="tok-str">&quot;بین&quot;</span>, <span class="tok-str">&quot;از&quot;</span>, <span class="tok-str">&quot;تا&quot;</span>, <span class="tok-str">&quot;روی&quot;</span>, <span class="tok-str">&quot;به‌وسیله&quot;</span>, <span class="tok-str">&quot;در&quot;</span>, <span class="tok-str">&quot;علی‌رغم&quot;</span>, <span class="tok-str">&quot;بعد از&quot;</span>, <span class="tok-str">&quot;قبل از&quot;</span>, <span class="tok-str">&quot;بالا&quot;</span>, <span class="tok-str">&quot;پایین&quot;</span>, <span class="tok-str">&quot;در جلوی&quot;</span>, <span class="tok-str">&quot;پشت&quot;</span>, <span class="tok-str">&quot;در کنار&quot;</span>, <span class="tok-str">&quot;در دسترس&quot;</span>, <span class="tok-str">&quot;در ضد&quot;</span>, <span class="tok-str">&quot;نزد&quot;</span>, <span class="tok-str">&quot;در عین حال&quot;</span>, <span class="tok-str">&quot;برابر با&quot;</span>, <span class="tok-str">&quot;میان&quot;</span>, <span class="tok-str">&quot;در عوض&quot;</span>, <span class="tok-str">&quot;به دلیل&quot;</span>, <span class="tok-str">&quot;نزدیک&quot;</span>, <span class="tok-str">&quot;دور&quot;</span>, <span class="tok-str">&quot;با توجه به&quot;</span>, <span class="tok-str">&quot;به عنوان&quot;</span>, <span class="tok-str">&quot;علاوه بر&quot;</span>, <span class="tok-str">&quot;با هم&quot;</span>, <span class="tok-str">&quot;با احترام به&quot;</span>, <span class="tok-str">&quot;برخلاف&quot;</span>, <span class="tok-str">&quot;به‌روز&quot;</span>, <span class="tok-str">&quot;تحت&quot;</span>, <span class="tok-str">&quot;به طوری که&quot;</span>, <span class="tok-str">&quot;به صورت&quot;</span>, <span class="tok-str">&quot;به عنوان مثال&quot;</span>, <span class="tok-str">&quot;علاوه بر آن&quot;</span>, <span class="tok-str">&quot;با توجه به این که&quot;</span>, <span class="tok-str">&quot;تا حدودی&quot;</span>, <span class="tok-str">&quot;با اطمینان&quot;</span>, <span class="tok-str">&quot;با هر شک&quot;</span>, <span class="tok-str">&quot;با استفاده از&quot;</span>, <span class="tok-str">&quot;بدون توجه به&quot;</span>, <span class="tok-str">&quot;تا حد امکان&quot;</span>, <span class="tok-str">&quot;به طور عمده&quot;</span>, <span class="tok-str">&quot;به نسبت&quot;</span>, <span class="tok-str">&quot;به تناسب&quot;</span>, <span class="tok-str">&quot;به نظر&quot;</span>, <span class="tok-str">&quot;به طور کامل&quot;</span>, <span class="tok-str">&quot;در برابر&quot;</span>, <span class="tok-str">&quot;به هیچ وجه&quot;</span>, <span class="tok-str">&quot;در مقابل&quot;</span>, <span class="tok-str">&quot;به نوعی&quot;</span>, <span class="tok-str">&quot;به ترتیب&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;رفتن&quot;</span>, <span class="tok-str">&quot;آمدن&quot;</span>, <span class="tok-str">&quot;خوردن&quot;</span>, <span class="tok-str">&quot;نوشیدن&quot;</span>, <span class="tok-str">&quot;خواندن&quot;</span>, <span class="tok-str">&quot;نوشتن&quot;</span>, <span class="tok-str">&quot;دیدن&quot;</span>, <span class="tok-str">&quot;شنیدن&quot;</span>, <span class="tok-str">&quot;گفتن&quot;</span>, <span class="tok-str">&quot;بودن&quot;</span>, <span class="tok-str">&quot;داشتن&quot;</span>, <span class="tok-str">&quot;آغاز کردن&quot;</span>, <span class="tok-str">&quot;پایان دادن&quot;</span>, <span class="tok-str">&quot;شروع کردن&quot;</span>, <span class="tok-str">&quot;تمام کردن&quot;</span>, <span class="tok-str">&quot;کمک کردن&quot;</span>, <span class="tok-str">&quot;انجام دادن&quot;</span>, <span class="tok-str">&quot;فهمیدن&quot;</span>, <span class="tok-str">&quot;تلاش کردن&quot;</span>, <span class="tok-str">&quot;بازی کردن&quot;</span>, <span class="tok-str">&quot;درک کردن&quot;</span>, <span class="tok-str">&quot;انتظار داشتن&quot;</span>, <span class="tok-str">&quot;احساس کردن&quot;</span>, <span class="tok-str">&quot;مشاهده کردن&quot;</span>, <span class="tok-str">&quot;باختن&quot;</span>, <span class="tok-str">&quot;برنده شدن&quot;</span>, <span class="tok-str">&quot;می‌دانستن&quot;</span>, <span class="tok-str">&quot;فکر کردن&quot;</span>, <span class="tok-str">&quot;علاقه داشتن&quot;</span>, <span class="tok-str">&quot;خواستن&quot;</span>, <span class="tok-str">&quot;امیدوار بودن&quot;</span>, <span class="tok-str">&quot;باور کردن&quot;</span>, <span class="tok-str">&quot;پیشنهاد دادن&quot;</span>, <span class="tok-str">&quot;قبول کردن&quot;</span>, <span class="tok-str">&quot;رد کردن&quot;</span>, <span class="tok-str">&quot;راه انداختن&quot;</span>, <span class="tok-str">&quot;پیروی کردن&quot;</span>, <span class="tok-str">&quot;واکنش نشان دادن&quot;</span>, <span class="tok-str">&quot;گذاشتن&quot;</span>, <span class="tok-str">&quot;دریافت کردن&quot;</span>, <span class="tok-str">&quot;دست یافتن&quot;</span>, <span class="tok-str">&quot;مجبور کردن&quot;</span>, <span class="tok-str">&quot;می‌خواستن&quot;</span>, <span class="tok-str">&quot;نشان دادن&quot;</span>, <span class="tok-str">&quot;پشتیبانی کردن&quot;</span>, <span class="tok-str">&quot;رسیدن&quot;</span>, <span class="tok-str">&quot;فراموش کردن&quot;</span>, <span class="tok-str">&quot;انتخاب کردن&quot;</span>, <span class="tok-str">&quot;ترجیح دادن&quot;</span>, <span class="tok-str">&quot;تصمیم گرفتن&quot;</span>, <span class="tok-str">&quot;تشویق کردن&quot;</span>, <span class="tok-str">&quot;رهبری کردن&quot;</span>, <span class="tok-str">&quot;درست کردن&quot;</span>, <span class="tok-str">&quot;گم شدن&quot;</span>, <span class="tok-str">&quot;ساختن&quot;</span>, <span class="tok-str">&quot;سفارش دادن&quot;</span>, <span class="tok-str">&quot;سازماندهی کردن&quot;</span>, <span class="tok-str">&quot;توجه داشتن&quot;</span>, <span class="tok-str">&quot;خوابیدن&quot;</span>, <span class="tok-str">&quot;سرگرم شدن&quot;</span>, <span class="tok-str">&quot;جواب دادن&quot;</span>, <span class="tok-str">&quot;عکس العمل نشان دادن&quot;</span>, <span class="tok-str">&quot;درخواست کردن&quot;</span>, <span class="tok-str">&quot;تسلط داشتن&quot;</span>, <span class="tok-str">&quot;شک کردن&quot;</span>, <span class="tok-str">&quot;اطمینان داشتن&quot;</span>, <span class="tok-str">&quot;باور نکردن&quot;</span>, <span class="tok-str">&quot;آرام کردن&quot;</span>, <span class="tok-str">&quot;نیاز داشتن&quot;</span>, <span class="tok-str">&quot;عوض کردن&quot;</span>, <span class="tok-str">&quot;تغییر دادن&quot;</span> };</span>
+<span class="line" id="L12"></span>
+</code></pre></body>
+</html>

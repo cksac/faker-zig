@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\pl\lorem.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> words = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;alias&quot;</span>, <span class="tok-str">&quot;consequatur&quot;</span>, <span class="tok-str">&quot;aut&quot;</span>, <span class="tok-str">&quot;perferendis&quot;</span>, <span class="tok-str">&quot;sit&quot;</span>, <span class="tok-str">&quot;voluptatem&quot;</span>, <span class="tok-str">&quot;accusantium&quot;</span>, <span class="tok-str">&quot;doloremque&quot;</span>, <span class="tok-str">&quot;aperiam&quot;</span>, <span class="tok-str">&quot;eaque&quot;</span>, <span class="tok-str">&quot;ipsa&quot;</span>, <span class="tok-str">&quot;quae&quot;</span>, <span class="tok-str">&quot;ab&quot;</span>, <span class="tok-str">&quot;illo&quot;</span>, <span class="tok-str">&quot;inventore&quot;</span>, <span class="tok-str">&quot;veritatis&quot;</span>, <span class="tok-str">&quot;et&quot;</span>, <span class="tok-str">&quot;quasi&quot;</span>, <span class="tok-str">&quot;architecto&quot;</span>, <span class="tok-str">&quot;beatae&quot;</span>, <span class="tok-str">&quot;vitae&quot;</span>, <span class="tok-str">&quot;dicta&quot;</span>, <span class="tok-str">&quot;sunt&quot;</span>, <span class="tok-str">&quot;explicabo&quot;</span>, <span class="tok-str">&quot;aspernatur&quot;</span>, <span class="tok-str">&quot;odit&quot;</span>, <span class="tok-str">&quot;fugit&quot;</span>, <span class="tok-str">&quot;sed&quot;</span>, <span class="tok-str">&quot;quia&quot;</span>, <span class="tok-str">&quot;consequuntur&quot;</span>, <span class="tok-str">&quot;magni&quot;</span>, <span class="tok-str">&quot;dolores&quot;</span>, <span class="tok-str">&quot;eos&quot;</span>, <span class="tok-str">&quot;qui&quot;</span>, <span class="tok-str">&quot;ratione&quot;</span>, <span class="tok-str">&quot;sequi&quot;</span>, <span class="tok-str">&quot;nesciunt&quot;</span>, <span class="tok-str">&quot;neque&quot;</span>, <span class="tok-str">&quot;dolorem&quot;</span>, <span class="tok-str">&quot;ipsum&quot;</span>, <span class="tok-str">&quot;dolor&quot;</span>, <span class="tok-str">&quot;amet&quot;</span>, <span class="tok-str">&quot;consectetur&quot;</span>, <span class="tok-str">&quot;adipisci&quot;</span>, <span class="tok-str">&quot;velit&quot;</span>, <span class="tok-str">&quot;non&quot;</span>, <span class="tok-str">&quot;numquam&quot;</span>, <span class="tok-str">&quot;eius&quot;</span>, <span class="tok-str">&quot;modi&quot;</span>, <span class="tok-str">&quot;tempora&quot;</span>, <span class="tok-str">&quot;incidunt&quot;</span>, <span class="tok-str">&quot;ut&quot;</span>, <span class="tok-str">&quot;labore&quot;</span>, <span class="tok-str">&quot;dolore&quot;</span>, <span class="tok-str">&quot;magnam&quot;</span>, <span class="tok-str">&quot;aliquam&quot;</span>, <span class="tok-str">&quot;quaerat&quot;</span>, <span class="tok-str">&quot;enim&quot;</span>, <span class="tok-str">&quot;ad&quot;</span>, <span class="tok-str">&quot;minima&quot;</span>, <span class="tok-str">&quot;veniam&quot;</span>, <span class="tok-str">&quot;quis&quot;</span>, <span class="tok-str">&quot;nostrum&quot;</span>, <span class="tok-str">&quot;exercitationem&quot;</span>, <span class="tok-str">&quot;ullam&quot;</span>, <span class="tok-str">&quot;corporis&quot;</span>, <span class="tok-str">&quot;nemo&quot;</span>, <span class="tok-str">&quot;ipsam&quot;</span>, <span class="tok-str">&quot;voluptas&quot;</span>, <span class="tok-str">&quot;suscipit&quot;</span>, <span class="tok-str">&quot;laboriosam&quot;</span>, <span class="tok-str">&quot;nisi&quot;</span>, <span class="tok-str">&quot;aliquid&quot;</span>, <span class="tok-str">&quot;ex&quot;</span>, <span class="tok-str">&quot;ea&quot;</span>, <span class="tok-str">&quot;commodi&quot;</span>, <span class="tok-str">&quot;autem&quot;</span>, <span class="tok-str">&quot;vel&quot;</span>, <span class="tok-str">&quot;eum&quot;</span>, <span class="tok-str">&quot;iure&quot;</span>, <span class="tok-str">&quot;reprehenderit&quot;</span>, <span class="tok-str">&quot;in&quot;</span>, <span class="tok-str">&quot;voluptate&quot;</span>, <span class="tok-str">&quot;esse&quot;</span>, <span class="tok-str">&quot;quam&quot;</span>, <span class="tok-str">&quot;nihil&quot;</span>, <span class="tok-str">&quot;molestiae&quot;</span>, <span class="tok-str">&quot;iusto&quot;</span>, <span class="tok-str">&quot;odio&quot;</span>, <span class="tok-str">&quot;dignissimos&quot;</span>, <span class="tok-str">&quot;ducimus&quot;</span>, <span class="tok-str">&quot;blanditiis&quot;</span>, <span class="tok-str">&quot;praesentium&quot;</span>, <span class="tok-str">&quot;laudantium&quot;</span>, <span class="tok-str">&quot;totam&quot;</span>, <span class="tok-str">&quot;rem&quot;</span>, <span class="tok-str">&quot;voluptatum&quot;</span>, <span class="tok-str">&quot;deleniti&quot;</span>, <span class="tok-str">&quot;atque&quot;</span>, <span class="tok-str">&quot;corrupti&quot;</span>, <span class="tok-str">&quot;quos&quot;</span>, <span class="tok-str">&quot;quas&quot;</span>, <span class="tok-str">&quot;molestias&quot;</span>, <span class="tok-str">&quot;excepturi&quot;</span>, <span class="tok-str">&quot;sint&quot;</span>, <span class="tok-str">&quot;occaecati&quot;</span>, <span class="tok-str">&quot;cupiditate&quot;</span>, <span class="tok-str">&quot;provident&quot;</span>, <span class="tok-str">&quot;perspiciatis&quot;</span>, <span class="tok-str">&quot;unde&quot;</span>, <span class="tok-str">&quot;omnis&quot;</span>, <span class="tok-str">&quot;iste&quot;</span>, <span class="tok-str">&quot;natus&quot;</span>, <span class="tok-str">&quot;error&quot;</span>, <span class="tok-str">&quot;similique&quot;</span>, <span class="tok-str">&quot;culpa&quot;</span>, <span class="tok-str">&quot;officia&quot;</span>, <span class="tok-str">&quot;deserunt&quot;</span>, <span class="tok-str">&quot;mollitia&quot;</span>, <span class="tok-str">&quot;animi&quot;</span>, <span class="tok-str">&quot;id&quot;</span>, <span class="tok-str">&quot;est&quot;</span>, <span class="tok-str">&quot;laborum&quot;</span>, <span class="tok-str">&quot;dolorum&quot;</span>, <span class="tok-str">&quot;fuga&quot;</span>, <span class="tok-str">&quot;harum&quot;</span>, <span class="tok-str">&quot;quidem&quot;</span>, <span class="tok-str">&quot;rerum&quot;</span>, <span class="tok-str">&quot;facilis&quot;</span>, <span class="tok-str">&quot;expedita&quot;</span>, <span class="tok-str">&quot;distinctio&quot;</span>, <span class="tok-str">&quot;nam&quot;</span>, <span class="tok-str">&quot;libero&quot;</span>, <span class="tok-str">&quot;tempore&quot;</span>, <span class="tok-str">&quot;cum&quot;</span>, <span class="tok-str">&quot;soluta&quot;</span>, <span class="tok-str">&quot;nobis&quot;</span>, <span class="tok-str">&quot;eligendi&quot;</span>, <span class="tok-str">&quot;optio&quot;</span>, <span class="tok-str">&quot;cumque&quot;</span>, <span class="tok-str">&quot;impedit&quot;</span>, <span class="tok-str">&quot;quo&quot;</span>, <span class="tok-str">&quot;porro&quot;</span>, <span class="tok-str">&quot;quisquam&quot;</span>, <span class="tok-str">&quot;minus&quot;</span>, <span class="tok-str">&quot;quod&quot;</span>, <span class="tok-str">&quot;maxime&quot;</span>, <span class="tok-str">&quot;placeat&quot;</span>, <span class="tok-str">&quot;facere&quot;</span>, <span class="tok-str">&quot;possimus&quot;</span>, <span class="tok-str">&quot;assumenda&quot;</span>, <span class="tok-str">&quot;repellendus&quot;</span>, <span class="tok-str">&quot;temporibus&quot;</span>, <span class="tok-str">&quot;quibusdam&quot;</span>, <span class="tok-str">&quot;illum&quot;</span>, <span class="tok-str">&quot;fugiat&quot;</span>, <span class="tok-str">&quot;nulla&quot;</span>, <span class="tok-str">&quot;pariatur&quot;</span>, <span class="tok-str">&quot;at&quot;</span>, <span class="tok-str">&quot;vero&quot;</span>, <span class="tok-str">&quot;accusamus&quot;</span>, <span class="tok-str">&quot;officiis&quot;</span>, <span class="tok-str">&quot;debitis&quot;</span>, <span class="tok-str">&quot;necessitatibus&quot;</span>, <span class="tok-str">&quot;saepe&quot;</span>, <span class="tok-str">&quot;eveniet&quot;</span>, <span class="tok-str">&quot;voluptates&quot;</span>, <span class="tok-str">&quot;repudiandae&quot;</span>, <span class="tok-str">&quot;recusandae&quot;</span>, <span class="tok-str">&quot;itaque&quot;</span>, <span class="tok-str">&quot;earum&quot;</span>, <span class="tok-str">&quot;hic&quot;</span>, <span class="tok-str">&quot;tenetur&quot;</span>, <span class="tok-str">&quot;a&quot;</span>, <span class="tok-str">&quot;sapiente&quot;</span>, <span class="tok-str">&quot;delectus&quot;</span>, <span class="tok-str">&quot;reiciendis&quot;</span>, <span class="tok-str">&quot;voluptatibus&quot;</span>, <span class="tok-str">&quot;maiores&quot;</span>, <span class="tok-str">&quot;doloribus&quot;</span>, <span class="tok-str">&quot;asperiores&quot;</span>, <span class="tok-str">&quot;repellat&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

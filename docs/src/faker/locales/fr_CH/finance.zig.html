@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fr_CH\finance.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> Currency = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/finance.zig&quot;</span>).Currency;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> account_type = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Chèque&quot;</span>, <span class="tok-str">&quot;Epargne&quot;</span>, <span class="tok-str">&quot;Marché monétaire&quot;</span>, <span class="tok-str">&quot;Investissement&quot;</span>, <span class="tok-str">&quot;Prêt immobilier&quot;</span>, <span class="tok-str">&quot;Carte de crédit&quot;</span>, <span class="tok-str">&quot;Prêt personnel&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> currency = [_]Currency{ .{ .name = <span class="tok-str">&quot;Dollar&quot;</span>, .code = <span class="tok-str">&quot;USD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar canadien&quot;</span>, .code = <span class="tok-str">&quot;CAD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Peso mexicain&quot;</span>, .code = <span class="tok-str">&quot;MXN&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Florin&quot;</span>, .code = <span class="tok-str">&quot;AWG&quot;</span>, .symbol = <span class="tok-str">&quot;ƒ&quot;</span> }, .{ .name = <span class="tok-str">&quot;Baisse du dollar&quot;</span>, .code = <span class="tok-str">&quot;BBD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar bermudien&quot;</span>, .code = <span class="tok-str">&quot;BMD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar des Bahamas&quot;</span>, .code = <span class="tok-str">&quot;BSD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Peso dominicain&quot;</span>, .code = <span class="tok-str">&quot;DOP&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar jamaïcain&quot;</span>, .code = <span class="tok-str">&quot;JMD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Quetzal guatémaltèque&quot;</span>, .code = <span class="tok-str">&quot;GTQ&quot;</span>, .symbol = <span class="tok-str">&quot;Q&quot;</span> }, .{ .name = <span class="tok-str">&quot;Balboa panaméen&quot;</span>, .code = <span class="tok-str">&quot;PAB&quot;</span>, .symbol = <span class="tok-str">&quot;B/.&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar des Caraïbes&quot;</span>, .code = <span class="tok-str">&quot;XCD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;euro&quot;</span>, .code = <span class="tok-str">&quot;EUR&quot;</span>, .symbol = <span class="tok-str">&quot;€&quot;</span> }, .{ .name = <span class="tok-str">&quot;Livre sterling&quot;</span>, .code = <span class="tok-str">&quot;GBP&quot;</span>, .symbol = <span class="tok-str">&quot;£&quot;</span> }, .{ .name = <span class="tok-str">&quot;Course géorgienne&quot;</span>, .code = <span class="tok-str">&quot;GEL&quot;</span>, .symbol = <span class="tok-str">&quot;₾&quot;</span> }, .{ .name = <span class="tok-str">&quot;Lev bulgare&quot;</span>, .code = <span class="tok-str">&quot;BGN&quot;</span>, .symbol = <span class="tok-str">&quot;лв&quot;</span> }, .{ .name = <span class="tok-str">&quot;Franc suisse&quot;</span>, .code = <span class="tok-str">&quot;CHF&quot;</span>, .symbol = <span class="tok-str">&quot;CHF&quot;</span> }, .{ .name = <span class="tok-str">&quot;Couronne danoise&quot;</span>, .code = <span class="tok-str">&quot;DKK&quot;</span>, .symbol = <span class="tok-str">&quot;kr&quot;</span> }, .{ .name = <span class="tok-str">&quot;République tchèque Couronne&quot;</span>, .code = <span class="tok-str">&quot;CZK&quot;</span>, .symbol = <span class="tok-str">&quot;Kč&quot;</span> }, .{ .name = <span class="tok-str">&quot;Kuna croate&quot;</span>, .code = <span class="tok-str">&quot;HRK&quot;</span>, .symbol = <span class="tok-str">&quot;kn&quot;</span> }, .{ .name = <span class="tok-str">&quot;Forint hongrois&quot;</span>, .code = <span class="tok-str">&quot;HUF&quot;</span>, .symbol = <span class="tok-str">&quot;ft&quot;</span> }, .{ .name = <span class="tok-str">&quot;couronne norvégienne&quot;</span>, .code = <span class="tok-str">&quot;NOK&quot;</span>, .symbol = <span class="tok-str">&quot;kr&quot;</span> }, .{ .name = <span class="tok-str">&quot;Rouble russe&quot;</span>, .code = <span class="tok-str">&quot;RUB&quot;</span>, .symbol = <span class="tok-str">&quot;₽&quot;</span> }, .{ .name = <span class="tok-str">&quot;Zloty polonais&quot;</span>, .code = <span class="tok-str">&quot;PLN&quot;</span>, .symbol = <span class="tok-str">&quot;zł&quot;</span> }, .{ .name = <span class="tok-str">&quot;Leu roumain&quot;</span>, .code = <span class="tok-str">&quot;RON&quot;</span>, .symbol = <span class="tok-str">&quot;lei&quot;</span> }, .{ .name = <span class="tok-str">&quot;couronne suédoise&quot;</span>, .code = <span class="tok-str">&quot;SEK&quot;</span>, .symbol = <span class="tok-str">&quot;kr&quot;</span> }, .{ .name = <span class="tok-str">&quot;Hryvnia ukrainienne&quot;</span>, .code = <span class="tok-str">&quot;UAH&quot;</span>, .symbol = <span class="tok-str">&quot;₴&quot;</span> }, .{ .name = <span class="tok-str">&quot;lire turque&quot;</span>, .code = <span class="tok-str">&quot;TRY&quot;</span>, .symbol = <span class="tok-str">&quot;₺&quot;</span> }, .{ .name = <span class="tok-str">&quot;Argentine Peso&quot;</span>, .code = <span class="tok-str">&quot;ARS&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Bolivien bolivien&quot;</span>, .code = <span class="tok-str">&quot;BOB&quot;</span>, .symbol = <span class="tok-str">&quot;Bs.&quot;</span> }, .{ .name = <span class="tok-str">&quot;Real brésilien&quot;</span>, .code = <span class="tok-str">&quot;BRL&quot;</span>, .symbol = <span class="tok-str">&quot;R$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Peso chilien&quot;</span>, .code = <span class="tok-str">&quot;CLP&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Peso colombien&quot;</span>, .code = <span class="tok-str">&quot;COP&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Nouveau Sol Péruvien&quot;</span>, .code = <span class="tok-str">&quot;PEN&quot;</span>, .symbol = <span class="tok-str">&quot;S/.&quot;</span> }, .{ .name = <span class="tok-str">&quot;Guarani paraguayen&quot;</span>, .code = <span class="tok-str">&quot;PYG&quot;</span>, .symbol = <span class="tok-str">&quot;₲&quot;</span> }, .{ .name = <span class="tok-str">&quot;Peso uruguayen&quot;</span>, .code = <span class="tok-str">&quot;UYU&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Bolivar vénézuélien&quot;</span>, .code = <span class="tok-str">&quot;VES&quot;</span>, .symbol = <span class="tok-str">&quot;Bs.&quot;</span> }, .{ .name = <span class="tok-str">&quot;Yen japonais&quot;</span>, .code = <span class="tok-str">&quot;JPY&quot;</span>, .symbol = <span class="tok-str">&quot;¥&quot;</span> }, .{ .name = <span class="tok-str">&quot;Bangladesh Taka&quot;</span>, .code = <span class="tok-str">&quot;BDT&quot;</span>, .symbol = <span class="tok-str">&quot;৳&quot;</span> }, .{ .name = <span class="tok-str">&quot;Le yuan chinois&quot;</span>, .code = <span class="tok-str">&quot;CNY&quot;</span>, .symbol = <span class="tok-str">&quot;¥&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar de Hong Kong&quot;</span>, .code = <span class="tok-str">&quot;HKD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Roupie indienne&quot;</span>, .code = <span class="tok-str">&quot;INR&quot;</span>, .symbol = <span class="tok-str">&quot;₹&quot;</span> }, .{ .name = <span class="tok-str">&quot;Riel cambodgien&quot;</span>, .code = <span class="tok-str">&quot;KHR&quot;</span>, .symbol = <span class="tok-str">&quot;៛&quot;</span> }, .{ .name = <span class="tok-str">&quot;Poulet&quot;</span>, .code = <span class="tok-str">&quot;LAK&quot;</span>, .symbol = <span class="tok-str">&quot;₭&quot;</span> }, .{ .name = <span class="tok-str">&quot;Roupie sri lankaise&quot;</span>, .code = <span class="tok-str">&quot;LKR&quot;</span>, .symbol = <span class="tok-str">&quot;රු&quot;</span> }, .{ .name = <span class="tok-str">&quot;Rufiyaa&quot;</span>, .code = <span class="tok-str">&quot;MVR&quot;</span>, .symbol = <span class="tok-str">&quot;.ރ&quot;</span> }, .{ .name = <span class="tok-str">&quot;cloche malaisienne&quot;</span>, .code = <span class="tok-str">&quot;MYR&quot;</span>, .symbol = <span class="tok-str">&quot;RM&quot;</span> }, .{ .name = <span class="tok-str">&quot;Roupie népalaise&quot;</span>, .code = <span class="tok-str">&quot;NPR&quot;</span>, .symbol = <span class="tok-str">&quot;रू&quot;</span> }, .{ .name = <span class="tok-str">&quot;Peso philippin&quot;</span>, .code = <span class="tok-str">&quot;PHP&quot;</span>, .symbol = <span class="tok-str">&quot;₱&quot;</span> }, .{ .name = <span class="tok-str">&quot;Roupie pakistanaise&quot;</span>, .code = <span class="tok-str">&quot;PKR&quot;</span>, .symbol = <span class="tok-str">&quot;₨&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar de Singapour&quot;</span>, .code = <span class="tok-str">&quot;SGD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Baht thaïlandais&quot;</span>, .code = <span class="tok-str">&quot;THB&quot;</span>, .symbol = <span class="tok-str">&quot;฿&quot;</span> }, .{ .name = <span class="tok-str">&quot;Nouveau dollar de Taïwan&quot;</span>, .code = <span class="tok-str">&quot;TWD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dong vietnamien&quot;</span>, .code = <span class="tok-str">&quot;VND&quot;</span>, .symbol = <span class="tok-str">&quot;₫&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar australien&quot;</span>, .code = <span class="tok-str">&quot;AUD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar fidjien&quot;</span>, .code = <span class="tok-str">&quot;FJD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar néo-zélandais&quot;</span>, .code = <span class="tok-str">&quot;NZD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Franc CFP&quot;</span>, .code = <span class="tok-str">&quot;XPF&quot;</span>, .symbol = <span class="tok-str">&quot;₣&quot;</span> }, .{ .name = <span class="tok-str">&quot;Livre égyptienne&quot;</span>, .code = <span class="tok-str">&quot;EGP&quot;</span>, .symbol = <span class="tok-str">&quot;£&quot;</span> }, .{ .name = <span class="tok-str">&quot;Cédi ghanéen&quot;</span>, .code = <span class="tok-str">&quot;GHS&quot;</span>, .symbol = <span class="tok-str">&quot;₵&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dalasi&quot;</span>, .code = <span class="tok-str">&quot;GMD&quot;</span>, .symbol = <span class="tok-str">&quot;D&quot;</span> }, .{ .name = <span class="tok-str">&quot;Shilling kenyan&quot;</span>, .code = <span class="tok-str">&quot;KES&quot;</span>, .symbol = <span class="tok-str">&quot;Sh&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dirham marocain&quot;</span>, .code = <span class="tok-str">&quot;MAD&quot;</span>, .symbol = <span class="tok-str">&quot;DH&quot;</span> }, .{ .name = <span class="tok-str">&quot;Ariary malgache&quot;</span>, .code = <span class="tok-str">&quot;MGA&quot;</span>, .symbol = <span class="tok-str">&quot;Ar&quot;</span> }, .{ .name = <span class="tok-str">&quot;Roupie mauricienne&quot;</span>, .code = <span class="tok-str">&quot;MUR&quot;</span>, .symbol = <span class="tok-str">&quot;₨&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dollar namibien&quot;</span>, .code = <span class="tok-str">&quot;NAD&quot;</span>, .symbol = <span class="tok-str">&quot;$&quot;</span> }, .{ .name = <span class="tok-str">&quot;Naira nigérian&quot;</span>, .code = <span class="tok-str">&quot;NGN&quot;</span>, .symbol = <span class="tok-str">&quot;₦&quot;</span> }, .{ .name = <span class="tok-str">&quot;Roupie&quot;</span>, .code = <span class="tok-str">&quot;SCR&quot;</span>, .symbol = <span class="tok-str">&quot;₨&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dinar tunisien&quot;</span>, .code = <span class="tok-str">&quot;TND&quot;</span>, .symbol = <span class="tok-str">&quot;DT&quot;</span> }, .{ .name = <span class="tok-str">&quot;Shilling ougandais&quot;</span>, .code = <span class="tok-str">&quot;UGX&quot;</span>, .symbol = <span class="tok-str">&quot;Sh&quot;</span> }, .{ .name = <span class="tok-str">&quot;CFA Franc BEAC&quot;</span>, .code = <span class="tok-str">&quot;XAF&quot;</span>, .symbol = <span class="tok-str">&quot;Fr&quot;</span> }, .{ .name = <span class="tok-str">&quot;CFA Franc BCEAO&quot;</span>, .code = <span class="tok-str">&quot;XOF&quot;</span>, .symbol = <span class="tok-str">&quot;Fr&quot;</span> }, .{ .name = <span class="tok-str">&quot;Rand sud-africain&quot;</span>, .code = <span class="tok-str">&quot;ZAR&quot;</span>, .symbol = <span class="tok-str">&quot;Br&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dirham des Émirats arabes unis&quot;</span>, .code = <span class="tok-str">&quot;AED&quot;</span>, .symbol = <span class="tok-str">&quot;د.إ&quot;</span> }, .{ .name = <span class="tok-str">&quot;Nouveau Shekel israélien&quot;</span>, .code = <span class="tok-str">&quot;ILS&quot;</span>, .symbol = <span class="tok-str">&quot;₪&quot;</span> }, .{ .name = <span class="tok-str">&quot;Livre syrienne&quot;</span>, .code = <span class="tok-str">&quot;SYP&quot;</span>, .symbol = <span class="tok-str">&quot;£&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dinar jordanien&quot;</span>, .code = <span class="tok-str">&quot;JOD&quot;</span>, .symbol = <span class="tok-str">&quot;د.ا&quot;</span> }, .{ .name = <span class="tok-str">&quot;Dinar koweïtien&quot;</span>, .code = <span class="tok-str">&quot;KWD&quot;</span>, .symbol = <span class="tok-str">&quot;د.ك&quot;</span> }, .{ .name = <span class="tok-str">&quot;Livre libanaise&quot;</span>, .code = <span class="tok-str">&quot;LBP&quot;</span>, .symbol = <span class="tok-str">&quot;ل.ل&quot;</span> }, .{ .name = <span class="tok-str">&quot;Rial omanais&quot;</span>, .code = <span class="tok-str">&quot;OMR&quot;</span>, .symbol = <span class="tok-str">&quot;ر.ع.&quot;</span> }, .{ .name = <span class="tok-str">&quot;Rial qatari&quot;</span>, .code = <span class="tok-str">&quot;QAR&quot;</span>, .symbol = <span class="tok-str">&quot;ر.ق&quot;</span> }, .{ .name = <span class="tok-str">&quot;Riyal saoudien&quot;</span>, .code = <span class="tok-str">&quot;SAR&quot;</span>, .symbol = <span class="tok-str">&quot;&quot;</span> }, .{ .name = <span class="tok-str">&quot;Bitcoin&quot;</span>, .code = <span class="tok-str">&quot;BTC&quot;</span>, .symbol = <span class="tok-str">&quot;₿&quot;</span> }, .{ .name = <span class="tok-str">&quot;Ethereum&quot;</span>, .code = <span class="tok-str">&quot;ETH&quot;</span>, .symbol = <span class="tok-str">&quot;Ξ&quot;</span> }, .{ .name = <span class="tok-str">&quot;Litecoin&quot;</span>, .code = <span class="tok-str">&quot;LTC&quot;</span>, .symbol = <span class="tok-str">&quot;Ł&quot;</span> }, .{ .name = <span class="tok-str">&quot;Ripples&quot;</span>, .code = <span class="tok-str">&quot;XRP&quot;</span>, .symbol = <span class="tok-str">&quot;XRP&quot;</span> } };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> transaction_type = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;dépôt&quot;</span>, <span class="tok-str">&quot;retrait&quot;</span>, <span class="tok-str">&quot;paiement&quot;</span>, <span class="tok-str">&quot;facture&quot;</span> };</span>
+<span class="line" id="L8"></span>
+</code></pre></body>
+</html>

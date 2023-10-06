@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\el\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Αθήνα&quot;</span>, <span class="tok-str">&quot;Θεσσαλονίκη&quot;</span>, <span class="tok-str">&quot;Πειραιάς&quot;</span>, <span class="tok-str">&quot;Πάτρα&quot;</span>, <span class="tok-str">&quot;Ηράκλειο&quot;</span>, <span class="tok-str">&quot;Λάρισα&quot;</span>, <span class="tok-str">&quot;Βόλος&quot;</span>, <span class="tok-str">&quot;Ιωάννινα&quot;</span>, <span class="tok-str">&quot;Τρίκαλα&quot;</span>, <span class="tok-str">&quot;Σέρρες&quot;</span>, <span class="tok-str">&quot;Χαλκίδα&quot;</span>, <span class="tok-str">&quot;Αλεξανδρούπολη&quot;</span>, <span class="tok-str">&quot;Ξάνθη&quot;</span>, <span class="tok-str">&quot;Κατερίνη&quot;</span>, <span class="tok-str">&quot;Αγρίνιο&quot;</span>, <span class="tok-str">&quot;Καλαμάτα&quot;</span>, <span class="tok-str">&quot;Καβάλα&quot;</span>, <span class="tok-str">&quot;Χανιά&quot;</span>, <span class="tok-str">&quot;Λαμία&quot;</span>, <span class="tok-str">&quot;Κομοτηνή&quot;</span>, <span class="tok-str">&quot;Ρόδος&quot;</span>, <span class="tok-str">&quot;Δράμα&quot;</span>, <span class="tok-str">&quot;Βέροια&quot;</span>, <span class="tok-str">&quot;Κοζάνη&quot;</span>, <span class="tok-str">&quot;Καρδίτσα&quot;</span>, <span class="tok-str">&quot;Ρέθυμνο&quot;</span>, <span class="tok-str">&quot;Πτολεμαΐδα&quot;</span>, <span class="tok-str">&quot;Τρίπολη&quot;</span>, <span class="tok-str">&quot;Κόρινθος&quot;</span>, <span class="tok-str">&quot;Γέρακας&quot;</span>, <span class="tok-str">&quot;Γιαννιτσά&quot;</span>, <span class="tok-str">&quot;Μυτιλήνη&quot;</span>, <span class="tok-str">&quot;Χίος&quot;</span>, <span class="tok-str">&quot;Σαλαμίνα&quot;</span>, <span class="tok-str">&quot;Ελευσίνα&quot;</span>, <span class="tok-str">&quot;Κέρκυρα&quot;</span>, <span class="tok-str">&quot;Πύργος&quot;</span>, <span class="tok-str">&quot;Μέγαρα&quot;</span>, <span class="tok-str">&quot;Κιλκίς&quot;</span>, <span class="tok-str">&quot;Θήβα&quot;</span>, <span class="tok-str">&quot;Άργος&quot;</span>, <span class="tok-str">&quot;Άρτα&quot;</span>, <span class="tok-str">&quot;Άρτεμη&quot;</span>, <span class="tok-str">&quot;Λιβαδειά&quot;</span>, <span class="tok-str">&quot;Ωραιόκαστρο&quot;</span>, <span class="tok-str">&quot;Αίγιο&quot;</span>, <span class="tok-str">&quot;Κως&quot;</span>, <span class="tok-str">&quot;Κορωπί&quot;</span>, <span class="tok-str">&quot;Πρέβεζα&quot;</span>, <span class="tok-str">&quot;Νάουσα&quot;</span>, <span class="tok-str">&quot;Ορεστιάδα&quot;</span>, <span class="tok-str">&quot;Έδεσσα&quot;</span>, <span class="tok-str">&quot;Φλώρινα&quot;</span>, <span class="tok-str">&quot;Αμαλιάδα&quot;</span>, <span class="tok-str">&quot;Παλλήνη&quot;</span>, <span class="tok-str">&quot;Σπάρτη&quot;</span>, <span class="tok-str">&quot;Θέρμη&quot;</span>, <span class="tok-str">&quot;Βάρη&quot;</span>, <span class="tok-str">&quot;Νέα&quot;</span>, <span class="tok-str">&quot;Αλεξάνδρεια&quot;</span>, <span class="tok-str">&quot;Παιανία&quot;</span>, <span class="tok-str">&quot;Καλύβια&quot;</span>, <span class="tok-str">&quot;Ναύπλιο&quot;</span>, <span class="tok-str">&quot;Ναύπακτος&quot;</span>, <span class="tok-str">&quot;Καστοριά&quot;</span>, <span class="tok-str">&quot;Γρεβενά&quot;</span>, <span class="tok-str">&quot;Μεσολόγγι&quot;</span>, <span class="tok-str">&quot;Γάζι&quot;</span>, <span class="tok-str">&quot;Ιεράπετρα&quot;</span>, <span class="tok-str">&quot;Κάλυμνος&quot;</span>, <span class="tok-str">&quot;Ραφήνα&quot;</span>, <span class="tok-str">&quot;Λουτράκι&quot;</span>, <span class="tok-str">&quot;Άγιος&quot;</span>, <span class="tok-str">&quot;Ερμούπολη&quot;</span>, <span class="tok-str">&quot;Ιαλυσός&quot;</span>, <span class="tok-str">&quot;Τύρναβος&quot;</span>, <span class="tok-str">&quot;Γλυκά Νερά&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_name}}&quot;</span>};</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Ελλάδα&quot;</span>};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.firstName}} {{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.lastName}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L8"></span>
+</code></pre></body>
+</html>

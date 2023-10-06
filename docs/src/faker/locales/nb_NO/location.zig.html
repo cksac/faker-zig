@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\nb_NO\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;#&quot;</span>, <span class="tok-str">&quot;##&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Fet&quot;</span>, <span class="tok-str">&quot;Gjes&quot;</span>, <span class="tok-str">&quot;Høy&quot;</span>, <span class="tok-str">&quot;Inn&quot;</span>, <span class="tok-str">&quot;Fager&quot;</span>, <span class="tok-str">&quot;Lille&quot;</span>, <span class="tok-str">&quot;Lo&quot;</span>, <span class="tok-str">&quot;Mal&quot;</span>, <span class="tok-str">&quot;Nord&quot;</span>, <span class="tok-str">&quot;Nær&quot;</span>, <span class="tok-str">&quot;Sand&quot;</span>, <span class="tok-str">&quot;Sme&quot;</span>, <span class="tok-str">&quot;Stav&quot;</span>, <span class="tok-str">&quot;Stor&quot;</span>, <span class="tok-str">&quot;Tand&quot;</span>, <span class="tok-str">&quot;Ut&quot;</span>, <span class="tok-str">&quot;Vest&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_name}}{{location.city_suffix}}&quot;</span>};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;berg&quot;</span>, <span class="tok-str">&quot;borg&quot;</span>, <span class="tok-str">&quot;by&quot;</span>, <span class="tok-str">&quot;bø&quot;</span>, <span class="tok-str">&quot;dal&quot;</span>, <span class="tok-str">&quot;eid&quot;</span>, <span class="tok-str">&quot;fjell&quot;</span>, <span class="tok-str">&quot;fjord&quot;</span>, <span class="tok-str">&quot;foss&quot;</span>, <span class="tok-str">&quot;grunn&quot;</span>, <span class="tok-str">&quot;hamn&quot;</span>, <span class="tok-str">&quot;havn&quot;</span>, <span class="tok-str">&quot;helle&quot;</span>, <span class="tok-str">&quot;mark&quot;</span>, <span class="tok-str">&quot;nes&quot;</span>, <span class="tok-str">&quot;odden&quot;</span>, <span class="tok-str">&quot;sand&quot;</span>, <span class="tok-str">&quot;sjøen&quot;</span>, <span class="tok-str">&quot;stad&quot;</span>, <span class="tok-str">&quot;strand&quot;</span>, <span class="tok-str">&quot;strøm&quot;</span>, <span class="tok-str">&quot;sund&quot;</span>, <span class="tok-str">&quot;vik&quot;</span>, <span class="tok-str">&quot;vær&quot;</span>, <span class="tok-str">&quot;våg&quot;</span>, <span class="tok-str">&quot;ø&quot;</span>, <span class="tok-str">&quot;øy&quot;</span>, <span class="tok-str">&quot;ås&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> common_street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;sgate&quot;</span>, <span class="tok-str">&quot;svei&quot;</span>, <span class="tok-str">&quot;s Gate&quot;</span>, <span class="tok-str">&quot;s Vei&quot;</span>, <span class="tok-str">&quot;gata&quot;</span>, <span class="tok-str">&quot;veien&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Norge&quot;</span>};</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;####&quot;</span>, <span class="tok-str">&quot;0###&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> secondary_address = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Leil. ###&quot;</span>, <span class="tok-str">&quot;Oppgang A&quot;</span>, <span class="tok-str">&quot;Oppgang B&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;&quot;</span>};</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}} {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Eike&quot;</span>, <span class="tok-str">&quot;Bjørke&quot;</span>, <span class="tok-str">&quot;Gran&quot;</span>, <span class="tok-str">&quot;Vass&quot;</span>, <span class="tok-str">&quot;Furu&quot;</span>, <span class="tok-str">&quot;Litj&quot;</span>, <span class="tok-str">&quot;Lille&quot;</span>, <span class="tok-str">&quot;Høy&quot;</span>, <span class="tok-str">&quot;Fosse&quot;</span>, <span class="tok-str">&quot;Elve&quot;</span>, <span class="tok-str">&quot;Ku&quot;</span>, <span class="tok-str">&quot;Konvall&quot;</span>, <span class="tok-str">&quot;Soldugg&quot;</span>, <span class="tok-str">&quot;Hestemyr&quot;</span>, <span class="tok-str">&quot;Granitt&quot;</span>, <span class="tok-str">&quot;Hegge&quot;</span>, <span class="tok-str">&quot;Rogne&quot;</span>, <span class="tok-str">&quot;Fiol&quot;</span>, <span class="tok-str">&quot;Sol&quot;</span>, <span class="tok-str">&quot;Ting&quot;</span>, <span class="tok-str">&quot;Malm&quot;</span>, <span class="tok-str">&quot;Klokker&quot;</span>, <span class="tok-str">&quot;Preste&quot;</span>, <span class="tok-str">&quot;Dam&quot;</span>, <span class="tok-str">&quot;Geiterygg&quot;</span>, <span class="tok-str">&quot;Bekke&quot;</span>, <span class="tok-str">&quot;Berg&quot;</span>, <span class="tok-str">&quot;Kirke&quot;</span>, <span class="tok-str">&quot;Kors&quot;</span>, <span class="tok-str">&quot;Bru&quot;</span>, <span class="tok-str">&quot;Blåveis&quot;</span>, <span class="tok-str">&quot;Torg&quot;</span>, <span class="tok-str">&quot;Sjø&quot;</span> };</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.street_name}}{{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.street_prefix}} {{location.street_name}}{{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.first_name}}{{location.common_street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.common_street_suffix}}&quot;</span> };</span>
+<span class="line" id="L24"></span>
+<span class="line" id="L25"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Øvre&quot;</span>, <span class="tok-str">&quot;Nedre&quot;</span>, <span class="tok-str">&quot;Søndre&quot;</span>, <span class="tok-str">&quot;Gamle&quot;</span>, <span class="tok-str">&quot;Østre&quot;</span>, <span class="tok-str">&quot;Vestre&quot;</span> };</span>
+<span class="line" id="L26"></span>
+<span class="line" id="L27"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;alléen&quot;</span>, <span class="tok-str">&quot;bakken&quot;</span>, <span class="tok-str">&quot;berget&quot;</span>, <span class="tok-str">&quot;bråten&quot;</span>, <span class="tok-str">&quot;eggen&quot;</span>, <span class="tok-str">&quot;engen&quot;</span>, <span class="tok-str">&quot;ekra&quot;</span>, <span class="tok-str">&quot;faret&quot;</span>, <span class="tok-str">&quot;flata&quot;</span>, <span class="tok-str">&quot;gata&quot;</span>, <span class="tok-str">&quot;gjerdet&quot;</span>, <span class="tok-str">&quot;grenda&quot;</span>, <span class="tok-str">&quot;gropa&quot;</span>, <span class="tok-str">&quot;hagen&quot;</span>, <span class="tok-str">&quot;haugen&quot;</span>, <span class="tok-str">&quot;havna&quot;</span>, <span class="tok-str">&quot;holtet&quot;</span>, <span class="tok-str">&quot;høgda&quot;</span>, <span class="tok-str">&quot;jordet&quot;</span>, <span class="tok-str">&quot;kollen&quot;</span>, <span class="tok-str">&quot;kroken&quot;</span>, <span class="tok-str">&quot;lia&quot;</span>, <span class="tok-str">&quot;lunden&quot;</span>, <span class="tok-str">&quot;lyngen&quot;</span>, <span class="tok-str">&quot;løkka&quot;</span>, <span class="tok-str">&quot;marka&quot;</span>, <span class="tok-str">&quot;moen&quot;</span>, <span class="tok-str">&quot;myra&quot;</span>, <span class="tok-str">&quot;plassen&quot;</span>, <span class="tok-str">&quot;ringen&quot;</span>, <span class="tok-str">&quot;roa&quot;</span>, <span class="tok-str">&quot;røa&quot;</span>, <span class="tok-str">&quot;skogen&quot;</span>, <span class="tok-str">&quot;skrenten&quot;</span>, <span class="tok-str">&quot;spranget&quot;</span>, <span class="tok-str">&quot;stien&quot;</span>, <span class="tok-str">&quot;stranda&quot;</span>, <span class="tok-str">&quot;stubben&quot;</span>, <span class="tok-str">&quot;stykket&quot;</span>, <span class="tok-str">&quot;svingen&quot;</span>, <span class="tok-str">&quot;tjernet&quot;</span>, <span class="tok-str">&quot;toppen&quot;</span>, <span class="tok-str">&quot;tunet&quot;</span>, <span class="tok-str">&quot;vollen&quot;</span>, <span class="tok-str">&quot;vika&quot;</span>, <span class="tok-str">&quot;åsen&quot;</span> };</span>
+<span class="line" id="L28"></span>
+</code></pre></body>
+</html>

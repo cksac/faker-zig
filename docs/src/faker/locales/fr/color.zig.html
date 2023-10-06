@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fr\color.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> human = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;abricot&quot;</span>, <span class="tok-str">&quot;acajou&quot;</span>, <span class="tok-str">&quot;aigue-marine&quot;</span>, <span class="tok-str">&quot;amande&quot;</span>, <span class="tok-str">&quot;amarante&quot;</span>, <span class="tok-str">&quot;ambre&quot;</span>, <span class="tok-str">&quot;améthyste&quot;</span>, <span class="tok-str">&quot;anthracite&quot;</span>, <span class="tok-str">&quot;argent&quot;</span>, <span class="tok-str">&quot;aubergine&quot;</span>, <span class="tok-str">&quot;aurore&quot;</span>, <span class="tok-str">&quot;avocat&quot;</span>, <span class="tok-str">&quot;azur&quot;</span>, <span class="tok-str">&quot;basané&quot;</span>, <span class="tok-str">&quot;beurre&quot;</span>, <span class="tok-str">&quot;bis&quot;</span>, <span class="tok-str">&quot;bisque&quot;</span>, <span class="tok-str">&quot;bistre&quot;</span>, <span class="tok-str">&quot;bitume&quot;</span>, <span class="tok-str">&quot;blanc cassé&quot;</span>, <span class="tok-str">&quot;blanc lunaire&quot;</span>, <span class="tok-str">&quot;blé&quot;</span>, <span class="tok-str">&quot;bleu acier&quot;</span>, <span class="tok-str">&quot;bleu bleuet&quot;</span>, <span class="tok-str">&quot;bleu canard&quot;</span>, <span class="tok-str">&quot;bleu charrette&quot;</span>, <span class="tok-str">&quot;bleu ciel&quot;</span>, <span class="tok-str">&quot;bleu de cobalt&quot;</span>, <span class="tok-str">&quot;bleu de Prusse&quot;</span>, <span class="tok-str">&quot;bleu électrique&quot;</span>, <span class="tok-str">&quot;bleu givré&quot;</span>, <span class="tok-str">&quot;bleu marine&quot;</span>, <span class="tok-str">&quot;bleu nuit&quot;</span>, <span class="tok-str">&quot;bleu outremer&quot;</span>, <span class="tok-str">&quot;bleu paon&quot;</span>, <span class="tok-str">&quot;bleu persan&quot;</span>, <span class="tok-str">&quot;bleu pétrole&quot;</span>, <span class="tok-str">&quot;bleu roi&quot;</span>, <span class="tok-str">&quot;bleu saphir&quot;</span>, <span class="tok-str">&quot;bleu turquin&quot;</span>, <span class="tok-str">&quot;bouton d'or&quot;</span>, <span class="tok-str">&quot;brique&quot;</span>, <span class="tok-str">&quot;bronze&quot;</span>, <span class="tok-str">&quot;brou de noix&quot;</span>, <span class="tok-str">&quot;caca d'oie&quot;</span>, <span class="tok-str">&quot;cacao&quot;</span>, <span class="tok-str">&quot;cachou&quot;</span>, <span class="tok-str">&quot;café&quot;</span>, <span class="tok-str">&quot;cannelle&quot;</span>, <span class="tok-str">&quot;capucine&quot;</span>, <span class="tok-str">&quot;caramel&quot;</span>, <span class="tok-str">&quot;carmin&quot;</span>, <span class="tok-str">&quot;carotte&quot;</span>, <span class="tok-str">&quot;chamois&quot;</span>, <span class="tok-str">&quot;chartreuse&quot;</span>, <span class="tok-str">&quot;cuivre&quot;</span>, <span class="tok-str">&quot;chocolat&quot;</span>, <span class="tok-str">&quot;cinabre&quot;</span>, <span class="tok-str">&quot;citrouille&quot;</span>, <span class="tok-str">&quot;cœruleum&quot;</span>, <span class="tok-str">&quot;coquille d'œuf&quot;</span>, <span class="tok-str">&quot;corail&quot;</span>, <span class="tok-str">&quot;cramoisi&quot;</span>, <span class="tok-str">&quot;cuisse de nymphe&quot;</span>, <span class="tok-str">&quot;cyan&quot;</span>, <span class="tok-str">&quot;écarlate&quot;</span>, <span class="tok-str">&quot;écru&quot;</span>, <span class="tok-str">&quot;émeraude&quot;</span>, <span class="tok-str">&quot;fauve&quot;</span>, <span class="tok-str">&quot;flave&quot;</span>, <span class="tok-str">&quot;fraise&quot;</span>, <span class="tok-str">&quot;framboise&quot;</span>, <span class="tok-str">&quot;fumée&quot;</span>, <span class="tok-str">&quot;garance&quot;</span>, <span class="tok-str">&quot;glauque&quot;</span>, <span class="tok-str">&quot;glycine&quot;</span>, <span class="tok-str">&quot;grège&quot;</span>, <span class="tok-str">&quot;grenadine&quot;</span>, <span class="tok-str">&quot;grenat&quot;</span>, <span class="tok-str">&quot;gris acier&quot;</span>, <span class="tok-str">&quot;gris de Payne&quot;</span>, <span class="tok-str">&quot;gris fer&quot;</span>, <span class="tok-str">&quot;gris perle&quot;</span>, <span class="tok-str">&quot;gris souris&quot;</span>, <span class="tok-str">&quot;groseille&quot;</span>, <span class="tok-str">&quot;gueules&quot;</span>, <span class="tok-str">&quot;héliotrope&quot;</span>, <span class="tok-str">&quot;incarnat&quot;</span>, <span class="tok-str">&quot;indigo&quot;</span>, <span class="tok-str">&quot;isabelle&quot;</span>, <span class="tok-str">&quot;jaune canari&quot;</span>, <span class="tok-str">&quot;jaune citron&quot;</span>, <span class="tok-str">&quot;jaune de cobalt&quot;</span>, <span class="tok-str">&quot;couleurs de Mars&quot;</span>, <span class="tok-str">&quot;jaune de Naples&quot;</span>, <span class="tok-str">&quot;jaune impérial&quot;</span>, <span class="tok-str">&quot;jaune mimosa&quot;</span>, <span class="tok-str">&quot;outremer véritable&quot;</span>, <span class="tok-str">&quot;lavallière&quot;</span>, <span class="tok-str">&quot;lavande&quot;</span>, <span class="tok-str">&quot;lie de vin&quot;</span>, <span class="tok-str">&quot;lilas&quot;</span>, <span class="tok-str">&quot;lime&quot;</span>, <span class="tok-str">&quot;lin&quot;</span>, <span class="tok-str">&quot;magenta&quot;</span>, <span class="tok-str">&quot;maïs&quot;</span>, <span class="tok-str">&quot;malachite&quot;</span>, <span class="tok-str">&quot;mandarine&quot;</span>, <span class="tok-str">&quot;marron&quot;</span>, <span class="tok-str">&quot;mastic&quot;</span>, <span class="tok-str">&quot;mauve&quot;</span>, <span class="tok-str">&quot;menthe&quot;</span>, <span class="tok-str">&quot;moutarde&quot;</span>, <span class="tok-str">&quot;nacarat&quot;</span>, <span class="tok-str">&quot;nankin&quot;</span>, <span class="tok-str">&quot;noisette&quot;</span>, <span class="tok-str">&quot;ocre&quot;</span>, <span class="tok-str">&quot;ocre rouge&quot;</span>, <span class="tok-str">&quot;olive&quot;</span>, <span class="tok-str">&quot;or&quot;</span>, <span class="tok-str">&quot;orange brûlé&quot;</span>, <span class="tok-str">&quot;orchidée&quot;</span>, <span class="tok-str">&quot;orpiment&quot;</span>, <span class="tok-str">&quot;paille&quot;</span>, <span class="tok-str">&quot;parme&quot;</span>, <span class="tok-str">&quot;pelure d'oignon&quot;</span>, <span class="tok-str">&quot;pervenche&quot;</span>, <span class="tok-str">&quot;pistache&quot;</span>, <span class="tok-str">&quot;poil de chameau&quot;</span>, <span class="tok-str">&quot;ponceau&quot;</span>, <span class="tok-str">&quot;pourpre&quot;</span>, <span class="tok-str">&quot;prasin&quot;</span>, <span class="tok-str">&quot;prune&quot;</span>, <span class="tok-str">&quot;puce&quot;</span>, <span class="tok-str">&quot;rose Mountbatten&quot;</span>, <span class="tok-str">&quot;oxyde de fer&quot;</span>, <span class="tok-str">&quot;rouge cardinal&quot;</span>, <span class="tok-str">&quot;rouge cerise&quot;</span>, <span class="tok-str">&quot;rouge d'Andrinople&quot;</span>, <span class="tok-str">&quot;rouge de Falun&quot;</span>, <span class="tok-str">&quot;rouge feu&quot;</span>, <span class="tok-str">&quot;rouge tomate&quot;</span>, <span class="tok-str">&quot;tomette&quot;</span>, <span class="tok-str">&quot;rouille&quot;</span>, <span class="tok-str">&quot;rubis&quot;</span>, <span class="tok-str">&quot;sable&quot;</span>, <span class="tok-str">&quot;safre&quot;</span>, <span class="tok-str">&quot;sang de bœuf&quot;</span>, <span class="tok-str">&quot;sanguine&quot;</span>, <span class="tok-str">&quot;sarcelle&quot;</span>, <span class="tok-str">&quot;saumon&quot;</span>, <span class="tok-str">&quot;sépia&quot;</span>, <span class="tok-str">&quot;sinople&quot;</span>, <span class="tok-str">&quot;smalt&quot;</span>, <span class="tok-str">&quot;soufre&quot;</span>, <span class="tok-str">&quot;tabac&quot;</span>, <span class="tok-str">&quot;terre d'ombre&quot;</span>, <span class="tok-str">&quot;topaze&quot;</span>, <span class="tok-str">&quot;tourterelle&quot;</span>, <span class="tok-str">&quot;turquoise&quot;</span>, <span class="tok-str">&quot;vanille&quot;</span>, <span class="tok-str">&quot;vermeil&quot;</span>, <span class="tok-str">&quot;vermillon&quot;</span>, <span class="tok-str">&quot;vert bouteille&quot;</span>, <span class="tok-str">&quot;vert céladon&quot;</span>, <span class="tok-str">&quot;vert d'eau&quot;</span>, <span class="tok-str">&quot;vert-de-gris&quot;</span>, <span class="tok-str">&quot;vert de Hooker&quot;</span>, <span class="tok-str">&quot;vert de vessie&quot;</span>, <span class="tok-str">&quot;vert épinard&quot;</span>, <span class="tok-str">&quot;vert impérial&quot;</span>, <span class="tok-str">&quot;vert lichen&quot;</span>, <span class="tok-str">&quot;vert oxyde de chrome&quot;</span>, <span class="tok-str">&quot;vert perroquet&quot;</span>, <span class="tok-str">&quot;vert poireau&quot;</span>, <span class="tok-str">&quot;vert pomme&quot;</span>, <span class="tok-str">&quot;vert prairie&quot;</span>, <span class="tok-str">&quot;vert printemps&quot;</span>, <span class="tok-str">&quot;vert sapin&quot;</span>, <span class="tok-str">&quot;vert sauge&quot;</span>, <span class="tok-str">&quot;vert tilleul&quot;</span>, <span class="tok-str">&quot;vert Véronèse&quot;</span>, <span class="tok-str">&quot;violet&quot;</span>, <span class="tok-str">&quot;violet d'évêque&quot;</span>, <span class="tok-str">&quot;viride&quot;</span>, <span class="tok-str">&quot;zinzolin&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\th\animal.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> cat = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;เอเซียนกึ่งขนยาว&quot;</span>, <span class="tok-str">&quot;บาลินีส&quot;</span>, <span class="tok-str">&quot;เบอร์แมน&quot;</span>, <span class="tok-str">&quot;บริติชขนยาว&quot;</span>, <span class="tok-str">&quot;ชานทิลลี&quot;</span>, <span class="tok-str">&quot;หิมาลายัน&quot;</span>, <span class="tok-str">&quot;จาวานีส&quot;</span>, <span class="tok-str">&quot;เมนคูน&quot;</span>, <span class="tok-str">&quot;เนบีลัง&quot;</span>, <span class="tok-str">&quot;นอร์เวเจียนฟอเรสต์&quot;</span>, <span class="tok-str">&quot;โอเรียนทัลขนยาว&quot;</span>, <span class="tok-str">&quot;เปอร์เซีย&quot;</span>, <span class="tok-str">&quot;แร็กดอลล์&quot;</span>, <span class="tok-str">&quot;รากามัฟฟิน&quot;</span>, <span class="tok-str">&quot;ไซบีเรียน&quot;</span>, <span class="tok-str">&quot;เทอร์คิชแวน&quot;</span>, <span class="tok-str">&quot;เทอร์คิชแองโกรา&quot;</span>, <span class="tok-str">&quot;ยอร์กช็อกโกแลต&quot;</span>, <span class="tok-str">&quot;อะบิสซิเนียน&quot;</span>, <span class="tok-str">&quot;อเมริกันขนสั้น&quot;</span>, <span class="tok-str">&quot;ออสเตรเลียนมิสต์&quot;</span>, <span class="tok-str">&quot;บอมเบย์&quot;</span>, <span class="tok-str">&quot;บริติชขนสั้น&quot;</span>, <span class="tok-str">&quot;เบอร์มีส&quot;</span>, <span class="tok-str">&quot;ส้ม&quot;</span>, <span class="tok-str">&quot;เบอร์มิลลา&quot;</span>, <span class="tok-str">&quot;แคลิฟอร์เนียสแปงเกิลด์&quot;</span>, <span class="tok-str">&quot;ชาร์ตรู&quot;</span>, <span class="tok-str">&quot;คัลเลอร์พอยต์ขนสั้น&quot;</span>, <span class="tok-str">&quot;อียิปเทียนมัว&quot;</span>, <span class="tok-str">&quot;ยูโรเปียนขนสั้น&quot;</span>, <span class="tok-str">&quot;เอกโซติก&quot;</span>, <span class="tok-str">&quot;ฮาวานาบราวน์&quot;</span>, <span class="tok-str">&quot;โคราช&quot;</span>, <span class="tok-str">&quot;อ็อกซิแคต&quot;</span>, <span class="tok-str">&quot;โอเรียนทัลขนสั้น&quot;</span>, <span class="tok-str">&quot;รัสเซียนบลู&quot;</span>, <span class="tok-str">&quot;สยามีส&quot;</span>, <span class="tok-str">&quot;สิงหปุระ&quot;</span>, <span class="tok-str">&quot;สโนว์ชู&quot;</span>, <span class="tok-str">&quot;โซโกเก&quot;</span>, <span class="tok-str">&quot;โซมาลี&quot;</span>, <span class="tok-str">&quot;ตองกินีส&quot;</span>, <span class="tok-str">&quot;อเมริกันบ็อบเทล&quot;</span>, <span class="tok-str">&quot;อเมริกันเคิร์ล&quot;</span>, <span class="tok-str">&quot;อเมริกันไวร์แฮร์&quot;</span>, <span class="tok-str">&quot;คอร์นิชเรกซ์&quot;</span>, <span class="tok-str">&quot;ซิมริก&quot;</span>, <span class="tok-str">&quot;ดีวอนเรกซ์&quot;</span>, <span class="tok-str">&quot;เยอรมันเรกซ์&quot;</span>, <span class="tok-str">&quot;แจแพนีสบ็อบเทล&quot;</span>, <span class="tok-str">&quot;ลาเปิร์ม&quot;</span>, <span class="tok-str">&quot;แมงซ์&quot;</span>, <span class="tok-str">&quot;มึนชกิน&quot;</span>, <span class="tok-str">&quot;โอโจสแอซูเลส&quot;</span>, <span class="tok-str">&quot;เพเทอร์บัลด์&quot;</span>, <span class="tok-str">&quot;พิกซีบ็อบ&quot;</span>, <span class="tok-str">&quot;เซลเกิร์กเรกซ์&quot;</span>, <span class="tok-str">&quot;สกอตติชโฟลด์&quot;</span>, <span class="tok-str">&quot;สฟิงซ์&quot;</span>, <span class="tok-str">&quot;เบงกอล&quot;</span>, <span class="tok-str">&quot;ชอซี&quot;</span>, <span class="tok-str">&quot;ชีโต&quot;</span>, <span class="tok-str">&quot;ซาวันนา&quot;</span>, <span class="tok-str">&quot;เซเรนเจตี&quot;</span>, <span class="tok-str">&quot;ทอยเกอร์&quot;</span>, <span class="tok-str">&quot;อาชีร่า&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> dog = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;เกรตเดน&quot;</span>, <span class="tok-str">&quot;เกรทเทอร์สวิสส์เมาน์เทนด๊อก&quot;</span>, <span class="tok-str">&quot;เกรย์ฮาวนด์&quot;</span>, <span class="tok-str">&quot;โกลเดินริทรีฟเวอร์&quot;</span>, <span class="tok-str">&quot;คลัมเบอร์สแปเนียล&quot;</span>, <span class="tok-str">&quot;คอลลี&quot;</span>, <span class="tok-str">&quot;คะเนเดียนเอสกิโมด็อก&quot;</span>, <span class="tok-str">&quot;คาอิเคน&quot;</span>, <span class="tok-str">&quot;คิชู&quot;</span>, <span class="tok-str">&quot;คันกัล&quot;</span>, <span class="tok-str">&quot;แคทาลันชีปด็อก&quot;</span>, <span class="tok-str">&quot;แคร์นเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;แควาเลียร์คิงชาลส์สแปเนียล&quot;</span>, <span class="tok-str">&quot;โคมอนดอร์&quot;</span>, <span class="tok-str">&quot;โคเรียนชินโด&quot;</span>, <span class="tok-str">&quot;เคนคอร์โซ่&quot;</span>, <span class="tok-str">&quot;คุนหมิงวูลฟ์ด็อก&quot;</span>, <span class="tok-str">&quot;คอเคเซียนเชเพิร์ดด็อก&quot;</span>, <span class="tok-str">&quot;แจ็กรัสเซลล์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;แจพานีสชิน&quot;</span>, <span class="tok-str">&quot;แจพานีสเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;แจพานีสสปิตซ์&quot;</span>, <span class="tok-str">&quot;ชาผี&quot;</span>, <span class="tok-str">&quot;ชิโกะกุ&quot;</span>, <span class="tok-str">&quot;ชิบะอินุ&quot;</span>, <span class="tok-str">&quot;ชิวาวา&quot;</span>, <span class="tok-str">&quot;เชตแลนด์ชีปด็อก&quot;</span>, <span class="tok-str">&quot;เชาเชา&quot;</span>, <span class="tok-str">&quot;ไชนีสเครสติดด็อก&quot;</span>, <span class="tok-str">&quot;ซามอยิด&quot;</span>, <span class="tok-str">&quot;ซาลูกี&quot;</span>, <span class="tok-str">&quot;ซือจื่อ&quot;</span>, <span class="tok-str">&quot;เซนต์เบอร์นาร์ด&quot;</span>, <span class="tok-str">&quot;ไซบีเรียนฮัสกี&quot;</span>, <span class="tok-str">&quot;แด็กซันด์&quot;</span>, <span class="tok-str">&quot;แดนดีดินมอนต์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;แดลเมเชียน&quot;</span>, <span class="tok-str">&quot;โดโกอาร์เฆนติโน&quot;</span>, <span class="tok-str">&quot;โดเบอร์แมนพินเชอร์&quot;</span>, <span class="tok-str">&quot;ด็อจเดบอร์โดซ์&quot;</span>, <span class="tok-str">&quot;ดัตช์เชเพิร์ด&quot;</span>, <span class="tok-str">&quot;ทิเบตันแมสติฟฟ์&quot;</span>, <span class="tok-str">&quot;ไทยบางแก้ว&quot;</span>, <span class="tok-str">&quot;ไทยหลังอาน&quot;</span>, <span class="tok-str">&quot;โทสะอินุ&quot;</span>, <span class="tok-str">&quot;นโปเลียนแมสติฟฟ์&quot;</span>, <span class="tok-str">&quot;บรักโกอีตาเลียโน&quot;</span>, <span class="tok-str">&quot;บรักแซ็ง-แฌร์แม็ง&quot;</span>, <span class="tok-str">&quot;บรักโดแวร์ญ&quot;</span>, <span class="tok-str">&quot;บรักดูว์บูร์บอแน&quot;</span>, <span class="tok-str">&quot;บรักดูว์ปุย&quot;</span>, <span class="tok-str">&quot;บรักฟร็องแซ&quot;</span>, <span class="tok-str">&quot;บรัสเซิลส์กริฟฟัน&quot;</span>, <span class="tok-str">&quot;บราซิเลียนโดโก&quot;</span>, <span class="tok-str">&quot;บราซิเลียนเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;บริตทานี; บริตทานีสแปเนียล&quot;</span>, <span class="tok-str">&quot;บรีแกกรีฟงว็องเดแอ็ง&quot;</span>, <span class="tok-str">&quot;บรีอาร์ด&quot;</span>, <span class="tok-str">&quot;บรูโนจูราฮาวนด์&quot;</span>, <span class="tok-str">&quot;บลัดฮาวนด์&quot;</span>, <span class="tok-str">&quot;บลูทิกคูนฮาวนด์&quot;</span>, <span class="tok-str">&quot;บลูพอลเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;บลูเลซี&quot;</span>, <span class="tok-str">&quot;บ็อกเซอร์&quot;</span>, <span class="tok-str">&quot;บอยคินสแปเนียล&quot;</span>, <span class="tok-str">&quot;บอร์ซอย&quot;</span>, <span class="tok-str">&quot;บอร์เดอร์คอลลี&quot;</span>, <span class="tok-str">&quot;บอร์เดอร์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;บอสตันเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;บอสเนียคอร์ส-แฮด์ฮาวนด์&quot;</span>, <span class="tok-str">&quot;บาคาร์วัลด็อก&quot;</span>, <span class="tok-str">&quot;บาแซกรีฟงว็องเดแอ็ง&quot;</span>, <span class="tok-str">&quot;บาแซเบลอเดอกัสกอญ&quot;</span>, <span class="tok-str">&quot;บาแซโฟฟว์เดอเบรอตาญ&quot;</span>, <span class="tok-str">&quot;บาแซอาร์เตเซียงนอร์ม็อง&quot;</span>, <span class="tok-str">&quot;บาร์แบ&quot;</span>, <span class="tok-str">&quot;บาแวเรียนเมาน์เทนฮาวนด์&quot;</span>, <span class="tok-str">&quot;บาสก์เชเพิร์ดด็อก&quot;</span>, <span class="tok-str">&quot;บาเซนจี&quot;</span>, <span class="tok-str">&quot;บิยานูโกเดลัสเองการ์ตาซิโอเนส&quot;</span>, <span class="tok-str">&quot;บิวเซรอน&quot;</span>, <span class="tok-str">&quot;บีเกิล&quot;</span>, <span class="tok-str">&quot;บีเกิล-แฮร์เรียร์&quot;</span>, <span class="tok-str">&quot;บีชันฟรีส&quot;</span>, <span class="tok-str">&quot;บีลี&quot;</span>, <span class="tok-str">&quot;บุลล์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;บุลล์แมสติฟฟ์&quot;</span>, <span class="tok-str">&quot;บุลล์แอนด์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;บุลเลินไบส์เซอร์&quot;</span>, <span class="tok-str">&quot;บูลด็อก&quot;</span>, <span class="tok-str">&quot;บูโกวีนาเชเพิร์ดด็อก&quot;</span>, <span class="tok-str">&quot;บูร์บุล&quot;</span>, <span class="tok-str">&quot;บูวีเยเดซาร์แดน&quot;</span>, <span class="tok-str">&quot;บูวีเยเดฟล็องดร์&quot;</span>, <span class="tok-str">&quot;เบดลิงตันเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;เบลเจียนเชเพิร์ดด็อก&quot;</span>, <span class="tok-str">&quot;เบลอเดอกัสกอญ&quot;</span>, <span class="tok-str">&quot;เบอร์นีสเมาน์เทนด็อก&quot;</span>, <span class="tok-str">&quot;เบียร์ดดิดคอลลี&quot;</span>, <span class="tok-str">&quot;แบร์กามัสโกเชเพิร์ด&quot;</span>, <span class="tok-str">&quot;แบร์เฌบล็องซุอิส&quot;</span>, <span class="tok-str">&quot;แบร์เฌปีการ์&quot;</span>, <span class="tok-str">&quot;แบร์เนอร์นีเดอร์เลาฟ์ฮุนท์&quot;</span>, <span class="tok-str">&quot;แบล็กนอร์วีเจียนเอลก์ฮาวนด์&quot;</span>, <span class="tok-str">&quot;แบล็กเมาท์เคอร์&quot;</span>, <span class="tok-str">&quot;แบล็กรัชเชียนเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;แบล็กแอนด์แทนคูนฮาวนด์&quot;</span>, <span class="tok-str">&quot;แบล็กแอนด์แทนเวอร์จิเนียฟอกซ์ฮาวนด์&quot;</span>, <span class="tok-str">&quot;แบสซิตฮาวนด์&quot;</span>, <span class="tok-str">&quot;โบรฮอลเมอร์&quot;</span>, <span class="tok-str">&quot;โบสรง&quot;</span>, <span class="tok-str">&quot;โบโลญเญเซ&quot;</span>, <span class="tok-str">&quot;โบฮีเมียนเชเพิร์ด&quot;</span>, <span class="tok-str">&quot;ปั๊ก&quot;</span>, <span class="tok-str">&quot;ปักกิ่ง&quot;</span>, <span class="tok-str">&quot;ปาปียง&quot;</span>, <span class="tok-str">&quot;เปรูเวียนแฮร์เลสสด็อก&quot;</span>, <span class="tok-str">&quot;เปอร์โรเดอร์ปรีซ่าคานาริโอ&quot;</span>, <span class="tok-str">&quot;พอเมอเรเนียน&quot;</span>, <span class="tok-str">&quot;พาร์ซันแจ็กรัสเซลล์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;พูเดิล&quot;</span>, <span class="tok-str">&quot;ฟิล่าบราซิเลียโร&quot;</span>, <span class="tok-str">&quot;เฟรนช์บูลด็อก&quot;</span>, <span class="tok-str">&quot;มอลทีส&quot;</span>, <span class="tok-str">&quot;มาเรมมาชีปด็อก&quot;</span>, <span class="tok-str">&quot;มินะเจอร์ชเนาเซอร์&quot;</span>, <span class="tok-str">&quot;มินะเจอร์พินเชอร์&quot;</span>, <span class="tok-str">&quot;เม็กซิกันแฮร์เลสสด็อก&quot;</span>, <span class="tok-str">&quot;แมนเชสเตอร์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;ยอร์กเชอร์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;เยอรมันเชเพิร์ด&quot;</span>, <span class="tok-str">&quot;เยอรมันช็อตแฮร์พอยน์เตอร์&quot;</span>, <span class="tok-str">&quot;รอทท์ไวเลอร์&quot;</span>, <span class="tok-str">&quot;รัสเซลล์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;แรตเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;โรดีเชียนริดจ์แบ็ค&quot;</span>, <span class="tok-str">&quot;ลาซาแอปโซ&quot;</span>, <span class="tok-str">&quot;แลบราดอร์ริทรีฟเวอร์&quot;</span>, <span class="tok-str">&quot;เลิฟเชิน&quot;</span>, <span class="tok-str">&quot;วิฌลอ&quot;</span>, <span class="tok-str">&quot;วิปพิต&quot;</span>, <span class="tok-str">&quot;เวลช์คอร์กี&quot;</span>, <span class="tok-str">&quot;เวลช์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;เวลช์สปริงเงอร์สแปเนียล&quot;</span>, <span class="tok-str">&quot;เวสต์ไฮต์แลนด์ไวต์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;ไวมาราเนอร์&quot;</span>, <span class="tok-str">&quot;สกอตติชเดียร์ฮาวนด์&quot;</span>, <span class="tok-str">&quot;สกอตติชเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;อเมริกันคอกเกอร์สแปเนียล&quot;</span>, <span class="tok-str">&quot;อเมริกันบูลด็อก&quot;</span>, <span class="tok-str">&quot;อเมริกันพิตบุลล์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;อเมริกันฟอกซ์ฮาวนด์&quot;</span>, <span class="tok-str">&quot;อเมริกันวอเตอร์สแปเนียล&quot;</span>, <span class="tok-str">&quot;อเมริกันสแตฟฟอร์ดเชอร์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;อเมริกันเอสกิโมด็อก&quot;</span>, <span class="tok-str">&quot;อ็องกลอ-ฟร็องแซเดอเปอติตเวเนอรี&quot;</span>, <span class="tok-str">&quot;อเมริกันแฮร์เลสส์เทร์เรียร์&quot;</span>, <span class="tok-str">&quot;ออสเตรเลียนเคลพี&quot;</span>, <span class="tok-str">&quot;ออสเตรเลียนแคตเทิลด็อก&quot;</span>, <span class="tok-str">&quot;ออสเตรเลียนเชเพิร์ด&quot;</span>, <span class="tok-str">&quot;ออสเตรเลียนซิลกีเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;ออสเตรเลียนเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;ออสเตรเลียนสตัมปีเทลแคตเทิลด็อก&quot;</span>, <span class="tok-str">&quot;ออสเตรียนแบล็กแอนด์แทนฮาวนด์&quot;</span>, <span class="tok-str">&quot;ออสเตรียนพินเชอร์&quot;</span>, <span class="tok-str">&quot;อะกิตะอินุ&quot;</span>, <span class="tok-str">&quot;อะแลสกันแมละมิวต์&quot;</span>, <span class="tok-str">&quot;อะแลสกันคลีไค&quot;</span>, <span class="tok-str">&quot;อักบัช&quot;</span>, <span class="tok-str">&quot;อัพเพินเซ็ลเลอร์เซ็นเนินฮุนท์&quot;</span>, <span class="tok-str">&quot;อัฟเฟินพินเชอร์&quot;</span>, <span class="tok-str">&quot;อาซาวัก&quot;</span>, <span class="tok-str">&quot;อาร์ตัวฮาวนด์&quot;</span>, <span class="tok-str">&quot;อาร์มีเนียนแกมเพอร์ด็อก&quot;</span>, <span class="tok-str">&quot;อาร์ม็อง&quot;</span>, <span class="tok-str">&quot;อารีเยฌัว&quot;</span>, <span class="tok-str">&quot;อาเรียฌพอยน์เตอร์&quot;</span>, <span class="tok-str">&quot;อาลาโนเอสปัญญอล&quot;</span>, <span class="tok-str">&quot;อาอีดี&quot;</span>, <span class="tok-str">&quot;อิงกลิชคอกเกอร์สแปเนียล&quot;</span>, <span class="tok-str">&quot;อิงกลิชเซตเตอร์&quot;</span>, <span class="tok-str">&quot;อิงกลิชแมสติฟฟ์&quot;</span>, <span class="tok-str">&quot;อิตาเลียนเกรย์ฮาวด์&quot;</span>, <span class="tok-str">&quot;แอนดาลูซีอันฮาวนด์&quot;</span>, <span class="tok-str">&quot;แอนาโทเลียนเชเพิร์ดด็อก&quot;</span>, <span class="tok-str">&quot;แอฟแกนเชเพิร์ด&quot;</span>, <span class="tok-str">&quot;แอฟแกนฮาวนด์&quot;</span>, <span class="tok-str">&quot;แอร์เดลเทร์เรียร์&quot;</span>, <span class="tok-str">&quot;แอลไพน์ดัคส์บรัคเคอ&quot;</span>, <span class="tok-str">&quot;แอลไพน์สแปเนียล&quot;</span>, <span class="tok-str">&quot;โอลด์อิงลิชชีปด็อก&quot;</span>, <span class="tok-str">&quot;ฮกไกโด&quot;</span> };</span>
+<span class="line" id="L4"></span>
+</code></pre></body>
+</html>

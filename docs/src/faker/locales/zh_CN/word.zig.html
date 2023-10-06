@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\zh_CN\word.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;长&quot;</span>, <span class="tok-str">&quot;短&quot;</span>, <span class="tok-str">&quot;大&quot;</span>, <span class="tok-str">&quot;小&quot;</span>, <span class="tok-str">&quot;粗&quot;</span>, <span class="tok-str">&quot;细&quot;</span>, <span class="tok-str">&quot;红&quot;</span>, <span class="tok-str">&quot;绿&quot;</span>, <span class="tok-str">&quot;平坦&quot;</span>, <span class="tok-str">&quot;整齐&quot;</span>, <span class="tok-str">&quot;雪白&quot;</span>, <span class="tok-str">&quot;笔直&quot;</span>, <span class="tok-str">&quot;绿油油&quot;</span>, <span class="tok-str">&quot;血淋淋&quot;</span>, <span class="tok-str">&quot;骨碌碌&quot;</span>, <span class="tok-str">&quot;黑不溜秋&quot;</span>, <span class="tok-str">&quot;好&quot;</span>, <span class="tok-str">&quot;坏&quot;</span>, <span class="tok-str">&quot;伟大&quot;</span>, <span class="tok-str">&quot;勇敢&quot;</span>, <span class="tok-str">&quot;优秀&quot;</span>, <span class="tok-str">&quot;聪明&quot;</span>, <span class="tok-str">&quot;老实&quot;</span>, <span class="tok-str">&quot;鲁莽&quot;</span>, <span class="tok-str">&quot;大方&quot;</span>, <span class="tok-str">&quot;软&quot;</span>, <span class="tok-str">&quot;硬&quot;</span>, <span class="tok-str">&quot;苦&quot;</span>, <span class="tok-str">&quot;甜&quot;</span>, <span class="tok-str">&quot;冷&quot;</span>, <span class="tok-str">&quot;热&quot;</span>, <span class="tok-str">&quot;坚固&quot;</span>, <span class="tok-str">&quot;平常&quot;</span>, <span class="tok-str">&quot;快&quot;</span>, <span class="tok-str">&quot;慢&quot;</span>, <span class="tok-str">&quot;生动&quot;</span>, <span class="tok-str">&quot;熟练&quot;</span>, <span class="tok-str">&quot;轻松&quot;</span>, <span class="tok-str">&quot;清楚&quot;</span>, <span class="tok-str">&quot;马虎&quot;</span>, <span class="tok-str">&quot;干脆&quot;</span>, <span class="tok-str">&quot;许多&quot;</span>, <span class="tok-str">&quot;好些&quot;</span>, <span class="tok-str">&quot;全部&quot;</span>, <span class="tok-str">&quot;全&quot;</span>, <span class="tok-str">&quot;整&quot;</span>, <span class="tok-str">&quot;多&quot;</span>, <span class="tok-str">&quot;少&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adverb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;都&quot;</span>, <span class="tok-str">&quot;全&quot;</span>, <span class="tok-str">&quot;单&quot;</span>, <span class="tok-str">&quot;共&quot;</span>, <span class="tok-str">&quot;光&quot;</span>, <span class="tok-str">&quot;尽&quot;</span>, <span class="tok-str">&quot;净&quot;</span>, <span class="tok-str">&quot;仅&quot;</span>, <span class="tok-str">&quot;就&quot;</span>, <span class="tok-str">&quot;只&quot;</span>, <span class="tok-str">&quot;一共&quot;</span>, <span class="tok-str">&quot;一起&quot;</span>, <span class="tok-str">&quot;一同&quot;</span>, <span class="tok-str">&quot;一道&quot;</span>, <span class="tok-str">&quot;一齐&quot;</span>, <span class="tok-str">&quot;一概&quot;</span>, <span class="tok-str">&quot;一味&quot;</span>, <span class="tok-str">&quot;统统&quot;</span>, <span class="tok-str">&quot;总共&quot;</span>, <span class="tok-str">&quot;仅仅&quot;</span>, <span class="tok-str">&quot;惟独&quot;</span>, <span class="tok-str">&quot;可&quot;</span>, <span class="tok-str">&quot;倒&quot;</span>, <span class="tok-str">&quot;一定&quot;</span>, <span class="tok-str">&quot;必定&quot;</span>, <span class="tok-str">&quot;必然&quot;</span>, <span class="tok-str">&quot;却&quot;</span>, <span class="tok-str">&quot;幸亏&quot;</span>, <span class="tok-str">&quot;难道&quot;</span>, <span class="tok-str">&quot;何尝&quot;</span>, <span class="tok-str">&quot;偏偏&quot;</span>, <span class="tok-str">&quot;索性&quot;</span>, <span class="tok-str">&quot;简直&quot;</span>, <span class="tok-str">&quot;反正&quot;</span>, <span class="tok-str">&quot;多亏&quot;</span>, <span class="tok-str">&quot;也许&quot;</span>, <span class="tok-str">&quot;大约&quot;</span>, <span class="tok-str">&quot;好在&quot;</span>, <span class="tok-str">&quot;敢情&quot;</span>, <span class="tok-str">&quot;不&quot;</span>, <span class="tok-str">&quot;没&quot;</span>, <span class="tok-str">&quot;没有&quot;</span>, <span class="tok-str">&quot;别&quot;</span>, <span class="tok-str">&quot;仿佛&quot;</span>, <span class="tok-str">&quot;渐渐&quot;</span>, <span class="tok-str">&quot;百般&quot;</span>, <span class="tok-str">&quot;特地&quot;</span>, <span class="tok-str">&quot;互相&quot;</span>, <span class="tok-str">&quot;擅自&quot;</span>, <span class="tok-str">&quot;几乎&quot;</span>, <span class="tok-str">&quot;逐渐&quot;</span>, <span class="tok-str">&quot;逐步&quot;</span>, <span class="tok-str">&quot;猛然&quot;</span>, <span class="tok-str">&quot;依然&quot;</span>, <span class="tok-str">&quot;仍然&quot;</span>, <span class="tok-str">&quot;当然&quot;</span>, <span class="tok-str">&quot;毅然&quot;</span>, <span class="tok-str">&quot;果然&quot;</span>, <span class="tok-str">&quot;差点儿&quot;</span>, <span class="tok-str">&quot;很&quot;</span>, <span class="tok-str">&quot;极&quot;</span>, <span class="tok-str">&quot;最&quot;</span>, <span class="tok-str">&quot;太&quot;</span>, <span class="tok-str">&quot;更&quot;</span>, <span class="tok-str">&quot;更加&quot;</span>, <span class="tok-str">&quot;格外&quot;</span>, <span class="tok-str">&quot;十分&quot;</span>, <span class="tok-str">&quot;极其&quot;</span>, <span class="tok-str">&quot;比较&quot;</span>, <span class="tok-str">&quot;相当&quot;</span>, <span class="tok-str">&quot;稍微&quot;</span>, <span class="tok-str">&quot;略微&quot;</span>, <span class="tok-str">&quot;多么&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;打&quot;</span>, <span class="tok-str">&quot;吃&quot;</span>, <span class="tok-str">&quot;抿&quot;</span>, <span class="tok-str">&quot;做&quot;</span>, <span class="tok-str">&quot;坐&quot;</span>, <span class="tok-str">&quot;跑&quot;</span>, <span class="tok-str">&quot;跳&quot;</span>, <span class="tok-str">&quot;走&quot;</span>, <span class="tok-str">&quot;飞&quot;</span>, <span class="tok-str">&quot;爬&quot;</span>, <span class="tok-str">&quot;开&quot;</span>, <span class="tok-str">&quot;滑&quot;</span>, <span class="tok-str">&quot;切&quot;</span>, <span class="tok-str">&quot;拆&quot;</span>, <span class="tok-str">&quot;咬&quot;</span>, <span class="tok-str">&quot;吞&quot;</span>, <span class="tok-str">&quot;吐&quot;</span>, <span class="tok-str">&quot;吮&quot;</span>, <span class="tok-str">&quot;吸&quot;</span>, <span class="tok-str">&quot;啃&quot;</span>, <span class="tok-str">&quot;喝&quot;</span>, <span class="tok-str">&quot;咀&quot;</span>, <span class="tok-str">&quot;嚼&quot;</span>, <span class="tok-str">&quot;搀&quot;</span>, <span class="tok-str">&quot;抱&quot;</span>, <span class="tok-str">&quot;搂&quot;</span>, <span class="tok-str">&quot;扶&quot;</span>, <span class="tok-str">&quot;捉&quot;</span>, <span class="tok-str">&quot;擒&quot;</span>, <span class="tok-str">&quot;掐&quot;</span>, <span class="tok-str">&quot;推&quot;</span>, <span class="tok-str">&quot;拿&quot;</span>, <span class="tok-str">&quot;抽&quot;</span>, <span class="tok-str">&quot;撕&quot;</span>, <span class="tok-str">&quot;摘&quot;</span>, <span class="tok-str">&quot;拣&quot;</span>, <span class="tok-str">&quot;捡&quot;</span>, <span class="tok-str">&quot;播&quot;</span>, <span class="tok-str">&quot;击&quot;</span>, <span class="tok-str">&quot;捏&quot;</span>, <span class="tok-str">&quot;撒&quot;</span>, <span class="tok-str">&quot;按&quot;</span>, <span class="tok-str">&quot;弹&quot;</span>, <span class="tok-str">&quot;撞&quot;</span>, <span class="tok-str">&quot;提&quot;</span>, <span class="tok-str">&quot;扭&quot;</span>, <span class="tok-str">&quot;捶&quot;</span>, <span class="tok-str">&quot;持&quot;</span>, <span class="tok-str">&quot;揍&quot;</span>, <span class="tok-str">&quot;披&quot;</span>, <span class="tok-str">&quot;捣&quot;</span>, <span class="tok-str">&quot;搜&quot;</span>, <span class="tok-str">&quot;托&quot;</span>, <span class="tok-str">&quot;举&quot;</span>, <span class="tok-str">&quot;拖&quot;</span>, <span class="tok-str">&quot;擦&quot;</span>, <span class="tok-str">&quot;敲&quot;</span>, <span class="tok-str">&quot;挖&quot;</span>, <span class="tok-str">&quot;抛&quot;</span>, <span class="tok-str">&quot;掘&quot;</span>, <span class="tok-str">&quot;抬&quot;</span>, <span class="tok-str">&quot;插&quot;</span>, <span class="tok-str">&quot;扔&quot;</span>, <span class="tok-str">&quot;写&quot;</span>, <span class="tok-str">&quot;抄&quot;</span>, <span class="tok-str">&quot;抓&quot;</span>, <span class="tok-str">&quot;捧&quot;</span>, <span class="tok-str">&quot;掷&quot;</span>, <span class="tok-str">&quot;撑&quot;</span>, <span class="tok-str">&quot;摊&quot;</span>, <span class="tok-str">&quot;倒&quot;</span>, <span class="tok-str">&quot;摔&quot;</span>, <span class="tok-str">&quot;劈&quot;</span>, <span class="tok-str">&quot;画&quot;</span>, <span class="tok-str">&quot;搔&quot;</span>, <span class="tok-str">&quot;撬&quot;</span>, <span class="tok-str">&quot;挥&quot;</span>, <span class="tok-str">&quot;揽&quot;</span>, <span class="tok-str">&quot;挡&quot;</span>, <span class="tok-str">&quot;捺&quot;</span>, <span class="tok-str">&quot;抚&quot;</span>, <span class="tok-str">&quot;搡&quot;</span>, <span class="tok-str">&quot;拉&quot;</span>, <span class="tok-str">&quot;摸&quot;</span>, <span class="tok-str">&quot;拍&quot;</span>, <span class="tok-str">&quot;摇&quot;</span>, <span class="tok-str">&quot;剪&quot;</span>, <span class="tok-str">&quot;拎&quot;</span>, <span class="tok-str">&quot;拔&quot;</span>, <span class="tok-str">&quot;拧&quot;</span>, <span class="tok-str">&quot;拨&quot;</span>, <span class="tok-str">&quot;舞&quot;</span>, <span class="tok-str">&quot;握&quot;</span>, <span class="tok-str">&quot;攥&quot;</span>, <span class="tok-str">&quot;驾驶&quot;</span>, <span class="tok-str">&quot;移动&quot;</span>, <span class="tok-str">&quot;转动&quot;</span>, <span class="tok-str">&quot;操作&quot;</span>, <span class="tok-str">&quot;蠕动&quot;</span>, <span class="tok-str">&quot;启动&quot;</span>, <span class="tok-str">&quot;关闭&quot;</span> };</span>
+<span class="line" id="L6"></span>
+</code></pre></body>
+</html>

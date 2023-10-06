@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\ko\word.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;감정적인&quot;</span>, <span class="tok-str">&quot;같은&quot;</span>, <span class="tok-str">&quot;거대한&quot;</span>, <span class="tok-str">&quot;거창한&quot;</span>, <span class="tok-str">&quot;건조한&quot;</span>, <span class="tok-str">&quot;겁 없는&quot;</span>, <span class="tok-str">&quot;격렬한&quot;</span>, <span class="tok-str">&quot;결정적인&quot;</span>, <span class="tok-str">&quot;경솔한&quot;</span>, <span class="tok-str">&quot;경험한&quot;</span>, <span class="tok-str">&quot;고귀한&quot;</span>, <span class="tok-str">&quot;고급의&quot;</span>, <span class="tok-str">&quot;고대의&quot;</span>, <span class="tok-str">&quot;공정한&quot;</span>, <span class="tok-str">&quot;관심 있는&quot;</span>, <span class="tok-str">&quot;굉장한&quot;</span>, <span class="tok-str">&quot;교양 있는&quot;</span>, <span class="tok-str">&quot;교육받은&quot;</span>, <span class="tok-str">&quot;교활한&quot;</span>, <span class="tok-str">&quot;구부러진&quot;</span>, <span class="tok-str">&quot;굴곡진&quot;</span>, <span class="tok-str">&quot;굵은&quot;</span>, <span class="tok-str">&quot;권위 있는&quot;</span>, <span class="tok-str">&quot;귀여운&quot;</span>, <span class="tok-str">&quot;극적인&quot;</span>, <span class="tok-str">&quot;금발의&quot;</span>, <span class="tok-str">&quot;기민한&quot;</span>, <span class="tok-str">&quot;기분 좋은&quot;</span>, <span class="tok-str">&quot;기쁜&quot;</span>, <span class="tok-str">&quot;기초적인&quot;</span>, <span class="tok-str">&quot;깊은&quot;</span>, <span class="tok-str">&quot;깨끗한&quot;</span>, <span class="tok-str">&quot;깨진&quot;</span>, <span class="tok-str">&quot;끊임없는&quot;</span>, <span class="tok-str">&quot;끔찍한&quot;</span>, <span class="tok-str">&quot;나쁜&quot;</span>, <span class="tok-str">&quot;날씬한&quot;</span>, <span class="tok-str">&quot;냉담한&quot;</span>, <span class="tok-str">&quot;넓은 마음을 가진&quot;</span>, <span class="tok-str">&quot;놀라운&quot;</span>, <span class="tok-str">&quot;눈부신&quot;</span>, <span class="tok-str">&quot;눈이 먼&quot;</span>, <span class="tok-str">&quot;늙은&quot;</span>, <span class="tok-str">&quot;능숙한&quot;</span>, <span class="tok-str">&quot;다른&quot;</span>, <span class="tok-str">&quot;단조로운&quot;</span>, <span class="tok-str">&quot;단호한&quot;</span>, <span class="tok-str">&quot;닫힌&quot;</span>, <span class="tok-str">&quot;당황스러운&quot;</span>, <span class="tok-str">&quot;대담한&quot;</span>, <span class="tok-str">&quot;대량&quot;</span>, <span class="tok-str">&quot;더러운&quot;</span>, <span class="tok-str">&quot;동굴 같은&quot;</span>, <span class="tok-str">&quot;두려운&quot;</span>, <span class="tok-str">&quot;뛰어난&quot;</span>, <span class="tok-str">&quot;마른&quot;</span>, <span class="tok-str">&quot;막대한&quot;</span>, <span class="tok-str">&quot;맛있는&quot;</span>, <span class="tok-str">&quot;매력적인&quot;</span>, <span class="tok-str">&quot;매혹적인&quot;</span>, <span class="tok-str">&quot;먹을 수 있는&quot;</span>, <span class="tok-str">&quot;먼&quot;</span>, <span class="tok-str">&quot;멍든&quot;</span>, <span class="tok-str">&quot;메마른&quot;</span>, <span class="tok-str">&quot;명확한&quot;</span>, <span class="tok-str">&quot;모범적인&quot;</span>, <span class="tok-str">&quot;무더운&quot;</span>, <span class="tok-str">&quot;무서운&quot;</span>, <span class="tok-str">&quot;무심한&quot;</span>, <span class="tok-str">&quot;미친&quot;</span>, <span class="tok-str">&quot;밀집한&quot;</span>, <span class="tok-str">&quot;밝은&quot;</span>, <span class="tok-str">&quot;방어&quot;</span>, <span class="tok-str">&quot;방음&quot;</span>, <span class="tok-str">&quot;버려진&quot;</span>, <span class="tok-str">&quot;별개의&quot;</span>, <span class="tok-str">&quot;복잡한&quot;</span>, <span class="tok-str">&quot;부끄러운&quot;</span>, <span class="tok-str">&quot;부담스러운&quot;</span>, <span class="tok-str">&quot;부드러운&quot;</span>, <span class="tok-str">&quot;부러워하는&quot;</span>, <span class="tok-str">&quot;부정한&quot;</span>, <span class="tok-str">&quot;부족한&quot;</span>, <span class="tok-str">&quot;분명한&quot;</span>, <span class="tok-str">&quot;분주한&quot;</span>, <span class="tok-str">&quot;불결한&quot;</span>, <span class="tok-str">&quot;불룩한&quot;</span>, <span class="tok-str">&quot;불안한&quot;</span>, <span class="tok-str">&quot;불충실한&quot;</span>, <span class="tok-str">&quot;붐비는&quot;</span>, <span class="tok-str">&quot;비뚤어진&quot;</span>, <span class="tok-str">&quot;비싼&quot;</span>, <span class="tok-str">&quot;비어 있는&quot;</span>, <span class="tok-str">&quot;비참한&quot;</span>, <span class="tok-str">&quot;빠른&quot;</span>, <span class="tok-str">&quot;사랑스러운&quot;</span>, <span class="tok-str">&quot;사랑하는&quot;</span>, <span class="tok-str">&quot;사려 깊은&quot;</span>, <span class="tok-str">&quot;사악한&quot;</span>, <span class="tok-str">&quot;살아 있는&quot;</span>, <span class="tok-str">&quot;상세한&quot;</span>, <span class="tok-str">&quot;상쾌한&quot;</span>, <span class="tok-str">&quot;생기 있는&quot;</span>, <span class="tok-str">&quot;생분해성&quot;</span>, <span class="tok-str">&quot;성실한&quot;</span>, <span class="tok-str">&quot;세련된&quot;</span>, <span class="tok-str">&quot;소름 끼치는&quot;</span>, <span class="tok-str">&quot;솔직한&quot;</span>, <span class="tok-str">&quot;순수한&quot;</span>, <span class="tok-str">&quot;쉬운&quot;</span>, <span class="tok-str">&quot;습한&quot;</span>, <span class="tok-str">&quot;시원한&quot;</span>, <span class="tok-str">&quot;신나는&quot;</span>, <span class="tok-str">&quot;신뢰할 수 있는&quot;</span>, <span class="tok-str">&quot;싼&quot;</span>, <span class="tok-str">&quot;아름다운&quot;</span>, <span class="tok-str">&quot;알고 있는&quot;</span>, <span class="tok-str">&quot;약간의&quot;</span>, <span class="tok-str">&quot;어느&quot;</span>, <span class="tok-str">&quot;어두운&quot;</span>, <span class="tok-str">&quot;어려운&quot;</span>, <span class="tok-str">&quot;어리석은&quot;</span>, <span class="tok-str">&quot;어색한&quot;</span>, <span class="tok-str">&quot;어설픈&quot;</span>, <span class="tok-str">&quot;어지러운&quot;</span>, <span class="tok-str">&quot;억센&quot;</span>, <span class="tok-str">&quot;엄청난&quot;</span>, <span class="tok-str">&quot;역겨운&quot;</span>, <span class="tok-str">&quot;열심히&quot;</span>, <span class="tok-str">&quot;영리한&quot;</span>, <span class="tok-str">&quot;예술적인&quot;</span>, <span class="tok-str">&quot;예의 바른&quot;</span>, <span class="tok-str">&quot;온화한&quot;</span>, <span class="tok-str">&quot;완벽한&quot;</span>, <span class="tok-str">&quot;외향적인&quot;</span>, <span class="tok-str">&quot;용감한&quot;</span>, <span class="tok-str">&quot;용기 있는&quot;</span>, <span class="tok-str">&quot;우아한&quot;</span>, <span class="tok-str">&quot;원통형&quot;</span>, <span class="tok-str">&quot;위독한&quot;</span>, <span class="tok-str">&quot;윙윙&quot;</span>, <span class="tok-str">&quot;유리한&quot;</span>, <span class="tok-str">&quot;유명한&quot;</span>, <span class="tok-str">&quot;유익한&quot;</span>, <span class="tok-str">&quot;유치한&quot;</span>, <span class="tok-str">&quot;윤리적&quot;</span>, <span class="tok-str">&quot;음침한&quot;</span>, <span class="tok-str">&quot;의기 양양한&quot;</span>, <span class="tok-str">&quot;의식하는&quot;</span>, <span class="tok-str">&quot;이국적인&quot;</span>, <span class="tok-str">&quot;이타적인&quot;</span>, <span class="tok-str">&quot;인기 많은&quot;</span>, <span class="tok-str">&quot;인정 많은&quot;</span>, <span class="tok-str">&quot;일찍&quot;</span>, <span class="tok-str">&quot;자신 있는&quot;</span>, <span class="tok-str">&quot;잔혹한&quot;</span>, <span class="tok-str">&quot;저명한&quot;</span>, <span class="tok-str">&quot;저주받은&quot;</span>, <span class="tok-str">&quot;적극적인&quot;</span>, <span class="tok-str">&quot;적절한&quot;</span>, <span class="tok-str">&quot;전통적인&quot;</span>, <span class="tok-str">&quot;젊은&quot;</span>, <span class="tok-str">&quot;정교한&quot;</span>, <span class="tok-str">&quot;정통한&quot;</span>, <span class="tok-str">&quot;정확한&quot;</span>, <span class="tok-str">&quot;조잡한&quot;</span>, <span class="tok-str">&quot;존경하는&quot;</span>, <span class="tok-str">&quot;주의 깊은&quot;</span>, <span class="tok-str">&quot;죽은&quot;</span>, <span class="tok-str">&quot;즐거운&quot;</span>, <span class="tok-str">&quot;지루한&quot;</span>, <span class="tok-str">&quot;진지한&quot;</span>, <span class="tok-str">&quot;짧은&quot;</span>, <span class="tok-str">&quot;차가운&quot;</span>, <span class="tok-str">&quot;창의적인&quot;</span>, <span class="tok-str">&quot;철저한&quot;</span>, <span class="tok-str">&quot;추운&quot;</span>, <span class="tok-str">&quot;충실한&quot;</span>, <span class="tok-str">&quot;치명적인&quot;</span>, <span class="tok-str">&quot;친숙한&quot;</span>, <span class="tok-str">&quot;친절한&quot;</span>, <span class="tok-str">&quot;침착한&quot;</span>, <span class="tok-str">&quot;쾌활한&quot;</span>, <span class="tok-str">&quot;큰&quot;</span>, <span class="tok-str">&quot;타원형의&quot;</span>, <span class="tok-str">&quot;탄력 있는&quot;</span>, <span class="tok-str">&quot;탈진한&quot;</span>, <span class="tok-str">&quot;탐욕스러운&quot;</span>, <span class="tok-str">&quot;통통한&quot;</span>, <span class="tok-str">&quot;편안한&quot;</span>, <span class="tok-str">&quot;품위 있는&quot;</span>, <span class="tok-str">&quot;풍부한&quot;</span>, <span class="tok-str">&quot;필수적인&quot;</span>, <span class="tok-str">&quot;행복한&quot;</span>, <span class="tok-str">&quot;향긋한&quot;</span>, <span class="tok-str">&quot;혼란스러운&quot;</span>, <span class="tok-str">&quot;화난&quot;</span>, <span class="tok-str">&quot;화려한&quot;</span>, <span class="tok-str">&quot;환상적&quot;</span>, <span class="tok-str">&quot;활동적인&quot;</span>, <span class="tok-str">&quot;활발한&quot;</span>, <span class="tok-str">&quot;훌륭한&quot;</span>, <span class="tok-str">&quot;흔한&quot;</span>, <span class="tok-str">&quot;흥분한&quot;</span>, <span class="tok-str">&quot;희미한&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adverb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;간단히&quot;</span>, <span class="tok-str">&quot;거꾸로&quot;</span>, <span class="tok-str">&quot;거만하게&quot;</span>, <span class="tok-str">&quot;거의&quot;</span>, <span class="tok-str">&quot;고요히&quot;</span>, <span class="tok-str">&quot;고의로&quot;</span>, <span class="tok-str">&quot;극진히&quot;</span>, <span class="tok-str">&quot;깊이&quot;</span>, <span class="tok-str">&quot;나중에&quot;</span>, <span class="tok-str">&quot;노하여&quot;</span>, <span class="tok-str">&quot;다소&quot;</span>, <span class="tok-str">&quot;다채롭게&quot;</span>, <span class="tok-str">&quot;대담하게&quot;</span>, <span class="tok-str">&quot;대체로&quot;</span>, <span class="tok-str">&quot;도전적으로&quot;</span>, <span class="tok-str">&quot;똑똑하게&quot;</span>, <span class="tok-str">&quot;마구&quot;</span>, <span class="tok-str">&quot;맹목적으로&quot;</span>, <span class="tok-str">&quot;면밀히&quot;</span>, <span class="tok-str">&quot;명랑하게&quot;</span>, <span class="tok-str">&quot;몹시&quot;</span>, <span class="tok-str">&quot;바르게&quot;</span>, <span class="tok-str">&quot;바쁘게&quot;</span>, <span class="tok-str">&quot;밝게&quot;</span>, <span class="tok-str">&quot;분명히&quot;</span>, <span class="tok-str">&quot;비정상적으로&quot;</span>, <span class="tok-str">&quot;빠르게&quot;</span>, <span class="tok-str">&quot;심하게&quot;</span>, <span class="tok-str">&quot;아름답게&quot;</span>, <span class="tok-str">&quot;어색하게&quot;</span>, <span class="tok-str">&quot;언제나&quot;</span>, <span class="tok-str">&quot;열심히&quot;</span>, <span class="tok-str">&quot;용감하게&quot;</span>, <span class="tok-str">&quot;우연히&quot;</span>, <span class="tok-str">&quot;유감스럽게&quot;</span>, <span class="tok-str">&quot;의심스럽게&quot;</span>, <span class="tok-str">&quot;자랑스럽게&quot;</span>, <span class="tok-str">&quot;잔인하게&quot;</span>, <span class="tok-str">&quot;즐겁게&quot;</span>, <span class="tok-str">&quot;지속적으로&quot;</span>, <span class="tok-str">&quot;천하게&quot;</span>, <span class="tok-str">&quot;쿨하게&quot;</span>, <span class="tok-str">&quot;행복하게&quot;</span>, <span class="tok-str">&quot;흥미롭게&quot;</span>, <span class="tok-str">&quot;희미하게&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;가입&quot;</span>, <span class="tok-str">&quot;경보&quot;</span>, <span class="tok-str">&quot;고뇌&quot;</span>, <span class="tok-str">&quot;고도&quot;</span>, <span class="tok-str">&quot;고문&quot;</span>, <span class="tok-str">&quot;골목&quot;</span>, <span class="tok-str">&quot;공군&quot;</span>, <span class="tok-str">&quot;공기&quot;</span>, <span class="tok-str">&quot;공적&quot;</span>, <span class="tok-str">&quot;공항&quot;</span>, <span class="tok-str">&quot;관리&quot;</span>, <span class="tok-str">&quot;관리자&quot;</span>, <span class="tok-str">&quot;광고&quot;</span>, <span class="tok-str">&quot;구급차&quot;</span>, <span class="tok-str">&quot;구실&quot;</span>, <span class="tok-str">&quot;나이&quot;</span>, <span class="tok-str">&quot;내세&quot;</span>, <span class="tok-str">&quot;놀람&quot;</span>, <span class="tok-str">&quot;농업&quot;</span>, <span class="tok-str">&quot;달력&quot;</span>, <span class="tok-str">&quot;대사&quot;</span>, <span class="tok-str">&quot;대수학&quot;</span>, <span class="tok-str">&quot;대안&quot;</span>, <span class="tok-str">&quot;대행사&quot;</span>, <span class="tok-str">&quot;도토리&quot;</span>, <span class="tok-str">&quot;동맹&quot;</span>, <span class="tok-str">&quot;동작&quot;</span>, <span class="tok-str">&quot;무정부주의자&quot;</span>, <span class="tok-str">&quot;반침&quot;</span>, <span class="tok-str">&quot;배당&quot;</span>, <span class="tok-str">&quot;배우&quot;</span>, <span class="tok-str">&quot;변경&quot;</span>, <span class="tok-str">&quot;별명&quot;</span>, <span class="tok-str">&quot;보적&quot;</span>, <span class="tok-str">&quot;보좌관&quot;</span>, <span class="tok-str">&quot;부사&quot;</span>, <span class="tok-str">&quot;분석&quot;</span>, <span class="tok-str">&quot;분석자&quot;</span>, <span class="tok-str">&quot;분위기&quot;</span>, <span class="tok-str">&quot;불쌍한&quot;</span>, <span class="tok-str">&quot;비행기&quot;</span>, <span class="tok-str">&quot;비행사&quot;</span>, <span class="tok-str">&quot;비행선&quot;</span>, <span class="tok-str">&quot;비행장&quot;</span>, <span class="tok-str">&quot;성인&quot;</span>, <span class="tok-str">&quot;성취&quot;</span>, <span class="tok-str">&quot;성취자&quot;</span>, <span class="tok-str">&quot;쇠붙이&quot;</span>, <span class="tok-str">&quot;술&quot;</span>, <span class="tok-str">&quot;승인&quot;</span>, <span class="tok-str">&quot;아드레날린&quot;</span>, <span class="tok-str">&quot;아마존&quot;</span>, <span class="tok-str">&quot;아몬드&quot;</span>, <span class="tok-str">&quot;악어&quot;</span>, <span class="tok-str">&quot;안건&quot;</span>, <span class="tok-str">&quot;알파벳&quot;</span>, <span class="tok-str">&quot;알파카&quot;</span>, <span class="tok-str">&quot;애프터셰이브&quot;</span>, <span class="tok-str">&quot;앨범&quot;</span>, <span class="tok-str">&quot;양&quot;</span>, <span class="tok-str">&quot;양자&quot;</span>, <span class="tok-str">&quot;어댑터&quot;</span>, <span class="tok-str">&quot;에어백&quot;</span>, <span class="tok-str">&quot;에이전트&quot;</span>, <span class="tok-str">&quot;에일&quot;</span>, <span class="tok-str">&quot;여배우&quot;</span>, <span class="tok-str">&quot;여진&quot;</span>, <span class="tok-str">&quot;여파&quot;</span>, <span class="tok-str">&quot;연산&quot;</span>, <span class="tok-str">&quot;예의&quot;</span>, <span class="tok-str">&quot;오후&quot;</span>, <span class="tok-str">&quot;옹호&quot;</span>, <span class="tok-str">&quot;외계인&quot;</span>, <span class="tok-str">&quot;용돈&quot;</span>, <span class="tok-str">&quot;유연&quot;</span>, <span class="tok-str">&quot;유추&quot;</span>, <span class="tok-str">&quot;음향학&quot;</span>, <span class="tok-str">&quot;응집&quot;</span>, <span class="tok-str">&quot;이점&quot;</span>, <span class="tok-str">&quot;일&quot;</span>, <span class="tok-str">&quot;적응&quot;</span>, <span class="tok-str">&quot;전능자&quot;</span>, <span class="tok-str">&quot;전진&quot;</span>, <span class="tok-str">&quot;제단&quot;</span>, <span class="tok-str">&quot;조언&quot;</span>, <span class="tok-str">&quot;조정&quot;</span>, <span class="tok-str">&quot;주소&quot;</span>, <span class="tok-str">&quot;즐거움&quot;</span>, <span class="tok-str">&quot;지원&quot;</span>, <span class="tok-str">&quot;진보&quot;</span>, <span class="tok-str">&quot;진술&quot;</span>, <span class="tok-str">&quot;진술서&quot;</span>, <span class="tok-str">&quot;출현&quot;</span>, <span class="tok-str">&quot;침략&quot;</span>, <span class="tok-str">&quot;탄약&quot;</span>, <span class="tok-str">&quot;탐닉&quot;</span>, <span class="tok-str">&quot;특사&quot;</span>, <span class="tok-str">&quot;합금&quot;</span>, <span class="tok-str">&quot;합의&quot;</span>, <span class="tok-str">&quot;항공기&quot;</span>, <span class="tok-str">&quot;항공료&quot;</span>, <span class="tok-str">&quot;항공편&quot;</span>, <span class="tok-str">&quot;해석학&quot;</span>, <span class="tok-str">&quot;행동&quot;</span>, <span class="tok-str">&quot;형용사&quot;</span>, <span class="tok-str">&quot;호박색&quot;</span>, <span class="tok-str">&quot;활동&quot;</span>, <span class="tok-str">&quot;활동가&quot;</span>, <span class="tok-str">&quot;활성화&quot;</span> };</span>
+<span class="line" id="L6"></span>
+</code></pre></body>
+</html>

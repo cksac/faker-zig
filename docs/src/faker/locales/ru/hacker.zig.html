@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\ru\hacker.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> abbreviation = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;БИОС&quot;</span>, <span class="tok-str">&quot;Гб&quot;</span>, <span class="tok-str">&quot;ИИ&quot;</span>, <span class="tok-str">&quot;ОС&quot;</span>, <span class="tok-str">&quot;ОЗУ&quot;</span>, <span class="tok-str">&quot;ПО&quot;</span>, <span class="tok-str">&quot;СУБД&quot;</span>, <span class="tok-str">&quot;ХЗ&quot;</span>, <span class="tok-str">&quot;ЭВМ&quot;</span>, <span class="tok-str">&quot;HTTP&quot;</span>, <span class="tok-str">&quot;SDD&quot;</span>, <span class="tok-str">&quot;CSS&quot;</span>, <span class="tok-str">&quot;SSL&quot;</span>, <span class="tok-str">&quot;AGP&quot;</span>, <span class="tok-str">&quot;FTP&quot;</span>, <span class="tok-str">&quot;PCI&quot;</span>, <span class="tok-str">&quot;ADP&quot;</span>, <span class="tok-str">&quot;RSS&quot;</span>, <span class="tok-str">&quot;XML&quot;</span>, <span class="tok-str">&quot;EXE&quot;</span>, <span class="tok-str">&quot;COM&quot;</span>, <span class="tok-str">&quot;НМЖД&quot;</span>, <span class="tok-str">&quot;ПЗУ&quot;</span>, <span class="tok-str">&quot;SMTP&quot;</span>, <span class="tok-str">&quot;SMS&quot;</span>, <span class="tok-str">&quot;USB&quot;</span>, <span class="tok-str">&quot;PNG&quot;</span>, <span class="tok-str">&quot;SAS&quot;</span>, <span class="tok-str">&quot;JSON&quot;</span>, <span class="tok-str">&quot;XSS&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;вспомогательный&quot;</span>, <span class="tok-str">&quot;основной&quot;</span>, <span class="tok-str">&quot;внутренний&quot;</span>, <span class="tok-str">&quot;цифровой&quot;</span>, <span class="tok-str">&quot;свободно-распростроняемый&quot;</span>, <span class="tok-str">&quot;виртуальный&quot;</span>, <span class="tok-str">&quot;кросс-платформенный&quot;</span>, <span class="tok-str">&quot;излишний&quot;</span>, <span class="tok-str">&quot;онлайн&quot;</span>, <span class="tok-str">&quot;сенсорный&quot;</span>, <span class="tok-str">&quot;многобайтный&quot;</span>, <span class="tok-str">&quot;беспроводной&quot;</span>, <span class="tok-str">&quot;1080-пиксельный&quot;</span>, <span class="tok-str">&quot;нейронный&quot;</span>, <span class="tok-str">&quot;оптический&quot;</span>, <span class="tok-str">&quot;твердотельный&quot;</span>, <span class="tok-str">&quot;мобильный&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ingverb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;резервное копирование&quot;</span>, <span class="tok-str">&quot;обход&quot;</span>, <span class="tok-str">&quot;архивирование&quot;</span>, <span class="tok-str">&quot;взлом&quot;</span>, <span class="tok-str">&quot;шифрование&quot;</span>, <span class="tok-str">&quot;переопределение&quot;</span>, <span class="tok-str">&quot;сжатие&quot;</span>, <span class="tok-str">&quot;скачивание&quot;</span>, <span class="tok-str">&quot;копирование&quot;</span>, <span class="tok-str">&quot;навигация&quot;</span>, <span class="tok-str">&quot;индексирование&quot;</span>, <span class="tok-str">&quot;соединение&quot;</span>, <span class="tok-str">&quot;генерация&quot;</span>, <span class="tok-str">&quot;определение количества&quot;</span>, <span class="tok-str">&quot;вычисление&quot;</span>, <span class="tok-str">&quot;синтез&quot;</span>, <span class="tok-str">&quot;передача&quot;</span>, <span class="tok-str">&quot;программирование&quot;</span>, <span class="tok-str">&quot;разбор&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;драйвер&quot;</span>, <span class="tok-str">&quot;протокол&quot;</span>, <span class="tok-str">&quot;ограничитель&quot;</span>, <span class="tok-str">&quot;интерфейс&quot;</span>, <span class="tok-str">&quot;микрочип&quot;</span>, <span class="tok-str">&quot;код&quot;</span>, <span class="tok-str">&quot;парсер&quot;</span>, <span class="tok-str">&quot;сокет&quot;</span>, <span class="tok-str">&quot;кортеж&quot;</span>, <span class="tok-str">&quot;порт&quot;</span>, <span class="tok-str">&quot;ключ&quot;</span>, <span class="tok-str">&quot;массив&quot;</span>, <span class="tok-str">&quot;объект&quot;</span>, <span class="tok-str">&quot;сенсор&quot;</span>, <span class="tok-str">&quot;брандмауэр&quot;</span>, <span class="tok-str">&quot;винчестер&quot;</span>, <span class="tok-str">&quot;пиксель&quot;</span>, <span class="tok-str">&quot;механизм сигнализации&quot;</span>, <span class="tok-str">&quot;поглотитель&quot;</span>, <span class="tok-str">&quot;монитор&quot;</span>, <span class="tok-str">&quot;продукт&quot;</span>, <span class="tok-str">&quot;передатчик&quot;</span>, <span class="tok-str">&quot;блок разведения&quot;</span>, <span class="tok-str">&quot;канал&quot;</span>, <span class="tok-str">&quot;конденсатор&quot;</span>, <span class="tok-str">&quot;оператор&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> phrase = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Чтобы {{verb}} {{noun}}, мы можем получить {{abbreviation}} {{noun}} через {{adjective}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;Необходимо {{verb}} {{adjective}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;Попробуйте {{verb}} {{abbreviation}} {{noun}}, возможно это позволит {{verb}} {{adjective}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;Вы не можете {{verb}} {{noun}}, требуется {{ingverb}} или {{ingverb}}!&quot;</span>, <span class="tok-str">&quot;Используйте {{adjective}} {{abbreviation}} {{noun}}, для того чтобы {{verb}} {{adjective}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;{{abbreviation}} {{noun}} недоступен, требуется {{verb}} {{adjective}} {{noun}}, чтобы мы могли {{verb}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;{{ingverb}} не работает, попробуйте {{verb}} {{adjective}} {{abbreviation}} {{noun}}!&quot;</span>, <span class="tok-str">&quot;Я планирую {{verb}} {{adjective}} {{abbreviation}} {{noun}}, это должно помочь {{verb}} {{abbreviation}} {{noun}}!&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;сохранить&quot;</span>, <span class="tok-str">&quot;обойти&quot;</span>, <span class="tok-str">&quot;взломать&quot;</span>, <span class="tok-str">&quot;переопределить&quot;</span>, <span class="tok-str">&quot;сжать&quot;</span>, <span class="tok-str">&quot;зашифровать&quot;</span>, <span class="tok-str">&quot;импортировать&quot;</span>, <span class="tok-str">&quot;экспортировать&quot;</span>, <span class="tok-str">&quot;копировать&quot;</span>, <span class="tok-str">&quot;навигировать&quot;</span>, <span class="tok-str">&quot;индексировать&quot;</span>, <span class="tok-str">&quot;соединить&quot;</span>, <span class="tok-str">&quot;генерировать&quot;</span>, <span class="tok-str">&quot;распарсить&quot;</span>, <span class="tok-str">&quot;квантифицировать&quot;</span>, <span class="tok-str">&quot;вычислить&quot;</span>, <span class="tok-str">&quot;синтезировать&quot;</span>, <span class="tok-str">&quot;ввести&quot;</span>, <span class="tok-str">&quot;передать&quot;</span>, <span class="tok-str">&quot;запрограммировать&quot;</span>, <span class="tok-str">&quot;перезагрузить&quot;</span>, <span class="tok-str">&quot;разобрать&quot;</span> };</span>
+<span class="line" id="L12"></span>
+</code></pre></body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\zh_CN\music.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> genre = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;摇滚&quot;</span>, <span class="tok-str">&quot;流行&quot;</span>, <span class="tok-str">&quot;重金属&quot;</span>, <span class="tok-str">&quot;电子&quot;</span>, <span class="tok-str">&quot;民谣&quot;</span>, <span class="tok-str">&quot;世界&quot;</span>, <span class="tok-str">&quot;乡村&quot;</span>, <span class="tok-str">&quot;爵士&quot;</span>, <span class="tok-str">&quot;放克&quot;</span>, <span class="tok-str">&quot;灵魂&quot;</span>, <span class="tok-str">&quot;嘻哈&quot;</span>, <span class="tok-str">&quot;经典&quot;</span>, <span class="tok-str">&quot;拉丁&quot;</span>, <span class="tok-str">&quot;牙买加&quot;</span>, <span class="tok-str">&quot;蓝调&quot;</span>, <span class="tok-str">&quot;非音乐&quot;</span>, <span class="tok-str">&quot;说唱&quot;</span>, <span class="tok-str">&quot;舞台与银幕&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> song_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;白月光与朱砂痣&quot;</span>, <span class="tok-str">&quot;孤勇者&quot;</span>, <span class="tok-str">&quot;稻香&quot;</span>, <span class="tok-str">&quot;起风了&quot;</span>, <span class="tok-str">&quot;纪念&quot;</span>, <span class="tok-str">&quot;晴天&quot;</span>, <span class="tok-str">&quot;兰亭序&quot;</span>, <span class="tok-str">&quot;我流泪情绪零碎&quot;</span>, <span class="tok-str">&quot;七里香&quot;</span>, <span class="tok-str">&quot;花海&quot;</span>, <span class="tok-str">&quot;反方向的钟&quot;</span>, <span class="tok-str">&quot;一路向北&quot;</span>, <span class="tok-str">&quot;蒲公英的约定&quot;</span>, <span class="tok-str">&quot;夜曲&quot;</span>, <span class="tok-str">&quot;搁浅&quot;</span>, <span class="tok-str">&quot;海底&quot;</span>, <span class="tok-str">&quot;105度的你&quot;</span>, <span class="tok-str">&quot;明明就&quot;</span>, <span class="tok-str">&quot;爱在西元前&quot;</span>, <span class="tok-str">&quot;我如此相信&quot;</span>, <span class="tok-str">&quot;枫&quot;</span>, <span class="tok-str">&quot;青花瓷&quot;</span>, <span class="tok-str">&quot;半岛铁盒&quot;</span>, <span class="tok-str">&quot;说了再见&quot;</span>, <span class="tok-str">&quot;暗号&quot;</span>, <span class="tok-str">&quot;退后&quot;</span>, <span class="tok-str">&quot;最长的电影&quot;</span>, <span class="tok-str">&quot;等你下课&quot;</span>, <span class="tok-str">&quot;烟花易冷&quot;</span>, <span class="tok-str">&quot;不该&quot;</span>, <span class="tok-str">&quot;告白气球&quot;</span>, <span class="tok-str">&quot;说好不哭&quot;</span>, <span class="tok-str">&quot;轨迹&quot;</span>, <span class="tok-str">&quot;红尘客栈&quot;</span>, <span class="tok-str">&quot;不能说的秘密&quot;</span>, <span class="tok-str">&quot;珊瑚海&quot;</span>, <span class="tok-str">&quot;给我一首歌的时间&quot;</span>, <span class="tok-str">&quot;你听得到&quot;</span>, <span class="tok-str">&quot;简单的爱&quot;</span>, <span class="tok-str">&quot;龙卷风&quot;</span>, <span class="tok-str">&quot;发如雪&quot;</span>, <span class="tok-str">&quot;园游会&quot;</span>, <span class="tok-str">&quot;听妈妈的话&quot;</span>, <span class="tok-str">&quot;夜的第七章&quot;</span>, <span class="tok-str">&quot;接口&quot;</span>, <span class="tok-str">&quot;手写从前&quot;</span>, <span class="tok-str">&quot;安静&quot;</span>, <span class="tok-str">&quot;爱情废材&quot;</span>, <span class="tok-str">&quot;以父之名&quot;</span>, <span class="tok-str">&quot;我不配&quot;</span>, <span class="tok-str">&quot;最伟大的作品&quot;</span>, <span class="tok-str">&quot;可爱女人&quot;</span>, <span class="tok-str">&quot;彩虹&quot;</span>, <span class="tok-str">&quot;回到过去&quot;</span>, <span class="tok-str">&quot;听悲伤的情话&quot;</span>, <span class="tok-str">&quot;把回忆拼好给你&quot;</span>, <span class="tok-str">&quot;东风破&quot;</span>, <span class="tok-str">&quot;黑色毛衣&quot;</span>, <span class="tok-str">&quot;本草纲目&quot;</span>, <span class="tok-str">&quot;开不了口&quot;</span>, <span class="tok-str">&quot;霍元甲&quot;</span>, <span class="tok-str">&quot;爱的飞行日记&quot;</span>, <span class="tok-str">&quot;大本钟&quot;</span>, <span class="tok-str">&quot;断了的弦&quot;</span>, <span class="tok-str">&quot;爷爷泡的茶&quot;</span>, <span class="tok-str">&quot;星晴&quot;</span>, <span class="tok-str">&quot;甜甜的&quot;</span>, <span class="tok-str">&quot;红颜如霜&quot;</span>, <span class="tok-str">&quot;粉色海洋&quot;</span>, <span class="tok-str">&quot;她的睫毛&quot;</span>, <span class="tok-str">&quot;雨下一整晚&quot;</span>, <span class="tok-str">&quot;白色风车&quot;</span>, <span class="tok-str">&quot;还在流浪&quot;</span>, <span class="tok-str">&quot;阳光宅男&quot;</span>, <span class="tok-str">&quot;算什么男人&quot;</span>, <span class="tok-str">&quot;菊花台&quot;</span>, <span class="tok-str">&quot;千里之外&quot;</span>, <span class="tok-str">&quot;错过的烟火&quot;</span>, <span class="tok-str">&quot;倒影&quot;</span>, <span class="tok-str">&quot;听见下雨的声音&quot;</span>, <span class="tok-str">&quot;黑色幽默&quot;</span>, <span class="tok-str">&quot;默&quot;</span>, <span class="tok-str">&quot;不爱我拉倒&quot;</span>, <span class="tok-str">&quot;之战之殇&quot;</span>, <span class="tok-str">&quot;布拉格广场&quot;</span>, <span class="tok-str">&quot;美人鱼&quot;</span>, <span class="tok-str">&quot;分裂&quot;</span>, <span class="tok-str">&quot;心雨&quot;</span>, <span class="tok-str">&quot;米兰的小铁匠&quot;</span>, <span class="tok-str">&quot;世界末日&quot;</span>, <span class="tok-str">&quot;一点点&quot;</span>, <span class="tok-str">&quot;外婆&quot;</span>, <span class="tok-str">&quot;画沙&quot;</span>, <span class="tok-str">&quot;哪里都是你&quot;</span>, <span class="tok-str">&quot;刀马旦&quot;</span>, <span class="tok-str">&quot;超人不会飞&quot;</span>, <span class="tok-str">&quot;牛仔很忙&quot;</span>, <span class="tok-str">&quot;周大侠&quot;</span>, <span class="tok-str">&quot;飘移&quot;</span>, <span class="tok-str">&quot;忍者&quot;</span>, <span class="tok-str">&quot;夏日妄想&quot;</span>, <span class="tok-str">&quot;铃芽之旅&quot;</span>, <span class="tok-str">&quot;玫瑰少年&quot;</span>, <span class="tok-str">&quot;大鱼&quot;</span>, <span class="tok-str">&quot;灯火里的中国&quot;</span>, <span class="tok-str">&quot;义勇军进行曲&quot;</span>, <span class="tok-str">&quot;调查中&quot;</span>, <span class="tok-str">&quot;少年&quot;</span>, <span class="tok-str">&quot;堕&quot;</span>, <span class="tok-str">&quot;在你身边&quot;</span>, <span class="tok-str">&quot;悬溺&quot;</span>, <span class="tok-str">&quot;奢香夫人&quot;</span>, <span class="tok-str">&quot;最好的安排&quot;</span>, <span class="tok-str">&quot;夏至未至&quot;</span>, <span class="tok-str">&quot;小城夏天&quot;</span>, <span class="tok-str">&quot;暖暖&quot;</span> };</span>
+<span class="line" id="L4"></span>
+</code></pre></body>
+</html>

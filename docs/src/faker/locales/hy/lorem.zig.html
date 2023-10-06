@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\hy\lorem.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> words = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;տարի&quot;</span>, <span class="tok-str">&quot;որ&quot;</span>, <span class="tok-str">&quot;փոխեց&quot;</span>, <span class="tok-str">&quot;ամեն&quot;</span>, <span class="tok-str">&quot;ինչ&quot;</span>, <span class="tok-str">&quot;կենցաղից&quot;</span>, <span class="tok-str">&quot;մինչև&quot;</span>, <span class="tok-str">&quot;համաշխարհային&quot;</span>, <span class="tok-str">&quot;տնտեսություն&quot;</span>, <span class="tok-str">&quot;մի&quot;</span>, <span class="tok-str">&quot;քանի&quot;</span>, <span class="tok-str">&quot;շաբաթում&quot;</span>, <span class="tok-str">&quot;բնականոն&quot;</span>, <span class="tok-str">&quot;դարձնելով&quot;</span>, <span class="tok-str">&quot;այն&quot;</span>, <span class="tok-str">&quot;դեռ&quot;</span>, <span class="tok-str">&quot;երեկ&quot;</span>, <span class="tok-str">&quot;անհնար&quot;</span>, <span class="tok-str">&quot;էր&quot;</span>, <span class="tok-str">&quot;թվում&quot;</span>, <span class="tok-str">&quot;ը&quot;</span>, <span class="tok-str">&quot;շատերի&quot;</span>, <span class="tok-str">&quot;համար&quot;</span>, <span class="tok-str">&quot;կմնա&quot;</span>, <span class="tok-str">&quot;որպես&quot;</span>, <span class="tok-str">&quot;անտեսանելի&quot;</span>, <span class="tok-str">&quot;աղետի&quot;</span>, <span class="tok-str">&quot;խստագույն&quot;</span>, <span class="tok-str">&quot;սահմանափակումների&quot;</span>, <span class="tok-str">&quot;մարդկային&quot;</span>, <span class="tok-str">&quot;կորուստների&quot;</span>, <span class="tok-str">&quot;և&quot;</span>, <span class="tok-str">&quot;գործազրկության&quot;</span>, <span class="tok-str">&quot;Տարեսկզբին&quot;</span>, <span class="tok-str">&quot;չինական&quot;</span>, <span class="tok-str">&quot;Վուհանի&quot;</span>, <span class="tok-str">&quot;շուկայում&quot;</span>, <span class="tok-str">&quot;ենթադրաբար&quot;</span>, <span class="tok-str">&quot;չղջիկից&quot;</span>, <span class="tok-str">&quot;մարդուն&quot;</span>, <span class="tok-str">&quot;փոխանցված&quot;</span>, <span class="tok-str">&quot;վիրուսն&quot;</span>, <span class="tok-str">&quot;ապացուցեց&quot;</span>, <span class="tok-str">&quot;տեխնոլոգիական&quot;</span>, <span class="tok-str">&quot;նվաճումների&quot;</span>, <span class="tok-str">&quot;հասած&quot;</span>, <span class="tok-str">&quot;մարդկությունը&quot;</span>, <span class="tok-str">&quot;դեռևս&quot;</span>, <span class="tok-str">&quot;շատ&quot;</span>, <span class="tok-str">&quot;բան&quot;</span>, <span class="tok-str">&quot;չգիտի&quot;</span>, <span class="tok-str">&quot;իր&quot;</span>, <span class="tok-str">&quot;սեփական&quot;</span>, <span class="tok-str">&quot;առողջության&quot;</span>, <span class="tok-str">&quot;բնության&quot;</span>, <span class="tok-str">&quot;ու&quot;</span>, <span class="tok-str">&quot;դրա&quot;</span>, <span class="tok-str">&quot;հետ&quot;</span>, <span class="tok-str">&quot;հարաբերությունների&quot;</span>, <span class="tok-str">&quot;մասին&quot;</span>, <span class="tok-str">&quot;Գարնանը&quot;</span>, <span class="tok-str">&quot;երբ&quot;</span>, <span class="tok-str">&quot;վիրուսը&quot;</span>, <span class="tok-str">&quot;կաթվածահար&quot;</span>, <span class="tok-str">&quot;արեց&quot;</span>, <span class="tok-str">&quot;կյանքը&quot;</span>, <span class="tok-str">&quot;գրեթե&quot;</span>, <span class="tok-str">&quot;ողջ&quot;</span>, <span class="tok-str">&quot;աշխարհում&quot;</span>, <span class="tok-str">&quot;Հռոմի&quot;</span>, <span class="tok-str">&quot;կաթոլիկ&quot;</span>, <span class="tok-str">&quot;եկեղեցու&quot;</span>, <span class="tok-str">&quot;առաջնորդն&quot;</span>, <span class="tok-str">&quot;հավատացյալ&quot;</span>, <span class="tok-str">&quot;հոտին&quot;</span>, <span class="tok-str">&quot;դիմեց&quot;</span>, <span class="tok-str">&quot;աղոթքով&quot;</span>, <span class="tok-str">&quot;տարվա&quot;</span>, <span class="tok-str">&quot;ընթացքում&quot;</span>, <span class="tok-str">&quot;շատերն&quot;</span>, <span class="tok-str">&quot;էին&quot;</span>, <span class="tok-str">&quot;հիշում&quot;</span>, <span class="tok-str">&quot;մեջբերում&quot;</span>, <span class="tok-str">&quot;Մենք&quot;</span>, <span class="tok-str">&quot;առաջ&quot;</span>, <span class="tok-str">&quot;էինք&quot;</span>, <span class="tok-str">&quot;շարժվում&quot;</span>, <span class="tok-str">&quot;գլխապտույտ&quot;</span>, <span class="tok-str">&quot;արագությամբ&quot;</span>, <span class="tok-str">&quot;վստահ&quot;</span>, <span class="tok-str">&quot;ուժեղ&quot;</span>, <span class="tok-str">&quot;ենք&quot;</span>, <span class="tok-str">&quot;կարող&quot;</span>, <span class="tok-str">&quot;անել&quot;</span>, <span class="tok-str">&quot;կամենանք&quot;</span>, <span class="tok-str">&quot;Ձգտելով&quot;</span>, <span class="tok-str">&quot;անձնական&quot;</span>, <span class="tok-str">&quot;բարեկեցության&quot;</span>, <span class="tok-str">&quot;մենք&quot;</span>, <span class="tok-str">&quot;թույլ&quot;</span>, <span class="tok-str">&quot;տալիս&quot;</span>, <span class="tok-str">&quot;մեզ&quot;</span>, <span class="tok-str">&quot;տարվել&quot;</span>, <span class="tok-str">&quot;նյութականով&quot;</span>, <span class="tok-str">&quot;վազում&quot;</span>, <span class="tok-str">&quot;շահի&quot;</span>, <span class="tok-str">&quot;ետևից&quot;</span>, <span class="tok-str">&quot;չէին&quot;</span>, <span class="tok-str">&quot;կանգնեցնում&quot;</span>, <span class="tok-str">&quot;մեր&quot;</span>, <span class="tok-str">&quot;շուրջ&quot;</span>, <span class="tok-str">&quot;մոլեգնող&quot;</span>, <span class="tok-str">&quot;պատերազմներն&quot;</span>, <span class="tok-str">&quot;անարդարությունը&quot;</span>, <span class="tok-str">&quot;ոչ&quot;</span>, <span class="tok-str">&quot;էլ&quot;</span>, <span class="tok-str">&quot;աղքատների&quot;</span>, <span class="tok-str">&quot;օգնություն&quot;</span>, <span class="tok-str">&quot;աղերսող&quot;</span>, <span class="tok-str">&quot;ձայնն&quot;</span>, <span class="tok-str">&quot;լսում&quot;</span>, <span class="tok-str">&quot;շարունակում&quot;</span>, <span class="tok-str">&quot;ընթացքը&quot;</span>, <span class="tok-str">&quot;չնայելով&quot;</span>, <span class="tok-str">&quot;բանի&quot;</span>, <span class="tok-str">&quot;առողջ&quot;</span>, <span class="tok-str">&quot;մնալ&quot;</span>, <span class="tok-str">&quot;հիվանդ&quot;</span>, <span class="tok-str">&quot;հայտարարել&quot;</span>, <span class="tok-str">&quot;պապը&quot;</span>, <span class="tok-str">&quot;Անտեսանելի&quot;</span>, <span class="tok-str">&quot;առեղծվածային&quot;</span>, <span class="tok-str">&quot;մեկ&quot;</span>, <span class="tok-str">&quot;տարում&quot;</span>, <span class="tok-str">&quot;խլեց&quot;</span>, <span class="tok-str">&quot;ավելի&quot;</span>, <span class="tok-str">&quot;քան&quot;</span>, <span class="tok-str">&quot;միլիոն&quot;</span>, <span class="tok-str">&quot;հազար&quot;</span>, <span class="tok-str">&quot;մարդու&quot;</span>, <span class="tok-str">&quot;կյանք&quot;</span>, <span class="tok-str">&quot;վարակվեցին&quot;</span>, <span class="tok-str">&quot;միլիոնից&quot;</span>, <span class="tok-str">&quot;ավելին&quot;</span>, <span class="tok-str">&quot;վարակվածներից&quot;</span>, <span class="tok-str">&quot;յուրաքանչյուր&quot;</span>, <span class="tok-str">&quot;չորրորդը&quot;</span>, <span class="tok-str">&quot;մոտ&quot;</span>, <span class="tok-str">&quot;միլիոնը&quot;</span>, <span class="tok-str">&quot;այս&quot;</span>, <span class="tok-str">&quot;պահին&quot;</span>, <span class="tok-str">&quot;պայքարում&quot;</span>, <span class="tok-str">&quot;է&quot;</span>, <span class="tok-str">&quot;հիվանդության&quot;</span>, <span class="tok-str">&quot;դեմ&quot;</span>, <span class="tok-str">&quot;մարդ&quot;</span>, <span class="tok-str">&quot;գտնվում&quot;</span>, <span class="tok-str">&quot;ծայրահեղ&quot;</span>, <span class="tok-str">&quot;ծանր&quot;</span>, <span class="tok-str">&quot;վիճակում&quot;</span>, <span class="tok-str">&quot;Եվ&quot;</span>, <span class="tok-str">&quot;եթե&quot;</span>, <span class="tok-str">&quot;տարեսկզբին&quot;</span>, <span class="tok-str">&quot;որոշ&quot;</span>, <span class="tok-str">&quot;պետություններ&quot;</span>, <span class="tok-str">&quot;պարծենալ&quot;</span>, <span class="tok-str">&quot;իրենց&quot;</span>, <span class="tok-str">&quot;առողջապահական&quot;</span>, <span class="tok-str">&quot;համակարգերով&quot;</span>, <span class="tok-str">&quot;նորագույն&quot;</span>, <span class="tok-str">&quot;տեխնոլոգիաներով&quot;</span>, <span class="tok-str">&quot;ապա&quot;</span>, <span class="tok-str">&quot;համավարակից&quot;</span>, <span class="tok-str">&quot;հետո&quot;</span>, <span class="tok-str">&quot;ակնհայտ&quot;</span>, <span class="tok-str">&quot;դարձավ&quot;</span>, <span class="tok-str">&quot;անկախ&quot;</span>, <span class="tok-str">&quot;բյուջի&quot;</span>, <span class="tok-str">&quot;չափից&quot;</span>, <span class="tok-str">&quot;հնարավորություններից&quot;</span>, <span class="tok-str">&quot;հարուստ&quot;</span>, <span class="tok-str">&quot;թե&quot;</span>, <span class="tok-str">&quot;աղքատ&quot;</span>, <span class="tok-str">&quot;բոլորն&quot;</span>, <span class="tok-str">&quot;են&quot;</span>, <span class="tok-str">&quot;նույն&quot;</span>, <span class="tok-str">&quot;նավակում&quot;</span>, <span class="tok-str">&quot;նույնքան&quot;</span>, <span class="tok-str">&quot;անպաշտպան&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

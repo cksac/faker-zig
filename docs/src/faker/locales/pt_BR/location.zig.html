@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\pt_BR\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;#####&quot;</span>, <span class="tok-str">&quot;####&quot;</span>, <span class="tok-str">&quot;###&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.firstName}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.city_suffix}}&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = .{};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot; do Descoberto&quot;</span>, <span class="tok-str">&quot; de Nossa Senhora&quot;</span>, <span class="tok-str">&quot; do Norte&quot;</span>, <span class="tok-str">&quot; do Sul&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Afeganistão&quot;</span>, <span class="tok-str">&quot;Albânia&quot;</span>, <span class="tok-str">&quot;Algéria&quot;</span>, <span class="tok-str">&quot;Samoa&quot;</span>, <span class="tok-str">&quot;Andorra&quot;</span>, <span class="tok-str">&quot;Angola&quot;</span>, <span class="tok-str">&quot;Anguila&quot;</span>, <span class="tok-str">&quot;Antigua and Barbada&quot;</span>, <span class="tok-str">&quot;Argentina&quot;</span>, <span class="tok-str">&quot;Armênia&quot;</span>, <span class="tok-str">&quot;Aruba&quot;</span>, <span class="tok-str">&quot;Austrália&quot;</span>, <span class="tok-str">&quot;Áustria&quot;</span>, <span class="tok-str">&quot;Azerbaijão&quot;</span>, <span class="tok-str">&quot;Bahamas&quot;</span>, <span class="tok-str">&quot;Barém&quot;</span>, <span class="tok-str">&quot;Bangladesh&quot;</span>, <span class="tok-str">&quot;Barbados&quot;</span>, <span class="tok-str">&quot;Bélgica&quot;</span>, <span class="tok-str">&quot;Belize&quot;</span>, <span class="tok-str">&quot;Benin&quot;</span>, <span class="tok-str">&quot;Bermuda&quot;</span>, <span class="tok-str">&quot;Butão&quot;</span>, <span class="tok-str">&quot;Bolívia&quot;</span>, <span class="tok-str">&quot;Bôsnia&quot;</span>, <span class="tok-str">&quot;Botsuana&quot;</span>, <span class="tok-str">&quot;Ilha Bouvet&quot;</span>, <span class="tok-str">&quot;Brasil&quot;</span>, <span class="tok-str">&quot;Arquipélago de Chagos&quot;</span>, <span class="tok-str">&quot;Ilhas Virgens&quot;</span>, <span class="tok-str">&quot;Brunei&quot;</span>, <span class="tok-str">&quot;Bulgária&quot;</span>, <span class="tok-str">&quot;Burkina Faso&quot;</span>, <span class="tok-str">&quot;Burundi&quot;</span>, <span class="tok-str">&quot;Camboja&quot;</span>, <span class="tok-str">&quot;Camarões&quot;</span>, <span class="tok-str">&quot;Canadá&quot;</span>, <span class="tok-str">&quot;Cabo Verde&quot;</span>, <span class="tok-str">&quot;Ilhas Caiman&quot;</span>, <span class="tok-str">&quot;República da África Central&quot;</span>, <span class="tok-str">&quot;Chade&quot;</span>, <span class="tok-str">&quot;Chile&quot;</span>, <span class="tok-str">&quot;China&quot;</span>, <span class="tok-str">&quot;Ilha do Natal&quot;</span>, <span class="tok-str">&quot;Ilhas Cocos&quot;</span>, <span class="tok-str">&quot;Colômbia&quot;</span>, <span class="tok-str">&quot;Comores&quot;</span>, <span class="tok-str">&quot;Congo&quot;</span>, <span class="tok-str">&quot;Ilhas Cook&quot;</span>, <span class="tok-str">&quot;Costa Rica&quot;</span>, <span class="tok-str">&quot;Costa do Marfim&quot;</span>, <span class="tok-str">&quot;Croácia&quot;</span>, <span class="tok-str">&quot;Cuba&quot;</span>, <span class="tok-str">&quot;Chipre&quot;</span>, <span class="tok-str">&quot;República Tcheca&quot;</span>, <span class="tok-str">&quot;Dinamarca&quot;</span>, <span class="tok-str">&quot;Jibuti&quot;</span>, <span class="tok-str">&quot;Dominica&quot;</span>, <span class="tok-str">&quot;República Dominicana&quot;</span>, <span class="tok-str">&quot;Equador&quot;</span>, <span class="tok-str">&quot;Egito&quot;</span>, <span class="tok-str">&quot;El Salvador&quot;</span>, <span class="tok-str">&quot;Guiné Equatorial&quot;</span>, <span class="tok-str">&quot;Eritreia&quot;</span>, <span class="tok-str">&quot;Estônia&quot;</span>, <span class="tok-str">&quot;Etiópia&quot;</span>, <span class="tok-str">&quot;Ilhas Faroe&quot;</span>, <span class="tok-str">&quot;Malvinas&quot;</span>, <span class="tok-str">&quot;Fiji&quot;</span>, <span class="tok-str">&quot;Finlândia&quot;</span>, <span class="tok-str">&quot;França&quot;</span>, <span class="tok-str">&quot;Guiné Francesa&quot;</span>, <span class="tok-str">&quot;Polinésia Francesa&quot;</span>, <span class="tok-str">&quot;Gabão&quot;</span>, <span class="tok-str">&quot;Gâmbia&quot;</span>, <span class="tok-str">&quot;Georgia&quot;</span>, <span class="tok-str">&quot;Alemanha&quot;</span>, <span class="tok-str">&quot;Gana&quot;</span>, <span class="tok-str">&quot;Gibraltar&quot;</span>, <span class="tok-str">&quot;Grécia&quot;</span>, <span class="tok-str">&quot;Groelândia&quot;</span>, <span class="tok-str">&quot;Granada&quot;</span>, <span class="tok-str">&quot;Guadalupe&quot;</span>, <span class="tok-str">&quot;Guatemala&quot;</span>, <span class="tok-str">&quot;Guernesey&quot;</span>, <span class="tok-str">&quot;Guiné&quot;</span>, <span class="tok-str">&quot;Guiné-Bissau&quot;</span>, <span class="tok-str">&quot;Guiana&quot;</span>, <span class="tok-str">&quot;Haiti&quot;</span>, <span class="tok-str">&quot;Ilhas Heard e McDonald&quot;</span>, <span class="tok-str">&quot;Vaticano&quot;</span>, <span class="tok-str">&quot;Honduras&quot;</span>, <span class="tok-str">&quot;Hong Kong&quot;</span>, <span class="tok-str">&quot;Hungria&quot;</span>, <span class="tok-str">&quot;Islândia&quot;</span>, <span class="tok-str">&quot;Índia&quot;</span>, <span class="tok-str">&quot;Indonésia&quot;</span>, <span class="tok-str">&quot;Irã&quot;</span>, <span class="tok-str">&quot;Iraque&quot;</span>, <span class="tok-str">&quot;Irlanda&quot;</span>, <span class="tok-str">&quot;Ilha de Man&quot;</span>, <span class="tok-str">&quot;Israel&quot;</span>, <span class="tok-str">&quot;Itália&quot;</span>, <span class="tok-str">&quot;Jamaica&quot;</span>, <span class="tok-str">&quot;Japão&quot;</span>, <span class="tok-str">&quot;Jersey&quot;</span>, <span class="tok-str">&quot;Jordânia&quot;</span>, <span class="tok-str">&quot;Cazaquistão&quot;</span>, <span class="tok-str">&quot;Quênia&quot;</span>, <span class="tok-str">&quot;Quiribati&quot;</span>, <span class="tok-str">&quot;Coreia do Norte&quot;</span>, <span class="tok-str">&quot;Coreia do Sul&quot;</span>, <span class="tok-str">&quot;Kuwait&quot;</span>, <span class="tok-str">&quot;Quirguistão&quot;</span>, <span class="tok-str">&quot;Laos&quot;</span>, <span class="tok-str">&quot;Latvia&quot;</span>, <span class="tok-str">&quot;Líbano&quot;</span>, <span class="tok-str">&quot;Lesoto&quot;</span>, <span class="tok-str">&quot;Libéria&quot;</span>, <span class="tok-str">&quot;Líbia&quot;</span>, <span class="tok-str">&quot;Liechtenstein&quot;</span>, <span class="tok-str">&quot;Lituânia&quot;</span>, <span class="tok-str">&quot;Luxemburgo&quot;</span>, <span class="tok-str">&quot;Macao&quot;</span>, <span class="tok-str">&quot;Macedônia&quot;</span>, <span class="tok-str">&quot;Madagascar&quot;</span>, <span class="tok-str">&quot;Malawi&quot;</span>, <span class="tok-str">&quot;Malásia&quot;</span>, <span class="tok-str">&quot;Maldives&quot;</span>, <span class="tok-str">&quot;Mali&quot;</span>, <span class="tok-str">&quot;Malta&quot;</span>, <span class="tok-str">&quot;Ilhas Marshall&quot;</span>, <span class="tok-str">&quot;Martinica&quot;</span>, <span class="tok-str">&quot;Mauritânia&quot;</span>, <span class="tok-str">&quot;Maurícia&quot;</span>, <span class="tok-str">&quot;Maiote&quot;</span>, <span class="tok-str">&quot;México&quot;</span>, <span class="tok-str">&quot;Micronésia&quot;</span>, <span class="tok-str">&quot;Moldávia&quot;</span>, <span class="tok-str">&quot;Mônaco&quot;</span>, <span class="tok-str">&quot;Mongólia&quot;</span>, <span class="tok-str">&quot;Montenegro&quot;</span>, <span class="tok-str">&quot;Montserrat&quot;</span>, <span class="tok-str">&quot;Marrocos&quot;</span>, <span class="tok-str">&quot;Moçambique&quot;</span>, <span class="tok-str">&quot;Myanmar&quot;</span>, <span class="tok-str">&quot;Namibia&quot;</span>, <span class="tok-str">&quot;Nauru&quot;</span>, <span class="tok-str">&quot;Nepal&quot;</span>, <span class="tok-str">&quot;Antilhas Holandesas&quot;</span>, <span class="tok-str">&quot;Países Baixos&quot;</span>, <span class="tok-str">&quot;Nova Caledonia&quot;</span>, <span class="tok-str">&quot;Nova Zelândia&quot;</span>, <span class="tok-str">&quot;Nicarágua&quot;</span>, <span class="tok-str">&quot;Nigéria&quot;</span>, <span class="tok-str">&quot;Niue&quot;</span>, <span class="tok-str">&quot;Ilha Norfolk&quot;</span>, <span class="tok-str">&quot;Marianas Setentrionais&quot;</span>, <span class="tok-str">&quot;Noruega&quot;</span>, <span class="tok-str">&quot;Omã&quot;</span>, <span class="tok-str">&quot;Paquistão&quot;</span>, <span class="tok-str">&quot;Palau&quot;</span>, <span class="tok-str">&quot;Território da Palestina&quot;</span>, <span class="tok-str">&quot;Panamá&quot;</span>, <span class="tok-str">&quot;Papua-Nova Guiné&quot;</span>, <span class="tok-str">&quot;Paraguai&quot;</span>, <span class="tok-str">&quot;Peru&quot;</span>, <span class="tok-str">&quot;Filipinas&quot;</span>, <span class="tok-str">&quot;Polônia&quot;</span>, <span class="tok-str">&quot;Portugal&quot;</span>, <span class="tok-str">&quot;Porto Rico&quot;</span>, <span class="tok-str">&quot;Qatar&quot;</span>, <span class="tok-str">&quot;Romênia&quot;</span>, <span class="tok-str">&quot;Rússia&quot;</span>, <span class="tok-str">&quot;Ruanda&quot;</span>, <span class="tok-str">&quot;São Bartolomeu&quot;</span>, <span class="tok-str">&quot;Santa Helena&quot;</span>, <span class="tok-str">&quot;Santa Lúcia&quot;</span>, <span class="tok-str">&quot;São Martinho&quot;</span>, <span class="tok-str">&quot;São Pedro e Miquelão&quot;</span>, <span class="tok-str">&quot;São Vicente e Granadinas&quot;</span>, <span class="tok-str">&quot;San Marino&quot;</span>, <span class="tok-str">&quot;Sao Tomé e Príncipe&quot;</span>, <span class="tok-str">&quot;Arábia Saudita&quot;</span>, <span class="tok-str">&quot;Senegal&quot;</span>, <span class="tok-str">&quot;Sérvia&quot;</span>, <span class="tok-str">&quot;Seicheles&quot;</span>, <span class="tok-str">&quot;Serra Leoa&quot;</span>, <span class="tok-str">&quot;Singapura&quot;</span>, <span class="tok-str">&quot;Eslováquia&quot;</span>, <span class="tok-str">&quot;Eslovênia&quot;</span>, <span class="tok-str">&quot;Ilhas Salomão&quot;</span>, <span class="tok-str">&quot;Somália&quot;</span>, <span class="tok-str">&quot;África do Sul&quot;</span>, <span class="tok-str">&quot;Ilhas Geórgia do Sul e Sandwich do Sul&quot;</span>, <span class="tok-str">&quot;Espanha&quot;</span>, <span class="tok-str">&quot;Sri Lanka&quot;</span>, <span class="tok-str">&quot;Sudão&quot;</span>, <span class="tok-str">&quot;Suriname&quot;</span>, <span class="tok-str">&quot;Ilhas Svalbard &amp; Jan Mayen&quot;</span>, <span class="tok-str">&quot;Suazilândia&quot;</span>, <span class="tok-str">&quot;Suécia&quot;</span>, <span class="tok-str">&quot;Suíça&quot;</span>, <span class="tok-str">&quot;Síria&quot;</span>, <span class="tok-str">&quot;Taiwan&quot;</span>, <span class="tok-str">&quot;Tajiquistão&quot;</span>, <span class="tok-str">&quot;Tanzânia&quot;</span>, <span class="tok-str">&quot;Tailândia&quot;</span>, <span class="tok-str">&quot;Timor-Leste&quot;</span>, <span class="tok-str">&quot;Togo&quot;</span>, <span class="tok-str">&quot;Toquelau&quot;</span>, <span class="tok-str">&quot;Tonga&quot;</span>, <span class="tok-str">&quot;Trinidad e Tobago&quot;</span>, <span class="tok-str">&quot;Tunísia&quot;</span>, <span class="tok-str">&quot;Turquia&quot;</span>, <span class="tok-str">&quot;Turcomenistão&quot;</span>, <span class="tok-str">&quot;Turcas e Caicos&quot;</span>, <span class="tok-str">&quot;Tuvalu&quot;</span>, <span class="tok-str">&quot;Uganda&quot;</span>, <span class="tok-str">&quot;Ucrânia&quot;</span>, <span class="tok-str">&quot;Emirados Árabes Unidos&quot;</span>, <span class="tok-str">&quot;Reino Unido&quot;</span>, <span class="tok-str">&quot;Estados Unidos da América&quot;</span>, <span class="tok-str">&quot;Estados Unidos das Ilhas Virgens&quot;</span>, <span class="tok-str">&quot;Uruguai&quot;</span>, <span class="tok-str">&quot;Uzbequistão&quot;</span>, <span class="tok-str">&quot;Vanuatu&quot;</span>, <span class="tok-str">&quot;Venezuela&quot;</span>, <span class="tok-str">&quot;Vietnã&quot;</span>, <span class="tok-str">&quot;Wallis e Futuna&quot;</span>, <span class="tok-str">&quot;Iêmen&quot;</span>, <span class="tok-str">&quot;Zâmbia&quot;</span>, <span class="tok-str">&quot;Zimbábue&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Brasil&quot;</span>};</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;#####-###&quot;</span>};</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> secondary_address = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Apto. ###&quot;</span>, <span class="tok-str">&quot;Sobrado ##&quot;</span>, <span class="tok-str">&quot;Casa #&quot;</span>, <span class="tok-str">&quot;Lote ##&quot;</span>, <span class="tok-str">&quot;Quadra ##&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Acre&quot;</span>, <span class="tok-str">&quot;Alagoas&quot;</span>, <span class="tok-str">&quot;Amapá&quot;</span>, <span class="tok-str">&quot;Amazonas&quot;</span>, <span class="tok-str">&quot;Bahia&quot;</span>, <span class="tok-str">&quot;Ceará&quot;</span>, <span class="tok-str">&quot;Distrito Federal&quot;</span>, <span class="tok-str">&quot;Espírito Santo&quot;</span>, <span class="tok-str">&quot;Goiás&quot;</span>, <span class="tok-str">&quot;Maranhão&quot;</span>, <span class="tok-str">&quot;Mato Grosso&quot;</span>, <span class="tok-str">&quot;Mato Grosso do Sul&quot;</span>, <span class="tok-str">&quot;Minas Gerais&quot;</span>, <span class="tok-str">&quot;Pará&quot;</span>, <span class="tok-str">&quot;Paraíba&quot;</span>, <span class="tok-str">&quot;Paraná&quot;</span>, <span class="tok-str">&quot;Pernambuco&quot;</span>, <span class="tok-str">&quot;Piauí&quot;</span>, <span class="tok-str">&quot;Rio de Janeiro&quot;</span>, <span class="tok-str">&quot;Rio Grande do Norte&quot;</span>, <span class="tok-str">&quot;Rio Grande do Sul&quot;</span>, <span class="tok-str">&quot;Rondônia&quot;</span>, <span class="tok-str">&quot;Roraima&quot;</span>, <span class="tok-str">&quot;Santa Catarina&quot;</span>, <span class="tok-str">&quot;São Paulo&quot;</span>, <span class="tok-str">&quot;Sergipe&quot;</span>, <span class="tok-str">&quot;Tocantins&quot;</span> };</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state_abbr = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;AC&quot;</span>, <span class="tok-str">&quot;AL&quot;</span>, <span class="tok-str">&quot;AP&quot;</span>, <span class="tok-str">&quot;AM&quot;</span>, <span class="tok-str">&quot;BA&quot;</span>, <span class="tok-str">&quot;CE&quot;</span>, <span class="tok-str">&quot;DF&quot;</span>, <span class="tok-str">&quot;ES&quot;</span>, <span class="tok-str">&quot;GO&quot;</span>, <span class="tok-str">&quot;MA&quot;</span>, <span class="tok-str">&quot;MT&quot;</span>, <span class="tok-str">&quot;MS&quot;</span>, <span class="tok-str">&quot;MG&quot;</span>, <span class="tok-str">&quot;PA&quot;</span>, <span class="tok-str">&quot;PB&quot;</span>, <span class="tok-str">&quot;PR&quot;</span>, <span class="tok-str">&quot;PE&quot;</span>, <span class="tok-str">&quot;PI&quot;</span>, <span class="tok-str">&quot;RJ&quot;</span>, <span class="tok-str">&quot;RN&quot;</span>, <span class="tok-str">&quot;RS&quot;</span>, <span class="tok-str">&quot;RO&quot;</span>, <span class="tok-str">&quot;RR&quot;</span>, <span class="tok-str">&quot;SC&quot;</span>, <span class="tok-str">&quot;SP&quot;</span>, <span class="tok-str">&quot;SE&quot;</span>, <span class="tok-str">&quot;TO&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.firstName}} {{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.lastName}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Rua&quot;</span>, <span class="tok-str">&quot;Avenida&quot;</span>, <span class="tok-str">&quot;Travessa&quot;</span>, <span class="tok-str">&quot;Alameda&quot;</span>, <span class="tok-str">&quot;Marginal&quot;</span>, <span class="tok-str">&quot;Rodovia&quot;</span> };</span>
+<span class="line" id="L24"></span>
+</code></pre></body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\ja\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.city_prefix}}{{person.first_name}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.first_name}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.city_prefix}}{{person.last_name}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.city_suffix}}&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;北&quot;</span>, <span class="tok-str">&quot;東&quot;</span>, <span class="tok-str">&quot;西&quot;</span>, <span class="tok-str">&quot;南&quot;</span>, <span class="tok-str">&quot;新&quot;</span>, <span class="tok-str">&quot;湖&quot;</span>, <span class="tok-str">&quot;港&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;市&quot;</span>, <span class="tok-str">&quot;区&quot;</span>, <span class="tok-str">&quot;町&quot;</span>, <span class="tok-str">&quot;村&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;アフガニスタン&quot;</span>, <span class="tok-str">&quot;アルバニア&quot;</span>, <span class="tok-str">&quot;アルジェリア&quot;</span>, <span class="tok-str">&quot;アメリカ&quot;</span>, <span class="tok-str">&quot;アンゴラ&quot;</span>, <span class="tok-str">&quot;アルゼンチン&quot;</span>, <span class="tok-str">&quot;オーストラリア&quot;</span>, <span class="tok-str">&quot;オーストリア&quot;</span>, <span class="tok-str">&quot;バハマ&quot;</span>, <span class="tok-str">&quot;バーレーン&quot;</span>, <span class="tok-str">&quot;バングラデシュ&quot;</span>, <span class="tok-str">&quot;バルバドス&quot;</span>, <span class="tok-str">&quot;ベルギー&quot;</span>, <span class="tok-str">&quot;ベリーズ&quot;</span>, <span class="tok-str">&quot;ブータン&quot;</span>, <span class="tok-str">&quot;ボリビア&quot;</span>, <span class="tok-str">&quot;ボスニヤ・&quot;</span>, <span class="tok-str">&quot;ヘルツェゴビナ&quot;</span>, <span class="tok-str">&quot;ボツワナ&quot;</span>, <span class="tok-str">&quot;ブラジル&quot;</span>, <span class="tok-str">&quot;ブルネイ&quot;</span>, <span class="tok-str">&quot;ブルガリア&quot;</span>, <span class="tok-str">&quot;カンボジア&quot;</span>, <span class="tok-str">&quot;カメルーン&quot;</span>, <span class="tok-str">&quot;カナダ&quot;</span>, <span class="tok-str">&quot;中央アフリカ&quot;</span>, <span class="tok-str">&quot;チャド&quot;</span>, <span class="tok-str">&quot;チリ&quot;</span>, <span class="tok-str">&quot;中国&quot;</span>, <span class="tok-str">&quot;コロンビア&quot;</span>, <span class="tok-str">&quot;コンゴ&quot;</span>, <span class="tok-str">&quot;コスタリカ&quot;</span>, <span class="tok-str">&quot;クロアチア&quot;</span>, <span class="tok-str">&quot;キューバ&quot;</span>, <span class="tok-str">&quot;キプロス&quot;</span>, <span class="tok-str">&quot;チェコ&quot;</span>, <span class="tok-str">&quot;デンマーク&quot;</span>, <span class="tok-str">&quot;ドミニカ共和国&quot;</span>, <span class="tok-str">&quot;エクアドル&quot;</span>, <span class="tok-str">&quot;エジプト&quot;</span>, <span class="tok-str">&quot;エルサルバドル&quot;</span>, <span class="tok-str">&quot;赤道ギニア&quot;</span>, <span class="tok-str">&quot;エストニア&quot;</span>, <span class="tok-str">&quot;エチオピア&quot;</span>, <span class="tok-str">&quot;フィジー&quot;</span>, <span class="tok-str">&quot;フィンランド&quot;</span>, <span class="tok-str">&quot;フランス&quot;</span>, <span class="tok-str">&quot;ガンビア&quot;</span>, <span class="tok-str">&quot;ドイツ&quot;</span>, <span class="tok-str">&quot;ガーナ&quot;</span>, <span class="tok-str">&quot;イギリス&quot;</span>, <span class="tok-str">&quot;ギリシャ&quot;</span>, <span class="tok-str">&quot;グリーンランド&quot;</span>, <span class="tok-str">&quot;グレナダ&quot;</span>, <span class="tok-str">&quot;グアテマラ&quot;</span>, <span class="tok-str">&quot;ギニア&quot;</span>, <span class="tok-str">&quot;ガイヤナ&quot;</span>, <span class="tok-str">&quot;ハイチ&quot;</span>, <span class="tok-str">&quot;オランダ&quot;</span>, <span class="tok-str">&quot;ホンジェラス&quot;</span>, <span class="tok-str">&quot;香港&quot;</span>, <span class="tok-str">&quot;ハンガリー&quot;</span>, <span class="tok-str">&quot;アイスランド&quot;</span>, <span class="tok-str">&quot;インド&quot;</span>, <span class="tok-str">&quot;インドネシア&quot;</span>, <span class="tok-str">&quot;イラン&quot;</span>, <span class="tok-str">&quot;イラク&quot;</span>, <span class="tok-str">&quot;アイルランド&quot;</span>, <span class="tok-str">&quot;イスラエル&quot;</span>, <span class="tok-str">&quot;イタリア&quot;</span>, <span class="tok-str">&quot;ジャマイカ&quot;</span>, <span class="tok-str">&quot;日本&quot;</span>, <span class="tok-str">&quot;ヨルダン&quot;</span>, <span class="tok-str">&quot;ケニア&quot;</span>, <span class="tok-str">&quot;コソボ&quot;</span>, <span class="tok-str">&quot;クウェート&quot;</span>, <span class="tok-str">&quot;ラオス&quot;</span>, <span class="tok-str">&quot;ラトビア&quot;</span>, <span class="tok-str">&quot;レバノン&quot;</span>, <span class="tok-str">&quot;リベリア&quot;</span>, <span class="tok-str">&quot;リビア&quot;</span>, <span class="tok-str">&quot;リトアニア&quot;</span>, <span class="tok-str">&quot;ルクセンブルク&quot;</span>, <span class="tok-str">&quot;マカオ&quot;</span>, <span class="tok-str">&quot;マダガスカル&quot;</span>, <span class="tok-str">&quot;マラウィ&quot;</span>, <span class="tok-str">&quot;マレーシア&quot;</span>, <span class="tok-str">&quot;マルタ&quot;</span>, <span class="tok-str">&quot;モルジブ&quot;</span>, <span class="tok-str">&quot;モーリシャス&quot;</span>, <span class="tok-str">&quot;メキシコ&quot;</span>, <span class="tok-str">&quot;モルドバ&quot;</span>, <span class="tok-str">&quot;モナコ&quot;</span>, <span class="tok-str">&quot;モンゴル&quot;</span>, <span class="tok-str">&quot;モロッコ&quot;</span>, <span class="tok-str">&quot;モザンビーク&quot;</span>, <span class="tok-str">&quot;ミャンマー&quot;</span>, <span class="tok-str">&quot;ナミビア&quot;</span>, <span class="tok-str">&quot;ネパール&quot;</span>, <span class="tok-str">&quot;ニューギニア&quot;</span>, <span class="tok-str">&quot;ニュージーランド&quot;</span>, <span class="tok-str">&quot;ニカラグア&quot;</span>, <span class="tok-str">&quot;ナイジェリア&quot;</span>, <span class="tok-str">&quot;北朝鮮&quot;</span>, <span class="tok-str">&quot;ノルウェー&quot;</span>, <span class="tok-str">&quot;オーマン&quot;</span>, <span class="tok-str">&quot;パキスタン&quot;</span>, <span class="tok-str">&quot;パレスチナ&quot;</span>, <span class="tok-str">&quot;パナマ&quot;</span>, <span class="tok-str">&quot;パプアニューギニア&quot;</span>, <span class="tok-str">&quot;パラグアイ&quot;</span>, <span class="tok-str">&quot;ペルー&quot;</span>, <span class="tok-str">&quot;フィリピン&quot;</span>, <span class="tok-str">&quot;ポーランド&quot;</span>, <span class="tok-str">&quot;ポルトガル&quot;</span>, <span class="tok-str">&quot;カタール&quot;</span>, <span class="tok-str">&quot;ルーマニア&quot;</span>, <span class="tok-str">&quot;ロシア&quot;</span>, <span class="tok-str">&quot;ルワンダ&quot;</span>, <span class="tok-str">&quot;サウジアラビア&quot;</span>, <span class="tok-str">&quot;スコットランド&quot;</span>, <span class="tok-str">&quot;セネガル&quot;</span>, <span class="tok-str">&quot;セイシェル&quot;</span>, <span class="tok-str">&quot;シンガポール&quot;</span>, <span class="tok-str">&quot;スロバキア&quot;</span>, <span class="tok-str">&quot;スロベニア&quot;</span>, <span class="tok-str">&quot;ソロモン諸島&quot;</span>, <span class="tok-str">&quot;ソマリア&quot;</span>, <span class="tok-str">&quot;南アフリカ&quot;</span>, <span class="tok-str">&quot;韓国&quot;</span>, <span class="tok-str">&quot;スペイン&quot;</span>, <span class="tok-str">&quot;スリランカ&quot;</span>, <span class="tok-str">&quot;スーダン&quot;</span>, <span class="tok-str">&quot;スウェーデン&quot;</span>, <span class="tok-str">&quot;スイス&quot;</span>, <span class="tok-str">&quot;シリア&quot;</span>, <span class="tok-str">&quot;タヒチ&quot;</span>, <span class="tok-str">&quot;台湾&quot;</span>, <span class="tok-str">&quot;タンザニア&quot;</span>, <span class="tok-str">&quot;タイ&quot;</span>, <span class="tok-str">&quot;トリニダード・トバゴ&quot;</span>, <span class="tok-str">&quot;チュニジア&quot;</span>, <span class="tok-str">&quot;トルコ&quot;</span>, <span class="tok-str">&quot;ウガンダ&quot;</span>, <span class="tok-str">&quot;ウクライナ&quot;</span>, <span class="tok-str">&quot;アラブ首長国連邦&quot;</span>, <span class="tok-str">&quot;ウルグアイ&quot;</span>, <span class="tok-str">&quot;バチカン&quot;</span>, <span class="tok-str">&quot;ベネズエラ&quot;</span>, <span class="tok-str">&quot;ベトナム&quot;</span>, <span class="tok-str">&quot;ウェールズ&quot;</span>, <span class="tok-str">&quot;イエメン&quot;</span>, <span class="tok-str">&quot;ザイール&quot;</span>, <span class="tok-str">&quot;ザンビア&quot;</span>, <span class="tok-str">&quot;ジンバブエ&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> direction = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;北&quot;</span>, <span class="tok-str">&quot;東&quot;</span>, <span class="tok-str">&quot;南&quot;</span>, <span class="tok-str">&quot;西&quot;</span>, <span class="tok-str">&quot;北東&quot;</span>, <span class="tok-str">&quot;北西&quot;</span>, <span class="tok-str">&quot;南東&quot;</span>, <span class="tok-str">&quot;南西&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;###-####&quot;</span>};</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;北海道&quot;</span>, <span class="tok-str">&quot;青森県&quot;</span>, <span class="tok-str">&quot;岩手県&quot;</span>, <span class="tok-str">&quot;宮城県&quot;</span>, <span class="tok-str">&quot;秋田県&quot;</span>, <span class="tok-str">&quot;山形県&quot;</span>, <span class="tok-str">&quot;福島県&quot;</span>, <span class="tok-str">&quot;茨城県&quot;</span>, <span class="tok-str">&quot;栃木県&quot;</span>, <span class="tok-str">&quot;群馬県&quot;</span>, <span class="tok-str">&quot;埼玉県&quot;</span>, <span class="tok-str">&quot;千葉県&quot;</span>, <span class="tok-str">&quot;東京都&quot;</span>, <span class="tok-str">&quot;神奈川県&quot;</span>, <span class="tok-str">&quot;新潟県&quot;</span>, <span class="tok-str">&quot;富山県&quot;</span>, <span class="tok-str">&quot;石川県&quot;</span>, <span class="tok-str">&quot;福井県&quot;</span>, <span class="tok-str">&quot;山梨県&quot;</span>, <span class="tok-str">&quot;長野県&quot;</span>, <span class="tok-str">&quot;岐阜県&quot;</span>, <span class="tok-str">&quot;静岡県&quot;</span>, <span class="tok-str">&quot;愛知県&quot;</span>, <span class="tok-str">&quot;三重県&quot;</span>, <span class="tok-str">&quot;滋賀県&quot;</span>, <span class="tok-str">&quot;京都府&quot;</span>, <span class="tok-str">&quot;大阪府&quot;</span>, <span class="tok-str">&quot;兵庫県&quot;</span>, <span class="tok-str">&quot;奈良県&quot;</span>, <span class="tok-str">&quot;和歌山県&quot;</span>, <span class="tok-str">&quot;鳥取県&quot;</span>, <span class="tok-str">&quot;島根県&quot;</span>, <span class="tok-str">&quot;岡山県&quot;</span>, <span class="tok-str">&quot;広島県&quot;</span>, <span class="tok-str">&quot;山口県&quot;</span>, <span class="tok-str">&quot;徳島県&quot;</span>, <span class="tok-str">&quot;香川県&quot;</span>, <span class="tok-str">&quot;愛媛県&quot;</span>, <span class="tok-str">&quot;高知県&quot;</span>, <span class="tok-str">&quot;福岡県&quot;</span>, <span class="tok-str">&quot;佐賀県&quot;</span>, <span class="tok-str">&quot;長崎県&quot;</span>, <span class="tok-str">&quot;熊本県&quot;</span>, <span class="tok-str">&quot;大分県&quot;</span>, <span class="tok-str">&quot;宮崎県&quot;</span>, <span class="tok-str">&quot;鹿児島県&quot;</span>, <span class="tok-str">&quot;沖縄県&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state_abbr = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;1&quot;</span>, <span class="tok-str">&quot;2&quot;</span>, <span class="tok-str">&quot;3&quot;</span>, <span class="tok-str">&quot;4&quot;</span>, <span class="tok-str">&quot;5&quot;</span>, <span class="tok-str">&quot;6&quot;</span>, <span class="tok-str">&quot;7&quot;</span>, <span class="tok-str">&quot;8&quot;</span>, <span class="tok-str">&quot;9&quot;</span>, <span class="tok-str">&quot;10&quot;</span>, <span class="tok-str">&quot;11&quot;</span>, <span class="tok-str">&quot;12&quot;</span>, <span class="tok-str">&quot;13&quot;</span>, <span class="tok-str">&quot;14&quot;</span>, <span class="tok-str">&quot;15&quot;</span>, <span class="tok-str">&quot;16&quot;</span>, <span class="tok-str">&quot;17&quot;</span>, <span class="tok-str">&quot;18&quot;</span>, <span class="tok-str">&quot;19&quot;</span>, <span class="tok-str">&quot;20&quot;</span>, <span class="tok-str">&quot;21&quot;</span>, <span class="tok-str">&quot;22&quot;</span>, <span class="tok-str">&quot;23&quot;</span>, <span class="tok-str">&quot;24&quot;</span>, <span class="tok-str">&quot;25&quot;</span>, <span class="tok-str">&quot;26&quot;</span>, <span class="tok-str">&quot;27&quot;</span>, <span class="tok-str">&quot;28&quot;</span>, <span class="tok-str">&quot;29&quot;</span>, <span class="tok-str">&quot;30&quot;</span>, <span class="tok-str">&quot;31&quot;</span>, <span class="tok-str">&quot;32&quot;</span>, <span class="tok-str">&quot;33&quot;</span>, <span class="tok-str">&quot;34&quot;</span>, <span class="tok-str">&quot;35&quot;</span>, <span class="tok-str">&quot;36&quot;</span>, <span class="tok-str">&quot;37&quot;</span>, <span class="tok-str">&quot;38&quot;</span>, <span class="tok-str">&quot;39&quot;</span>, <span class="tok-str">&quot;40&quot;</span>, <span class="tok-str">&quot;41&quot;</span>, <span class="tok-str">&quot;42&quot;</span>, <span class="tok-str">&quot;43&quot;</span>, <span class="tok-str">&quot;44&quot;</span>, <span class="tok-str">&quot;45&quot;</span>, <span class="tok-str">&quot;46&quot;</span>, <span class="tok-str">&quot;47&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.first_name}}{{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L18"></span>
+</code></pre></body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\ru\lorem.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> words = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;а&quot;</span>, <span class="tok-str">&quot;административных&quot;</span>, <span class="tok-str">&quot;активизации&quot;</span>, <span class="tok-str">&quot;активности&quot;</span>, <span class="tok-str">&quot;активом&quot;</span>, <span class="tok-str">&quot;актуальность&quot;</span>, <span class="tok-str">&quot;анализа&quot;</span>, <span class="tok-str">&quot;базы&quot;</span>, <span class="tok-str">&quot;богатый&quot;</span>, <span class="tok-str">&quot;в&quot;</span>, <span class="tok-str">&quot;важную&quot;</span>, <span class="tok-str">&quot;важные&quot;</span>, <span class="tok-str">&quot;влечёт&quot;</span>, <span class="tok-str">&quot;внедрения&quot;</span>, <span class="tok-str">&quot;воздействия&quot;</span>, <span class="tok-str">&quot;всего&quot;</span>, <span class="tok-str">&quot;выбранный&quot;</span>, <span class="tok-str">&quot;вызывает&quot;</span>, <span class="tok-str">&quot;выполнять&quot;</span>, <span class="tok-str">&quot;высокотехнологичная&quot;</span>, <span class="tok-str">&quot;высшего&quot;</span>, <span class="tok-str">&quot;гражданского&quot;</span>, <span class="tok-str">&quot;дальнейшее&quot;</span>, <span class="tok-str">&quot;дальнейших&quot;</span>, <span class="tok-str">&quot;демократической&quot;</span>, <span class="tok-str">&quot;деятельности&quot;</span>, <span class="tok-str">&quot;для&quot;</span>, <span class="tok-str">&quot;другой&quot;</span>, <span class="tok-str">&quot;же&quot;</span>, <span class="tok-str">&quot;за&quot;</span>, <span class="tok-str">&quot;забывать&quot;</span>, <span class="tok-str">&quot;зависит&quot;</span>, <span class="tok-str">&quot;задания&quot;</span>, <span class="tok-str">&quot;задач&quot;</span>, <span class="tok-str">&quot;задача&quot;</span>, <span class="tok-str">&quot;занимаемых&quot;</span>, <span class="tok-str">&quot;значение&quot;</span>, <span class="tok-str">&quot;значимость&quot;</span>, <span class="tok-str">&quot;значительной&quot;</span>, <span class="tok-str">&quot;и&quot;</span>, <span class="tok-str">&quot;играет&quot;</span>, <span class="tok-str">&quot;идейные&quot;</span>, <span class="tok-str">&quot;изменений&quot;</span>, <span class="tok-str">&quot;инновационный&quot;</span>, <span class="tok-str">&quot;интересный&quot;</span>, <span class="tok-str">&quot;информационно-пропогандистское&quot;</span>, <span class="tok-str">&quot;кадров&quot;</span>, <span class="tok-str">&quot;кадровой&quot;</span>, <span class="tok-str">&quot;качества&quot;</span>, <span class="tok-str">&quot;качественно&quot;</span>, <span class="tok-str">&quot;количественный&quot;</span>, <span class="tok-str">&quot;консультация&quot;</span>, <span class="tok-str">&quot;концепция&quot;</span>, <span class="tok-str">&quot;кругу&quot;</span>, <span class="tok-str">&quot;курс&quot;</span>, <span class="tok-str">&quot;массового&quot;</span>, <span class="tok-str">&quot;материально-технической&quot;</span>, <span class="tok-str">&quot;место&quot;</span>, <span class="tok-str">&quot;мира&quot;</span>, <span class="tok-str">&quot;модели&quot;</span>, <span class="tok-str">&quot;модель&quot;</span>, <span class="tok-str">&quot;модернизации&quot;</span>, <span class="tok-str">&quot;на&quot;</span>, <span class="tok-str">&quot;намеченных&quot;</span>, <span class="tok-str">&quot;нами&quot;</span>, <span class="tok-str">&quot;направлений&quot;</span>, <span class="tok-str">&quot;напрямую&quot;</span>, <span class="tok-str">&quot;нас&quot;</span>, <span class="tok-str">&quot;настолько&quot;</span>, <span class="tok-str">&quot;насущным&quot;</span>, <span class="tok-str">&quot;национальный&quot;</span>, <span class="tok-str">&quot;начало&quot;</span>, <span class="tok-str">&quot;нашей&quot;</span>, <span class="tok-str">&quot;не&quot;</span>, <span class="tok-str">&quot;новая&quot;</span>, <span class="tok-str">&quot;новых&quot;</span>, <span class="tok-str">&quot;обеспечение&quot;</span>, <span class="tok-str">&quot;обеспечивает&quot;</span>, <span class="tok-str">&quot;образом&quot;</span>, <span class="tok-str">&quot;обуславливает&quot;</span>, <span class="tok-str">&quot;обучения&quot;</span>, <span class="tok-str">&quot;общества&quot;</span>, <span class="tok-str">&quot;общественной&quot;</span>, <span class="tok-str">&quot;обществом&quot;</span>, <span class="tok-str">&quot;однако&quot;</span>, <span class="tok-str">&quot;определения&quot;</span>, <span class="tok-str">&quot;опыт&quot;</span>, <span class="tok-str">&quot;организации&quot;</span>, <span class="tok-str">&quot;организационной&quot;</span>, <span class="tok-str">&quot;особенности&quot;</span>, <span class="tok-str">&quot;от&quot;</span>, <span class="tok-str">&quot;отметить&quot;</span>, <span class="tok-str">&quot;отношении&quot;</span>, <span class="tok-str">&quot;оценить&quot;</span>, <span class="tok-str">&quot;очевидна&quot;</span>, <span class="tok-str">&quot;плановых&quot;</span>, <span class="tok-str">&quot;по&quot;</span>, <span class="tok-str">&quot;повседневная&quot;</span>, <span class="tok-str">&quot;повседневной&quot;</span>, <span class="tok-str">&quot;повышение&quot;</span>, <span class="tok-str">&quot;повышению&quot;</span>, <span class="tok-str">&quot;подготовке&quot;</span>, <span class="tok-str">&quot;позволяет&quot;</span>, <span class="tok-str">&quot;позиции&quot;</span>, <span class="tok-str">&quot;показывает&quot;</span>, <span class="tok-str">&quot;понимание&quot;</span>, <span class="tok-str">&quot;порядка&quot;</span>, <span class="tok-str">&quot;последовательного&quot;</span>, <span class="tok-str">&quot;поставленных&quot;</span>, <span class="tok-str">&quot;постоянное&quot;</span>, <span class="tok-str">&quot;постоянный&quot;</span>, <span class="tok-str">&quot;потребностям&quot;</span>, <span class="tok-str">&quot;поэтапного&quot;</span>, <span class="tok-str">&quot;правительством&quot;</span>, <span class="tok-str">&quot;практика&quot;</span>, <span class="tok-str">&quot;предложений&quot;</span>, <span class="tok-str">&quot;предпосылки&quot;</span>, <span class="tok-str">&quot;представляет&quot;</span>, <span class="tok-str">&quot;прежде&quot;</span>, <span class="tok-str">&quot;принимаемых&quot;</span>, <span class="tok-str">&quot;принципов&quot;</span>, <span class="tok-str">&quot;проблем&quot;</span>, <span class="tok-str">&quot;проверки&quot;</span>, <span class="tok-str">&quot;прогресса&quot;</span>, <span class="tok-str">&quot;прогрессивного&quot;</span>, <span class="tok-str">&quot;проект&quot;</span>, <span class="tok-str">&quot;профессионального&quot;</span>, <span class="tok-str">&quot;процесс&quot;</span>, <span class="tok-str">&quot;путь&quot;</span>, <span class="tok-str">&quot;работы&quot;</span>, <span class="tok-str">&quot;равным&quot;</span>, <span class="tok-str">&quot;развития&quot;</span>, <span class="tok-str">&quot;различных&quot;</span>, <span class="tok-str">&quot;разнообразный&quot;</span>, <span class="tok-str">&quot;разработке&quot;</span>, <span class="tok-str">&quot;рамки&quot;</span>, <span class="tok-str">&quot;реализация&quot;</span>, <span class="tok-str">&quot;ресурсосберегающих&quot;</span>, <span class="tok-str">&quot;роль&quot;</span>, <span class="tok-str">&quot;рост&quot;</span>, <span class="tok-str">&quot;с&quot;</span>, <span class="tok-str">&quot;систему&quot;</span>, <span class="tok-str">&quot;системы&quot;</span>, <span class="tok-str">&quot;следует&quot;</span>, <span class="tok-str">&quot;сложившаяся&quot;</span>, <span class="tok-str">&quot;собой&quot;</span>, <span class="tok-str">&quot;современного&quot;</span>, <span class="tok-str">&quot;создаёт&quot;</span>, <span class="tok-str">&quot;создание&quot;</span>, <span class="tok-str">&quot;сознания&quot;</span>, <span class="tok-str">&quot;сомнений&quot;</span>, <span class="tok-str">&quot;соображения&quot;</span>, <span class="tok-str">&quot;соответствующей&quot;</span>, <span class="tok-str">&quot;соответствующих&quot;</span>, <span class="tok-str">&quot;социально-ориентированный&quot;</span>, <span class="tok-str">&quot;социально-экономическое&quot;</span>, <span class="tok-str">&quot;специалистов&quot;</span>, <span class="tok-str">&quot;способствует&quot;</span>, <span class="tok-str">&quot;степени&quot;</span>, <span class="tok-str">&quot;стороны&quot;</span>, <span class="tok-str">&quot;структура&quot;</span>, <span class="tok-str">&quot;структуры&quot;</span>, <span class="tok-str">&quot;существующий&quot;</span>, <span class="tok-str">&quot;сущности&quot;</span>, <span class="tok-str">&quot;сфера&quot;</span>, <span class="tok-str">&quot;также&quot;</span>, <span class="tok-str">&quot;таким&quot;</span>, <span class="tok-str">&quot;технологий&quot;</span>, <span class="tok-str">&quot;требует&quot;</span>, <span class="tok-str">&quot;укрепления&quot;</span>, <span class="tok-str">&quot;управление&quot;</span>, <span class="tok-str">&quot;уровня&quot;</span>, <span class="tok-str">&quot;условий&quot;</span>, <span class="tok-str">&quot;уточнения&quot;</span>, <span class="tok-str">&quot;участия&quot;</span>, <span class="tok-str">&quot;участниками&quot;</span>, <span class="tok-str">&quot;финансовых&quot;</span>, <span class="tok-str">&quot;форм&quot;</span>, <span class="tok-str">&quot;формировании&quot;</span>, <span class="tok-str">&quot;формированию&quot;</span>, <span class="tok-str">&quot;формирования&quot;</span>, <span class="tok-str">&quot;целесообразности&quot;</span>, <span class="tok-str">&quot;что&quot;</span>, <span class="tok-str">&quot;шагов&quot;</span>, <span class="tok-str">&quot;широким&quot;</span>, <span class="tok-str">&quot;широкому&quot;</span>, <span class="tok-str">&quot;экономической&quot;</span>, <span class="tok-str">&quot;эксперимент&quot;</span>, <span class="tok-str">&quot;этих&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

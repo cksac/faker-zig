@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en\vehicle.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> bicycle_type = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Adventure Road Bicycle&quot;</span>, <span class="tok-str">&quot;BMX Bicycle&quot;</span>, <span class="tok-str">&quot;City Bicycle&quot;</span>, <span class="tok-str">&quot;Cruiser Bicycle&quot;</span>, <span class="tok-str">&quot;Cyclocross Bicycle&quot;</span>, <span class="tok-str">&quot;Dual-Sport Bicycle&quot;</span>, <span class="tok-str">&quot;Fitness Bicycle&quot;</span>, <span class="tok-str">&quot;Flat-Foot Comfort Bicycle&quot;</span>, <span class="tok-str">&quot;Folding Bicycle&quot;</span>, <span class="tok-str">&quot;Hybrid Bicycle&quot;</span>, <span class="tok-str">&quot;Mountain Bicycle&quot;</span>, <span class="tok-str">&quot;Recumbent Bicycle&quot;</span>, <span class="tok-str">&quot;Road Bicycle&quot;</span>, <span class="tok-str">&quot;Tandem Bicycle&quot;</span>, <span class="tok-str">&quot;Touring Bicycle&quot;</span>, <span class="tok-str">&quot;Track/Fixed-Gear Bicycle&quot;</span>, <span class="tok-str">&quot;Triathlon/Time Trial Bicycle&quot;</span>, <span class="tok-str">&quot;Tricycle&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fuel = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Diesel&quot;</span>, <span class="tok-str">&quot;Electric&quot;</span>, <span class="tok-str">&quot;Gasoline&quot;</span>, <span class="tok-str">&quot;Hybrid&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> manufacturer = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aston Martin&quot;</span>, <span class="tok-str">&quot;Audi&quot;</span>, <span class="tok-str">&quot;Bentley&quot;</span>, <span class="tok-str">&quot;BMW&quot;</span>, <span class="tok-str">&quot;Bugatti&quot;</span>, <span class="tok-str">&quot;Cadillac&quot;</span>, <span class="tok-str">&quot;Chevrolet&quot;</span>, <span class="tok-str">&quot;Chrysler&quot;</span>, <span class="tok-str">&quot;Dodge&quot;</span>, <span class="tok-str">&quot;Ferrari&quot;</span>, <span class="tok-str">&quot;Fiat&quot;</span>, <span class="tok-str">&quot;Ford&quot;</span>, <span class="tok-str">&quot;Honda&quot;</span>, <span class="tok-str">&quot;Hyundai&quot;</span>, <span class="tok-str">&quot;Jaguar&quot;</span>, <span class="tok-str">&quot;Jeep&quot;</span>, <span class="tok-str">&quot;Kia&quot;</span>, <span class="tok-str">&quot;Lamborghini&quot;</span>, <span class="tok-str">&quot;Land Rover&quot;</span>, <span class="tok-str">&quot;Maserati&quot;</span>, <span class="tok-str">&quot;Mazda&quot;</span>, <span class="tok-str">&quot;Mercedes Benz&quot;</span>, <span class="tok-str">&quot;Mini&quot;</span>, <span class="tok-str">&quot;Nissan&quot;</span>, <span class="tok-str">&quot;Polestar&quot;</span>, <span class="tok-str">&quot;Porsche&quot;</span>, <span class="tok-str">&quot;Rolls Royce&quot;</span>, <span class="tok-str">&quot;Smart&quot;</span>, <span class="tok-str">&quot;Tesla&quot;</span>, <span class="tok-str">&quot;Toyota&quot;</span>, <span class="tok-str">&quot;Volkswagen&quot;</span>, <span class="tok-str">&quot;Volvo&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> model = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Fiesta&quot;</span>, <span class="tok-str">&quot;Focus&quot;</span>, <span class="tok-str">&quot;Taurus&quot;</span>, <span class="tok-str">&quot;Mustang&quot;</span>, <span class="tok-str">&quot;Explorer&quot;</span>, <span class="tok-str">&quot;Expedition&quot;</span>, <span class="tok-str">&quot;F-150&quot;</span>, <span class="tok-str">&quot;Model T&quot;</span>, <span class="tok-str">&quot;Ranchero&quot;</span>, <span class="tok-str">&quot;Volt&quot;</span>, <span class="tok-str">&quot;Cruze&quot;</span>, <span class="tok-str">&quot;Malibu&quot;</span>, <span class="tok-str">&quot;Impala&quot;</span>, <span class="tok-str">&quot;Camaro&quot;</span>, <span class="tok-str">&quot;Corvette&quot;</span>, <span class="tok-str">&quot;Colorado&quot;</span>, <span class="tok-str">&quot;Silverado&quot;</span>, <span class="tok-str">&quot;El Camino&quot;</span>, <span class="tok-str">&quot;CTS&quot;</span>, <span class="tok-str">&quot;XTS&quot;</span>, <span class="tok-str">&quot;ATS&quot;</span>, <span class="tok-str">&quot;Escalade&quot;</span>, <span class="tok-str">&quot;Alpine&quot;</span>, <span class="tok-str">&quot;Charger&quot;</span>, <span class="tok-str">&quot;LeBaron&quot;</span>, <span class="tok-str">&quot;PT Cruiser&quot;</span>, <span class="tok-str">&quot;Challenger&quot;</span>, <span class="tok-str">&quot;Durango&quot;</span>, <span class="tok-str">&quot;Grand Caravan&quot;</span>, <span class="tok-str">&quot;Wrangler&quot;</span>, <span class="tok-str">&quot;Grand Cherokee&quot;</span>, <span class="tok-str">&quot;Roadster&quot;</span>, <span class="tok-str">&quot;Model S&quot;</span>, <span class="tok-str">&quot;Model 3&quot;</span>, <span class="tok-str">&quot;Model X&quot;</span>, <span class="tok-str">&quot;Model Y&quot;</span>, <span class="tok-str">&quot;Camry&quot;</span>, <span class="tok-str">&quot;Prius&quot;</span>, <span class="tok-str">&quot;Land Cruiser&quot;</span>, <span class="tok-str">&quot;Accord&quot;</span>, <span class="tok-str">&quot;Civic&quot;</span>, <span class="tok-str">&quot;Element&quot;</span>, <span class="tok-str">&quot;Sentra&quot;</span>, <span class="tok-str">&quot;Altima&quot;</span>, <span class="tok-str">&quot;A8&quot;</span>, <span class="tok-str">&quot;A4&quot;</span>, <span class="tok-str">&quot;Beetle&quot;</span>, <span class="tok-str">&quot;Jetta&quot;</span>, <span class="tok-str">&quot;Golf&quot;</span>, <span class="tok-str">&quot;911&quot;</span>, <span class="tok-str">&quot;Spyder&quot;</span>, <span class="tok-str">&quot;Countach&quot;</span>, <span class="tok-str">&quot;Mercielago&quot;</span>, <span class="tok-str">&quot;Aventador&quot;</span>, <span class="tok-str">&quot;1&quot;</span>, <span class="tok-str">&quot;2&quot;</span>, <span class="tok-str">&quot;Fortwo&quot;</span>, <span class="tok-str">&quot;V90&quot;</span>, <span class="tok-str">&quot;XC90&quot;</span>, <span class="tok-str">&quot;CX-9&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> @&quot;type&quot; = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Cargo Van&quot;</span>, <span class="tok-str">&quot;Convertible&quot;</span>, <span class="tok-str">&quot;Coupe&quot;</span>, <span class="tok-str">&quot;Crew Cab Pickup&quot;</span>, <span class="tok-str">&quot;Extended Cab Pickup&quot;</span>, <span class="tok-str">&quot;Hatchback&quot;</span>, <span class="tok-str">&quot;Minivan&quot;</span>, <span class="tok-str">&quot;Passenger Van&quot;</span>, <span class="tok-str">&quot;SUV&quot;</span>, <span class="tok-str">&quot;Sedan&quot;</span>, <span class="tok-str">&quot;Wagon&quot;</span> };</span>
+<span class="line" id="L10"></span>
+</code></pre></body>
+</html>

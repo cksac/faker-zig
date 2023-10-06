@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\de_CH\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> CountryCode = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/location.zig&quot;</span>).CountryCode;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aarau&quot;</span>, <span class="tok-str">&quot;Adliswil&quot;</span>, <span class="tok-str">&quot;Allschwil&quot;</span>, <span class="tok-str">&quot;Arbon&quot;</span>, <span class="tok-str">&quot;Baar&quot;</span>, <span class="tok-str">&quot;Baden&quot;</span>, <span class="tok-str">&quot;Basel&quot;</span>, <span class="tok-str">&quot;Bellinzona&quot;</span>, <span class="tok-str">&quot;Bern&quot;</span>, <span class="tok-str">&quot;Biel/Bienne&quot;</span>, <span class="tok-str">&quot;Binningen&quot;</span>, <span class="tok-str">&quot;Brig-Glis&quot;</span>, <span class="tok-str">&quot;Bulle&quot;</span>, <span class="tok-str">&quot;Burgdorf&quot;</span>, <span class="tok-str">&quot;Bülach&quot;</span>, <span class="tok-str">&quot;Carouge&quot;</span>, <span class="tok-str">&quot;Cham&quot;</span>, <span class="tok-str">&quot;Chur&quot;</span>, <span class="tok-str">&quot;Dietikon&quot;</span>, <span class="tok-str">&quot;Dübendorf&quot;</span>, <span class="tok-str">&quot;Einsiedeln&quot;</span>, <span class="tok-str">&quot;Emmen&quot;</span>, <span class="tok-str">&quot;Frauenfeld&quot;</span>, <span class="tok-str">&quot;Freiburg&quot;</span>, <span class="tok-str">&quot;Freienbach&quot;</span>, <span class="tok-str">&quot;Genf&quot;</span>, <span class="tok-str">&quot;Glarus Nord&quot;</span>, <span class="tok-str">&quot;Gossau&quot;</span>, <span class="tok-str">&quot;Grenchen&quot;</span>, <span class="tok-str">&quot;Herisau&quot;</span>, <span class="tok-str">&quot;Horgen&quot;</span>, <span class="tok-str">&quot;Horw&quot;</span>, <span class="tok-str">&quot;Illnau-Effretikon&quot;</span>, <span class="tok-str">&quot;Kloten&quot;</span>, <span class="tok-str">&quot;Kreuzlingen&quot;</span>, <span class="tok-str">&quot;Kriens&quot;</span>, <span class="tok-str">&quot;Köniz&quot;</span>, <span class="tok-str">&quot;Küsnacht&quot;</span>, <span class="tok-str">&quot;La Chaux-de-Fonds&quot;</span>, <span class="tok-str">&quot;Lancy&quot;</span>, <span class="tok-str">&quot;Langenthal&quot;</span>, <span class="tok-str">&quot;Lausanne&quot;</span>, <span class="tok-str">&quot;Liestal&quot;</span>, <span class="tok-str">&quot;Locarno&quot;</span>, <span class="tok-str">&quot;Lugano&quot;</span>, <span class="tok-str">&quot;Luzern&quot;</span>, <span class="tok-str">&quot;Lyss&quot;</span>, <span class="tok-str">&quot;Martigny&quot;</span>, <span class="tok-str">&quot;Meilen&quot;</span>, <span class="tok-str">&quot;Mendrisio&quot;</span>, <span class="tok-str">&quot;Meyrin&quot;</span>, <span class="tok-str">&quot;Monthey&quot;</span>, <span class="tok-str">&quot;Montreux&quot;</span>, <span class="tok-str">&quot;Morges&quot;</span>, <span class="tok-str">&quot;Muri bei Bern&quot;</span>, <span class="tok-str">&quot;Muttenz&quot;</span>, <span class="tok-str">&quot;Neuenburg&quot;</span>, <span class="tok-str">&quot;Nyon&quot;</span>, <span class="tok-str">&quot;Oftringen&quot;</span>, <span class="tok-str">&quot;Olten&quot;</span>, <span class="tok-str">&quot;Onex&quot;</span>, <span class="tok-str">&quot;Opfikon&quot;</span>, <span class="tok-str">&quot;Ostermundigen&quot;</span>, <span class="tok-str">&quot;Pratteln&quot;</span>, <span class="tok-str">&quot;Pully&quot;</span>, <span class="tok-str">&quot;Rapperswil-Jona&quot;</span>, <span class="tok-str">&quot;Regensdorf&quot;</span>, <span class="tok-str">&quot;Reinach&quot;</span>, <span class="tok-str">&quot;Renens&quot;</span>, <span class="tok-str">&quot;Rheinfelden&quot;</span>, <span class="tok-str">&quot;Richterswil&quot;</span>, <span class="tok-str">&quot;Riehen&quot;</span>, <span class="tok-str">&quot;Schaffhausen&quot;</span>, <span class="tok-str">&quot;Schlieren&quot;</span>, <span class="tok-str">&quot;Schwyz&quot;</span>, <span class="tok-str">&quot;Siders&quot;</span>, <span class="tok-str">&quot;Sitten&quot;</span>, <span class="tok-str">&quot;Solothurn&quot;</span>, <span class="tok-str">&quot;St. Gallen&quot;</span>, <span class="tok-str">&quot;Steffisburg&quot;</span>, <span class="tok-str">&quot;Stäfa&quot;</span>, <span class="tok-str">&quot;Thalwil&quot;</span>, <span class="tok-str">&quot;Thun&quot;</span>, <span class="tok-str">&quot;Thônex&quot;</span>, <span class="tok-str">&quot;Uster&quot;</span>, <span class="tok-str">&quot;Val-de-Ruz&quot;</span>, <span class="tok-str">&quot;Vernier&quot;</span>, <span class="tok-str">&quot;Versoix&quot;</span>, <span class="tok-str">&quot;Vevey&quot;</span>, <span class="tok-str">&quot;Volketswil&quot;</span>, <span class="tok-str">&quot;Wallisellen&quot;</span>, <span class="tok-str">&quot;Wettingen&quot;</span>, <span class="tok-str">&quot;Wetzikon&quot;</span>, <span class="tok-str">&quot;Wil&quot;</span>, <span class="tok-str">&quot;Winterthur&quot;</span>, <span class="tok-str">&quot;Wohlen&quot;</span>, <span class="tok-str">&quot;Wädenswil&quot;</span>, <span class="tok-str">&quot;Yverdon-les-Bains&quot;</span>, <span class="tok-str">&quot;Zug&quot;</span>, <span class="tok-str">&quot;Zürich&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_name}}&quot;</span>};</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country_code = [_]CountryCode{ .{ .alpha2 = <span class="tok-str">&quot;CH&quot;</span>, .alpha3 = <span class="tok-str">&quot;CHE&quot;</span>, .numeric = <span class="tok-str">&quot;756&quot;</span> }, .{ .alpha2 = <span class="tok-str">&quot;DE&quot;</span>, .alpha3 = <span class="tok-str">&quot;DEU&quot;</span>, .numeric = <span class="tok-str">&quot;276&quot;</span> }, .{ .alpha2 = <span class="tok-str">&quot;AT&quot;</span>, .alpha3 = <span class="tok-str">&quot;AUT&quot;</span>, .numeric = <span class="tok-str">&quot;040&quot;</span> } };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Schweiz&quot;</span>};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;1###&quot;</span>, <span class="tok-str">&quot;2###&quot;</span>, <span class="tok-str">&quot;3###&quot;</span>, <span class="tok-str">&quot;4###&quot;</span>, <span class="tok-str">&quot;5###&quot;</span>, <span class="tok-str">&quot;6###&quot;</span>, <span class="tok-str">&quot;7###&quot;</span>, <span class="tok-str">&quot;8###&quot;</span>, <span class="tok-str">&quot;9###&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aargau&quot;</span>, <span class="tok-str">&quot;Appenzell Ausserrhoden&quot;</span>, <span class="tok-str">&quot;Appenzell Innerrhoden&quot;</span>, <span class="tok-str">&quot;Basel-Land&quot;</span>, <span class="tok-str">&quot;Basel-Stadt&quot;</span>, <span class="tok-str">&quot;Bern&quot;</span>, <span class="tok-str">&quot;Freiburg&quot;</span>, <span class="tok-str">&quot;Genf&quot;</span>, <span class="tok-str">&quot;Glarus&quot;</span>, <span class="tok-str">&quot;Graubünden&quot;</span>, <span class="tok-str">&quot;Jura&quot;</span>, <span class="tok-str">&quot;Luzern&quot;</span>, <span class="tok-str">&quot;Neuenburg&quot;</span>, <span class="tok-str">&quot;Nidwalden&quot;</span>, <span class="tok-str">&quot;Obwalden&quot;</span>, <span class="tok-str">&quot;St. Gallen&quot;</span>, <span class="tok-str">&quot;Schaffhausen&quot;</span>, <span class="tok-str">&quot;Schwyz&quot;</span>, <span class="tok-str">&quot;Solothurn&quot;</span>, <span class="tok-str">&quot;Tessin&quot;</span>, <span class="tok-str">&quot;Thurgau&quot;</span>, <span class="tok-str">&quot;Uri&quot;</span>, <span class="tok-str">&quot;Waadt&quot;</span>, <span class="tok-str">&quot;Wallis&quot;</span>, <span class="tok-str">&quot;Zug&quot;</span>, <span class="tok-str">&quot;Zürich&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state_abbr = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;AG&quot;</span>, <span class="tok-str">&quot;AR&quot;</span>, <span class="tok-str">&quot;AI&quot;</span>, <span class="tok-str">&quot;BL&quot;</span>, <span class="tok-str">&quot;BS&quot;</span>, <span class="tok-str">&quot;BE&quot;</span>, <span class="tok-str">&quot;FR&quot;</span>, <span class="tok-str">&quot;GE&quot;</span>, <span class="tok-str">&quot;GL&quot;</span>, <span class="tok-str">&quot;GR&quot;</span>, <span class="tok-str">&quot;JU&quot;</span>, <span class="tok-str">&quot;LU&quot;</span>, <span class="tok-str">&quot;NE&quot;</span>, <span class="tok-str">&quot;NW&quot;</span>, <span class="tok-str">&quot;OW&quot;</span>, <span class="tok-str">&quot;SG&quot;</span>, <span class="tok-str">&quot;SH&quot;</span>, <span class="tok-str">&quot;SZ&quot;</span>, <span class="tok-str">&quot;SO&quot;</span>, <span class="tok-str">&quot;TI&quot;</span>, <span class="tok-str">&quot;TG&quot;</span>, <span class="tok-str">&quot;UR&quot;</span>, <span class="tok-str">&quot;VD&quot;</span>, <span class="tok-str">&quot;VS&quot;</span>, <span class="tok-str">&quot;ZG&quot;</span>, <span class="tok-str">&quot;ZH&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Amthausstrasse&quot;</span>, <span class="tok-str">&quot;Augustinergasse&quot;</span>, <span class="tok-str">&quot;Bahnhofstrasse&quot;</span>, <span class="tok-str">&quot;Birkenweg&quot;</span>, <span class="tok-str">&quot;Bierkellerweg&quot;</span>, <span class="tok-str">&quot;Columbusstrasse&quot;</span>, <span class="tok-str">&quot;Dorfstrasse&quot;</span>, <span class="tok-str">&quot;Elefantenbach&quot;</span>, <span class="tok-str">&quot;Endingerstrasse&quot;</span>, <span class="tok-str">&quot;Glockengasse&quot;</span>, <span class="tok-str">&quot;Hauptstrasse&quot;</span>, <span class="tok-str">&quot;Hirschengraben&quot;</span>, <span class="tok-str">&quot;Honiggasse&quot;</span>, <span class="tok-str">&quot;Industriestrasse&quot;</span>, <span class="tok-str">&quot;Katzenplatz&quot;</span>, <span class="tok-str">&quot;Kirchweg&quot;</span>, <span class="tok-str">&quot;Knoblauchweg&quot;</span>, <span class="tok-str">&quot;Lindenhofweg&quot;</span>, <span class="tok-str">&quot;Melonenstrasse&quot;</span>, <span class="tok-str">&quot;Oberdorfstrasse&quot;</span>, <span class="tok-str">&quot;Ödhus&quot;</span>, <span class="tok-str">&quot;Ogimatte&quot;</span>, <span class="tok-str">&quot;Rämistrasse&quot;</span>, <span class="tok-str">&quot;Rennweg&quot;</span>, <span class="tok-str">&quot;Rosenweg&quot;</span>, <span class="tok-str">&quot;Schulhausstrasse&quot;</span>, <span class="tok-str">&quot;Schulstrasse&quot;</span>, <span class="tok-str">&quot;Sihlfeldstrasse&quot;</span>, <span class="tok-str">&quot;Trittligasse&quot;</span>, <span class="tok-str">&quot;Uraniastrasse&quot;</span>, <span class="tok-str">&quot;Vorstadt&quot;</span> };</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.street_name}}&quot;</span>};</span>
+<span class="line" id="L20"></span>
+</code></pre></body>
+</html>

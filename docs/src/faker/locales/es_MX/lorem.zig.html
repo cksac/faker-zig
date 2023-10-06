@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\es_MX\lorem.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> words = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Abacalero&quot;</span>, <span class="tok-str">&quot;Abacería&quot;</span>, <span class="tok-str">&quot;Abacero&quot;</span>, <span class="tok-str">&quot;Abacial&quot;</span>, <span class="tok-str">&quot;Abaco&quot;</span>, <span class="tok-str">&quot;Abacora&quot;</span>, <span class="tok-str">&quot;Abacorar&quot;</span>, <span class="tok-str">&quot;Abad&quot;</span>, <span class="tok-str">&quot;Abada&quot;</span>, <span class="tok-str">&quot;Abadejo&quot;</span>, <span class="tok-str">&quot;Abadengo&quot;</span>, <span class="tok-str">&quot;Abadernar&quot;</span>, <span class="tok-str">&quot;Abadesa&quot;</span>, <span class="tok-str">&quot;Abadí&quot;</span>, <span class="tok-str">&quot;Abadía&quot;</span>, <span class="tok-str">&quot;Abadiado&quot;</span>, <span class="tok-str">&quot;Abadiato&quot;</span>, <span class="tok-str">&quot;Abajadero&quot;</span>, <span class="tok-str">&quot;Abajamiento&quot;</span>, <span class="tok-str">&quot;Abajar&quot;</span>, <span class="tok-str">&quot;Abajeño&quot;</span>, <span class="tok-str">&quot;Abajera&quot;</span>, <span class="tok-str">&quot;Abajo&quot;</span>, <span class="tok-str">&quot;Abalada&quot;</span>, <span class="tok-str">&quot;Abalanzar&quot;</span>, <span class="tok-str">&quot;Abalar&quot;</span>, <span class="tok-str">&quot;Abalaustrado&quot;</span>, <span class="tok-str">&quot;Abaldonadamente&quot;</span>, <span class="tok-str">&quot;Abaldonamiento&quot;</span>, <span class="tok-str">&quot;Bastonada&quot;</span>, <span class="tok-str">&quot;Bastonazo&quot;</span>, <span class="tok-str">&quot;Bastoncillo&quot;</span>, <span class="tok-str">&quot;Bastonear&quot;</span>, <span class="tok-str">&quot;Bastonero&quot;</span>, <span class="tok-str">&quot;Bástulo&quot;</span>, <span class="tok-str">&quot;Basura&quot;</span>, <span class="tok-str">&quot;Basural&quot;</span>, <span class="tok-str">&quot;Basurear&quot;</span>, <span class="tok-str">&quot;Basurero&quot;</span>, <span class="tok-str">&quot;Bata&quot;</span>, <span class="tok-str">&quot;Batacazo&quot;</span>, <span class="tok-str">&quot;Batahola&quot;</span>, <span class="tok-str">&quot;Batalán&quot;</span>, <span class="tok-str">&quot;Batalla&quot;</span>, <span class="tok-str">&quot;Batallador&quot;</span>, <span class="tok-str">&quot;Batallar&quot;</span>, <span class="tok-str">&quot;Batallaroso&quot;</span>, <span class="tok-str">&quot;Batallola&quot;</span>, <span class="tok-str">&quot;Batallón&quot;</span>, <span class="tok-str">&quot;Batallona&quot;</span>, <span class="tok-str">&quot;Batalloso&quot;</span>, <span class="tok-str">&quot;Batán&quot;</span>, <span class="tok-str">&quot;Batanar&quot;</span>, <span class="tok-str">&quot;Batanear&quot;</span>, <span class="tok-str">&quot;Batanero&quot;</span>, <span class="tok-str">&quot;Batanga&quot;</span>, <span class="tok-str">&quot;Bataola&quot;</span>, <span class="tok-str">&quot;Batata&quot;</span>, <span class="tok-str">&quot;Batatazo&quot;</span>, <span class="tok-str">&quot;Batato&quot;</span>, <span class="tok-str">&quot;Batavia&quot;</span>, <span class="tok-str">&quot;Bátavo&quot;</span>, <span class="tok-str">&quot;Batayola&quot;</span>, <span class="tok-str">&quot;Batazo&quot;</span>, <span class="tok-str">&quot;Bate&quot;</span>, <span class="tok-str">&quot;Batea&quot;</span>, <span class="tok-str">&quot;Bateador&quot;</span>, <span class="tok-str">&quot;Bateaguas&quot;</span>, <span class="tok-str">&quot;Cenagar&quot;</span>, <span class="tok-str">&quot;Cenagoso&quot;</span>, <span class="tok-str">&quot;Cenal&quot;</span>, <span class="tok-str">&quot;Cenaoscuras&quot;</span>, <span class="tok-str">&quot;Ceñar&quot;</span>, <span class="tok-str">&quot;Cenata&quot;</span>, <span class="tok-str">&quot;Cenca&quot;</span>, <span class="tok-str">&quot;Cencapa&quot;</span>, <span class="tok-str">&quot;Cencellada&quot;</span>, <span class="tok-str">&quot;Cenceñada&quot;</span>, <span class="tok-str">&quot;Cenceño&quot;</span>, <span class="tok-str">&quot;Cencero&quot;</span>, <span class="tok-str">&quot;Cencerra&quot;</span>, <span class="tok-str">&quot;Cencerrada&quot;</span>, <span class="tok-str">&quot;Cencerrado&quot;</span>, <span class="tok-str">&quot;Cencerrear&quot;</span>, <span class="tok-str">&quot;Cencerreo&quot;</span>, <span class="tok-str">&quot;Cencerril&quot;</span>, <span class="tok-str">&quot;Cencerrillas&quot;</span>, <span class="tok-str">&quot;Cencerro&quot;</span>, <span class="tok-str">&quot;Cencerrón&quot;</span>, <span class="tok-str">&quot;Cencha&quot;</span>, <span class="tok-str">&quot;Cencido&quot;</span>, <span class="tok-str">&quot;Cencío&quot;</span>, <span class="tok-str">&quot;Cencivera&quot;</span>, <span class="tok-str">&quot;Cenco&quot;</span>, <span class="tok-str">&quot;Cencuate&quot;</span>, <span class="tok-str">&quot;Cendal&quot;</span>, <span class="tok-str">&quot;Cendalí&quot;</span>, <span class="tok-str">&quot;Céndea&quot;</span>, <span class="tok-str">&quot;Cendolilla&quot;</span>, <span class="tok-str">&quot;Cendra&quot;</span>, <span class="tok-str">&quot;Cendrada&quot;</span>, <span class="tok-str">&quot;Cendradilla&quot;</span>, <span class="tok-str">&quot;Cendrado&quot;</span>, <span class="tok-str">&quot;Cendrar&quot;</span>, <span class="tok-str">&quot;Cendrazo&quot;</span>, <span class="tok-str">&quot;Cenefa&quot;</span>, <span class="tok-str">&quot;Cenegar&quot;</span>, <span class="tok-str">&quot;Ceneque&quot;</span>, <span class="tok-str">&quot;Cenero&quot;</span>, <span class="tok-str">&quot;Cenestesia&quot;</span>, <span class="tok-str">&quot;Desceñir&quot;</span>, <span class="tok-str">&quot;Descensión&quot;</span>, <span class="tok-str">&quot;Descenso&quot;</span>, <span class="tok-str">&quot;Descentrado&quot;</span>, <span class="tok-str">&quot;Descentralización&quot;</span>, <span class="tok-str">&quot;Descentralizador&quot;</span>, <span class="tok-str">&quot;Descentralizar&quot;</span>, <span class="tok-str">&quot;Descentrar&quot;</span>, <span class="tok-str">&quot;Descepar&quot;</span>, <span class="tok-str">&quot;Descerar&quot;</span>, <span class="tok-str">&quot;Descercado&quot;</span>, <span class="tok-str">&quot;Descercador&quot;</span>, <span class="tok-str">&quot;Descercar&quot;</span>, <span class="tok-str">&quot;Descerco&quot;</span>, <span class="tok-str">&quot;Descerebración&quot;</span>, <span class="tok-str">&quot;Descerebrado&quot;</span>, <span class="tok-str">&quot;Descerebrar&quot;</span>, <span class="tok-str">&quot;Descerezar&quot;</span>, <span class="tok-str">&quot;Descerrajado&quot;</span>, <span class="tok-str">&quot;Descerrajadura&quot;</span>, <span class="tok-str">&quot;Descerrajar&quot;</span>, <span class="tok-str">&quot;Descerrar&quot;</span>, <span class="tok-str">&quot;Descerrumarse&quot;</span>, <span class="tok-str">&quot;Descervigamiento&quot;</span>, <span class="tok-str">&quot;Descervigar&quot;</span>, <span class="tok-str">&quot;Deschapar&quot;</span>, <span class="tok-str">&quot;Descharchar&quot;</span>, <span class="tok-str">&quot;Deschavetado&quot;</span>, <span class="tok-str">&quot;Deschavetarse&quot;</span>, <span class="tok-str">&quot;Deschuponar&quot;</span>, <span class="tok-str">&quot;Descifrable&quot;</span>, <span class="tok-str">&quot;Descifrador&quot;</span>, <span class="tok-str">&quot;Desciframiento&quot;</span>, <span class="tok-str">&quot;Descifrar&quot;</span>, <span class="tok-str">&quot;Descifre&quot;</span>, <span class="tok-str">&quot;Descimbramiento&quot;</span>, <span class="tok-str">&quot;Descimbrar&quot;</span>, <span class="tok-str">&quot;Engarbarse&quot;</span>, <span class="tok-str">&quot;Engarberar&quot;</span>, <span class="tok-str">&quot;Engarbullar&quot;</span>, <span class="tok-str">&quot;Engarce&quot;</span>, <span class="tok-str">&quot;Engarfiar&quot;</span>, <span class="tok-str">&quot;Engargantadura&quot;</span>, <span class="tok-str">&quot;Engargantar&quot;</span>, <span class="tok-str">&quot;Engargante&quot;</span>, <span class="tok-str">&quot;Engargolado&quot;</span>, <span class="tok-str">&quot;Engargolar&quot;</span>, <span class="tok-str">&quot;Engaritar&quot;</span>, <span class="tok-str">&quot;Engarmarse&quot;</span>, <span class="tok-str">&quot;Engarnio&quot;</span>, <span class="tok-str">&quot;Engarrafador&quot;</span>, <span class="tok-str">&quot;Engarrafar&quot;</span>, <span class="tok-str">&quot;Engarrar&quot;</span>, <span class="tok-str">&quot;Engarro&quot;</span>, <span class="tok-str">&quot;Engarronar&quot;</span>, <span class="tok-str">&quot;Engarrotar&quot;</span>, <span class="tok-str">&quot;Engarzador&quot;</span>, <span class="tok-str">&quot;Engarzadura&quot;</span>, <span class="tok-str">&quot;Engarzar&quot;</span>, <span class="tok-str">&quot;Engasgarse&quot;</span>, <span class="tok-str">&quot;Engastador&quot;</span>, <span class="tok-str">&quot;Engastadura&quot;</span>, <span class="tok-str">&quot;Engastar&quot;</span>, <span class="tok-str">&quot;Engaste&quot;</span>, <span class="tok-str">&quot;Ficción&quot;</span>, <span class="tok-str">&quot;Fice&quot;</span>, <span class="tok-str">&quot;Ficha&quot;</span>, <span class="tok-str">&quot;Fichaje&quot;</span>, <span class="tok-str">&quot;Fichar&quot;</span>, <span class="tok-str">&quot;Fichero&quot;</span>, <span class="tok-str">&quot;Ficoideo&quot;</span>, <span class="tok-str">&quot;Ficticio&quot;</span>, <span class="tok-str">&quot;Fidalgo&quot;</span>, <span class="tok-str">&quot;Fidecomiso&quot;</span>, <span class="tok-str">&quot;Fidedigno&quot;</span>, <span class="tok-str">&quot;Fideero&quot;</span>, <span class="tok-str">&quot;Fideicomisario&quot;</span>, <span class="tok-str">&quot;Fideicomiso&quot;</span>, <span class="tok-str">&quot;Fideicomitente&quot;</span>, <span class="tok-str">&quot;Fideísmo&quot;</span>, <span class="tok-str">&quot;Fidelidad&quot;</span>, <span class="tok-str">&quot;Fidelísimo&quot;</span>, <span class="tok-str">&quot;Fideo&quot;</span>, <span class="tok-str">&quot;Fido&quot;</span>, <span class="tok-str">&quot;Fiducia&quot;</span>, <span class="tok-str">&quot;Geminación&quot;</span>, <span class="tok-str">&quot;Geminado&quot;</span>, <span class="tok-str">&quot;Geminar&quot;</span>, <span class="tok-str">&quot;Géminis&quot;</span>, <span class="tok-str">&quot;Gémino&quot;</span>, <span class="tok-str">&quot;Gemíparo&quot;</span>, <span class="tok-str">&quot;Gemiquear&quot;</span>, <span class="tok-str">&quot;Gemiqueo&quot;</span>, <span class="tok-str">&quot;Gemir&quot;</span>, <span class="tok-str">&quot;Gemología&quot;</span>, <span class="tok-str">&quot;Gemológico&quot;</span>, <span class="tok-str">&quot;Gemólogo&quot;</span>, <span class="tok-str">&quot;Gemonias&quot;</span>, <span class="tok-str">&quot;Gemoso&quot;</span>, <span class="tok-str">&quot;Gemoterapia&quot;</span>, <span class="tok-str">&quot;Gen&quot;</span>, <span class="tok-str">&quot;Genciana&quot;</span>, <span class="tok-str">&quot;Gencianáceo&quot;</span>, <span class="tok-str">&quot;Gencianeo&quot;</span>, <span class="tok-str">&quot;Gendarme&quot;</span>, <span class="tok-str">&quot;Gendarmería&quot;</span>, <span class="tok-str">&quot;Genealogía&quot;</span>, <span class="tok-str">&quot;Genealógico&quot;</span>, <span class="tok-str">&quot;Genealogista&quot;</span>, <span class="tok-str">&quot;Genearca&quot;</span>, <span class="tok-str">&quot;Geneático&quot;</span>, <span class="tok-str">&quot;Generable&quot;</span>, <span class="tok-str">&quot;Generación&quot;</span>, <span class="tok-str">&quot;Generacional&quot;</span>, <span class="tok-str">&quot;Generador&quot;</span>, <span class="tok-str">&quot;General&quot;</span>, <span class="tok-str">&quot;Generala&quot;</span>, <span class="tok-str">&quot;Generalato&quot;</span>, <span class="tok-str">&quot;Generalidad&quot;</span>, <span class="tok-str">&quot;Generalísimo&quot;</span>, <span class="tok-str">&quot;Incordio&quot;</span>, <span class="tok-str">&quot;Incorporación&quot;</span>, <span class="tok-str">&quot;Incorporal&quot;</span>, <span class="tok-str">&quot;Incorporalmente&quot;</span>, <span class="tok-str">&quot;Incorporar&quot;</span>, <span class="tok-str">&quot;Incorporeidad&quot;</span>, <span class="tok-str">&quot;Incorpóreo&quot;</span>, <span class="tok-str">&quot;Incorporo&quot;</span>, <span class="tok-str">&quot;Incorrección&quot;</span>, <span class="tok-str">&quot;Incorrectamente&quot;</span>, <span class="tok-str">&quot;Incorrecto&quot;</span>, <span class="tok-str">&quot;Incorregibilidad&quot;</span>, <span class="tok-str">&quot;Incorregible&quot;</span>, <span class="tok-str">&quot;Incorregiblemente&quot;</span>, <span class="tok-str">&quot;Incorrupción&quot;</span>, <span class="tok-str">&quot;Incorruptamente&quot;</span>, <span class="tok-str">&quot;Incorruptibilidad&quot;</span>, <span class="tok-str">&quot;Incorruptible&quot;</span>, <span class="tok-str">&quot;Incorrupto&quot;</span>, <span class="tok-str">&quot;Incrasar&quot;</span>, <span class="tok-str">&quot;Increado&quot;</span>, <span class="tok-str">&quot;Incredibilidad&quot;</span>, <span class="tok-str">&quot;Incrédulamente&quot;</span>, <span class="tok-str">&quot;Incredulidad&quot;</span>, <span class="tok-str">&quot;Incrédulo&quot;</span>, <span class="tok-str">&quot;Increíble&quot;</span>, <span class="tok-str">&quot;Increíblemente&quot;</span>, <span class="tok-str">&quot;Incrementar&quot;</span>, <span class="tok-str">&quot;Incremento&quot;</span>, <span class="tok-str">&quot;Increpación&quot;</span>, <span class="tok-str">&quot;Increpador&quot;</span>, <span class="tok-str">&quot;Increpar&quot;</span>, <span class="tok-str">&quot;Incriminación&quot;</span>, <span class="tok-str">&quot;Incriminar&quot;</span>, <span class="tok-str">&quot;Incristalizable&quot;</span>, <span class="tok-str">&quot;Incruentamente&quot;</span>, <span class="tok-str">&quot;Incruento&quot;</span>, <span class="tok-str">&quot;Incrustación&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

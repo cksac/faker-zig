@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\sv\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;###&quot;</span>, <span class="tok-str">&quot;##&quot;</span>, <span class="tok-str">&quot;#&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;{{location.city_prefix}}{{location.city_suffix}}&quot;</span>};</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Söder&quot;</span>, <span class="tok-str">&quot;Norr&quot;</span>, <span class="tok-str">&quot;Väst&quot;</span>, <span class="tok-str">&quot;Öster&quot;</span>, <span class="tok-str">&quot;Aling&quot;</span>, <span class="tok-str">&quot;Ar&quot;</span>, <span class="tok-str">&quot;Av&quot;</span>, <span class="tok-str">&quot;Bo&quot;</span>, <span class="tok-str">&quot;Br&quot;</span>, <span class="tok-str">&quot;Bå&quot;</span>, <span class="tok-str">&quot;Ek&quot;</span>, <span class="tok-str">&quot;En&quot;</span>, <span class="tok-str">&quot;Esk&quot;</span>, <span class="tok-str">&quot;Fal&quot;</span>, <span class="tok-str">&quot;Gäv&quot;</span>, <span class="tok-str">&quot;Göte&quot;</span>, <span class="tok-str">&quot;Ha&quot;</span>, <span class="tok-str">&quot;Helsing&quot;</span>, <span class="tok-str">&quot;Karl&quot;</span>, <span class="tok-str">&quot;Krist&quot;</span>, <span class="tok-str">&quot;Kram&quot;</span>, <span class="tok-str">&quot;Kung&quot;</span>, <span class="tok-str">&quot;Kö&quot;</span>, <span class="tok-str">&quot;Lyck&quot;</span>, <span class="tok-str">&quot;Ny&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;stad&quot;</span>, <span class="tok-str">&quot;land&quot;</span>, <span class="tok-str">&quot;sås&quot;</span>, <span class="tok-str">&quot;ås&quot;</span>, <span class="tok-str">&quot;holm&quot;</span>, <span class="tok-str">&quot;tuna&quot;</span>, <span class="tok-str">&quot;sta&quot;</span>, <span class="tok-str">&quot;berg&quot;</span>, <span class="tok-str">&quot;löv&quot;</span>, <span class="tok-str">&quot;borg&quot;</span>, <span class="tok-str">&quot;mora&quot;</span>, <span class="tok-str">&quot;hamn&quot;</span>, <span class="tok-str">&quot;fors&quot;</span>, <span class="tok-str">&quot;köping&quot;</span>, <span class="tok-str">&quot;by&quot;</span>, <span class="tok-str">&quot;hult&quot;</span>, <span class="tok-str">&quot;torp&quot;</span>, <span class="tok-str">&quot;fred&quot;</span>, <span class="tok-str">&quot;vik&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> common_street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;s Väg&quot;</span>, <span class="tok-str">&quot;s Gata&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Ryssland&quot;</span>, <span class="tok-str">&quot;Kanada&quot;</span>, <span class="tok-str">&quot;Kina&quot;</span>, <span class="tok-str">&quot;USA&quot;</span>, <span class="tok-str">&quot;Brasilien&quot;</span>, <span class="tok-str">&quot;Australien&quot;</span>, <span class="tok-str">&quot;Indien&quot;</span>, <span class="tok-str">&quot;Argentina&quot;</span>, <span class="tok-str">&quot;Kazakstan&quot;</span>, <span class="tok-str">&quot;Algeriet&quot;</span>, <span class="tok-str">&quot;DR Kongo&quot;</span>, <span class="tok-str">&quot;Danmark&quot;</span>, <span class="tok-str">&quot;Färöarna&quot;</span>, <span class="tok-str">&quot;Grönland&quot;</span>, <span class="tok-str">&quot;Saudiarabien&quot;</span>, <span class="tok-str">&quot;Mexiko&quot;</span>, <span class="tok-str">&quot;Indonesien&quot;</span>, <span class="tok-str">&quot;Sudan&quot;</span>, <span class="tok-str">&quot;Libyen&quot;</span>, <span class="tok-str">&quot;Iran&quot;</span>, <span class="tok-str">&quot;Mongoliet&quot;</span>, <span class="tok-str">&quot;Peru&quot;</span>, <span class="tok-str">&quot;Tchad&quot;</span>, <span class="tok-str">&quot;Niger&quot;</span>, <span class="tok-str">&quot;Angola&quot;</span>, <span class="tok-str">&quot;Mali&quot;</span>, <span class="tok-str">&quot;Sydafrika&quot;</span>, <span class="tok-str">&quot;Colombia&quot;</span>, <span class="tok-str">&quot;Etiopien&quot;</span>, <span class="tok-str">&quot;Bolivia&quot;</span>, <span class="tok-str">&quot;Mauretanien&quot;</span>, <span class="tok-str">&quot;Egypten&quot;</span>, <span class="tok-str">&quot;Tanzania&quot;</span>, <span class="tok-str">&quot;Nigeria&quot;</span>, <span class="tok-str">&quot;Venezuela&quot;</span>, <span class="tok-str">&quot;Namibia&quot;</span>, <span class="tok-str">&quot;Pakistan&quot;</span>, <span class="tok-str">&quot;Moçambique&quot;</span>, <span class="tok-str">&quot;Turkiet&quot;</span>, <span class="tok-str">&quot;Chile&quot;</span>, <span class="tok-str">&quot;Zambia&quot;</span>, <span class="tok-str">&quot;Marocko&quot;</span>, <span class="tok-str">&quot;Västsahara&quot;</span>, <span class="tok-str">&quot;Burma&quot;</span>, <span class="tok-str">&quot;Afghanistan&quot;</span>, <span class="tok-str">&quot;Somalia&quot;</span>, <span class="tok-str">&quot;Centralafrikanska republiken&quot;</span>, <span class="tok-str">&quot;Sydsudan&quot;</span>, <span class="tok-str">&quot;Ukraina&quot;</span>, <span class="tok-str">&quot;Botswana&quot;</span>, <span class="tok-str">&quot;Madagaskar&quot;</span>, <span class="tok-str">&quot;Kenya&quot;</span>, <span class="tok-str">&quot;Frankrike&quot;</span>, <span class="tok-str">&quot;Franska Guyana&quot;</span>, <span class="tok-str">&quot;Jemen&quot;</span>, <span class="tok-str">&quot;Thailand&quot;</span>, <span class="tok-str">&quot;Spanien&quot;</span>, <span class="tok-str">&quot;Turkmenistan&quot;</span>, <span class="tok-str">&quot;Kamerun&quot;</span>, <span class="tok-str">&quot;Papua Nya Guinea&quot;</span>, <span class="tok-str">&quot;Sverige&quot;</span>, <span class="tok-str">&quot;Uzbekistan&quot;</span>, <span class="tok-str">&quot;Irak&quot;</span>, <span class="tok-str">&quot;Paraguay&quot;</span>, <span class="tok-str">&quot;Zimbabwe&quot;</span>, <span class="tok-str">&quot;Japan&quot;</span>, <span class="tok-str">&quot;Tyskland&quot;</span>, <span class="tok-str">&quot;Kongo&quot;</span>, <span class="tok-str">&quot;Finland&quot;</span>, <span class="tok-str">&quot;Malaysia&quot;</span>, <span class="tok-str">&quot;Vietnam&quot;</span>, <span class="tok-str">&quot;Norge&quot;</span>, <span class="tok-str">&quot;Svalbard&quot;</span>, <span class="tok-str">&quot;Jan Mayen&quot;</span>, <span class="tok-str">&quot;Elfenbenskusten&quot;</span>, <span class="tok-str">&quot;Polen&quot;</span>, <span class="tok-str">&quot;Italien&quot;</span>, <span class="tok-str">&quot;Filippinerna&quot;</span>, <span class="tok-str">&quot;Ecuador&quot;</span>, <span class="tok-str">&quot;Burkina Faso&quot;</span>, <span class="tok-str">&quot;Nya Zeeland&quot;</span>, <span class="tok-str">&quot;Gabon&quot;</span>, <span class="tok-str">&quot;Guinea&quot;</span>, <span class="tok-str">&quot;Storbritannien&quot;</span>, <span class="tok-str">&quot;Ghana&quot;</span>, <span class="tok-str">&quot;Rumänien&quot;</span>, <span class="tok-str">&quot;Laos&quot;</span>, <span class="tok-str">&quot;Uganda&quot;</span>, <span class="tok-str">&quot;Guyana&quot;</span>, <span class="tok-str">&quot;Oman&quot;</span>, <span class="tok-str">&quot;Vitryssland&quot;</span>, <span class="tok-str">&quot;Kirgizistan&quot;</span>, <span class="tok-str">&quot;Senegal&quot;</span>, <span class="tok-str">&quot;Syrien&quot;</span>, <span class="tok-str">&quot;Kambodja&quot;</span>, <span class="tok-str">&quot;Uruguay&quot;</span>, <span class="tok-str">&quot;Tunisien&quot;</span>, <span class="tok-str">&quot;Surinam&quot;</span>, <span class="tok-str">&quot;Nepal&quot;</span>, <span class="tok-str">&quot;Bangladesh&quot;</span>, <span class="tok-str">&quot;Tadzjikistan&quot;</span>, <span class="tok-str">&quot;Grekland&quot;</span>, <span class="tok-str">&quot;Nicaragua&quot;</span>, <span class="tok-str">&quot;Eritrea&quot;</span>, <span class="tok-str">&quot;Nordkorea&quot;</span>, <span class="tok-str">&quot;Malawi&quot;</span>, <span class="tok-str">&quot;Benin&quot;</span>, <span class="tok-str">&quot;Honduras&quot;</span>, <span class="tok-str">&quot;Liberia&quot;</span>, <span class="tok-str">&quot;Bulgarien&quot;</span>, <span class="tok-str">&quot;Kuba&quot;</span>, <span class="tok-str">&quot;Guatemala&quot;</span>, <span class="tok-str">&quot;Island&quot;</span>, <span class="tok-str">&quot;Sydkorea&quot;</span>, <span class="tok-str">&quot;Ungern&quot;</span>, <span class="tok-str">&quot;Portugal&quot;</span>, <span class="tok-str">&quot;Jordanien&quot;</span>, <span class="tok-str">&quot;Serbien&quot;</span>, <span class="tok-str">&quot;Azerbajdzjan&quot;</span>, <span class="tok-str">&quot;Österrike&quot;</span>, <span class="tok-str">&quot;Förenade Arabemiraten&quot;</span>, <span class="tok-str">&quot;Tjeckien&quot;</span>, <span class="tok-str">&quot;Panama&quot;</span>, <span class="tok-str">&quot;Sierra Leone&quot;</span>, <span class="tok-str">&quot;Irland&quot;</span>, <span class="tok-str">&quot;Georgien&quot;</span>, <span class="tok-str">&quot;Sri Lanka&quot;</span>, <span class="tok-str">&quot;Litauen&quot;</span>, <span class="tok-str">&quot;Lettland&quot;</span>, <span class="tok-str">&quot;Togo&quot;</span>, <span class="tok-str">&quot;Kroatien&quot;</span>, <span class="tok-str">&quot;Bosnien och Hercegovina&quot;</span>, <span class="tok-str">&quot;Costa Rica&quot;</span>, <span class="tok-str">&quot;Slovakien&quot;</span>, <span class="tok-str">&quot;Dominikanska republiken&quot;</span>, <span class="tok-str">&quot;Bhutan&quot;</span>, <span class="tok-str">&quot;Estland&quot;</span>, <span class="tok-str">&quot;Nederländerna&quot;</span>, <span class="tok-str">&quot;Schweiz&quot;</span>, <span class="tok-str">&quot;Guinea-Bissau&quot;</span>, <span class="tok-str">&quot;Taiwan&quot;</span>, <span class="tok-str">&quot;Moldavien&quot;</span>, <span class="tok-str">&quot;Belgien&quot;</span>, <span class="tok-str">&quot;Lesotho&quot;</span>, <span class="tok-str">&quot;Armenien&quot;</span>, <span class="tok-str">&quot;Albanien&quot;</span>, <span class="tok-str">&quot;Salomonöarna&quot;</span>, <span class="tok-str">&quot;Ekvatorialguinea&quot;</span>, <span class="tok-str">&quot;Burundi&quot;</span>, <span class="tok-str">&quot;Haiti&quot;</span>, <span class="tok-str">&quot;Rwanda&quot;</span>, <span class="tok-str">&quot;Makedonien&quot;</span>, <span class="tok-str">&quot;Djibouti&quot;</span>, <span class="tok-str">&quot;Belize&quot;</span>, <span class="tok-str">&quot;Israel&quot;</span>, <span class="tok-str">&quot;El Salvador&quot;</span>, <span class="tok-str">&quot;Slovenien&quot;</span>, <span class="tok-str">&quot;Fiji&quot;</span>, <span class="tok-str">&quot;Kuwait&quot;</span>, <span class="tok-str">&quot;Swaziland&quot;</span>, <span class="tok-str">&quot;Timor-Leste&quot;</span>, <span class="tok-str">&quot;Montenegro&quot;</span>, <span class="tok-str">&quot;Bahamas&quot;</span>, <span class="tok-str">&quot;Vanuatu&quot;</span>, <span class="tok-str">&quot;Qatar&quot;</span>, <span class="tok-str">&quot;Gambia&quot;</span>, <span class="tok-str">&quot;Jamaica&quot;</span>, <span class="tok-str">&quot;Kosovo&quot;</span>, <span class="tok-str">&quot;Libanon&quot;</span>, <span class="tok-str">&quot;Cypern&quot;</span>, <span class="tok-str">&quot;Brunei&quot;</span>, <span class="tok-str">&quot;Trinidad och Tobago&quot;</span>, <span class="tok-str">&quot;Kap Verde&quot;</span>, <span class="tok-str">&quot;Samoa&quot;</span>, <span class="tok-str">&quot;Luxemburg&quot;</span>, <span class="tok-str">&quot;Komorerna&quot;</span>, <span class="tok-str">&quot;Mauritius&quot;</span>, <span class="tok-str">&quot;São Tomé och Príncipe&quot;</span>, <span class="tok-str">&quot;Kiribati&quot;</span>, <span class="tok-str">&quot;Dominica&quot;</span>, <span class="tok-str">&quot;Tonga&quot;</span>, <span class="tok-str">&quot;Mikronesiens federerade stater&quot;</span>, <span class="tok-str">&quot;Singapore&quot;</span>, <span class="tok-str">&quot;Bahrain&quot;</span>, <span class="tok-str">&quot;Saint Lucia&quot;</span>, <span class="tok-str">&quot;Andorra&quot;</span>, <span class="tok-str">&quot;Palau&quot;</span>, <span class="tok-str">&quot;Seychellerna&quot;</span>, <span class="tok-str">&quot;Antigua och Barbuda&quot;</span>, <span class="tok-str">&quot;Barbados&quot;</span>, <span class="tok-str">&quot;Saint Vincent och Grenadinerna&quot;</span>, <span class="tok-str">&quot;Grenada&quot;</span>, <span class="tok-str">&quot;Malta&quot;</span>, <span class="tok-str">&quot;Maldiverna&quot;</span>, <span class="tok-str">&quot;Saint Kitts och Nevis&quot;</span>, <span class="tok-str">&quot;Marshallöarna&quot;</span>, <span class="tok-str">&quot;Liechtenstein&quot;</span>, <span class="tok-str">&quot;San Marino&quot;</span>, <span class="tok-str">&quot;Tuvalu&quot;</span>, <span class="tok-str">&quot;Nauru&quot;</span>, <span class="tok-str">&quot;Monaco&quot;</span>, <span class="tok-str">&quot;Vatikanstaten&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Sverige&quot;</span>};</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;#####&quot;</span>};</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> secondary_address = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Lgh. ###&quot;</span>, <span class="tok-str">&quot;Hus ###&quot;</span> };</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Blekinge&quot;</span>, <span class="tok-str">&quot;Dalarna&quot;</span>, <span class="tok-str">&quot;Gotland&quot;</span>, <span class="tok-str">&quot;Gävleborg&quot;</span>, <span class="tok-str">&quot;Göteborg&quot;</span>, <span class="tok-str">&quot;Halland&quot;</span>, <span class="tok-str">&quot;Jämtland&quot;</span>, <span class="tok-str">&quot;Jönköping&quot;</span>, <span class="tok-str">&quot;Kalmar&quot;</span>, <span class="tok-str">&quot;Kronoberg&quot;</span>, <span class="tok-str">&quot;Norrbotten&quot;</span>, <span class="tok-str">&quot;Skaraborg&quot;</span>, <span class="tok-str">&quot;Skåne&quot;</span>, <span class="tok-str">&quot;Stockholm&quot;</span>, <span class="tok-str">&quot;Södermanland&quot;</span>, <span class="tok-str">&quot;Uppsala&quot;</span>, <span class="tok-str">&quot;Värmland&quot;</span>, <span class="tok-str">&quot;Västerbotten&quot;</span>, <span class="tok-str">&quot;Västernorrland&quot;</span>, <span class="tok-str">&quot;Västmanland&quot;</span>, <span class="tok-str">&quot;Älvsborg&quot;</span>, <span class="tok-str">&quot;Örebro&quot;</span>, <span class="tok-str">&quot;Östergötland&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}} {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Björk&quot;</span>, <span class="tok-str">&quot;Järnvägs&quot;</span>, <span class="tok-str">&quot;Ring&quot;</span>, <span class="tok-str">&quot;Skol&quot;</span>, <span class="tok-str">&quot;Skogs&quot;</span>, <span class="tok-str">&quot;Ny&quot;</span>, <span class="tok-str">&quot;Gran&quot;</span>, <span class="tok-str">&quot;Idrotts&quot;</span>, <span class="tok-str">&quot;Stor&quot;</span>, <span class="tok-str">&quot;Kyrk&quot;</span>, <span class="tok-str">&quot;Industri&quot;</span>, <span class="tok-str">&quot;Park&quot;</span>, <span class="tok-str">&quot;Strand&quot;</span>, <span class="tok-str">&quot;Trädgård&quot;</span>, <span class="tok-str">&quot;Ängs&quot;</span>, <span class="tok-str">&quot;Kyrko&quot;</span>, <span class="tok-str">&quot;Villa&quot;</span>, <span class="tok-str">&quot;Ek&quot;</span>, <span class="tok-str">&quot;Kvarn&quot;</span>, <span class="tok-str">&quot;Stations&quot;</span>, <span class="tok-str">&quot;Back&quot;</span>, <span class="tok-str">&quot;Furu&quot;</span>, <span class="tok-str">&quot;Gen&quot;</span>, <span class="tok-str">&quot;Fabriks&quot;</span>, <span class="tok-str">&quot;Åker&quot;</span>, <span class="tok-str">&quot;Bäck&quot;</span>, <span class="tok-str">&quot;Asp&quot;</span> };</span>
+<span class="line" id="L24"></span>
+<span class="line" id="L25"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.street_name}}{{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.street_prefix}} {{location.street_name}}{{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.first_name}}{{location.common_street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.common_street_suffix}}&quot;</span> };</span>
+<span class="line" id="L26"></span>
+<span class="line" id="L27"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Västra&quot;</span>, <span class="tok-str">&quot;Östra&quot;</span>, <span class="tok-str">&quot;Norra&quot;</span>, <span class="tok-str">&quot;Södra&quot;</span>, <span class="tok-str">&quot;Övre&quot;</span>, <span class="tok-str">&quot;Undre&quot;</span> };</span>
+<span class="line" id="L28"></span>
+<span class="line" id="L29"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;vägen&quot;</span>, <span class="tok-str">&quot;gatan&quot;</span>, <span class="tok-str">&quot;gränden&quot;</span>, <span class="tok-str">&quot;gärdet&quot;</span>, <span class="tok-str">&quot;allén&quot;</span> };</span>
+<span class="line" id="L30"></span>
+</code></pre></body>
+</html>

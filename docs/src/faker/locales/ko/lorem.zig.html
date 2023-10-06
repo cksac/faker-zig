@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\ko\lorem.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> words = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;국가는&quot;</span>, <span class="tok-str">&quot;법률이&quot;</span>, <span class="tok-str">&quot;정하는&quot;</span>, <span class="tok-str">&quot;바에&quot;</span>, <span class="tok-str">&quot;의하여&quot;</span>, <span class="tok-str">&quot;재외국민을&quot;</span>, <span class="tok-str">&quot;보호할&quot;</span>, <span class="tok-str">&quot;의무를&quot;</span>, <span class="tok-str">&quot;진다.&quot;</span>, <span class="tok-str">&quot;모든&quot;</span>, <span class="tok-str">&quot;국민은&quot;</span>, <span class="tok-str">&quot;신체의&quot;</span>, <span class="tok-str">&quot;자유를&quot;</span>, <span class="tok-str">&quot;가진다.&quot;</span>, <span class="tok-str">&quot;전통문화의&quot;</span>, <span class="tok-str">&quot;계승·발전과&quot;</span>, <span class="tok-str">&quot;민족문화의&quot;</span>, <span class="tok-str">&quot;창달에&quot;</span>, <span class="tok-str">&quot;노력하여야&quot;</span>, <span class="tok-str">&quot;한다.&quot;</span>, <span class="tok-str">&quot;통신·방송의&quot;</span>, <span class="tok-str">&quot;시설기준과&quot;</span>, <span class="tok-str">&quot;신문의&quot;</span>, <span class="tok-str">&quot;기능을&quot;</span>, <span class="tok-str">&quot;보장하기&quot;</span>, <span class="tok-str">&quot;위하여&quot;</span>, <span class="tok-str">&quot;필요한&quot;</span>, <span class="tok-str">&quot;사항은&quot;</span>, <span class="tok-str">&quot;법률로&quot;</span>, <span class="tok-str">&quot;정한다.&quot;</span>, <span class="tok-str">&quot;헌법에&quot;</span>, <span class="tok-str">&quot;체결·공포된&quot;</span>, <span class="tok-str">&quot;조약과&quot;</span>, <span class="tok-str">&quot;일반적으로&quot;</span>, <span class="tok-str">&quot;승인된&quot;</span>, <span class="tok-str">&quot;국제법규는&quot;</span>, <span class="tok-str">&quot;국내법과&quot;</span>, <span class="tok-str">&quot;같은&quot;</span>, <span class="tok-str">&quot;효력을&quot;</span>, <span class="tok-str">&quot;다만,&quot;</span>, <span class="tok-str">&quot;현행범인인&quot;</span>, <span class="tok-str">&quot;경우와&quot;</span>, <span class="tok-str">&quot;장기&quot;</span>, <span class="tok-str">&quot;3년&quot;</span>, <span class="tok-str">&quot;이상의&quot;</span>, <span class="tok-str">&quot;형에&quot;</span>, <span class="tok-str">&quot;해당하는&quot;</span>, <span class="tok-str">&quot;죄를&quot;</span>, <span class="tok-str">&quot;범하고&quot;</span>, <span class="tok-str">&quot;도피&quot;</span>, <span class="tok-str">&quot;또는&quot;</span>, <span class="tok-str">&quot;증거인멸의&quot;</span>, <span class="tok-str">&quot;염려가&quot;</span>, <span class="tok-str">&quot;있을&quot;</span>, <span class="tok-str">&quot;때에는&quot;</span>, <span class="tok-str">&quot;사후에&quot;</span>, <span class="tok-str">&quot;영장을&quot;</span>, <span class="tok-str">&quot;청구할&quot;</span>, <span class="tok-str">&quot;수&quot;</span>, <span class="tok-str">&quot;있다.&quot;</span>, <span class="tok-str">&quot;저작자·발명가·과학기술자와&quot;</span>, <span class="tok-str">&quot;예술가의&quot;</span>, <span class="tok-str">&quot;권리는&quot;</span>, <span class="tok-str">&quot;법률로써&quot;</span>, <span class="tok-str">&quot;보호한다.&quot;</span>, <span class="tok-str">&quot;형사피고인은&quot;</span>, <span class="tok-str">&quot;유죄의&quot;</span>, <span class="tok-str">&quot;판결이&quot;</span>, <span class="tok-str">&quot;확정될&quot;</span>, <span class="tok-str">&quot;때까지는&quot;</span>, <span class="tok-str">&quot;무죄로&quot;</span>, <span class="tok-str">&quot;추정된다.&quot;</span>, <span class="tok-str">&quot;행위시의&quot;</span>, <span class="tok-str">&quot;법률에&quot;</span>, <span class="tok-str">&quot;범죄를&quot;</span>, <span class="tok-str">&quot;구성하지&quot;</span>, <span class="tok-str">&quot;아니하는&quot;</span>, <span class="tok-str">&quot;행위로&quot;</span>, <span class="tok-str">&quot;소추되지&quot;</span>, <span class="tok-str">&quot;아니하며,&quot;</span>, <span class="tok-str">&quot;동일한&quot;</span>, <span class="tok-str">&quot;범죄에&quot;</span>, <span class="tok-str">&quot;대하여&quot;</span>, <span class="tok-str">&quot;거듭&quot;</span>, <span class="tok-str">&quot;처벌받지&quot;</span>, <span class="tok-str">&quot;아니한다.&quot;</span>, <span class="tok-str">&quot;평생교육을&quot;</span>, <span class="tok-str">&quot;진흥하여야&quot;</span>, <span class="tok-str">&quot;사생활의&quot;</span>, <span class="tok-str">&quot;비밀과&quot;</span>, <span class="tok-str">&quot;침해받지&quot;</span>, <span class="tok-str">&quot;의무교육은&quot;</span>, <span class="tok-str">&quot;무상으로&quot;</span>, <span class="tok-str">&quot;모성의&quot;</span>, <span class="tok-str">&quot;보호를&quot;</span> };</span>
+<span class="line" id="L2"></span>
+</code></pre></body>
+</html>

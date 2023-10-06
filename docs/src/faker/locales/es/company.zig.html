@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\es\company.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Adaptativo&quot;</span>, <span class="tok-str">&quot;Avanzado&quot;</span>, <span class="tok-str">&quot;Asimilado&quot;</span>, <span class="tok-str">&quot;Automatizado&quot;</span>, <span class="tok-str">&quot;Equilibrado&quot;</span>, <span class="tok-str">&quot;Centrado en el negocio&quot;</span>, <span class="tok-str">&quot;Centralizado&quot;</span>, <span class="tok-str">&quot;Clonado&quot;</span>, <span class="tok-str">&quot;Compatible&quot;</span>, <span class="tok-str">&quot;Configurable&quot;</span>, <span class="tok-str">&quot;Multi grupo&quot;</span>, <span class="tok-str">&quot;Multi plataforma&quot;</span>, <span class="tok-str">&quot;Centrado en el usuario&quot;</span>, <span class="tok-str">&quot;Descentralizado&quot;</span>, <span class="tok-str">&quot;Digitalizado&quot;</span>, <span class="tok-str">&quot;Distribuido&quot;</span>, <span class="tok-str">&quot;Diverso&quot;</span>, <span class="tok-str">&quot;Reducido&quot;</span>, <span class="tok-str">&quot;Mejorado&quot;</span>, <span class="tok-str">&quot;Para toda la empresa&quot;</span>, <span class="tok-str">&quot;Ergonómico&quot;</span>, <span class="tok-str">&quot;Exclusivo&quot;</span>, <span class="tok-str">&quot;Expandido&quot;</span>, <span class="tok-str">&quot;Extendido&quot;</span>, <span class="tok-str">&quot;Cara a cara&quot;</span>, <span class="tok-str">&quot;Enfocado&quot;</span>, <span class="tok-str">&quot;Totalmente configurable&quot;</span>, <span class="tok-str">&quot;Fundamental&quot;</span>, <span class="tok-str">&quot;Orígenes&quot;</span>, <span class="tok-str">&quot;Horizontal&quot;</span>, <span class="tok-str">&quot;Implementado&quot;</span>, <span class="tok-str">&quot;Innovador&quot;</span>, <span class="tok-str">&quot;Integrado&quot;</span>, <span class="tok-str">&quot;Intuitivo&quot;</span>, <span class="tok-str">&quot;Inverso&quot;</span>, <span class="tok-str">&quot;Gestionado&quot;</span>, <span class="tok-str">&quot;Obligatorio&quot;</span>, <span class="tok-str">&quot;Monitorizado&quot;</span>, <span class="tok-str">&quot;Multi canal&quot;</span>, <span class="tok-str">&quot;Multi lateral&quot;</span>, <span class="tok-str">&quot;Multi capa&quot;</span>, <span class="tok-str">&quot;En red&quot;</span>, <span class="tok-str">&quot;Orientado a objetos&quot;</span>, <span class="tok-str">&quot;Open-source&quot;</span>, <span class="tok-str">&quot;Operativo&quot;</span>, <span class="tok-str">&quot;Optimizado&quot;</span>, <span class="tok-str">&quot;Opcional&quot;</span>, <span class="tok-str">&quot;Orgánico&quot;</span>, <span class="tok-str">&quot;Organizado&quot;</span>, <span class="tok-str">&quot;Perseverando&quot;</span>, <span class="tok-str">&quot;Persistente&quot;</span>, <span class="tok-str">&quot;en fases&quot;</span>, <span class="tok-str">&quot;Polarizado&quot;</span>, <span class="tok-str">&quot;Pre-emptivo&quot;</span>, <span class="tok-str">&quot;Proactivo&quot;</span>, <span class="tok-str">&quot;Enfocado a benficios&quot;</span>, <span class="tok-str">&quot;Profundo&quot;</span>, <span class="tok-str">&quot;Programable&quot;</span>, <span class="tok-str">&quot;Progresivo&quot;</span>, <span class="tok-str">&quot;Public-key&quot;</span>, <span class="tok-str">&quot;Enfocado en la calidad&quot;</span>, <span class="tok-str">&quot;Reactivo&quot;</span>, <span class="tok-str">&quot;Realineado&quot;</span>, <span class="tok-str">&quot;Re-contextualizado&quot;</span>, <span class="tok-str">&quot;Re-implementado&quot;</span>, <span class="tok-str">&quot;Ingeniería inversa&quot;</span>, <span class="tok-str">&quot;Robusto&quot;</span>, <span class="tok-str">&quot;Fácil&quot;</span>, <span class="tok-str">&quot;Seguro&quot;</span>, <span class="tok-str">&quot;Auto proporciona&quot;</span>, <span class="tok-str">&quot;Compartible&quot;</span>, <span class="tok-str">&quot;Intercambiable&quot;</span>, <span class="tok-str">&quot;Sincronizado&quot;</span>, <span class="tok-str">&quot;Orientado a equipos&quot;</span>, <span class="tok-str">&quot;Total&quot;</span>, <span class="tok-str">&quot;Universal&quot;</span>, <span class="tok-str">&quot;Actualizable&quot;</span>, <span class="tok-str">&quot;Amigable&quot;</span>, <span class="tok-str">&quot;Versatil&quot;</span>, <span class="tok-str">&quot;Virtual&quot;</span>, <span class="tok-str">&quot;Visionario&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> descriptor = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;24 horas&quot;</span>, <span class="tok-str">&quot;24/7&quot;</span>, <span class="tok-str">&quot;3rd generación&quot;</span>, <span class="tok-str">&quot;4th generación&quot;</span>, <span class="tok-str">&quot;5th generación&quot;</span>, <span class="tok-str">&quot;6th generación&quot;</span>, <span class="tok-str">&quot;analizada&quot;</span>, <span class="tok-str">&quot;asimétrica&quot;</span>, <span class="tok-str">&quot;asíncrona&quot;</span>, <span class="tok-str">&quot;monitorizada por red&quot;</span>, <span class="tok-str">&quot;bidireccional&quot;</span>, <span class="tok-str">&quot;bifurcada&quot;</span>, <span class="tok-str">&quot;generada por el cliente&quot;</span>, <span class="tok-str">&quot;cliente servidor&quot;</span>, <span class="tok-str">&quot;coherente&quot;</span>, <span class="tok-str">&quot;cohesiva&quot;</span>, <span class="tok-str">&quot;compuesto&quot;</span>, <span class="tok-str">&quot;sensible al contexto&quot;</span>, <span class="tok-str">&quot;basado en el contexto&quot;</span>, <span class="tok-str">&quot;basado en contenido&quot;</span>, <span class="tok-str">&quot;dedicada&quot;</span>, <span class="tok-str">&quot;generado por la demanda&quot;</span>, <span class="tok-str">&quot;didactica&quot;</span>, <span class="tok-str">&quot;direccional&quot;</span>, <span class="tok-str">&quot;discreta&quot;</span>, <span class="tok-str">&quot;dinámica&quot;</span>, <span class="tok-str">&quot;potenciada&quot;</span>, <span class="tok-str">&quot;acompasada&quot;</span>, <span class="tok-str">&quot;ejecutiva&quot;</span>, <span class="tok-str">&quot;explícita&quot;</span>, <span class="tok-str">&quot;tolerante a fallos&quot;</span>, <span class="tok-str">&quot;innovadora&quot;</span>, <span class="tok-str">&quot;amplio ábanico&quot;</span>, <span class="tok-str">&quot;global&quot;</span>, <span class="tok-str">&quot;heurística&quot;</span>, <span class="tok-str">&quot;alto nivel&quot;</span>, <span class="tok-str">&quot;holística&quot;</span>, <span class="tok-str">&quot;homogénea&quot;</span>, <span class="tok-str">&quot;hibrida&quot;</span>, <span class="tok-str">&quot;incremental&quot;</span>, <span class="tok-str">&quot;intangible&quot;</span>, <span class="tok-str">&quot;interactiva&quot;</span>, <span class="tok-str">&quot;intermedia&quot;</span>, <span class="tok-str">&quot;local&quot;</span>, <span class="tok-str">&quot;logística&quot;</span>, <span class="tok-str">&quot;maximizada&quot;</span>, <span class="tok-str">&quot;metódica&quot;</span>, <span class="tok-str">&quot;misión crítica&quot;</span>, <span class="tok-str">&quot;móbil&quot;</span>, <span class="tok-str">&quot;modular&quot;</span>, <span class="tok-str">&quot;motivadora&quot;</span>, <span class="tok-str">&quot;multimedia&quot;</span>, <span class="tok-str">&quot;multiestado&quot;</span>, <span class="tok-str">&quot;multitarea&quot;</span>, <span class="tok-str">&quot;nacional&quot;</span>, <span class="tok-str">&quot;basado en necesidades&quot;</span>, <span class="tok-str">&quot;neutral&quot;</span>, <span class="tok-str">&quot;nueva generación&quot;</span>, <span class="tok-str">&quot;no-volátil&quot;</span>, <span class="tok-str">&quot;orientado a objetos&quot;</span>, <span class="tok-str">&quot;óptima&quot;</span>, <span class="tok-str">&quot;optimizada&quot;</span>, <span class="tok-str">&quot;radical&quot;</span>, <span class="tok-str">&quot;tiempo real&quot;</span>, <span class="tok-str">&quot;recíproca&quot;</span>, <span class="tok-str">&quot;regional&quot;</span>, <span class="tok-str">&quot;escalable&quot;</span>, <span class="tok-str">&quot;secundaria&quot;</span>, <span class="tok-str">&quot;orientada a soluciones&quot;</span>, <span class="tok-str">&quot;estable&quot;</span>, <span class="tok-str">&quot;estatica&quot;</span>, <span class="tok-str">&quot;sistemática&quot;</span>, <span class="tok-str">&quot;sistémica&quot;</span>, <span class="tok-str">&quot;tangible&quot;</span>, <span class="tok-str">&quot;terciaria&quot;</span>, <span class="tok-str">&quot;transicional&quot;</span>, <span class="tok-str">&quot;uniforme&quot;</span>, <span class="tok-str">&quot;valor añadido&quot;</span>, <span class="tok-str">&quot;vía web&quot;</span>, <span class="tok-str">&quot;defectos cero&quot;</span>, <span class="tok-str">&quot;tolerancia cero&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> name_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.last_name}} {{company.suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}} y {{person.last_name}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}} {{person.last_name}} {{company.suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}, {{person.last_name}} y {{person.last_name}} Asociados&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;habilidad&quot;</span>, <span class="tok-str">&quot;acceso&quot;</span>, <span class="tok-str">&quot;adaptador&quot;</span>, <span class="tok-str">&quot;algoritmo&quot;</span>, <span class="tok-str">&quot;alianza&quot;</span>, <span class="tok-str">&quot;analista&quot;</span>, <span class="tok-str">&quot;aplicación&quot;</span>, <span class="tok-str">&quot;enfoque&quot;</span>, <span class="tok-str">&quot;arquitectura&quot;</span>, <span class="tok-str">&quot;archivo&quot;</span>, <span class="tok-str">&quot;inteligencia artificial&quot;</span>, <span class="tok-str">&quot;array&quot;</span>, <span class="tok-str">&quot;actitud&quot;</span>, <span class="tok-str">&quot;medición&quot;</span>, <span class="tok-str">&quot;gestión presupuestaria&quot;</span>, <span class="tok-str">&quot;capacidad&quot;</span>, <span class="tok-str">&quot;desafío&quot;</span>, <span class="tok-str">&quot;circuito&quot;</span>, <span class="tok-str">&quot;colaboración&quot;</span>, <span class="tok-str">&quot;complejidad&quot;</span>, <span class="tok-str">&quot;concepto&quot;</span>, <span class="tok-str">&quot;conglomeración&quot;</span>, <span class="tok-str">&quot;contingencia&quot;</span>, <span class="tok-str">&quot;núcleo&quot;</span>, <span class="tok-str">&quot;fidelidad&quot;</span>, <span class="tok-str">&quot;base de datos&quot;</span>, <span class="tok-str">&quot;data-warehouse&quot;</span>, <span class="tok-str">&quot;definición&quot;</span>, <span class="tok-str">&quot;emulación&quot;</span>, <span class="tok-str">&quot;codificar&quot;</span>, <span class="tok-str">&quot;encriptar&quot;</span>, <span class="tok-str">&quot;extranet&quot;</span>, <span class="tok-str">&quot;firmware&quot;</span>, <span class="tok-str">&quot;flexibilidad&quot;</span>, <span class="tok-str">&quot;focus group&quot;</span>, <span class="tok-str">&quot;previsión&quot;</span>, <span class="tok-str">&quot;base de trabajo&quot;</span>, <span class="tok-str">&quot;función&quot;</span>, <span class="tok-str">&quot;funcionalidad&quot;</span>, <span class="tok-str">&quot;Interfaz Gráfica&quot;</span>, <span class="tok-str">&quot;groupware&quot;</span>, <span class="tok-str">&quot;Interfaz gráfico de usuario&quot;</span>, <span class="tok-str">&quot;hardware&quot;</span>, <span class="tok-str">&quot;Soporte&quot;</span>, <span class="tok-str">&quot;jerarquía&quot;</span>, <span class="tok-str">&quot;conjunto&quot;</span>, <span class="tok-str">&quot;implementación&quot;</span>, <span class="tok-str">&quot;infraestructura&quot;</span>, <span class="tok-str">&quot;iniciativa&quot;</span>, <span class="tok-str">&quot;instalación&quot;</span>, <span class="tok-str">&quot;conjunto de instrucciones&quot;</span>, <span class="tok-str">&quot;interfaz&quot;</span>, <span class="tok-str">&quot;intranet&quot;</span>, <span class="tok-str">&quot;base del conocimiento&quot;</span>, <span class="tok-str">&quot;red de area local&quot;</span>, <span class="tok-str">&quot;aprovechar&quot;</span>, <span class="tok-str">&quot;matrices&quot;</span>, <span class="tok-str">&quot;metodologías&quot;</span>, <span class="tok-str">&quot;middleware&quot;</span>, <span class="tok-str">&quot;migración&quot;</span>, <span class="tok-str">&quot;modelo&quot;</span>, <span class="tok-str">&quot;moderador&quot;</span>, <span class="tok-str">&quot;monitorizar&quot;</span>, <span class="tok-str">&quot;arquitectura abierta&quot;</span>, <span class="tok-str">&quot;sistema abierto&quot;</span>, <span class="tok-str">&quot;orquestar&quot;</span>, <span class="tok-str">&quot;paradigma&quot;</span>, <span class="tok-str">&quot;paralelismo&quot;</span>, <span class="tok-str">&quot;política&quot;</span>, <span class="tok-str">&quot;portal&quot;</span>, <span class="tok-str">&quot;estructura de precios&quot;</span>, <span class="tok-str">&quot;proceso de mejora&quot;</span>, <span class="tok-str">&quot;producto&quot;</span>, <span class="tok-str">&quot;productividad&quot;</span>, <span class="tok-str">&quot;proyecto&quot;</span>, <span class="tok-str">&quot;proyección&quot;</span>, <span class="tok-str">&quot;protocolo&quot;</span>, <span class="tok-str">&quot;línea segura&quot;</span>, <span class="tok-str">&quot;software&quot;</span>, <span class="tok-str">&quot;solución&quot;</span>, <span class="tok-str">&quot;estandardización&quot;</span>, <span class="tok-str">&quot;estrategia&quot;</span>, <span class="tok-str">&quot;estructura&quot;</span>, <span class="tok-str">&quot;éxito&quot;</span>, <span class="tok-str">&quot;superestructura&quot;</span>, <span class="tok-str">&quot;soporte&quot;</span>, <span class="tok-str">&quot;sinergia&quot;</span>, <span class="tok-str">&quot;mediante&quot;</span>, <span class="tok-str">&quot;marco de tiempo&quot;</span>, <span class="tok-str">&quot;caja de herramientas&quot;</span>, <span class="tok-str">&quot;utilización&quot;</span>, <span class="tok-str">&quot;website&quot;</span>, <span class="tok-str">&quot;fuerza de trabajo&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;S.L.&quot;</span>, <span class="tok-str">&quot;e Hijos&quot;</span>, <span class="tok-str">&quot;S.A.&quot;</span>, <span class="tok-str">&quot;Hermanos&quot;</span> };</span>
+<span class="line" id="L10"></span>
+</code></pre></body>
+</html>

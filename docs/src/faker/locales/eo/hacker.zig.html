@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\eo\hacker.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;altkvalita&quot;</span>, <span class="tok-str">&quot;aŭtomata&quot;</span>, <span class="tok-str">&quot;bludenta&quot;</span>, <span class="tok-str">&quot;cifereca&quot;</span>, <span class="tok-str">&quot;ĉefa&quot;</span>, <span class="tok-str">&quot;defaŭlta&quot;</span>, <span class="tok-str">&quot;enreta&quot;</span>, <span class="tok-str">&quot;helpa&quot;</span>, <span class="tok-str">&quot;hibrida&quot;</span>, <span class="tok-str">&quot;interna&quot;</span>, <span class="tok-str">&quot;malfermitkoda&quot;</span>, <span class="tok-str">&quot;nesinkrona&quot;</span>, <span class="tok-str">&quot;neŭrona&quot;</span>, <span class="tok-str">&quot;nuba&quot;</span>, <span class="tok-str">&quot;optika&quot;</span>, <span class="tok-str">&quot;plenekrana&quot;</span>, <span class="tok-str">&quot;plurbajta&quot;</span>, <span class="tok-str">&quot;plurplatforma&quot;</span>, <span class="tok-str">&quot;portebla&quot;</span>, <span class="tok-str">&quot;realtempa&quot;</span>, <span class="tok-str">&quot;redunda&quot;</span>, <span class="tok-str">&quot;sendrata&quot;</span>, <span class="tok-str">&quot;solidstata&quot;</span>, <span class="tok-str">&quot;universala&quot;</span>, <span class="tok-str">&quot;virtuala&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ingverb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;analizado&quot;</span>, <span class="tok-str">&quot;arĥivado&quot;</span>, <span class="tok-str">&quot;bitigado&quot;</span>, <span class="tok-str">&quot;densigado&quot;</span>, <span class="tok-str">&quot;enigado&quot;</span>, <span class="tok-str">&quot;generado&quot;</span>, <span class="tok-str">&quot;indeksado&quot;</span>, <span class="tok-str">&quot;interŝanĝado&quot;</span>, <span class="tok-str">&quot;kalkulado&quot;</span>, <span class="tok-str">&quot;kodrompado&quot;</span>, <span class="tok-str">&quot;kodumado&quot;</span>, <span class="tok-str">&quot;kompilado&quot;</span>, <span class="tok-str">&quot;konektado&quot;</span>, <span class="tok-str">&quot;kopiado&quot;</span>, <span class="tok-str">&quot;muntado&quot;</span>, <span class="tok-str">&quot;nuligado&quot;</span>, <span class="tok-str">&quot;preterpasado&quot;</span>, <span class="tok-str">&quot;programado&quot;</span>, <span class="tok-str">&quot;restartigado&quot;</span>, <span class="tok-str">&quot;savkopiado&quot;</span>, <span class="tok-str">&quot;sinkronigado&quot;</span>, <span class="tok-str">&quot;sintezado&quot;</span>, <span class="tok-str">&quot;transpasado&quot;</span>, <span class="tok-str">&quot;transsendado&quot;</span>, <span class="tok-str">&quot;validigado&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;alarmo&quot;</span>, <span class="tok-str">&quot;aplikaĵo&quot;</span>, <span class="tok-str">&quot;bendlarĝo&quot;</span>, <span class="tok-str">&quot;buso&quot;</span>, <span class="tok-str">&quot;cirkvito&quot;</span>, <span class="tok-str">&quot;datumbazo&quot;</span>, <span class="tok-str">&quot;datumcentro&quot;</span>, <span class="tok-str">&quot;disko&quot;</span>, <span class="tok-str">&quot;dosiero&quot;</span>, <span class="tok-str">&quot;ekrano&quot;</span>, <span class="tok-str">&quot;fajroŝirmilo&quot;</span>, <span class="tok-str">&quot;fluo&quot;</span>, <span class="tok-str">&quot;interfaco&quot;</span>, <span class="tok-str">&quot;karto&quot;</span>, <span class="tok-str">&quot;kondensilo&quot;</span>, <span class="tok-str">&quot;konektilo&quot;</span>, <span class="tok-str">&quot;konektingo&quot;</span>, <span class="tok-str">&quot;konekto&quot;</span>, <span class="tok-str">&quot;matrico&quot;</span>, <span class="tok-str">&quot;operaciumo&quot;</span>, <span class="tok-str">&quot;panelo&quot;</span>, <span class="tok-str">&quot;pelilo&quot;</span>, <span class="tok-str">&quot;programo&quot;</span>, <span class="tok-str">&quot;protokolo&quot;</span>, <span class="tok-str">&quot;rastrumero&quot;</span>, <span class="tok-str">&quot;reto&quot;</span>, <span class="tok-str">&quot;sentilo&quot;</span>, <span class="tok-str">&quot;servilo&quot;</span>, <span class="tok-str">&quot;sistemo&quot;</span>, <span class="tok-str">&quot;transsendilo&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> phrase = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Se ni povus {{verb}} la {{noun}}n, ni povus aliri la {{abbreviation}}-{{noun}}n per la {{adjective}} {{abbreviation}}-{{noun}}!&quot;</span>, <span class="tok-str">&quot;Ni devas {{verb}} la {{adjective}}n {{abbreviation}}-{{noun}}n!&quot;</span>, <span class="tok-str">&quot;Provu {{verb}} la {{abbreviation}}-{{noun}}n, eble ni sukcesos {{verb}} la {{adjective}}n {{noun}}n!&quot;</span>, <span class="tok-str">&quot;Vi ne povas {{verb}} la {{noun}}n sen {{ingverb}} de la {{adjective}} {{abbreviation}}-{{noun}}!&quot;</span>, <span class="tok-str">&quot;Uzu la {{adjective}}n {{abbreviation}}-{{noun}}n, poste vi povos {{verb}} la {{adjective}}n {{noun}}n!&quot;</span>, <span class="tok-str">&quot;La {{abbreviation}}-{{noun}} ne funkcias, provu {{verb}} la {{adjective}}n {{noun}}n, por ke ni povu {{verb}} la {{abbreviation}}-{{noun}}n!&quot;</span>, <span class="tok-str">&quot;Ne funkcios {{ingverb}} de la {{noun}}, ni devas {{verb}} la {{adjective}}n {{abbreviation}}-{{noun}}n!&quot;</span>, <span class="tok-str">&quot;Mi provos {{verb}} la {{adjective}}n {{abbreviation}}-{{noun}}n, tio devus {{verb}} la {{abbreviation}}-{{noun}}n!&quot;</span>, <span class="tok-str">&quot;Ne gravas, se ni ne povus {{verb}} la {{noun}}n, ni devas nur {{verb}} la {{adjective}}n {{abbreviation}}-{{noun}}!&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;analizi&quot;</span>, <span class="tok-str">&quot;arĥivi&quot;</span>, <span class="tok-str">&quot;bitigi&quot;</span>, <span class="tok-str">&quot;densigi&quot;</span>, <span class="tok-str">&quot;enigi&quot;</span>, <span class="tok-str">&quot;generi&quot;</span>, <span class="tok-str">&quot;indeksi&quot;</span>, <span class="tok-str">&quot;interŝanĝi&quot;</span>, <span class="tok-str">&quot;kalkuli&quot;</span>, <span class="tok-str">&quot;kodrompi&quot;</span>, <span class="tok-str">&quot;kodumi&quot;</span>, <span class="tok-str">&quot;kompili&quot;</span>, <span class="tok-str">&quot;konekti&quot;</span>, <span class="tok-str">&quot;kopii&quot;</span>, <span class="tok-str">&quot;munti&quot;</span>, <span class="tok-str">&quot;nuligi&quot;</span>, <span class="tok-str">&quot;preterpasi&quot;</span>, <span class="tok-str">&quot;programi&quot;</span>, <span class="tok-str">&quot;restartigi&quot;</span>, <span class="tok-str">&quot;savkopii&quot;</span>, <span class="tok-str">&quot;sinkronigi&quot;</span>, <span class="tok-str">&quot;sintezi&quot;</span>, <span class="tok-str">&quot;transpasi&quot;</span>, <span class="tok-str">&quot;transsendi&quot;</span>, <span class="tok-str">&quot;validigi&quot;</span> };</span>
+<span class="line" id="L10"></span>
+</code></pre></body>
+</html>

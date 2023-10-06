@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en\commerce.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> department = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Books&quot;</span>, <span class="tok-str">&quot;Movies&quot;</span>, <span class="tok-str">&quot;Music&quot;</span>, <span class="tok-str">&quot;Games&quot;</span>, <span class="tok-str">&quot;Electronics&quot;</span>, <span class="tok-str">&quot;Computers&quot;</span>, <span class="tok-str">&quot;Home&quot;</span>, <span class="tok-str">&quot;Garden&quot;</span>, <span class="tok-str">&quot;Tools&quot;</span>, <span class="tok-str">&quot;Grocery&quot;</span>, <span class="tok-str">&quot;Health&quot;</span>, <span class="tok-str">&quot;Beauty&quot;</span>, <span class="tok-str">&quot;Toys&quot;</span>, <span class="tok-str">&quot;Kids&quot;</span>, <span class="tok-str">&quot;Baby&quot;</span>, <span class="tok-str">&quot;Clothing&quot;</span>, <span class="tok-str">&quot;Shoes&quot;</span>, <span class="tok-str">&quot;Jewelery&quot;</span>, <span class="tok-str">&quot;Sports&quot;</span>, <span class="tok-str">&quot;Outdoors&quot;</span>, <span class="tok-str">&quot;Automotive&quot;</span>, <span class="tok-str">&quot;Industrial&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_description = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support&quot;</span>, <span class="tok-str">&quot;The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive&quot;</span>, <span class="tok-str">&quot;New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A &amp; J 2016&quot;</span>, <span class="tok-str">&quot;The slim &amp; simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality&quot;</span>, <span class="tok-str">&quot;The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design&quot;</span>, <span class="tok-str">&quot;The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J&quot;</span>, <span class="tok-str">&quot;The Football Is Good For Training And Recreational Purposes&quot;</span>, <span class="tok-str">&quot;Carbonite web goalkeeper gloves are ergonomically designed to give easy fit&quot;</span>, <span class="tok-str">&quot;Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles&quot;</span>, <span class="tok-str">&quot;New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart&quot;</span>, <span class="tok-str">&quot;The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients&quot;</span>, <span class="tok-str">&quot;Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes &amp; sandals&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> product_name = .{ .adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Small&quot;</span>, <span class="tok-str">&quot;Ergonomic&quot;</span>, <span class="tok-str">&quot;Electronic&quot;</span>, <span class="tok-str">&quot;Rustic&quot;</span>, <span class="tok-str">&quot;Intelligent&quot;</span>, <span class="tok-str">&quot;Gorgeous&quot;</span>, <span class="tok-str">&quot;Incredible&quot;</span>, <span class="tok-str">&quot;Elegant&quot;</span>, <span class="tok-str">&quot;Fantastic&quot;</span>, <span class="tok-str">&quot;Practical&quot;</span>, <span class="tok-str">&quot;Modern&quot;</span>, <span class="tok-str">&quot;Recycled&quot;</span>, <span class="tok-str">&quot;Sleek&quot;</span>, <span class="tok-str">&quot;Bespoke&quot;</span>, <span class="tok-str">&quot;Awesome&quot;</span>, <span class="tok-str">&quot;Generic&quot;</span>, <span class="tok-str">&quot;Handcrafted&quot;</span>, <span class="tok-str">&quot;Handmade&quot;</span>, <span class="tok-str">&quot;Oriental&quot;</span>, <span class="tok-str">&quot;Licensed&quot;</span>, <span class="tok-str">&quot;Luxurious&quot;</span>, <span class="tok-str">&quot;Refined&quot;</span>, <span class="tok-str">&quot;Unbranded&quot;</span>, <span class="tok-str">&quot;Tasty&quot;</span> }, .material = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Steel&quot;</span>, <span class="tok-str">&quot;Bronze&quot;</span>, <span class="tok-str">&quot;Wooden&quot;</span>, <span class="tok-str">&quot;Concrete&quot;</span>, <span class="tok-str">&quot;Plastic&quot;</span>, <span class="tok-str">&quot;Cotton&quot;</span>, <span class="tok-str">&quot;Granite&quot;</span>, <span class="tok-str">&quot;Rubber&quot;</span>, <span class="tok-str">&quot;Metal&quot;</span>, <span class="tok-str">&quot;Soft&quot;</span>, <span class="tok-str">&quot;Fresh&quot;</span>, <span class="tok-str">&quot;Frozen&quot;</span> }, .product = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Chair&quot;</span>, <span class="tok-str">&quot;Car&quot;</span>, <span class="tok-str">&quot;Computer&quot;</span>, <span class="tok-str">&quot;Keyboard&quot;</span>, <span class="tok-str">&quot;Mouse&quot;</span>, <span class="tok-str">&quot;Bike&quot;</span>, <span class="tok-str">&quot;Ball&quot;</span>, <span class="tok-str">&quot;Gloves&quot;</span>, <span class="tok-str">&quot;Pants&quot;</span>, <span class="tok-str">&quot;Shirt&quot;</span>, <span class="tok-str">&quot;Table&quot;</span>, <span class="tok-str">&quot;Shoes&quot;</span>, <span class="tok-str">&quot;Hat&quot;</span>, <span class="tok-str">&quot;Towels&quot;</span>, <span class="tok-str">&quot;Soap&quot;</span>, <span class="tok-str">&quot;Tuna&quot;</span>, <span class="tok-str">&quot;Chicken&quot;</span>, <span class="tok-str">&quot;Fish&quot;</span>, <span class="tok-str">&quot;Cheese&quot;</span>, <span class="tok-str">&quot;Bacon&quot;</span>, <span class="tok-str">&quot;Pizza&quot;</span>, <span class="tok-str">&quot;Salad&quot;</span>, <span class="tok-str">&quot;Sausages&quot;</span>, <span class="tok-str">&quot;Chips&quot;</span> } };</span>
+<span class="line" id="L6"></span>
+</code></pre></body>
+</html>

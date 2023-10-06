@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en_GB\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;###&quot;</span>, <span class="tok-str">&quot;##&quot;</span>, <span class="tok-str">&quot;#&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_infix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;-under-&quot;</span>, <span class="tok-str">&quot;-over-&quot;</span>, <span class="tok-str">&quot;-le-&quot;</span>, <span class="tok-str">&quot;-upon-&quot;</span>, <span class="tok-str">&quot;-on-&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.city_prefix}} {{person.last_name}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.city_prefix}} {{person.last_name}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}{{location.city_infix}}{{person.last_name}}&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Great&quot;</span>, <span class="tok-str">&quot;Little&quot;</span>, <span class="tok-str">&quot;St.&quot;</span>, <span class="tok-str">&quot;West&quot;</span>, <span class="tok-str">&quot;East&quot;</span>, <span class="tok-str">&quot;North&quot;</span>, <span class="tok-str">&quot;South&quot;</span>, <span class="tok-str">&quot;Upper&quot;</span>, <span class="tok-str">&quot;Lower&quot;</span>, <span class="tok-str">&quot;Old&quot;</span>, <span class="tok-str">&quot;Long&quot;</span>, <span class="tok-str">&quot;New&quot;</span>, <span class="tok-str">&quot;High&quot;</span>, <span class="tok-str">&quot;Nether&quot;</span>, <span class="tok-str">&quot;Castle&quot;</span>, <span class="tok-str">&quot;Upton&quot;</span>, <span class="tok-str">&quot;Newton&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ton&quot;</span>, <span class="tok-str">&quot;ham&quot;</span>, <span class="tok-str">&quot;ley&quot;</span>, <span class="tok-str">&quot;ington&quot;</span>, <span class="tok-str">&quot;ford&quot;</span>, <span class="tok-str">&quot;field&quot;</span>, <span class="tok-str">&quot;bury&quot;</span>, <span class="tok-str">&quot;don&quot;</span>, <span class="tok-str">&quot;ing&quot;</span>, <span class="tok-str">&quot;worth&quot;</span>, <span class="tok-str">&quot;well&quot;</span>, <span class="tok-str">&quot;ingham&quot;</span>, <span class="tok-str">&quot;wood&quot;</span>, <span class="tok-str">&quot;ridge&quot;</span>, <span class="tok-str">&quot;borough&quot;</span>, <span class="tok-str">&quot;stone&quot;</span>, <span class="tok-str">&quot;hill&quot;</span>, <span class="tok-str">&quot;thorpe&quot;</span>, <span class="tok-str">&quot;hampton&quot;</span>, <span class="tok-str">&quot;wick&quot;</span>, <span class="tok-str">&quot; Green&quot;</span>, <span class="tok-str">&quot; Park&quot;</span>, <span class="tok-str">&quot; Hill&quot;</span>, <span class="tok-str">&quot; Court&quot;</span>, <span class="tok-str">&quot; Heath&quot;</span>, <span class="tok-str">&quot; Bridge&quot;</span>, <span class="tok-str">&quot; End&quot;</span>, <span class="tok-str">&quot; Common&quot;</span>, <span class="tok-str">&quot; Place&quot;</span>, <span class="tok-str">&quot; Cross&quot;</span>, <span class="tok-str">&quot; Gardens&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> county = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Avon&quot;</span>, <span class="tok-str">&quot;Bedfordshire&quot;</span>, <span class="tok-str">&quot;Berkshire&quot;</span>, <span class="tok-str">&quot;Borders&quot;</span>, <span class="tok-str">&quot;Buckinghamshire&quot;</span>, <span class="tok-str">&quot;Cambridgeshire&quot;</span>, <span class="tok-str">&quot;Central&quot;</span>, <span class="tok-str">&quot;Cheshire&quot;</span>, <span class="tok-str">&quot;Cleveland&quot;</span>, <span class="tok-str">&quot;Clwyd&quot;</span>, <span class="tok-str">&quot;Cornwall&quot;</span>, <span class="tok-str">&quot;County Antrim&quot;</span>, <span class="tok-str">&quot;County Armagh&quot;</span>, <span class="tok-str">&quot;County Down&quot;</span>, <span class="tok-str">&quot;County Fermanagh&quot;</span>, <span class="tok-str">&quot;County Londonderry&quot;</span>, <span class="tok-str">&quot;County Tyrone&quot;</span>, <span class="tok-str">&quot;Cumbria&quot;</span>, <span class="tok-str">&quot;Derbyshire&quot;</span>, <span class="tok-str">&quot;Devon&quot;</span>, <span class="tok-str">&quot;Dorset&quot;</span>, <span class="tok-str">&quot;Dumfries and Galloway&quot;</span>, <span class="tok-str">&quot;Durham&quot;</span>, <span class="tok-str">&quot;Dyfed&quot;</span>, <span class="tok-str">&quot;East Sussex&quot;</span>, <span class="tok-str">&quot;Essex&quot;</span>, <span class="tok-str">&quot;Fife&quot;</span>, <span class="tok-str">&quot;Gloucestershire&quot;</span>, <span class="tok-str">&quot;Grampian&quot;</span>, <span class="tok-str">&quot;Greater Manchester&quot;</span>, <span class="tok-str">&quot;Gwent&quot;</span>, <span class="tok-str">&quot;Gwynedd County&quot;</span>, <span class="tok-str">&quot;Hampshire&quot;</span>, <span class="tok-str">&quot;Herefordshire&quot;</span>, <span class="tok-str">&quot;Hertfordshire&quot;</span>, <span class="tok-str">&quot;Highlands and Islands&quot;</span>, <span class="tok-str">&quot;Humberside&quot;</span>, <span class="tok-str">&quot;Isle of Wight&quot;</span>, <span class="tok-str">&quot;Kent&quot;</span>, <span class="tok-str">&quot;Lancashire&quot;</span>, <span class="tok-str">&quot;Leicestershire&quot;</span>, <span class="tok-str">&quot;Lincolnshire&quot;</span>, <span class="tok-str">&quot;Lothian&quot;</span>, <span class="tok-str">&quot;Merseyside&quot;</span>, <span class="tok-str">&quot;Mid Glamorgan&quot;</span>, <span class="tok-str">&quot;Norfolk&quot;</span>, <span class="tok-str">&quot;North Yorkshire&quot;</span>, <span class="tok-str">&quot;Northamptonshire&quot;</span>, <span class="tok-str">&quot;Northumberland&quot;</span>, <span class="tok-str">&quot;Nottinghamshire&quot;</span>, <span class="tok-str">&quot;Oxfordshire&quot;</span>, <span class="tok-str">&quot;Powys&quot;</span>, <span class="tok-str">&quot;Rutland&quot;</span>, <span class="tok-str">&quot;Shropshire&quot;</span>, <span class="tok-str">&quot;Somerset&quot;</span>, <span class="tok-str">&quot;South Glamorgan&quot;</span>, <span class="tok-str">&quot;South Yorkshire&quot;</span>, <span class="tok-str">&quot;Staffordshire&quot;</span>, <span class="tok-str">&quot;Strathclyde&quot;</span>, <span class="tok-str">&quot;Suffolk&quot;</span>, <span class="tok-str">&quot;Surrey&quot;</span>, <span class="tok-str">&quot;Tayside&quot;</span>, <span class="tok-str">&quot;Tyne and Wear&quot;</span>, <span class="tok-str">&quot;Warwickshire&quot;</span>, <span class="tok-str">&quot;West Glamorgan&quot;</span>, <span class="tok-str">&quot;West Midlands&quot;</span>, <span class="tok-str">&quot;West Sussex&quot;</span>, <span class="tok-str">&quot;West Yorkshire&quot;</span>, <span class="tok-str">&quot;Wiltshire&quot;</span>, <span class="tok-str">&quot;Worcestershire&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;England&quot;</span>, <span class="tok-str">&quot;Scotland&quot;</span>, <span class="tok-str">&quot;Wales&quot;</span>, <span class="tok-str">&quot;Northern Ireland&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;??# #??&quot;</span>, <span class="tok-str">&quot;??## #??&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;England&quot;</span>, <span class="tok-str">&quot;Northern Ireland&quot;</span>, <span class="tok-str">&quot;Scotland&quot;</span>, <span class="tok-str">&quot;Wales&quot;</span> };</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state_abbr = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ENG&quot;</span>, <span class="tok-str">&quot;NIR&quot;</span>, <span class="tok-str">&quot;SCT&quot;</span>, <span class="tok-str">&quot;WLS&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.firstName}} {{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.lastName}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Road&quot;</span>, <span class="tok-str">&quot;Close&quot;</span>, <span class="tok-str">&quot;Street&quot;</span>, <span class="tok-str">&quot;Lane&quot;</span>, <span class="tok-str">&quot;Avenue&quot;</span>, <span class="tok-str">&quot;Drive&quot;</span>, <span class="tok-str">&quot;Way&quot;</span>, <span class="tok-str">&quot;Place&quot;</span>, <span class="tok-str">&quot;Court&quot;</span>, <span class="tok-str">&quot;Gardens&quot;</span>, <span class="tok-str">&quot;Crescent&quot;</span>, <span class="tok-str">&quot;Grove&quot;</span>, <span class="tok-str">&quot;Terrace&quot;</span>, <span class="tok-str">&quot;Hill&quot;</span>, <span class="tok-str">&quot;View&quot;</span>, <span class="tok-str">&quot;Walk&quot;</span>, <span class="tok-str">&quot;Park&quot;</span>, <span class="tok-str">&quot;Mews&quot;</span>, <span class="tok-str">&quot;Rise&quot;</span>, <span class="tok-str">&quot;Green&quot;</span>, <span class="tok-str">&quot;Square&quot;</span>, <span class="tok-str">&quot;Croft&quot;</span>, <span class="tok-str">&quot;Bank&quot;</span>, <span class="tok-str">&quot;Row&quot;</span>, <span class="tok-str">&quot;Meadow&quot;</span>, <span class="tok-str">&quot;Gate&quot;</span>, <span class="tok-str">&quot;End&quot;</span>, <span class="tok-str">&quot;Drove&quot;</span>, <span class="tok-str">&quot;Mead&quot;</span>, <span class="tok-str">&quot;Field&quot;</span>, <span class="tok-str">&quot;Chase&quot;</span>, <span class="tok-str">&quot;Mount&quot;</span>, <span class="tok-str">&quot;Meadows&quot;</span>, <span class="tok-str">&quot;Orchard&quot;</span>, <span class="tok-str">&quot;Fields&quot;</span>, <span class="tok-str">&quot;Yard&quot;</span>, <span class="tok-str">&quot;Garth&quot;</span>, <span class="tok-str">&quot;Fold&quot;</span>, <span class="tok-str">&quot;Wynd&quot;</span>, <span class="tok-str">&quot;Parade&quot;</span>, <span class="tok-str">&quot;Vale&quot;</span>, <span class="tok-str">&quot;Brae&quot;</span>, <span class="tok-str">&quot;Grange&quot;</span>, <span class="tok-str">&quot;Approach&quot;</span>, <span class="tok-str">&quot;Wood&quot;</span>, <span class="tok-str">&quot;Paddock&quot;</span>, <span class="tok-str">&quot;Brow&quot;</span>, <span class="tok-str">&quot;Lea&quot;</span>, <span class="tok-str">&quot;Path&quot;</span>, <span class="tok-str">&quot;Side&quot;</span>, <span class="tok-str">&quot;Heights&quot;</span>, <span class="tok-str">&quot;Copse&quot;</span>, <span class="tok-str">&quot;Corner&quot;</span>, <span class="tok-str">&quot;Ridge&quot;</span>, <span class="tok-str">&quot;Glade&quot;</span> };</span>
+<span class="line" id="L24"></span>
+</code></pre></body>
+</html>

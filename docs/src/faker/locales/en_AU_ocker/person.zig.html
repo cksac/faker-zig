@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\en_AU_ocker\person.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> NamePattern = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/person.zig&quot;</span>).NamePattern;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Charlotte&quot;</span>, <span class="tok-str">&quot;Ava&quot;</span>, <span class="tok-str">&quot;Chloe&quot;</span>, <span class="tok-str">&quot;Emily&quot;</span>, <span class="tok-str">&quot;Olivia&quot;</span>, <span class="tok-str">&quot;Zoe&quot;</span>, <span class="tok-str">&quot;Lily&quot;</span>, <span class="tok-str">&quot;Sophie&quot;</span>, <span class="tok-str">&quot;Amelia&quot;</span>, <span class="tok-str">&quot;Sofia&quot;</span>, <span class="tok-str">&quot;Ella&quot;</span>, <span class="tok-str">&quot;Isabella&quot;</span>, <span class="tok-str">&quot;Ruby&quot;</span>, <span class="tok-str">&quot;Sienna&quot;</span>, <span class="tok-str">&quot;Mia+3&quot;</span>, <span class="tok-str">&quot;Grace&quot;</span>, <span class="tok-str">&quot;Emma&quot;</span>, <span class="tok-str">&quot;Ivy&quot;</span>, <span class="tok-str">&quot;Layla&quot;</span>, <span class="tok-str">&quot;Abigail&quot;</span>, <span class="tok-str">&quot;Isla&quot;</span>, <span class="tok-str">&quot;Hannah&quot;</span>, <span class="tok-str">&quot;Zara&quot;</span>, <span class="tok-str">&quot;Lucy&quot;</span>, <span class="tok-str">&quot;Evie&quot;</span>, <span class="tok-str">&quot;Annabelle&quot;</span>, <span class="tok-str">&quot;Madison&quot;</span>, <span class="tok-str">&quot;Alice&quot;</span>, <span class="tok-str">&quot;Georgia&quot;</span>, <span class="tok-str">&quot;Maya&quot;</span>, <span class="tok-str">&quot;Madeline&quot;</span>, <span class="tok-str">&quot;Audrey&quot;</span>, <span class="tok-str">&quot;Scarlett&quot;</span>, <span class="tok-str">&quot;Isabelle&quot;</span>, <span class="tok-str">&quot;Chelsea&quot;</span>, <span class="tok-str">&quot;Mila&quot;</span>, <span class="tok-str">&quot;Holly&quot;</span>, <span class="tok-str">&quot;Indiana&quot;</span>, <span class="tok-str">&quot;Poppy&quot;</span>, <span class="tok-str">&quot;Harper&quot;</span>, <span class="tok-str">&quot;Sarah&quot;</span>, <span class="tok-str">&quot;Alyssa&quot;</span>, <span class="tok-str">&quot;Jasmine&quot;</span>, <span class="tok-str">&quot;Imogen&quot;</span>, <span class="tok-str">&quot;Hayley&quot;</span>, <span class="tok-str">&quot;Pheobe&quot;</span>, <span class="tok-str">&quot;Eva&quot;</span>, <span class="tok-str">&quot;Evelyn&quot;</span>, <span class="tok-str">&quot;Mackenzie&quot;</span>, <span class="tok-str">&quot;Ayla&quot;</span>, <span class="tok-str">&quot;Oliver&quot;</span>, <span class="tok-str">&quot;Jack&quot;</span>, <span class="tok-str">&quot;Jackson&quot;</span>, <span class="tok-str">&quot;William&quot;</span>, <span class="tok-str">&quot;Ethan&quot;</span>, <span class="tok-str">&quot;Charlie&quot;</span>, <span class="tok-str">&quot;Lucas&quot;</span>, <span class="tok-str">&quot;Cooper&quot;</span>, <span class="tok-str">&quot;Lachlan&quot;</span>, <span class="tok-str">&quot;Noah&quot;</span>, <span class="tok-str">&quot;Liam&quot;</span>, <span class="tok-str">&quot;Alexander&quot;</span>, <span class="tok-str">&quot;Max&quot;</span>, <span class="tok-str">&quot;Isaac&quot;</span>, <span class="tok-str">&quot;Thomas&quot;</span>, <span class="tok-str">&quot;Xavier&quot;</span>, <span class="tok-str">&quot;Oscar&quot;</span>, <span class="tok-str">&quot;Benjamin&quot;</span>, <span class="tok-str">&quot;Aiden&quot;</span>, <span class="tok-str">&quot;Mason&quot;</span>, <span class="tok-str">&quot;Samuel&quot;</span>, <span class="tok-str">&quot;James&quot;</span>, <span class="tok-str">&quot;Levi&quot;</span>, <span class="tok-str">&quot;Riley&quot;</span>, <span class="tok-str">&quot;Harrison&quot;</span>, <span class="tok-str">&quot;Ryan&quot;</span>, <span class="tok-str">&quot;Henry&quot;</span>, <span class="tok-str">&quot;Jacob&quot;</span>, <span class="tok-str">&quot;Joshua&quot;</span>, <span class="tok-str">&quot;Leo&quot;</span>, <span class="tok-str">&quot;Zach&quot;</span>, <span class="tok-str">&quot;Harry&quot;</span>, <span class="tok-str">&quot;Hunter&quot;</span>, <span class="tok-str">&quot;Flynn&quot;</span>, <span class="tok-str">&quot;Archie&quot;</span>, <span class="tok-str">&quot;Tyler&quot;</span>, <span class="tok-str">&quot;Elijah&quot;</span>, <span class="tok-str">&quot;Hayden&quot;</span>, <span class="tok-str">&quot;Jayden&quot;</span>, <span class="tok-str">&quot;Blake&quot;</span>, <span class="tok-str">&quot;Archer&quot;</span>, <span class="tok-str">&quot;Ashton&quot;</span>, <span class="tok-str">&quot;Sebastian&quot;</span>, <span class="tok-str">&quot;Zachery&quot;</span>, <span class="tok-str">&quot;Lincoln&quot;</span>, <span class="tok-str">&quot;Mitchell&quot;</span>, <span class="tok-str">&quot;Luca&quot;</span>, <span class="tok-str">&quot;Nathan&quot;</span>, <span class="tok-str">&quot;Kai&quot;</span>, <span class="tok-str">&quot;Connor&quot;</span>, <span class="tok-str">&quot;Tom&quot;</span>, <span class="tok-str">&quot;Nigel&quot;</span>, <span class="tok-str">&quot;Matt&quot;</span>, <span class="tok-str">&quot;Sean&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Smith&quot;</span>, <span class="tok-str">&quot;Jones&quot;</span>, <span class="tok-str">&quot;Williams&quot;</span>, <span class="tok-str">&quot;Brown&quot;</span>, <span class="tok-str">&quot;Wilson&quot;</span>, <span class="tok-str">&quot;Taylor&quot;</span>, <span class="tok-str">&quot;Morton&quot;</span>, <span class="tok-str">&quot;White&quot;</span>, <span class="tok-str">&quot;Martin&quot;</span>, <span class="tok-str">&quot;Anderson&quot;</span>, <span class="tok-str">&quot;Thompson&quot;</span>, <span class="tok-str">&quot;Nguyen&quot;</span>, <span class="tok-str">&quot;Thomas&quot;</span>, <span class="tok-str">&quot;Walker&quot;</span>, <span class="tok-str">&quot;Harris&quot;</span>, <span class="tok-str">&quot;Lee&quot;</span>, <span class="tok-str">&quot;Ryan&quot;</span>, <span class="tok-str">&quot;Robinson&quot;</span>, <span class="tok-str">&quot;Kelly&quot;</span>, <span class="tok-str">&quot;King&quot;</span>, <span class="tok-str">&quot;Rausch&quot;</span>, <span class="tok-str">&quot;Ridge&quot;</span>, <span class="tok-str">&quot;Connolly&quot;</span>, <span class="tok-str">&quot;LeQuesne&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name_pattern = [_]NamePattern{ .{ .value = <span class="tok-str">&quot;{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">95</span> }, .{ .value = <span class="tok-str">&quot;{{person.last_name}}-{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">5</span> } };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ocker_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Bazza&quot;</span>, <span class="tok-str">&quot;Bluey&quot;</span>, <span class="tok-str">&quot;Davo&quot;</span>, <span class="tok-str">&quot;Johno&quot;</span>, <span class="tok-str">&quot;Shano&quot;</span>, <span class="tok-str">&quot;Shazza&quot;</span> };</span>
+<span class="line" id="L10"></span>
+</code></pre></body>
+</html>

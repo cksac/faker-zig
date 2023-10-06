@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\base\system.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> directory_paths = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;/Applications&quot;</span>, <span class="tok-str">&quot;/bin&quot;</span>, <span class="tok-str">&quot;/boot&quot;</span>, <span class="tok-str">&quot;/boot/defaults&quot;</span>, <span class="tok-str">&quot;/dev&quot;</span>, <span class="tok-str">&quot;/etc&quot;</span>, <span class="tok-str">&quot;/etc/defaults&quot;</span>, <span class="tok-str">&quot;/etc/mail&quot;</span>, <span class="tok-str">&quot;/etc/namedb&quot;</span>, <span class="tok-str">&quot;/etc/periodic&quot;</span>, <span class="tok-str">&quot;/etc/ppp&quot;</span>, <span class="tok-str">&quot;/home&quot;</span>, <span class="tok-str">&quot;/home/user&quot;</span>, <span class="tok-str">&quot;/home/user/dir&quot;</span>, <span class="tok-str">&quot;/lib&quot;</span>, <span class="tok-str">&quot;/Library&quot;</span>, <span class="tok-str">&quot;/lost+found&quot;</span>, <span class="tok-str">&quot;/media&quot;</span>, <span class="tok-str">&quot;/mnt&quot;</span>, <span class="tok-str">&quot;/net&quot;</span>, <span class="tok-str">&quot;/Network&quot;</span>, <span class="tok-str">&quot;/opt&quot;</span>, <span class="tok-str">&quot;/opt/bin&quot;</span>, <span class="tok-str">&quot;/opt/include&quot;</span>, <span class="tok-str">&quot;/opt/lib&quot;</span>, <span class="tok-str">&quot;/opt/sbin&quot;</span>, <span class="tok-str">&quot;/opt/share&quot;</span>, <span class="tok-str">&quot;/private&quot;</span>, <span class="tok-str">&quot;/private/tmp&quot;</span>, <span class="tok-str">&quot;/private/var&quot;</span>, <span class="tok-str">&quot;/proc&quot;</span>, <span class="tok-str">&quot;/rescue&quot;</span>, <span class="tok-str">&quot;/root&quot;</span>, <span class="tok-str">&quot;/sbin&quot;</span>, <span class="tok-str">&quot;/selinux&quot;</span>, <span class="tok-str">&quot;/srv&quot;</span>, <span class="tok-str">&quot;/sys&quot;</span>, <span class="tok-str">&quot;/System&quot;</span>, <span class="tok-str">&quot;/tmp&quot;</span>, <span class="tok-str">&quot;/Users&quot;</span>, <span class="tok-str">&quot;/usr&quot;</span>, <span class="tok-str">&quot;/usr/X11R6&quot;</span>, <span class="tok-str">&quot;/usr/bin&quot;</span>, <span class="tok-str">&quot;/usr/include&quot;</span>, <span class="tok-str">&quot;/usr/lib&quot;</span>, <span class="tok-str">&quot;/usr/libdata&quot;</span>, <span class="tok-str">&quot;/usr/libexec&quot;</span>, <span class="tok-str">&quot;/usr/local/bin&quot;</span>, <span class="tok-str">&quot;/usr/local/src&quot;</span>, <span class="tok-str">&quot;/usr/obj&quot;</span>, <span class="tok-str">&quot;/usr/ports&quot;</span>, <span class="tok-str">&quot;/usr/sbin&quot;</span>, <span class="tok-str">&quot;/usr/share&quot;</span>, <span class="tok-str">&quot;/usr/src&quot;</span>, <span class="tok-str">&quot;/var&quot;</span>, <span class="tok-str">&quot;/var/log&quot;</span>, <span class="tok-str">&quot;/var/mail&quot;</span>, <span class="tok-str">&quot;/var/spool&quot;</span>, <span class="tok-str">&quot;/var/tmp&quot;</span>, <span class="tok-str">&quot;/var/yp&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> mimeTypes = .{ .@&quot;application/epub+zip&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;epub&quot;</span>} }, .@&quot;application/gzip&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;gz&quot;</span>} }, .@&quot;application/java-archive&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;jar&quot;</span>, <span class="tok-str">&quot;war&quot;</span>, <span class="tok-str">&quot;ear&quot;</span> } }, .@&quot;application/json&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;json&quot;</span>, <span class="tok-str">&quot;map&quot;</span> } }, .@&quot;application/ld+json&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;jsonld&quot;</span>} }, .@&quot;application/msword&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;doc&quot;</span>, <span class="tok-str">&quot;dot&quot;</span> } }, .@&quot;application/octet-stream&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;bin&quot;</span>, <span class="tok-str">&quot;dms&quot;</span>, <span class="tok-str">&quot;lrf&quot;</span>, <span class="tok-str">&quot;mar&quot;</span>, <span class="tok-str">&quot;so&quot;</span>, <span class="tok-str">&quot;dist&quot;</span>, <span class="tok-str">&quot;distz&quot;</span>, <span class="tok-str">&quot;pkg&quot;</span>, <span class="tok-str">&quot;bpk&quot;</span>, <span class="tok-str">&quot;dump&quot;</span>, <span class="tok-str">&quot;elc&quot;</span>, <span class="tok-str">&quot;deploy&quot;</span>, <span class="tok-str">&quot;exe&quot;</span>, <span class="tok-str">&quot;dll&quot;</span>, <span class="tok-str">&quot;deb&quot;</span>, <span class="tok-str">&quot;dmg&quot;</span>, <span class="tok-str">&quot;iso&quot;</span>, <span class="tok-str">&quot;img&quot;</span>, <span class="tok-str">&quot;msi&quot;</span>, <span class="tok-str">&quot;msp&quot;</span>, <span class="tok-str">&quot;msm&quot;</span>, <span class="tok-str">&quot;buffer&quot;</span> } }, .@&quot;application/ogg&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;ogx&quot;</span>} }, .@&quot;application/pdf&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;pdf&quot;</span>} }, .@&quot;application/rtf&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;rtf&quot;</span>} }, .@&quot;application/vnd.amazon.ebook&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;azw&quot;</span>} }, .@&quot;application/vnd.apple.installer+xml&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;mpkg&quot;</span>} }, .@&quot;application/vnd.mozilla.xul+xml&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;xul&quot;</span>} }, .@&quot;application/vnd.ms-excel&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;xls&quot;</span>, <span class="tok-str">&quot;xlm&quot;</span>, <span class="tok-str">&quot;xla&quot;</span>, <span class="tok-str">&quot;xlc&quot;</span>, <span class="tok-str">&quot;xlt&quot;</span>, <span class="tok-str">&quot;xlw&quot;</span> } }, .@&quot;application/vnd.ms-fontobject&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;eot&quot;</span>} }, .@&quot;application/vnd.ms-powerpoint&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ppt&quot;</span>, <span class="tok-str">&quot;pps&quot;</span>, <span class="tok-str">&quot;pot&quot;</span> } }, .@&quot;application/vnd.oasis.opendocument.presentation&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;odp&quot;</span>} }, .@&quot;application/vnd.oasis.opendocument.spreadsheet&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;ods&quot;</span>} }, .@&quot;application/vnd.oasis.opendocument.text&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;odt&quot;</span>} }, .@&quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;pptx&quot;</span>} }, .@&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;xlsx&quot;</span>} }, .@&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;docx&quot;</span>} }, .@&quot;application/vnd.rar&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;rar&quot;</span>} }, .@&quot;application/vnd.visio&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;vsd&quot;</span>, <span class="tok-str">&quot;vst&quot;</span>, <span class="tok-str">&quot;vss&quot;</span>, <span class="tok-str">&quot;vsw&quot;</span> } }, .@&quot;application/x-7z-compressed&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;7z&quot;</span>} }, .@&quot;application/x-abiword&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;abw&quot;</span>} }, .@&quot;application/x-bzip&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;bz&quot;</span>} }, .@&quot;application/x-bzip2&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;bz2&quot;</span>, <span class="tok-str">&quot;boz&quot;</span> } }, .@&quot;application/x-csh&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;csh&quot;</span>} }, .@&quot;application/x-freearc&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;arc&quot;</span>} }, .@&quot;application/x-httpd-php&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;php&quot;</span>} }, .@&quot;application/x-sh&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;sh&quot;</span>} }, .@&quot;application/x-tar&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;tar&quot;</span>} }, .@&quot;application/xhtml+xml&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;xhtml&quot;</span>, <span class="tok-str">&quot;xht&quot;</span> } }, .@&quot;application/xml&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;xml&quot;</span>, <span class="tok-str">&quot;xsl&quot;</span>, <span class="tok-str">&quot;xsd&quot;</span>, <span class="tok-str">&quot;rng&quot;</span> } }, .@&quot;application/zip&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;zip&quot;</span>} }, .@&quot;audio/3gpp&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;3gpp&quot;</span>} }, .@&quot;audio/3gpp2&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;3g2&quot;</span>} }, .@&quot;audio/aac&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;aac&quot;</span>} }, .@&quot;audio/midi&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;mid&quot;</span>, <span class="tok-str">&quot;midi&quot;</span>, <span class="tok-str">&quot;kar&quot;</span>, <span class="tok-str">&quot;rmi&quot;</span> } }, .@&quot;audio/mpeg&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;mpga&quot;</span>, <span class="tok-str">&quot;mp2&quot;</span>, <span class="tok-str">&quot;mp2a&quot;</span>, <span class="tok-str">&quot;mp3&quot;</span>, <span class="tok-str">&quot;m2a&quot;</span>, <span class="tok-str">&quot;m3a&quot;</span> } }, .@&quot;audio/ogg&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;oga&quot;</span>, <span class="tok-str">&quot;ogg&quot;</span>, <span class="tok-str">&quot;spx&quot;</span>, <span class="tok-str">&quot;opus&quot;</span> } }, .@&quot;audio/opus&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;opus&quot;</span>} }, .@&quot;audio/wav&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;wav&quot;</span>} }, .@&quot;audio/webm&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;weba&quot;</span>} }, .@&quot;font/otf&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;otf&quot;</span>} }, .@&quot;font/ttf&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;ttf&quot;</span>} }, .@&quot;font/woff&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;woff&quot;</span>} }, .@&quot;font/woff2&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;woff2&quot;</span>} }, .@&quot;image/avif&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;avif&quot;</span>} }, .@&quot;image/bmp&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;bmp&quot;</span>} }, .@&quot;image/gif&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;gif&quot;</span>} }, .@&quot;image/jpeg&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;jpeg&quot;</span>, <span class="tok-str">&quot;jpg&quot;</span>, <span class="tok-str">&quot;jpe&quot;</span> } }, .@&quot;image/png&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;png&quot;</span>} }, .@&quot;image/svg+xml&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;svg&quot;</span>, <span class="tok-str">&quot;svgz&quot;</span> } }, .@&quot;image/tiff&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;tif&quot;</span>, <span class="tok-str">&quot;tiff&quot;</span> } }, .@&quot;image/vnd.microsoft.icon&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;ico&quot;</span>} }, .@&quot;image/webp&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;webp&quot;</span>} }, .@&quot;text/calendar&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ics&quot;</span>, <span class="tok-str">&quot;ifb&quot;</span> } }, .@&quot;text/css&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;css&quot;</span>} }, .@&quot;text/csv&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;csv&quot;</span>} }, .@&quot;text/html&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;html&quot;</span>, <span class="tok-str">&quot;htm&quot;</span>, <span class="tok-str">&quot;shtml&quot;</span> } }, .@&quot;text/javascript&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;js&quot;</span>, <span class="tok-str">&quot;mjs&quot;</span> } }, .@&quot;text/plain&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;txt&quot;</span>, <span class="tok-str">&quot;text&quot;</span>, <span class="tok-str">&quot;conf&quot;</span>, <span class="tok-str">&quot;def&quot;</span>, <span class="tok-str">&quot;list&quot;</span>, <span class="tok-str">&quot;log&quot;</span>, <span class="tok-str">&quot;in&quot;</span>, <span class="tok-str">&quot;ini&quot;</span> } }, .@&quot;video/3gpp&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;3gp&quot;</span>, <span class="tok-str">&quot;3gpp&quot;</span> } }, .@&quot;video/3gpp2&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;3g2&quot;</span>} }, .@&quot;video/mp2t&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;ts&quot;</span>} }, .@&quot;video/mp4&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;mp4&quot;</span>, <span class="tok-str">&quot;mp4v&quot;</span>, <span class="tok-str">&quot;mpg4&quot;</span> } }, .@&quot;video/mpeg&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;mpeg&quot;</span>, <span class="tok-str">&quot;mpg&quot;</span>, <span class="tok-str">&quot;mpe&quot;</span>, <span class="tok-str">&quot;m1v&quot;</span>, <span class="tok-str">&quot;m2v&quot;</span> } }, .@&quot;video/ogg&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;ogv&quot;</span>} }, .@&quot;video/webm&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;webm&quot;</span>} }, .@&quot;video/x-msvideo&quot; = .{ .extensions = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;avi&quot;</span>} } };</span>
+<span class="line" id="L4"></span>
+</code></pre></body>
+</html>

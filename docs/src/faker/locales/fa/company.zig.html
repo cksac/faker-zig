@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fa\company.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;انطباقی&quot;</span>, <span class="tok-str">&quot;پیشرفته&quot;</span>, <span class="tok-str">&quot;بهبود یافته&quot;</span>, <span class="tok-str">&quot;جذب شده&quot;</span>, <span class="tok-str">&quot;خودکار&quot;</span>, <span class="tok-str">&quot;متعادل&quot;</span>, <span class="tok-str">&quot;متمرکز بر تجارت&quot;</span>, <span class="tok-str">&quot;متمرکز&quot;</span>, <span class="tok-str">&quot;کلون شده&quot;</span>, <span class="tok-str">&quot;سازگار&quot;</span>, <span class="tok-str">&quot;قابل تنظیم&quot;</span>, <span class="tok-str">&quot;گروه متقابل&quot;</span>, <span class="tok-str">&quot;متمرکز بر مشتری&quot;</span>, <span class="tok-str">&quot;غیر متمرکز&quot;</span>, <span class="tok-str">&quot;مهندسی شده&quot;</span>, <span class="tok-str">&quot;دیجیتالی شده&quot;</span>, <span class="tok-str">&quot;توزیع شده&quot;</span>, <span class="tok-str">&quot;گوناگون&quot;</span>, <span class="tok-str">&quot;کوچک شده&quot;</span>, <span class="tok-str">&quot;ارگونومیک&quot;</span>, <span class="tok-str">&quot;انحصاری&quot;</span>, <span class="tok-str">&quot;منبسط&quot;</span>, <span class="tok-str">&quot;تمدید شده&quot;</span>, <span class="tok-str">&quot;رو در رو&quot;</span>, <span class="tok-str">&quot;متمرکز شده&quot;</span>, <span class="tok-str">&quot;خط مقدم&quot;</span>, <span class="tok-str">&quot;کاملاً قابل تنظیم&quot;</span>, <span class="tok-str">&quot;مبتنی بر عملکرد&quot;</span>, <span class="tok-str">&quot;اساسی&quot;</span>, <span class="tok-str">&quot;ضد آینده&quot;</span>, <span class="tok-str">&quot;افقی&quot;</span>, <span class="tok-str">&quot;پیاده سازی شده&quot;</span>, <span class="tok-str">&quot;خلاقانه&quot;</span>, <span class="tok-str">&quot;یکپارچه&quot;</span>, <span class="tok-str">&quot;شهودی&quot;</span>, <span class="tok-str">&quot;معکوس&quot;</span>, <span class="tok-str">&quot;اجباری&quot;</span>, <span class="tok-str">&quot;نظارت شده&quot;</span>, <span class="tok-str">&quot;چند کاناله&quot;</span>, <span class="tok-str">&quot;چند جانبی&quot;</span>, <span class="tok-str">&quot;متن باز&quot;</span>, <span class="tok-str">&quot;عملیاتی&quot;</span>, <span class="tok-str">&quot;بهینه شده&quot;</span>, <span class="tok-str">&quot;اختیاری&quot;</span>, <span class="tok-str">&quot;ارگانیک&quot;</span>, <span class="tok-str">&quot;سازمان یافته&quot;</span>, <span class="tok-str">&quot;پشتکار&quot;</span>, <span class="tok-str">&quot;مداوم&quot;</span>, <span class="tok-str">&quot;درجه&quot;</span>, <span class="tok-str">&quot;قطبی&quot;</span>, <span class="tok-str">&quot;فعال&quot;</span>, <span class="tok-str">&quot;متمرکز بر سود&quot;</span>, <span class="tok-str">&quot;ژرف&quot;</span>, <span class="tok-str">&quot;قابل برنامه ریزی&quot;</span>, <span class="tok-str">&quot;ترقی خواه&quot;</span>, <span class="tok-str">&quot;متمرکز بر کیفیت&quot;</span>, <span class="tok-str">&quot;واکنش گرا&quot;</span>, <span class="tok-str">&quot;تصحیح شده&quot;</span>, <span class="tok-str">&quot;رکود&quot;</span>, <span class="tok-str">&quot;مهندسی معکوس&quot;</span>, <span class="tok-str">&quot;قدرتمند&quot;</span>, <span class="tok-str">&quot;بدون درز&quot;</span>, <span class="tok-str">&quot;امن&quot;</span>, <span class="tok-str">&quot;خود توانمندی&quot;</span>, <span class="tok-str">&quot;همه کاره&quot;</span>, <span class="tok-str">&quot;مجازی&quot;</span>, <span class="tok-str">&quot;بینایی&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> buzz_adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ارزش افزوده&quot;</span>, <span class="tok-str">&quot;عمودی&quot;</span>, <span class="tok-str">&quot;فعال&quot;</span>, <span class="tok-str">&quot;قدرتمند&quot;</span>, <span class="tok-str">&quot;انقلابی&quot;</span>, <span class="tok-str">&quot;مقیاس پذیر&quot;</span>, <span class="tok-str">&quot;پیشرو&quot;</span>, <span class="tok-str">&quot;خلاقانه&quot;</span>, <span class="tok-str">&quot;شهودی&quot;</span>, <span class="tok-str">&quot;راهبردی&quot;</span>, <span class="tok-str">&quot;تجارت الکترونیکی&quot;</span>, <span class="tok-str">&quot;ماموریت بحرانی&quot;</span>, <span class="tok-str">&quot;چسبنده&quot;</span>, <span class="tok-str">&quot;یک به یک&quot;</span>, <span class="tok-str">&quot;24/7&quot;</span>, <span class="tok-str">&quot;جهانی&quot;</span>, <span class="tok-str">&quot;دانه ای&quot;</span>, <span class="tok-str">&quot;بدون اصطکاک&quot;</span>, <span class="tok-str">&quot;مجازی&quot;</span>, <span class="tok-str">&quot;ویروسی&quot;</span>, <span class="tok-str">&quot;پویا&quot;</span>, <span class="tok-str">&quot;24/365&quot;</span>, <span class="tok-str">&quot;مغناطیسی&quot;</span>, <span class="tok-str">&quot;عقب&quot;</span>, <span class="tok-str">&quot;موثر&quot;</span>, <span class="tok-str">&quot;توزیع شده&quot;</span>, <span class="tok-str">&quot;بدون درز&quot;</span>, <span class="tok-str">&quot;قابل توسعه&quot;</span>, <span class="tok-str">&quot;کلاس جهانی&quot;</span>, <span class="tok-str">&quot;متن باز&quot;</span>, <span class="tok-str">&quot;هم افزایی&quot;</span>, <span class="tok-str">&quot;بینایی&quot;</span>, <span class="tok-str">&quot;سفارشی&quot;</span>, <span class="tok-str">&quot;مبتنی بر همکاری&quot;</span>, <span class="tok-str">&quot;متقاعد کننده&quot;</span>, <span class="tok-str">&quot;جامع&quot;</span>, <span class="tok-str">&quot;پولدار&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> buzz_noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;هم افزایی&quot;</span>, <span class="tok-str">&quot;بازارها&quot;</span>, <span class="tok-str">&quot;شراکت&quot;</span>, <span class="tok-str">&quot;زیرساخت ها&quot;</span>, <span class="tok-str">&quot;پلتفرم&quot;</span>, <span class="tok-str">&quot;ابتکار عمل&quot;</span>, <span class="tok-str">&quot;کانال ها&quot;</span>, <span class="tok-str">&quot;اجتماعات&quot;</span>, <span class="tok-str">&quot;راه حل ها&quot;</span>, <span class="tok-str">&quot;خدمات الکترونیکی&quot;</span>, <span class="tok-str">&quot;موارد عملی&quot;</span>, <span class="tok-str">&quot;پورتال ها&quot;</span>, <span class="tok-str">&quot;سوله&quot;</span>, <span class="tok-str">&quot;فن آوری ها&quot;</span>, <span class="tok-str">&quot;محتوا&quot;</span>, <span class="tok-str">&quot;زنجیره تامین&quot;</span>, <span class="tok-str">&quot;همگرایی&quot;</span>, <span class="tok-str">&quot;روابط&quot;</span>, <span class="tok-str">&quot;معماری&quot;</span>, <span class="tok-str">&quot;رابط ها&quot;</span>, <span class="tok-str">&quot;بازارهای الکترونیکی&quot;</span>, <span class="tok-str">&quot;تجارت الکترونیک&quot;</span>, <span class="tok-str">&quot;سیستم ها&quot;</span>, <span class="tok-str">&quot;پهنای باند&quot;</span>, <span class="tok-str">&quot;مدل ها&quot;</span>, <span class="tok-str">&quot;ذهنیت&quot;</span>, <span class="tok-str">&quot;تحویل دادنی ها&quot;</span>, <span class="tok-str">&quot;کاربران&quot;</span>, <span class="tok-str">&quot;شبکه ها&quot;</span>, <span class="tok-str">&quot;برنامه های کاربردی&quot;</span>, <span class="tok-str">&quot;تجارت الکترونیکی&quot;</span>, <span class="tok-str">&quot;ویژگی ها&quot;</span>, <span class="tok-str">&quot;تجربیات&quot;</span>, <span class="tok-str">&quot;روش شناسی&quot;</span>, <span class="tok-str">&quot;بلاکچین&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> buzz_verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;پیاده سازی&quot;</span>, <span class="tok-str">&quot;استفاده&quot;</span>, <span class="tok-str">&quot;ادغام&quot;</span>, <span class="tok-str">&quot;ساده سازی&quot;</span>, <span class="tok-str">&quot;بهینه سازی&quot;</span>, <span class="tok-str">&quot;تبدیل&quot;</span>, <span class="tok-str">&quot;پذیرفتن&quot;</span>, <span class="tok-str">&quot;فعال کردن&quot;</span>, <span class="tok-str">&quot;نفوذ کردن&quot;</span>, <span class="tok-str">&quot;اختراع دوباره&quot;</span>, <span class="tok-str">&quot;تجمیع&quot;</span>, <span class="tok-str">&quot;معماری&quot;</span>, <span class="tok-str">&quot;تحریک کردن&quot;</span>, <span class="tok-str">&quot;مورف&quot;</span>, <span class="tok-str">&quot;قدرت دادن&quot;</span>, <span class="tok-str">&quot;پیش بینی کننده&quot;</span>, <span class="tok-str">&quot;کسب درآمد&quot;</span>, <span class="tok-str">&quot;مهار&quot;</span>, <span class="tok-str">&quot;تسهیل کردن&quot;</span>, <span class="tok-str">&quot;تصاحب کردن&quot;</span>, <span class="tok-str">&quot;بی تفاوت&quot;</span>, <span class="tok-str">&quot;هم افزایی&quot;</span>, <span class="tok-str">&quot;استراتژی کردن&quot;</span>, <span class="tok-str">&quot;استقرار&quot;</span>, <span class="tok-str">&quot;نام تجاری&quot;</span>, <span class="tok-str">&quot;رشد کردن&quot;</span>, <span class="tok-str">&quot;هدف&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> descriptor = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;24 ساعت&quot;</span>, <span class="tok-str">&quot;24/7&quot;</span>, <span class="tok-str">&quot;نسل سوم&quot;</span>, <span class="tok-str">&quot;نسل چهارم&quot;</span>, <span class="tok-str">&quot;نسل پنجم&quot;</span>, <span class="tok-str">&quot;نسل ششم&quot;</span>, <span class="tok-str">&quot;تجزیه و تحلیل&quot;</span>, <span class="tok-str">&quot;نامتقارن&quot;</span>, <span class="tok-str">&quot;ناهمگام&quot;</span>, <span class="tok-str">&quot;نگرش محور&quot;</span>, <span class="tok-str">&quot;پس زمینه&quot;</span>, <span class="tok-str">&quot;پهنای باند پایش&quot;</span>, <span class="tok-str">&quot;دو جهته&quot;</span>, <span class="tok-str">&quot;دوتایی&quot;</span>, <span class="tok-str">&quot;روشن اندیشی&quot;</span>, <span class="tok-str">&quot;مشتری محور&quot;</span>, <span class="tok-str">&quot;سرویس دهنده مشتری&quot;</span>, <span class="tok-str">&quot;منسجم&quot;</span>, <span class="tok-str">&quot;مرکب&quot;</span>, <span class="tok-str">&quot;حساس به متن&quot;</span>, <span class="tok-str">&quot;مبتنی بر متن&quot;</span>, <span class="tok-str">&quot;مبتنی بر محتوا&quot;</span>, <span class="tok-str">&quot;اختصاصی&quot;</span>, <span class="tok-str">&quot;تقاضا محور&quot;</span>, <span class="tok-str">&quot;اموزشی&quot;</span>, <span class="tok-str">&quot;جهت دار&quot;</span>, <span class="tok-str">&quot;گسسته&quot;</span>, <span class="tok-str">&quot;بی تفاوت&quot;</span>, <span class="tok-str">&quot;پویا&quot;</span>, <span class="tok-str">&quot;محیط زیست&quot;</span>, <span class="tok-str">&quot;توانمند سازی&quot;</span>, <span class="tok-str">&quot;اجرایی&quot;</span>, <span class="tok-str">&quot;صریح&quot;</span>, <span class="tok-str">&quot;خطاپذيری&quot;</span>, <span class="tok-str">&quot;پیش زمینه&quot;</span>, <span class="tok-str">&quot;پایدار&quot;</span>, <span class="tok-str">&quot;ثابت&quot;</span>, <span class="tok-str">&quot;سیستمی&quot;</span>, <span class="tok-str">&quot;شایسته سیستم&quot;</span>, <span class="tok-str">&quot;محسوس&quot;</span>, <span class="tok-str">&quot;انتقالی&quot;</span>, <span class="tok-str">&quot;یکسان&quot;</span>, <span class="tok-str">&quot;روند رو به بالا&quot;</span>, <span class="tok-str">&quot;تحمل صفر&quot;</span> };</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> name_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{person.last_name}} {{company.suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}-{{person.last_name}}&quot;</span>, <span class="tok-str">&quot;{{person.last_name}}, {{person.last_name}} و {{person.last_name}}&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;توانایی&quot;</span>, <span class="tok-str">&quot;دسترسی&quot;</span>, <span class="tok-str">&quot;آداپتور&quot;</span>, <span class="tok-str">&quot;الگوریتم&quot;</span>, <span class="tok-str">&quot;اتحاد&quot;</span>, <span class="tok-str">&quot;تحلیلگر&quot;</span>, <span class="tok-str">&quot;کاربرد&quot;</span>, <span class="tok-str">&quot;رویکرد&quot;</span>, <span class="tok-str">&quot;معماری&quot;</span>, <span class="tok-str">&quot;بایگانی&quot;</span>, <span class="tok-str">&quot;هوش مصنوعی&quot;</span>, <span class="tok-str">&quot;آرایه&quot;</span>, <span class="tok-str">&quot;نگرش&quot;</span>, <span class="tok-str">&quot;معیار&quot;</span>, <span class="tok-str">&quot;مدیریت بودجه&quot;</span>, <span class="tok-str">&quot;قابلیت&quot;</span>, <span class="tok-str">&quot;ظرفیت&quot;</span>, <span class="tok-str">&quot;چالش&quot;</span>, <span class="tok-str">&quot;جریان&quot;</span>, <span class="tok-str">&quot;همکاری&quot;</span>, <span class="tok-str">&quot;پیچیدگی&quot;</span>, <span class="tok-str">&quot;مفهوم&quot;</span>, <span class="tok-str">&quot;اجتماع&quot;</span>, <span class="tok-str">&quot;احتمالی&quot;</span>, <span class="tok-str">&quot;هسته&quot;</span>, <span class="tok-str">&quot;بانک اطلاعاتی&quot;</span>, <span class="tok-str">&quot;پایگاه داده تحلیلی&quot;</span>, <span class="tok-str">&quot;تعریف&quot;</span>, <span class="tok-str">&quot;شبیه سازی&quot;</span>, <span class="tok-str">&quot;رمزگذاری&quot;</span>, <span class="tok-str">&quot;اکسترانت&quot;</span>, <span class="tok-str">&quot;سیستم عامل&quot;</span>, <span class="tok-str">&quot;انعطاف پذیری&quot;</span>, <span class="tok-str">&quot;نیروی کار&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;کارخانه&quot;</span>, <span class="tok-str">&quot;و پسران&quot;</span>, <span class="tok-str">&quot;شرکت با مسئولیت محدود&quot;</span>, <span class="tok-str">&quot;گروه&quot;</span> };</span>
+<span class="line" id="L16"></span>
+</code></pre></body>
+</html>

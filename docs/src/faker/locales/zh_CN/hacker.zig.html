@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\zh_CN\hacker.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> adjective = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;辅助&quot;</span>, <span class="tok-str">&quot;主要&quot;</span>, <span class="tok-str">&quot;后端&quot;</span>, <span class="tok-str">&quot;开源&quot;</span>, <span class="tok-str">&quot;虚拟&quot;</span>, <span class="tok-str">&quot;跨平台&quot;</span>, <span class="tok-str">&quot;冗余&quot;</span>, <span class="tok-str">&quot;在线&quot;</span>, <span class="tok-str">&quot;触控&quot;</span>, <span class="tok-str">&quot;多字节&quot;</span>, <span class="tok-str">&quot;蓝牙&quot;</span>, <span class="tok-str">&quot;无线&quot;</span>, <span class="tok-str">&quot;全高清&quot;</span>, <span class="tok-str">&quot;神经元&quot;</span>, <span class="tok-str">&quot;光学&quot;</span>, <span class="tok-str">&quot;固态&quot;</span>, <span class="tok-str">&quot;移动&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> noun = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;驱动&quot;</span>, <span class="tok-str">&quot;协议&quot;</span>, <span class="tok-str">&quot;带宽&quot;</span>, <span class="tok-str">&quot;面板&quot;</span>, <span class="tok-str">&quot;芯片&quot;</span>, <span class="tok-str">&quot;程序&quot;</span>, <span class="tok-str">&quot;端口&quot;</span>, <span class="tok-str">&quot;卡片&quot;</span>, <span class="tok-str">&quot;数组&quot;</span>, <span class="tok-str">&quot;接口&quot;</span>, <span class="tok-str">&quot;系统&quot;</span>, <span class="tok-str">&quot;传感器&quot;</span>, <span class="tok-str">&quot;防火墙&quot;</span>, <span class="tok-str">&quot;硬盘&quot;</span>, <span class="tok-str">&quot;像素&quot;</span>, <span class="tok-str">&quot;警报&quot;</span>, <span class="tok-str">&quot;提要&quot;</span>, <span class="tok-str">&quot;监视器&quot;</span>, <span class="tok-str">&quot;应用&quot;</span>, <span class="tok-str">&quot;发送端&quot;</span>, <span class="tok-str">&quot;总线&quot;</span>, <span class="tok-str">&quot;电路&quot;</span>, <span class="tok-str">&quot;电容器&quot;</span>, <span class="tok-str">&quot;矩阵&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> phrase = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;倘若我们{{verb}}{{noun}}，我们就可以通过{{adjective}}{{abbreviation}}{{noun}}获得{{abbreviation}}{{noun}}！&quot;</span>, <span class="tok-str">&quot;我们需要{{verb}}{{adjective}}{{abbreviation}}{{noun}}！&quot;</span>, <span class="tok-str">&quot;尝试{{verb}}{{abbreviation}}{{noun}}，也许会{{verb}}{{adjective}}{{noun}}！&quot;</span>, <span class="tok-str">&quot;在没有{{verb}}{{adjective}}{{abbreviation}}{{noun}}的情况下，你不能{{verb}}{{noun}}！&quot;</span>, <span class="tok-str">&quot;使用{{adjective}}{{abbreviation}}{{noun}}，然后你就能{{verb}}{{adjective}}{{noun}}！&quot;</span>, <span class="tok-str">&quot;{{abbreviation}}{{noun}}已关闭，因为{{adjective}}{{noun}}所以我们能{{verb}}{{abbreviation}}{{noun}}！&quot;</span>, <span class="tok-str">&quot;{{verb}}{{noun}}是无济于事的，我们需要{{verb}}{{adjective}}{{abbreviation}}{{noun}}！&quot;</span>, <span class="tok-str">&quot;我将{{verb}}{{adjective}}{{abbreviation}}{{noun}}，那是应该{{noun}}{{abbreviation}}{{noun}}！&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> verb = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;备份&quot;</span>, <span class="tok-str">&quot;绕过&quot;</span>, <span class="tok-str">&quot;入侵&quot;</span>, <span class="tok-str">&quot;覆盖&quot;</span>, <span class="tok-str">&quot;压缩&quot;</span>, <span class="tok-str">&quot;复制&quot;</span>, <span class="tok-str">&quot;导航&quot;</span>, <span class="tok-str">&quot;索引&quot;</span>, <span class="tok-str">&quot;链接&quot;</span>, <span class="tok-str">&quot;生成&quot;</span>, <span class="tok-str">&quot;量化&quot;</span>, <span class="tok-str">&quot;计算&quot;</span>, <span class="tok-str">&quot;合成&quot;</span>, <span class="tok-str">&quot;输入&quot;</span>, <span class="tok-str">&quot;传输&quot;</span>, <span class="tok-str">&quot;编程&quot;</span>, <span class="tok-str">&quot;重启&quot;</span>, <span class="tok-str">&quot;解析&quot;</span> };</span>
+<span class="line" id="L8"></span>
+</code></pre></body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\eo\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.city_prefix}} {{person.first_name}}{{location.city_suffix}}&quot;</span>, <span class="tok-str">&quot;{{person.first_name}}{{location.city_suffix}}&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Norda&quot;</span>, <span class="tok-str">&quot;Orienta&quot;</span>, <span class="tok-str">&quot;Suda&quot;</span>, <span class="tok-str">&quot;Okcidenta&quot;</span>, <span class="tok-str">&quot;Bona&quot;</span>, <span class="tok-str">&quot;Nova&quot;</span>, <span class="tok-str">&quot;Malnova&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;burgo&quot;</span>, <span class="tok-str">&quot;damo&quot;</span>, <span class="tok-str">&quot;fildo&quot;</span>, <span class="tok-str">&quot;forto&quot;</span>, <span class="tok-str">&quot;fuorto&quot;</span>, <span class="tok-str">&quot;grado&quot;</span>, <span class="tok-str">&quot;haveno&quot;</span>, <span class="tok-str">&quot;porto&quot;</span>, <span class="tok-str">&quot;stado&quot;</span>, <span class="tok-str">&quot;ŝiro&quot;</span>, <span class="tok-str">&quot;urbo&quot;</span>, <span class="tok-str">&quot;valo&quot;</span>, <span class="tok-str">&quot;viko&quot;</span>, <span class="tok-str">&quot;vilao&quot;</span>, <span class="tok-str">&quot;vilaĝo&quot;</span>, <span class="tok-str">&quot;vilo&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Afganio&quot;</span>, <span class="tok-str">&quot;Alando&quot;</span>, <span class="tok-str">&quot;Albanio&quot;</span>, <span class="tok-str">&quot;Alĝerio&quot;</span>, <span class="tok-str">&quot;Andoro&quot;</span>, <span class="tok-str">&quot;Angolo&quot;</span>, <span class="tok-str">&quot;Angvilo&quot;</span>, <span class="tok-str">&quot;Antarkto&quot;</span>, <span class="tok-str">&quot;Antigvo kaj Barbudo&quot;</span>, <span class="tok-str">&quot;Argentino&quot;</span>, <span class="tok-str">&quot;Armenio&quot;</span>, <span class="tok-str">&quot;Arubo&quot;</span>, <span class="tok-str">&quot;Aŭstralio&quot;</span>, <span class="tok-str">&quot;Aŭstrio&quot;</span>, <span class="tok-str">&quot;Azerbajĝano&quot;</span>, <span class="tok-str">&quot;Bahamoj&quot;</span>, <span class="tok-str">&quot;Bangladeŝo&quot;</span>, <span class="tok-str">&quot;Barato&quot;</span>, <span class="tok-str">&quot;Barbado&quot;</span>, <span class="tok-str">&quot;Barejno&quot;</span>, <span class="tok-str">&quot;Belgio&quot;</span>, <span class="tok-str">&quot;Belizo&quot;</span>, <span class="tok-str">&quot;Belorusio&quot;</span>, <span class="tok-str">&quot;Benino&quot;</span>, <span class="tok-str">&quot;Bermudo&quot;</span>, <span class="tok-str">&quot;Bocvano&quot;</span>, <span class="tok-str">&quot;Bolivio&quot;</span>, <span class="tok-str">&quot;Bosnio kaj Hercegovino&quot;</span>, <span class="tok-str">&quot;Brazilo&quot;</span>, <span class="tok-str">&quot;Brita Hindoceana Teritorio&quot;</span>, <span class="tok-str">&quot;Britaj Virgulinsuloj&quot;</span>, <span class="tok-str">&quot;Brunejo&quot;</span>, <span class="tok-str">&quot;Bulgario&quot;</span>, <span class="tok-str">&quot;Burkino&quot;</span>, <span class="tok-str">&quot;Burundo&quot;</span>, <span class="tok-str">&quot;Butano&quot;</span>, <span class="tok-str">&quot;Buvet-Insulo&quot;</span>, <span class="tok-str">&quot;Ĉado&quot;</span>, <span class="tok-str">&quot;Ĉeĥio&quot;</span>, <span class="tok-str">&quot;Centr-Afrika Respubliko&quot;</span>, <span class="tok-str">&quot;Ĉilio&quot;</span>, <span class="tok-str">&quot;Ĉinio&quot;</span>, <span class="tok-str">&quot;Danio&quot;</span>, <span class="tok-str">&quot;Dominika Respubliko&quot;</span>, <span class="tok-str">&quot;Dominiko&quot;</span>, <span class="tok-str">&quot;Ebur-Bordo&quot;</span>, <span class="tok-str">&quot;Egiptio&quot;</span>, <span class="tok-str">&quot;Ekvadoro&quot;</span>, <span class="tok-str">&quot;Ekvatora Gvineo&quot;</span>, <span class="tok-str">&quot;Eritreo&quot;</span>, <span class="tok-str">&quot;Estonio&quot;</span>, <span class="tok-str">&quot;Etiopio&quot;</span>, <span class="tok-str">&quot;Falklandaj Insuloj&quot;</span>, <span class="tok-str">&quot;Ferooj&quot;</span>, <span class="tok-str">&quot;Fiĝioj&quot;</span>, <span class="tok-str">&quot;Filipinoj&quot;</span>, <span class="tok-str">&quot;Finnlando&quot;</span>, <span class="tok-str">&quot;Franca Gujano&quot;</span>, <span class="tok-str">&quot;Franca Polinezio&quot;</span>, <span class="tok-str">&quot;Francaj Sudaj kaj Antarktaj Teritorioj&quot;</span>, <span class="tok-str">&quot;Francio&quot;</span>, <span class="tok-str">&quot;Gabono&quot;</span>, <span class="tok-str">&quot;Gambio&quot;</span>, <span class="tok-str">&quot;Ganao&quot;</span>, <span class="tok-str">&quot;Germanio&quot;</span>, <span class="tok-str">&quot;Ĝibraltaro&quot;</span>, <span class="tok-str">&quot;Ĝibutio&quot;</span>, <span class="tok-str">&quot;Grekio&quot;</span>, <span class="tok-str">&quot;Grenado&quot;</span>, <span class="tok-str">&quot;Gronlando&quot;</span>, <span class="tok-str">&quot;Gujano&quot;</span>, <span class="tok-str">&quot;Gvadelupo&quot;</span>, <span class="tok-str">&quot;Gvamo&quot;</span>, <span class="tok-str">&quot;Gvatemalo&quot;</span>, <span class="tok-str">&quot;Gvernsejo&quot;</span>, <span class="tok-str">&quot;Gvineo&quot;</span>, <span class="tok-str">&quot;Gvineo-Bisaŭo&quot;</span>, <span class="tok-str">&quot;Haitio&quot;</span>, <span class="tok-str">&quot;Herda kaj Makdonaldaj Insuloj&quot;</span>, <span class="tok-str">&quot;Hispanio&quot;</span>, <span class="tok-str">&quot;Honduro&quot;</span>, <span class="tok-str">&quot;Honkongo&quot;</span>, <span class="tok-str">&quot;Hungario&quot;</span>, <span class="tok-str">&quot;Indonezio&quot;</span>, <span class="tok-str">&quot;Irako&quot;</span>, <span class="tok-str">&quot;Irano&quot;</span>, <span class="tok-str">&quot;Irlando&quot;</span>, <span class="tok-str">&quot;Islando&quot;</span>, <span class="tok-str">&quot;Israelo&quot;</span>, <span class="tok-str">&quot;Italio&quot;</span>, <span class="tok-str">&quot;Jamajko&quot;</span>, <span class="tok-str">&quot;Japanio&quot;</span>, <span class="tok-str">&quot;Jemeno&quot;</span>, <span class="tok-str">&quot;Ĵersejo&quot;</span>, <span class="tok-str">&quot;Jordanio&quot;</span>, <span class="tok-str">&quot;Kaboverdo&quot;</span>, <span class="tok-str">&quot;Kajmaninsuloj&quot;</span>, <span class="tok-str">&quot;Kamboĝo&quot;</span>, <span class="tok-str">&quot;Kameruno&quot;</span>, <span class="tok-str">&quot;Kanado&quot;</span>, <span class="tok-str">&quot;Kariba Nederlando&quot;</span>, <span class="tok-str">&quot;Kartvelio&quot;</span>, <span class="tok-str">&quot;Kataro&quot;</span>, <span class="tok-str">&quot;Kazaĥio&quot;</span>, <span class="tok-str">&quot;Kenjo&quot;</span>, <span class="tok-str">&quot;Kipro&quot;</span>, <span class="tok-str">&quot;Kirgizio&quot;</span>, <span class="tok-str">&quot;Kiribato&quot;</span>, <span class="tok-str">&quot;Kokosinsuloj&quot;</span>, <span class="tok-str">&quot;Kolombio&quot;</span>, <span class="tok-str">&quot;Komoroj&quot;</span>, <span class="tok-str">&quot;Kongo Brazavila&quot;</span>, <span class="tok-str">&quot;Kongo Kinŝasa&quot;</span>, <span class="tok-str">&quot;Kostariko&quot;</span>, <span class="tok-str">&quot;Kristnaskinsulo&quot;</span>, <span class="tok-str">&quot;Kroatio&quot;</span>, <span class="tok-str">&quot;Kubo&quot;</span>, <span class="tok-str">&quot;Kukinsuloj&quot;</span>, <span class="tok-str">&quot;Kuracao&quot;</span>, <span class="tok-str">&quot;Kuvajto&quot;</span>, <span class="tok-str">&quot;Laoso&quot;</span>, <span class="tok-str">&quot;Latvio&quot;</span>, <span class="tok-str">&quot;Lesoto&quot;</span>, <span class="tok-str">&quot;Libano&quot;</span>, <span class="tok-str">&quot;Liberio&quot;</span>, <span class="tok-str">&quot;Libio&quot;</span>, <span class="tok-str">&quot;Liĥtenŝtejno&quot;</span>, <span class="tok-str">&quot;Litovio&quot;</span>, <span class="tok-str">&quot;Luksemburgo&quot;</span>, <span class="tok-str">&quot;Madagaskaro&quot;</span>, <span class="tok-str">&quot;Majoto&quot;</span>, <span class="tok-str">&quot;Makao&quot;</span>, <span class="tok-str">&quot;Malajzio&quot;</span>, <span class="tok-str">&quot;Malavio&quot;</span>, <span class="tok-str">&quot;Maldivoj&quot;</span>, <span class="tok-str">&quot;Malio&quot;</span>, <span class="tok-str">&quot;Malto&quot;</span>, <span class="tok-str">&quot;Manksinsulo&quot;</span>, <span class="tok-str">&quot;Maroko&quot;</span>, <span class="tok-str">&quot;Marŝalaj Insuloj&quot;</span>, <span class="tok-str">&quot;Martiniko&quot;</span>, <span class="tok-str">&quot;Maŭricio&quot;</span>, <span class="tok-str">&quot;Maŭritanio&quot;</span>, <span class="tok-str">&quot;Meksiko&quot;</span>, <span class="tok-str">&quot;Mikronezio&quot;</span>, <span class="tok-str">&quot;Mjanmao&quot;</span>, <span class="tok-str">&quot;Moldavio&quot;</span>, <span class="tok-str">&quot;Monako&quot;</span>, <span class="tok-str">&quot;Moncerato&quot;</span>, <span class="tok-str">&quot;Mongolio&quot;</span>, <span class="tok-str">&quot;Montenegro&quot;</span>, <span class="tok-str">&quot;Mozambiko&quot;</span>, <span class="tok-str">&quot;Namibio&quot;</span>, <span class="tok-str">&quot;Nauro&quot;</span>, <span class="tok-str">&quot;Nederlando&quot;</span>, <span class="tok-str">&quot;Nepalo&quot;</span>, <span class="tok-str">&quot;Niĝerio&quot;</span>, <span class="tok-str">&quot;Niĝero&quot;</span>, <span class="tok-str">&quot;Nikaragvo&quot;</span>, <span class="tok-str">&quot;Niuo&quot;</span>, <span class="tok-str">&quot;Nord-Koreio&quot;</span>, <span class="tok-str">&quot;Nord-Makedonio&quot;</span>, <span class="tok-str">&quot;Nord-Marianoj&quot;</span>, <span class="tok-str">&quot;Norfolkinsulo&quot;</span>, <span class="tok-str">&quot;Norvegio&quot;</span>, <span class="tok-str">&quot;Nov-Kaledonio&quot;</span>, <span class="tok-str">&quot;Nov-Zelando&quot;</span>, <span class="tok-str">&quot;Okcidenta Saharo&quot;</span>, <span class="tok-str">&quot;Omano&quot;</span>, <span class="tok-str">&quot;Orienta Timoro&quot;</span>, <span class="tok-str">&quot;Pakistano&quot;</span>, <span class="tok-str">&quot;Palaŭo&quot;</span>, <span class="tok-str">&quot;Palestino&quot;</span>, <span class="tok-str">&quot;Panamo&quot;</span>, <span class="tok-str">&quot;Papuo-Nov-Gvineo&quot;</span>, <span class="tok-str">&quot;Paragvajo&quot;</span>, <span class="tok-str">&quot;Peruo&quot;</span>, <span class="tok-str">&quot;Pitkarna Insularo&quot;</span>, <span class="tok-str">&quot;Pollando&quot;</span>, <span class="tok-str">&quot;Portugalio&quot;</span>, <span class="tok-str">&quot;Puertoriko&quot;</span>, <span class="tok-str">&quot;Reunio&quot;</span>, <span class="tok-str">&quot;Ruando&quot;</span>, <span class="tok-str">&quot;Rumanio&quot;</span>, <span class="tok-str">&quot;Rusio&quot;</span>, <span class="tok-str">&quot;Salomonoj&quot;</span>, <span class="tok-str">&quot;Salvadoro&quot;</span>, <span class="tok-str">&quot;Samoo&quot;</span>, <span class="tok-str">&quot;Sankta Bartolomeo&quot;</span>, <span class="tok-str">&quot;Sankta Heleno&quot;</span>, <span class="tok-str">&quot;Sankta Kristoforo kaj Neviso&quot;</span>, <span class="tok-str">&quot;Sankta Lucio&quot;</span>, <span class="tok-str">&quot;Sankta Marteno (franca)&quot;</span>, <span class="tok-str">&quot;Sankta Marteno (nederlanda)&quot;</span>, <span class="tok-str">&quot;Sankta Piero kaj Mikelono&quot;</span>, <span class="tok-str">&quot;Sankta Vincento kaj Grenadinoj&quot;</span>, <span class="tok-str">&quot;Sanmarino&quot;</span>, <span class="tok-str">&quot;Santomeo kaj Principeo&quot;</span>, <span class="tok-str">&quot;Sauda Arabio&quot;</span>, <span class="tok-str">&quot;Sejŝeloj&quot;</span>, <span class="tok-str">&quot;Senegalo&quot;</span>, <span class="tok-str">&quot;Serbio&quot;</span>, <span class="tok-str">&quot;Sieraleono&quot;</span>, <span class="tok-str">&quot;Singapuro&quot;</span>, <span class="tok-str">&quot;Sirio&quot;</span>, <span class="tok-str">&quot;Slovakio&quot;</span>, <span class="tok-str">&quot;Slovenio&quot;</span>, <span class="tok-str">&quot;Somalio&quot;</span>, <span class="tok-str">&quot;Srilanko&quot;</span>, <span class="tok-str">&quot;Sud-Afriko&quot;</span>, <span class="tok-str">&quot;Sud-Georgio kaj Sud-Sandviĉinsuloj&quot;</span>, <span class="tok-str">&quot;Sud-Koreio&quot;</span>, <span class="tok-str">&quot;Sud-Sudano&quot;</span>, <span class="tok-str">&quot;Sudano&quot;</span>, <span class="tok-str">&quot;Surinamo&quot;</span>, <span class="tok-str">&quot;Svalbardo kaj Janmajeno&quot;</span>, <span class="tok-str">&quot;Svazilando&quot;</span>, <span class="tok-str">&quot;Svedio&quot;</span>, <span class="tok-str">&quot;Svislando&quot;</span>, <span class="tok-str">&quot;Taĝikio&quot;</span>, <span class="tok-str">&quot;Tajlando&quot;</span>, <span class="tok-str">&quot;Tajvano&quot;</span>, <span class="tok-str">&quot;Tanzanio&quot;</span>, <span class="tok-str">&quot;Togolando&quot;</span>, <span class="tok-str">&quot;Tokelao&quot;</span>, <span class="tok-str">&quot;Tongo&quot;</span>, <span class="tok-str">&quot;Trinidado kaj Tobago&quot;</span>, <span class="tok-str">&quot;Tunizio&quot;</span>, <span class="tok-str">&quot;Turkio&quot;</span>, <span class="tok-str">&quot;Turkmenio&quot;</span>, <span class="tok-str">&quot;Turkoj kaj Kajkoj&quot;</span>, <span class="tok-str">&quot;Tuvalo&quot;</span>, <span class="tok-str">&quot;Ugando&quot;</span>, <span class="tok-str">&quot;Ukrainio&quot;</span>, <span class="tok-str">&quot;Unuiĝinta Reĝlando&quot;</span>, <span class="tok-str">&quot;Unuiĝintaj Arabaj Emirlandoj&quot;</span>, <span class="tok-str">&quot;Urugvajo&quot;</span>, <span class="tok-str">&quot;Usona Samoo&quot;</span>, <span class="tok-str">&quot;Usonaj Malgrandaj Insuloj&quot;</span>, <span class="tok-str">&quot;Usonaj Virgulinsuloj&quot;</span>, <span class="tok-str">&quot;Usono&quot;</span>, <span class="tok-str">&quot;Uzbekio&quot;</span>, <span class="tok-str">&quot;Valiso kaj Futuno&quot;</span>, <span class="tok-str">&quot;Vanuatuo&quot;</span>, <span class="tok-str">&quot;Vatikano&quot;</span>, <span class="tok-str">&quot;Venezuelo&quot;</span>, <span class="tok-str">&quot;Vjetnamio&quot;</span>, <span class="tok-str">&quot;Zambio&quot;</span>, <span class="tok-str">&quot;Zimbabvo&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Esperantujo&quot;</span>};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> direction = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;nordo&quot;</span>, <span class="tok-str">&quot;oriento&quot;</span>, <span class="tok-str">&quot;sudo&quot;</span>, <span class="tok-str">&quot;okcidento&quot;</span>, <span class="tok-str">&quot;nordoriento&quot;</span>, <span class="tok-str">&quot;nordokcidenta&quot;</span>, <span class="tok-str">&quot;sudoriento&quot;</span>, <span class="tok-str">&quot;sudokcidento&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> direction_abbr = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;N&quot;</span>, <span class="tok-str">&quot;E&quot;</span>, <span class="tok-str">&quot;S&quot;</span>, <span class="tok-str">&quot;U&quot;</span>, <span class="tok-str">&quot;NE&quot;</span>, <span class="tok-str">&quot;NU&quot;</span>, <span class="tok-str">&quot;SE&quot;</span>, <span class="tok-str">&quot;SU&quot;</span> };</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> secondary_address = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;apartamento ###&quot;</span>, <span class="tok-str">&quot;ĉambro ###&quot;</span> };</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.street}} {{location.buildingNumber}} {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.street_prefix}} de {{person.first_name}}&quot;</span>, <span class="tok-str">&quot;{{location.street_prefix}} de {{person.last_name}}&quot;</span>, <span class="tok-str">&quot;{{person.first_name}}{{location.street_suffix}}&quot;</span>, <span class="tok-str">&quot;{{location.city_prefix}} {{person.first_name}}{{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aleo&quot;</span>, <span class="tok-str">&quot;Arbaro&quot;</span>, <span class="tok-str">&quot;Avenuo&quot;</span>, <span class="tok-str">&quot;Bulvardo&quot;</span>, <span class="tok-str">&quot;Digo&quot;</span>, <span class="tok-str">&quot;Ĝardeno&quot;</span>, <span class="tok-str">&quot;Insulo&quot;</span>, <span class="tok-str">&quot;Kampo&quot;</span>, <span class="tok-str">&quot;Klifo&quot;</span>, <span class="tok-str">&quot;Lago&quot;</span>, <span class="tok-str">&quot;Monto&quot;</span>, <span class="tok-str">&quot;Parko&quot;</span>, <span class="tok-str">&quot;Placo&quot;</span>, <span class="tok-str">&quot;Ponto&quot;</span>, <span class="tok-str">&quot;Rivero&quot;</span>, <span class="tok-str">&quot;Strato&quot;</span>, <span class="tok-str">&quot;Tunelo&quot;</span>, <span class="tok-str">&quot;Viadukto&quot;</span>, <span class="tok-str">&quot;Vojo&quot;</span> };</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;aleo&quot;</span>, <span class="tok-str">&quot;arbaro&quot;</span>, <span class="tok-str">&quot;avenuo&quot;</span>, <span class="tok-str">&quot;bulvardo&quot;</span>, <span class="tok-str">&quot;digo&quot;</span>, <span class="tok-str">&quot;ĝardeno&quot;</span>, <span class="tok-str">&quot;insulo&quot;</span>, <span class="tok-str">&quot;kampo&quot;</span>, <span class="tok-str">&quot;klifo&quot;</span>, <span class="tok-str">&quot;lago&quot;</span>, <span class="tok-str">&quot;monto&quot;</span>, <span class="tok-str">&quot;parko&quot;</span>, <span class="tok-str">&quot;placo&quot;</span>, <span class="tok-str">&quot;ponto&quot;</span>, <span class="tok-str">&quot;rivero&quot;</span>, <span class="tok-str">&quot;strato&quot;</span>, <span class="tok-str">&quot;tunelo&quot;</span>, <span class="tok-str">&quot;viadukto&quot;</span>, <span class="tok-str">&quot;vojo&quot;</span> };</span>
+<span class="line" id="L24"></span>
+</code></pre></body>
+</html>

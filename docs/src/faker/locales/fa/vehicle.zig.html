@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fa\vehicle.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> fuel = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;دیزل&quot;</span>, <span class="tok-str">&quot;الکتریکی&quot;</span>, <span class="tok-str">&quot;بنزین&quot;</span>, <span class="tok-str">&quot;هیبرید&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> manufacturer = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;شورولت&quot;</span>, <span class="tok-str">&quot;کادیلاک&quot;</span>, <span class="tok-str">&quot;فورد&quot;</span>, <span class="tok-str">&quot;کرایسلر&quot;</span>, <span class="tok-str">&quot;دوج&quot;</span>, <span class="tok-str">&quot;جیپ&quot;</span>, <span class="tok-str">&quot;تسلا&quot;</span>, <span class="tok-str">&quot;تویوتا&quot;</span>, <span class="tok-str">&quot;هوندا&quot;</span>, <span class="tok-str">&quot;نیسان&quot;</span>, <span class="tok-str">&quot;آٔ‌ئودی&quot;</span>, <span class="tok-str">&quot;مرسدس بنز&quot;</span>, <span class="tok-str">&quot;بی ام و&quot;</span>, <span class="tok-str">&quot;ولکس واگن&quot;</span>, <span class="tok-str">&quot;پورشه&quot;</span>, <span class="tok-str">&quot;جگوار&quot;</span>, <span class="tok-str">&quot;استون مارتین&quot;</span>, <span class="tok-str">&quot;لندرور&quot;</span>, <span class="tok-str">&quot;بنتلی&quot;</span>, <span class="tok-str">&quot;مینی&quot;</span>, <span class="tok-str">&quot;رولز رویس&quot;</span>, <span class="tok-str">&quot;فیات&quot;</span>, <span class="tok-str">&quot;لامبورگینی&quot;</span>, <span class="tok-str">&quot;مازراتی&quot;</span>, <span class="tok-str">&quot;فراری&quot;</span>, <span class="tok-str">&quot;بوگاتی&quot;</span>, <span class="tok-str">&quot;کیا&quot;</span>, <span class="tok-str">&quot;هیوندای&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> model = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;فیستا&quot;</span>, <span class="tok-str">&quot;فوکوس&quot;</span>, <span class="tok-str">&quot;تاروس&quot;</span>, <span class="tok-str">&quot;موستانگ&quot;</span>, <span class="tok-str">&quot;اکسپلورر&quot;</span>, <span class="tok-str">&quot;کروز&quot;</span>, <span class="tok-str">&quot;مالیبو&quot;</span>, <span class="tok-str">&quot;ایمپالا&quot;</span>, <span class="tok-str">&quot;کامارو&quot;</span>, <span class="tok-str">&quot;کروت&quot;</span>, <span class="tok-str">&quot;کولورادو&quot;</span>, <span class="tok-str">&quot;سیلورادو&quot;</span>, <span class="tok-str">&quot;اسکالید&quot;</span>, <span class="tok-str">&quot;آلپاین&quot;</span>, <span class="tok-str">&quot;چارجر&quot;</span>, <span class="tok-str">&quot;چلنجر&quot;</span>, <span class="tok-str">&quot;رانگلر&quot;</span>, <span class="tok-str">&quot;گرند چروکی&quot;</span>, <span class="tok-str">&quot;رودستر&quot;</span>, <span class="tok-str">&quot;کمری&quot;</span>, <span class="tok-str">&quot;پریوس&quot;</span>, <span class="tok-str">&quot;لندکروزر&quot;</span>, <span class="tok-str">&quot;آکورد&quot;</span>, <span class="tok-str">&quot;سیویک&quot;</span>, <span class="tok-str">&quot;المنت&quot;</span>, <span class="tok-str">&quot;سنترا&quot;</span>, <span class="tok-str">&quot;آلتیما&quot;</span>, <span class="tok-str">&quot;یبتل&quot;</span>, <span class="tok-str">&quot;جتا&quot;</span>, <span class="tok-str">&quot;گلف&quot;</span>, <span class="tok-str">&quot;911&quot;</span>, <span class="tok-str">&quot;اسپایدر&quot;</span>, <span class="tok-str">&quot;کونتاچ&quot;</span>, <span class="tok-str">&quot;مورسیه لاگو&quot;</span>, <span class="tok-str">&quot;اونتادور&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> @&quot;type&quot; = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;ون&quot;</span>, <span class="tok-str">&quot;کوپه&quot;</span>, <span class="tok-str">&quot;پیکاپ&quot;</span>, <span class="tok-str">&quot;مینی ون&quot;</span>, <span class="tok-str">&quot;ون مسافرتی&quot;</span>, <span class="tok-str">&quot;شاسی بلند&quot;</span>, <span class="tok-str">&quot;سدان&quot;</span>, <span class="tok-str">&quot;استیشن&quot;</span> };</span>
+<span class="line" id="L8"></span>
+</code></pre></body>
+</html>

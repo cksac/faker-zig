@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\hy\person.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> NamePattern = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/person.zig&quot;</span>).NamePattern;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Մարիա&quot;</span>, <span class="tok-str">&quot;Նարե&quot;</span>, <span class="tok-str">&quot;Մանե&quot;</span>, <span class="tok-str">&quot;Մարի&quot;</span>, <span class="tok-str">&quot;Մարիամ&quot;</span>, <span class="tok-str">&quot;Անի&quot;</span>, <span class="tok-str">&quot;Անգելինա&quot;</span>, <span class="tok-str">&quot;Անահիտ&quot;</span>, <span class="tok-str">&quot;Էլեն&quot;</span>, <span class="tok-str">&quot;Միլենա&quot;</span>, <span class="tok-str">&quot;Եվա&quot;</span>, <span class="tok-str">&quot;Աննա&quot;</span>, <span class="tok-str">&quot;Արփի&quot;</span>, <span class="tok-str">&quot;Գայանե&quot;</span>, <span class="tok-str">&quot;Լիլիթ&quot;</span>, <span class="tok-str">&quot;Մերի&quot;</span>, <span class="tok-str">&quot;Վիկտորյա&quot;</span>, <span class="tok-str">&quot;Արինա&quot;</span>, <span class="tok-str">&quot;Յանա&quot;</span>, <span class="tok-str">&quot;Սոնա&quot;</span>, <span class="tok-str">&quot;Նատալի&quot;</span>, <span class="tok-str">&quot;Գոհար&quot;</span>, <span class="tok-str">&quot;Հասմիկ&quot;</span>, <span class="tok-str">&quot;Սոֆի&quot;</span>, <span class="tok-str">&quot;Էմիլի&quot;</span>, <span class="tok-str">&quot;Սուսաննա&quot;</span>, <span class="tok-str">&quot;Արևիկ&quot;</span>, <span class="tok-str">&quot;Կարինե&quot;</span>, <span class="tok-str">&quot;Լյուսի&quot;</span>, <span class="tok-str">&quot;Արիանա&quot;</span>, <span class="tok-str">&quot;Տաթև&quot;</span>, <span class="tok-str">&quot;Լիկա&quot;</span>, <span class="tok-str">&quot;Ռուզաննա&quot;</span>, <span class="tok-str">&quot;Լիլի&quot;</span>, <span class="tok-str">&quot;Սոֆյա&quot;</span>, <span class="tok-str">&quot;Անուշ&quot;</span>, <span class="tok-str">&quot;Էլինա&quot;</span>, <span class="tok-str">&quot;Սառա&quot;</span>, <span class="tok-str">&quot;Նանե&quot;</span>, <span class="tok-str">&quot;Էվա&quot;</span>, <span class="tok-str">&quot;Լիանա&quot;</span>, <span class="tok-str">&quot;Մոնիկա&quot;</span>, <span class="tok-str">&quot;Կարինա&quot;</span>, <span class="tok-str">&quot;Լիա&quot;</span>, <span class="tok-str">&quot;Նարինե&quot;</span>, <span class="tok-str">&quot;Լուսինե&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Մարիա&quot;</span>, <span class="tok-str">&quot;Նարե&quot;</span>, <span class="tok-str">&quot;Մանե&quot;</span>, <span class="tok-str">&quot;Մարի&quot;</span>, <span class="tok-str">&quot;Մարիամ&quot;</span>, <span class="tok-str">&quot;Անի&quot;</span>, <span class="tok-str">&quot;Անգելինա&quot;</span>, <span class="tok-str">&quot;Անահիտ&quot;</span>, <span class="tok-str">&quot;Էլեն&quot;</span>, <span class="tok-str">&quot;Միլենա&quot;</span>, <span class="tok-str">&quot;Եվա&quot;</span>, <span class="tok-str">&quot;Աննա&quot;</span>, <span class="tok-str">&quot;Արփի&quot;</span>, <span class="tok-str">&quot;Գայանե&quot;</span>, <span class="tok-str">&quot;Լիլիթ&quot;</span>, <span class="tok-str">&quot;Մերի&quot;</span>, <span class="tok-str">&quot;Վիկտորյա&quot;</span>, <span class="tok-str">&quot;Արինա&quot;</span>, <span class="tok-str">&quot;Յանա&quot;</span>, <span class="tok-str">&quot;Սոնա&quot;</span>, <span class="tok-str">&quot;Նատալի&quot;</span>, <span class="tok-str">&quot;Գոհար&quot;</span>, <span class="tok-str">&quot;Հասմիկ&quot;</span>, <span class="tok-str">&quot;Սոֆի&quot;</span>, <span class="tok-str">&quot;Էմիլի&quot;</span>, <span class="tok-str">&quot;Սուսաննա&quot;</span>, <span class="tok-str">&quot;Արևիկ&quot;</span>, <span class="tok-str">&quot;Կարինե&quot;</span>, <span class="tok-str">&quot;Լյուսի&quot;</span>, <span class="tok-str">&quot;Արիանա&quot;</span>, <span class="tok-str">&quot;Տաթև&quot;</span>, <span class="tok-str">&quot;Լիկա&quot;</span>, <span class="tok-str">&quot;Ռուզաննա&quot;</span>, <span class="tok-str">&quot;Լիլի&quot;</span>, <span class="tok-str">&quot;Սոֆյա&quot;</span>, <span class="tok-str">&quot;Անուշ&quot;</span>, <span class="tok-str">&quot;Էլինա&quot;</span>, <span class="tok-str">&quot;Սառա&quot;</span>, <span class="tok-str">&quot;Նանե&quot;</span>, <span class="tok-str">&quot;Էվա&quot;</span>, <span class="tok-str">&quot;Լիանա&quot;</span>, <span class="tok-str">&quot;Մոնիկա&quot;</span>, <span class="tok-str">&quot;Կարինա&quot;</span>, <span class="tok-str">&quot;Լիա&quot;</span>, <span class="tok-str">&quot;Նարինե&quot;</span>, <span class="tok-str">&quot;Լուսինե&quot;</span>, <span class="tok-str">&quot;Դավիթ&quot;</span>, <span class="tok-str">&quot;Նարեկ&quot;</span>, <span class="tok-str">&quot;Ալեքս&quot;</span>, <span class="tok-str">&quot;Տիգրան&quot;</span>, <span class="tok-str">&quot;Հայկ&quot;</span>, <span class="tok-str">&quot;Գոռ&quot;</span>, <span class="tok-str">&quot;Արթուր&quot;</span>, <span class="tok-str">&quot;Արմեն&quot;</span>, <span class="tok-str">&quot;Մարկ&quot;</span>, <span class="tok-str">&quot;Էրիկ&quot;</span>, <span class="tok-str">&quot;Արամ&quot;</span>, <span class="tok-str">&quot;Սամվել&quot;</span>, <span class="tok-str">&quot;Արման&quot;</span>, <span class="tok-str">&quot;Ալեն&quot;</span>, <span class="tok-str">&quot;Աշոտ&quot;</span>, <span class="tok-str">&quot;Արեն&quot;</span>, <span class="tok-str">&quot;Գագիկ&quot;</span>, <span class="tok-str">&quot;Դանիել&quot;</span>, <span class="tok-str">&quot;Արեգ&quot;</span>, <span class="tok-str">&quot;Ռոբերտ&quot;</span>, <span class="tok-str">&quot;Արտյոմ&quot;</span>, <span class="tok-str">&quot;Արսեն&quot;</span>, <span class="tok-str">&quot;Միքայել&quot;</span>, <span class="tok-str">&quot;Սարգիս&quot;</span>, <span class="tok-str">&quot;Հովհաննես&quot;</span>, <span class="tok-str">&quot;Վահե&quot;</span>, <span class="tok-str">&quot;Կարեն&quot;</span>, <span class="tok-str">&quot;Գևորգ&quot;</span>, <span class="tok-str">&quot;Լևոն&quot;</span>, <span class="tok-str">&quot;Վարդան&quot;</span>, <span class="tok-str">&quot;Ռուբեն&quot;</span>, <span class="tok-str">&quot;Սուրեն&quot;</span>, <span class="tok-str">&quot;Հակոբ&quot;</span>, <span class="tok-str">&quot;Մհեր&quot;</span>, <span class="tok-str">&quot;Անդրանիկ&quot;</span>, <span class="tok-str">&quot;Ավետ&quot;</span>, <span class="tok-str">&quot;Գրիգոր&quot;</span>, <span class="tok-str">&quot;Ռաֆայել&quot;</span>, <span class="tok-str">&quot;Ալեքսանդր&quot;</span>, <span class="tok-str">&quot;Մոնթե&quot;</span>, <span class="tok-str">&quot;Հարություն&quot;</span>, <span class="tok-str">&quot;Էդուարդ&quot;</span>, <span class="tok-str">&quot;Ալբերտ&quot;</span>, <span class="tok-str">&quot;Գարիկ&quot;</span>, <span class="tok-str">&quot;Համլետ&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Հարությունյան&quot;</span>, <span class="tok-str">&quot;Սարգսյան&quot;</span>, <span class="tok-str">&quot;Հովհաննիսյան&quot;</span>, <span class="tok-str">&quot;Գրիգորյան&quot;</span>, <span class="tok-str">&quot;Խաչատրյան&quot;</span>, <span class="tok-str">&quot;Հակոբյան&quot;</span>, <span class="tok-str">&quot;Վարդանյան&quot;</span>, <span class="tok-str">&quot;Պետրոսյան&quot;</span>, <span class="tok-str">&quot;Կարապետյան&quot;</span>, <span class="tok-str">&quot;Գևորգյան&quot;</span>, <span class="tok-str">&quot;Մկրտչյան&quot;</span>, <span class="tok-str">&quot;Ղազարյան&quot;</span>, <span class="tok-str">&quot;Մանուկյան&quot;</span>, <span class="tok-str">&quot;Պողոսյան&quot;</span>, <span class="tok-str">&quot;Ավետիսյան&quot;</span>, <span class="tok-str">&quot;Մարտիրոսյան&quot;</span>, <span class="tok-str">&quot;Սահակյան&quot;</span>, <span class="tok-str">&quot;Դավթյան&quot;</span>, <span class="tok-str">&quot;Առաքելյան&quot;</span>, <span class="tok-str">&quot;Մարգարյան&quot;</span>, <span class="tok-str">&quot;Գալստյան&quot;</span>, <span class="tok-str">&quot;Բաղդասարյան&quot;</span>, <span class="tok-str">&quot;Ստեփանյան&quot;</span>, <span class="tok-str">&quot;Հայրապետյան&quot;</span>, <span class="tok-str">&quot;Սիմոնյան&quot;</span>, <span class="tok-str">&quot;Ավագյան&quot;</span>, <span class="tok-str">&quot;Գասպարյան&quot;</span>, <span class="tok-str">&quot;Մուրադյան&quot;</span>, <span class="tok-str">&quot;Ասատրյան&quot;</span>, <span class="tok-str">&quot;Հովսեփյան&quot;</span>, <span class="tok-str">&quot;Աբրահամյան&quot;</span>, <span class="tok-str">&quot;Զաքարյան&quot;</span>, <span class="tok-str">&quot;Մելքոնյան&quot;</span>, <span class="tok-str">&quot;Ալեքսանյան&quot;</span>, <span class="tok-str">&quot;Մխիթարյան&quot;</span>, <span class="tok-str">&quot;Բարսեղյան&quot;</span>, <span class="tok-str">&quot;Մովսիսյան&quot;</span>, <span class="tok-str">&quot;Կիրակոսյան&quot;</span>, <span class="tok-str">&quot;Եղիազարյան&quot;</span>, <span class="tok-str">&quot;Բաբայան&quot;</span>, <span class="tok-str">&quot;Մնացականյան&quot;</span>, <span class="tok-str">&quot;Թադևոսյան&quot;</span>, <span class="tok-str">&quot;Մինասյան&quot;</span>, <span class="tok-str">&quot;Համբարձումյան&quot;</span>, <span class="tok-str">&quot;Այվազյան&quot;</span>, <span class="tok-str">&quot;Գաբրիելյան&quot;</span>, <span class="tok-str">&quot;Ներսիսյան&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name_pattern = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Դավիթ&quot;</span>, <span class="tok-str">&quot;Նարեկ&quot;</span>, <span class="tok-str">&quot;Ալեքս&quot;</span>, <span class="tok-str">&quot;Տիգրան&quot;</span>, <span class="tok-str">&quot;Հայկ&quot;</span>, <span class="tok-str">&quot;Գոռ&quot;</span>, <span class="tok-str">&quot;Արթուր&quot;</span>, <span class="tok-str">&quot;Արմեն&quot;</span>, <span class="tok-str">&quot;Մարկ&quot;</span>, <span class="tok-str">&quot;Էրիկ&quot;</span>, <span class="tok-str">&quot;Արամ&quot;</span>, <span class="tok-str">&quot;Սամվել&quot;</span>, <span class="tok-str">&quot;Արման&quot;</span>, <span class="tok-str">&quot;Ալեն&quot;</span>, <span class="tok-str">&quot;Աշոտ&quot;</span>, <span class="tok-str">&quot;Արեն&quot;</span>, <span class="tok-str">&quot;Գագիկ&quot;</span>, <span class="tok-str">&quot;Դանիել&quot;</span>, <span class="tok-str">&quot;Արեգ&quot;</span>, <span class="tok-str">&quot;Ռոբերտ&quot;</span>, <span class="tok-str">&quot;Արտյոմ&quot;</span>, <span class="tok-str">&quot;Արսեն&quot;</span>, <span class="tok-str">&quot;Միքայել&quot;</span>, <span class="tok-str">&quot;Սարգիս&quot;</span>, <span class="tok-str">&quot;Հովհաննես&quot;</span>, <span class="tok-str">&quot;Վահե&quot;</span>, <span class="tok-str">&quot;Կարեն&quot;</span>, <span class="tok-str">&quot;Գևորգ&quot;</span>, <span class="tok-str">&quot;Լևոն&quot;</span>, <span class="tok-str">&quot;Վարդան&quot;</span>, <span class="tok-str">&quot;Ռուբեն&quot;</span>, <span class="tok-str">&quot;Սուրեն&quot;</span>, <span class="tok-str">&quot;Հակոբ&quot;</span>, <span class="tok-str">&quot;Մհեր&quot;</span>, <span class="tok-str">&quot;Անդրանիկ&quot;</span>, <span class="tok-str">&quot;Ավետ&quot;</span>, <span class="tok-str">&quot;Գրիգոր&quot;</span>, <span class="tok-str">&quot;Ռաֆայել&quot;</span>, <span class="tok-str">&quot;Ալեքսանդր&quot;</span>, <span class="tok-str">&quot;Մոնթե&quot;</span>, <span class="tok-str">&quot;Հարություն&quot;</span>, <span class="tok-str">&quot;Էդուարդ&quot;</span>, <span class="tok-str">&quot;Ալբերտ&quot;</span>, <span class="tok-str">&quot;Գարիկ&quot;</span>, <span class="tok-str">&quot;Համլետ&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> name = [_]NamePattern{ .{ .value = <span class="tok-str">&quot;{{person.prefix}} {{person.firstName}} {{person.lastName}}&quot;</span>, .weight = <span class="tok-number">1</span> }, .{ .value = <span class="tok-str">&quot;{{person.firstName}} {{person.lastName}} {{person.suffix}}&quot;</span>, .weight = <span class="tok-number">1</span> }, .{ .value = <span class="tok-str">&quot;{{person.firstName}} {{person.lastName}}&quot;</span>, .weight = <span class="tok-number">8</span> } };</span>
+<span class="line" id="L14"></span>
+</code></pre></body>
+</html>

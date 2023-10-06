@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\uk\location.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> building_number = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;#&quot;</span>, <span class="tok-str">&quot;##&quot;</span>, <span class="tok-str">&quot;###&quot;</span> };</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Алчевськ&quot;</span>, <span class="tok-str">&quot;Артемівськ&quot;</span>, <span class="tok-str">&quot;Бердичів&quot;</span>, <span class="tok-str">&quot;Бердянськ&quot;</span>, <span class="tok-str">&quot;Біла Церква&quot;</span>, <span class="tok-str">&quot;Бровари&quot;</span>, <span class="tok-str">&quot;Вінниця&quot;</span>, <span class="tok-str">&quot;Горлівка&quot;</span>, <span class="tok-str">&quot;Дніпродзержинськ&quot;</span>, <span class="tok-str">&quot;Дніпропетровськ&quot;</span>, <span class="tok-str">&quot;Донецьк&quot;</span>, <span class="tok-str">&quot;Євпаторія&quot;</span>, <span class="tok-str">&quot;Єнакієве&quot;</span>, <span class="tok-str">&quot;Житомир&quot;</span>, <span class="tok-str">&quot;Запоріжжя&quot;</span>, <span class="tok-str">&quot;Івано-Франківськ&quot;</span>, <span class="tok-str">&quot;Ізмаїл&quot;</span>, <span class="tok-str">&quot;Кам’янець-Подільський&quot;</span>, <span class="tok-str">&quot;Керч&quot;</span>, <span class="tok-str">&quot;Київ&quot;</span>, <span class="tok-str">&quot;Кіровоград&quot;</span>, <span class="tok-str">&quot;Конотоп&quot;</span>, <span class="tok-str">&quot;Краматорськ&quot;</span>, <span class="tok-str">&quot;Красний Луч&quot;</span>, <span class="tok-str">&quot;Кременчук&quot;</span>, <span class="tok-str">&quot;Кривий Ріг&quot;</span>, <span class="tok-str">&quot;Лисичанськ&quot;</span>, <span class="tok-str">&quot;Луганськ&quot;</span>, <span class="tok-str">&quot;Луцьк&quot;</span>, <span class="tok-str">&quot;Львів&quot;</span>, <span class="tok-str">&quot;Макіївка&quot;</span>, <span class="tok-str">&quot;Маріуполь&quot;</span>, <span class="tok-str">&quot;Мелітополь&quot;</span>, <span class="tok-str">&quot;Миколаїв&quot;</span>, <span class="tok-str">&quot;Мукачеве&quot;</span>, <span class="tok-str">&quot;Нікополь&quot;</span>, <span class="tok-str">&quot;Одеса&quot;</span>, <span class="tok-str">&quot;Олександрія&quot;</span>, <span class="tok-str">&quot;Павлоград&quot;</span>, <span class="tok-str">&quot;Полтава&quot;</span>, <span class="tok-str">&quot;Рівне&quot;</span>, <span class="tok-str">&quot;Севастополь&quot;</span>, <span class="tok-str">&quot;Сєвєродонецьк&quot;</span>, <span class="tok-str">&quot;Сімферополь&quot;</span>, <span class="tok-str">&quot;Слов’янськ&quot;</span>, <span class="tok-str">&quot;Суми&quot;</span>, <span class="tok-str">&quot;Тернопіль&quot;</span>, <span class="tok-str">&quot;Ужгород&quot;</span>, <span class="tok-str">&quot;Умань&quot;</span>, <span class="tok-str">&quot;Харків&quot;</span>, <span class="tok-str">&quot;Херсон&quot;</span>, <span class="tok-str">&quot;Хмельницький&quot;</span>, <span class="tok-str">&quot;Черкаси&quot;</span>, <span class="tok-str">&quot;Чернівці&quot;</span>, <span class="tok-str">&quot;Чернігів&quot;</span>, <span class="tok-str">&quot;Шостка&quot;</span>, <span class="tok-str">&quot;Ялта&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.city_name}}&quot;</span>, <span class="tok-str">&quot;{{location.city_prefix}} {{person.male_first_name}}&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Південний&quot;</span>, <span class="tok-str">&quot;Північний&quot;</span>, <span class="tok-str">&quot;Східний&quot;</span>, <span class="tok-str">&quot;Західний&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> city_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;град&quot;</span>};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Австралія&quot;</span>, <span class="tok-str">&quot;Австрія&quot;</span>, <span class="tok-str">&quot;Азербайджан&quot;</span>, <span class="tok-str">&quot;Албанія&quot;</span>, <span class="tok-str">&quot;Алжир&quot;</span>, <span class="tok-str">&quot;Ангола&quot;</span>, <span class="tok-str">&quot;Андорра&quot;</span>, <span class="tok-str">&quot;Антигуа і Барбуда&quot;</span>, <span class="tok-str">&quot;Аргентина&quot;</span>, <span class="tok-str">&quot;Афганістан&quot;</span>, <span class="tok-str">&quot;Багамські Острови&quot;</span>, <span class="tok-str">&quot;Бангладеш&quot;</span>, <span class="tok-str">&quot;Барбадос&quot;</span>, <span class="tok-str">&quot;Бахрейн&quot;</span>, <span class="tok-str">&quot;Беліз&quot;</span>, <span class="tok-str">&quot;Бельгія&quot;</span>, <span class="tok-str">&quot;Бенін&quot;</span>, <span class="tok-str">&quot;Білорусь&quot;</span>, <span class="tok-str">&quot;Болгарія&quot;</span>, <span class="tok-str">&quot;Болівія&quot;</span>, <span class="tok-str">&quot;Боснія і Герцеговина&quot;</span>, <span class="tok-str">&quot;Ботсвана&quot;</span>, <span class="tok-str">&quot;Бразилія&quot;</span>, <span class="tok-str">&quot;Бруней&quot;</span>, <span class="tok-str">&quot;Буркіна-Фасо&quot;</span>, <span class="tok-str">&quot;Бурунді&quot;</span>, <span class="tok-str">&quot;Бутан&quot;</span>, <span class="tok-str">&quot;В’єтнам&quot;</span>, <span class="tok-str">&quot;Вануату&quot;</span>, <span class="tok-str">&quot;Ватикан&quot;</span>, <span class="tok-str">&quot;Велика Британія&quot;</span>, <span class="tok-str">&quot;Венесуела&quot;</span>, <span class="tok-str">&quot;Вірменія&quot;</span>, <span class="tok-str">&quot;Габон&quot;</span>, <span class="tok-str">&quot;Гаїті&quot;</span>, <span class="tok-str">&quot;Гайана&quot;</span>, <span class="tok-str">&quot;Гамбія&quot;</span>, <span class="tok-str">&quot;Гана&quot;</span>, <span class="tok-str">&quot;Гватемала&quot;</span>, <span class="tok-str">&quot;Гвінея&quot;</span>, <span class="tok-str">&quot;Гвінея-Бісау&quot;</span>, <span class="tok-str">&quot;Гондурас&quot;</span>, <span class="tok-str">&quot;Гренада&quot;</span>, <span class="tok-str">&quot;Греція&quot;</span>, <span class="tok-str">&quot;Грузія&quot;</span>, <span class="tok-str">&quot;Данія&quot;</span>, <span class="tok-str">&quot;Демократична Республіка Конго&quot;</span>, <span class="tok-str">&quot;Джибуті&quot;</span>, <span class="tok-str">&quot;Домініка&quot;</span>, <span class="tok-str">&quot;Домініканська Республіка&quot;</span>, <span class="tok-str">&quot;Еквадор&quot;</span>, <span class="tok-str">&quot;Екваторіальна Гвінея&quot;</span>, <span class="tok-str">&quot;Еритрея&quot;</span>, <span class="tok-str">&quot;Естонія&quot;</span>, <span class="tok-str">&quot;Ефіопія&quot;</span>, <span class="tok-str">&quot;Єгипет&quot;</span>, <span class="tok-str">&quot;Ємен&quot;</span>, <span class="tok-str">&quot;Замбія&quot;</span>, <span class="tok-str">&quot;Зімбабве&quot;</span>, <span class="tok-str">&quot;Ізраїль&quot;</span>, <span class="tok-str">&quot;Індія&quot;</span>, <span class="tok-str">&quot;Індонезія&quot;</span>, <span class="tok-str">&quot;Ірак&quot;</span>, <span class="tok-str">&quot;Іран&quot;</span>, <span class="tok-str">&quot;Ірландія&quot;</span>, <span class="tok-str">&quot;Ісландія&quot;</span>, <span class="tok-str">&quot;Іспанія&quot;</span>, <span class="tok-str">&quot;Італія&quot;</span>, <span class="tok-str">&quot;Йорданія&quot;</span>, <span class="tok-str">&quot;Кабо-Верде&quot;</span>, <span class="tok-str">&quot;Казахстан&quot;</span>, <span class="tok-str">&quot;Камбоджа&quot;</span>, <span class="tok-str">&quot;Камерун&quot;</span>, <span class="tok-str">&quot;Канада&quot;</span>, <span class="tok-str">&quot;Катар&quot;</span>, <span class="tok-str">&quot;Кенія&quot;</span>, <span class="tok-str">&quot;Киргизстан&quot;</span>, <span class="tok-str">&quot;Китай&quot;</span>, <span class="tok-str">&quot;Кіпр&quot;</span>, <span class="tok-str">&quot;Кірибаті&quot;</span>, <span class="tok-str">&quot;Колумбія&quot;</span>, <span class="tok-str">&quot;Коморські Острови&quot;</span>, <span class="tok-str">&quot;Конго&quot;</span>, <span class="tok-str">&quot;Коста-Рика&quot;</span>, <span class="tok-str">&quot;Кот-д’Івуар&quot;</span>, <span class="tok-str">&quot;Куба&quot;</span>, <span class="tok-str">&quot;Кувейт&quot;</span>, <span class="tok-str">&quot;Лаос&quot;</span>, <span class="tok-str">&quot;Латвія&quot;</span>, <span class="tok-str">&quot;Лесото&quot;</span>, <span class="tok-str">&quot;Литва&quot;</span>, <span class="tok-str">&quot;Ліберія&quot;</span>, <span class="tok-str">&quot;Ліван&quot;</span>, <span class="tok-str">&quot;Лівія&quot;</span>, <span class="tok-str">&quot;Ліхтенштейн&quot;</span>, <span class="tok-str">&quot;Люксембург&quot;</span>, <span class="tok-str">&quot;Маврикій&quot;</span>, <span class="tok-str">&quot;Мавританія&quot;</span>, <span class="tok-str">&quot;Мадаґаскар&quot;</span>, <span class="tok-str">&quot;Македонія&quot;</span>, <span class="tok-str">&quot;Малаві&quot;</span>, <span class="tok-str">&quot;Малайзія&quot;</span>, <span class="tok-str">&quot;Малі&quot;</span>, <span class="tok-str">&quot;Мальдіви&quot;</span>, <span class="tok-str">&quot;Мальта&quot;</span>, <span class="tok-str">&quot;Марокко&quot;</span>, <span class="tok-str">&quot;Маршаллові Острови&quot;</span>, <span class="tok-str">&quot;Мексика&quot;</span>, <span class="tok-str">&quot;Мозамбік&quot;</span>, <span class="tok-str">&quot;Молдова&quot;</span>, <span class="tok-str">&quot;Монако&quot;</span>, <span class="tok-str">&quot;Монголія&quot;</span>, <span class="tok-str">&quot;Намібія&quot;</span>, <span class="tok-str">&quot;Науру&quot;</span>, <span class="tok-str">&quot;Непал&quot;</span>, <span class="tok-str">&quot;Нігер&quot;</span>, <span class="tok-str">&quot;Нігерія&quot;</span>, <span class="tok-str">&quot;Нідерланди&quot;</span>, <span class="tok-str">&quot;Нікарагуа&quot;</span>, <span class="tok-str">&quot;Німеччина&quot;</span>, <span class="tok-str">&quot;Нова Зеландія&quot;</span>, <span class="tok-str">&quot;Норвегія&quot;</span>, <span class="tok-str">&quot;Об’єднані Арабські Емірати&quot;</span>, <span class="tok-str">&quot;Оман&quot;</span>, <span class="tok-str">&quot;Пакистан&quot;</span>, <span class="tok-str">&quot;Палау&quot;</span>, <span class="tok-str">&quot;Панама&quot;</span>, <span class="tok-str">&quot;Папуа-Нова Гвінея&quot;</span>, <span class="tok-str">&quot;Парагвай&quot;</span>, <span class="tok-str">&quot;Перу&quot;</span>, <span class="tok-str">&quot;Південна Корея&quot;</span>, <span class="tok-str">&quot;Південний Судан&quot;</span>, <span class="tok-str">&quot;Південно-Африканська Республіка&quot;</span>, <span class="tok-str">&quot;Північна Корея&quot;</span>, <span class="tok-str">&quot;Польща&quot;</span>, <span class="tok-str">&quot;Португалія&quot;</span>, <span class="tok-str">&quot;Російська Федерація&quot;</span>, <span class="tok-str">&quot;Руанда&quot;</span>, <span class="tok-str">&quot;Румунія&quot;</span>, <span class="tok-str">&quot;Сальвадор&quot;</span>, <span class="tok-str">&quot;Самоа&quot;</span>, <span class="tok-str">&quot;Сан-Марино&quot;</span>, <span class="tok-str">&quot;Сан-Томе і Принсіпі&quot;</span>, <span class="tok-str">&quot;Саудівська Аравія&quot;</span>, <span class="tok-str">&quot;Свазіленд&quot;</span>, <span class="tok-str">&quot;Сейшельські Острови&quot;</span>, <span class="tok-str">&quot;Сенеґал&quot;</span>, <span class="tok-str">&quot;Сент-Вінсент і Гренадини&quot;</span>, <span class="tok-str">&quot;Сент-Кітс і Невіс&quot;</span>, <span class="tok-str">&quot;Сент-Люсія&quot;</span>, <span class="tok-str">&quot;Сербія&quot;</span>, <span class="tok-str">&quot;Сирія&quot;</span>, <span class="tok-str">&quot;Сінгапур&quot;</span>, <span class="tok-str">&quot;Словаччина&quot;</span>, <span class="tok-str">&quot;Словенія&quot;</span>, <span class="tok-str">&quot;Соломонові Острови&quot;</span>, <span class="tok-str">&quot;Сомалі&quot;</span>, <span class="tok-str">&quot;Судан&quot;</span>, <span class="tok-str">&quot;Суринам&quot;</span>, <span class="tok-str">&quot;Східний Тимор&quot;</span>, <span class="tok-str">&quot;США&quot;</span>, <span class="tok-str">&quot;Сьєрра-Леоне&quot;</span>, <span class="tok-str">&quot;Таджикистан&quot;</span>, <span class="tok-str">&quot;Таїланд&quot;</span>, <span class="tok-str">&quot;Танзанія&quot;</span>, <span class="tok-str">&quot;Того&quot;</span>, <span class="tok-str">&quot;Тонга&quot;</span>, <span class="tok-str">&quot;Тринідад і Тобаго&quot;</span>, <span class="tok-str">&quot;Тувалу&quot;</span>, <span class="tok-str">&quot;Туніс&quot;</span>, <span class="tok-str">&quot;Туреччина&quot;</span>, <span class="tok-str">&quot;Туркменістан&quot;</span>, <span class="tok-str">&quot;Уганда&quot;</span>, <span class="tok-str">&quot;Угорщина&quot;</span>, <span class="tok-str">&quot;Узбекистан&quot;</span>, <span class="tok-str">&quot;Україна&quot;</span>, <span class="tok-str">&quot;Уругвай&quot;</span>, <span class="tok-str">&quot;Федеративні Штати Мікронезії&quot;</span>, <span class="tok-str">&quot;Фіджі&quot;</span>, <span class="tok-str">&quot;Філіппіни&quot;</span>, <span class="tok-str">&quot;Фінляндія&quot;</span>, <span class="tok-str">&quot;Франція&quot;</span>, <span class="tok-str">&quot;Хорватія&quot;</span>, <span class="tok-str">&quot;Центральноафриканська Республіка&quot;</span>, <span class="tok-str">&quot;Чад&quot;</span>, <span class="tok-str">&quot;Чехія&quot;</span>, <span class="tok-str">&quot;Чилі&quot;</span>, <span class="tok-str">&quot;Чорногорія&quot;</span>, <span class="tok-str">&quot;Швейцарія&quot;</span>, <span class="tok-str">&quot;Швеція&quot;</span>, <span class="tok-str">&quot;Шрі-Ланка&quot;</span>, <span class="tok-str">&quot;Ямайка&quot;</span>, <span class="tok-str">&quot;Японія&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> default_country = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;Україна&quot;</span>};</span>
+<span class="line" id="L14"></span>
+<span class="line" id="L15"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> postcode = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;#####&quot;</span>};</span>
+<span class="line" id="L16"></span>
+<span class="line" id="L17"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> secondary_address = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;кв. ###&quot;</span>};</span>
+<span class="line" id="L18"></span>
+<span class="line" id="L19"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> state = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;АР Крим&quot;</span>, <span class="tok-str">&quot;Вінницька область&quot;</span>, <span class="tok-str">&quot;Волинська область&quot;</span>, <span class="tok-str">&quot;Дніпропетровська область&quot;</span>, <span class="tok-str">&quot;Донецька область&quot;</span>, <span class="tok-str">&quot;Житомирська область&quot;</span>, <span class="tok-str">&quot;Закарпатська область&quot;</span>, <span class="tok-str">&quot;Запорізька область&quot;</span>, <span class="tok-str">&quot;Івано-Франківська область&quot;</span>, <span class="tok-str">&quot;Київська область&quot;</span>, <span class="tok-str">&quot;Кіровоградська область&quot;</span>, <span class="tok-str">&quot;Луганська область&quot;</span>, <span class="tok-str">&quot;Львівська область&quot;</span>, <span class="tok-str">&quot;Миколаївська область&quot;</span>, <span class="tok-str">&quot;Одеська область&quot;</span>, <span class="tok-str">&quot;Полтавська область&quot;</span>, <span class="tok-str">&quot;Рівненська область&quot;</span>, <span class="tok-str">&quot;Сумська область&quot;</span>, <span class="tok-str">&quot;Тернопільська область&quot;</span>, <span class="tok-str">&quot;Харківська область&quot;</span>, <span class="tok-str">&quot;Херсонська область&quot;</span>, <span class="tok-str">&quot;Хмельницька область&quot;</span>, <span class="tok-str">&quot;Черкаська область&quot;</span>, <span class="tok-str">&quot;Чернівецька область&quot;</span>, <span class="tok-str">&quot;Чернігівська область&quot;</span>, <span class="tok-str">&quot;Київ&quot;</span>, <span class="tok-str">&quot;Севастополь&quot;</span> };</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_address = .{ .normal = <span class="tok-str">&quot;{{location.street}}, {{location.buildingNumber}}&quot;</span>, .full = <span class="tok-str">&quot;{{location.street}}, {{location.buildingNumber}} {{location.secondaryAddress}}&quot;</span> };</span>
+<span class="line" id="L22"></span>
+<span class="line" id="L23"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Зелена&quot;</span>, <span class="tok-str">&quot;Молодіжна&quot;</span>, <span class="tok-str">&quot;Городоцька&quot;</span>, <span class="tok-str">&quot;Стрийська&quot;</span>, <span class="tok-str">&quot;Вузька&quot;</span>, <span class="tok-str">&quot;Нижанківського&quot;</span>, <span class="tok-str">&quot;Староміська&quot;</span>, <span class="tok-str">&quot;Ліста&quot;</span>, <span class="tok-str">&quot;Вічева&quot;</span>, <span class="tok-str">&quot;Брюховичів&quot;</span>, <span class="tok-str">&quot;Винників&quot;</span>, <span class="tok-str">&quot;Рудного&quot;</span>, <span class="tok-str">&quot;Коліївщини&quot;</span> };</span>
+<span class="line" id="L24"></span>
+<span class="line" id="L25"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_pattern = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;{{location.street_prefix}} {{location.street_name}}&quot;</span>, <span class="tok-str">&quot;{{location.street_name}} {{location.street_suffix}}&quot;</span> };</span>
+<span class="line" id="L26"></span>
+<span class="line" id="L27"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_prefix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;вул.&quot;</span>, <span class="tok-str">&quot;вулиця&quot;</span>, <span class="tok-str">&quot;пр.&quot;</span>, <span class="tok-str">&quot;проспект&quot;</span>, <span class="tok-str">&quot;пл.&quot;</span>, <span class="tok-str">&quot;площа&quot;</span>, <span class="tok-str">&quot;пров.&quot;</span>, <span class="tok-str">&quot;провулок&quot;</span> };</span>
+<span class="line" id="L28"></span>
+<span class="line" id="L29"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> street_suffix = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{<span class="tok-str">&quot;майдан&quot;</span>};</span>
+<span class="line" id="L30"></span>
+</code></pre></body>
+</html>

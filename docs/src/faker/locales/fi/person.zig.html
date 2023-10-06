@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>locales\fi\person.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVR4AWMYWuD7EllJIM4G4g4g5oIJ/odhOJ8wToOxSTXgNxDHoeiBMfA4+wGShjyYOCkG/IGqWQziEzYAoUAeiF9D5U+DxEg14DRU7jWIT5IBIOdCxf+A+CQZAAoopEB7QJwBCBwHiip8UYmRdrAlDpIMgApwQZNnNii5Dq0MBgCxxycBnwEd+wAAAABJRU5ErkJggg==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTMgMTQwIj48ZyBmaWxsPSIjRjdBNDFEIj48Zz48cG9seWdvbiBwb2ludHM9IjQ2LDIyIDI4LDQ0IDE5LDMwIi8+PHBvbHlnb24gcG9pbnRzPSI0NiwyMiAzMywzMyAyOCw0NCAyMiw0NCAyMiw5NSAzMSw5NSAyMCwxMDAgMTIsMTE3IDAsMTE3IDAsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMzEsOTUgMTIsMTE3IDQsMTA2Ii8+PC9nPjxnPjxwb2x5Z29uIHBvaW50cz0iNTYsMjIgNjIsMzYgMzcsNDQiLz48cG9seWdvbiBwb2ludHM9IjU2LDIyIDExMSwyMiAxMTEsNDQgMzcsNDQgNTYsMzIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTE2LDk1IDk3LDExNyA5MCwxMDQiLz48cG9seWdvbiBwb2ludHM9IjExNiw5NSAxMDAsMTA0IDk3LDExNyA0MiwxMTcgNDIsOTUiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTUwLDAgNTIsMTE3IDMsMTQwIDEwMSwyMiIvPjwvZz48Zz48cG9seWdvbiBwb2ludHM9IjE0MSwyMiAxNDAsNDAgMTIyLDQ1Ii8+PHBvbHlnb24gcG9pbnRzPSIxNTMsMjIgMTUzLDExNyAxMDYsMTE3IDEyMCwxMDUgMTI1LDk1IDEzMSw5NSAxMzEsNDUgMTIyLDQ1IDEzMiwzNiAxNDEsMjIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyIvPjxwb2x5Z29uIHBvaW50cz0iMTI1LDk1IDEzMCwxMTAgMTA2LDExNyIvPjwvZz48L2c+PC9zdmc+">
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> NamePattern = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;../../modules/person.zig&quot;</span>).NamePattern;</span>
+<span class="line" id="L2"></span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> female_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aino&quot;</span>, <span class="tok-str">&quot;Anja&quot;</span>, <span class="tok-str">&quot;Anna&quot;</span>, <span class="tok-str">&quot;Anne&quot;</span>, <span class="tok-str">&quot;Anneli&quot;</span>, <span class="tok-str">&quot;Annikki&quot;</span>, <span class="tok-str">&quot;Eeva&quot;</span>, <span class="tok-str">&quot;Elina&quot;</span>, <span class="tok-str">&quot;Elisabet&quot;</span>, <span class="tok-str">&quot;Emilia&quot;</span>, <span class="tok-str">&quot;Eveliina&quot;</span>, <span class="tok-str">&quot;Hanna&quot;</span>, <span class="tok-str">&quot;Hannele&quot;</span>, <span class="tok-str">&quot;Helena&quot;</span>, <span class="tok-str">&quot;Inkeri&quot;</span>, <span class="tok-str">&quot;Irmeli&quot;</span>, <span class="tok-str">&quot;Johanna&quot;</span>, <span class="tok-str">&quot;Kaarina&quot;</span>, <span class="tok-str">&quot;Karoliina&quot;</span>, <span class="tok-str">&quot;Katariina&quot;</span>, <span class="tok-str">&quot;Kristiina&quot;</span>, <span class="tok-str">&quot;Kyllikki&quot;</span>, <span class="tok-str">&quot;Laura&quot;</span>, <span class="tok-str">&quot;Leena&quot;</span>, <span class="tok-str">&quot;Liisa&quot;</span>, <span class="tok-str">&quot;Maarit&quot;</span>, <span class="tok-str">&quot;Maija&quot;</span>, <span class="tok-str">&quot;Mari&quot;</span>, <span class="tok-str">&quot;Maria&quot;</span>, <span class="tok-str">&quot;Marika&quot;</span>, <span class="tok-str">&quot;Marja&quot;</span>, <span class="tok-str">&quot;Marjatta&quot;</span>, <span class="tok-str">&quot;Minna&quot;</span>, <span class="tok-str">&quot;Orvokki&quot;</span>, <span class="tok-str">&quot;Pauliina&quot;</span>, <span class="tok-str">&quot;Pirjo&quot;</span>, <span class="tok-str">&quot;Pirkko&quot;</span>, <span class="tok-str">&quot;Päivi&quot;</span>, <span class="tok-str">&quot;Riitta&quot;</span>, <span class="tok-str">&quot;Ritva&quot;</span>, <span class="tok-str">&quot;Sari&quot;</span>, <span class="tok-str">&quot;Satu&quot;</span>, <span class="tok-str">&quot;Sinikka&quot;</span>, <span class="tok-str">&quot;Sofia&quot;</span>, <span class="tok-str">&quot;Susanna&quot;</span>, <span class="tok-str">&quot;Tarja&quot;</span>, <span class="tok-str">&quot;Tellervo&quot;</span>, <span class="tok-str">&quot;Tiina&quot;</span>, <span class="tok-str">&quot;Tuula&quot;</span>, <span class="tok-str">&quot;Tuulikki&quot;</span> };</span>
+<span class="line" id="L4"></span>
+<span class="line" id="L5"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aleksi&quot;</span>, <span class="tok-str">&quot;Antero&quot;</span>, <span class="tok-str">&quot;Antti&quot;</span>, <span class="tok-str">&quot;Ari&quot;</span>, <span class="tok-str">&quot;Eero&quot;</span>, <span class="tok-str">&quot;Ensio&quot;</span>, <span class="tok-str">&quot;Erik&quot;</span>, <span class="tok-str">&quot;Erkki&quot;</span>, <span class="tok-str">&quot;Hannu&quot;</span>, <span class="tok-str">&quot;Heikki&quot;</span>, <span class="tok-str">&quot;Henrik&quot;</span>, <span class="tok-str">&quot;Ilmari&quot;</span>, <span class="tok-str">&quot;Jaakko&quot;</span>, <span class="tok-str">&quot;Janne&quot;</span>, <span class="tok-str">&quot;Jari&quot;</span>, <span class="tok-str">&quot;Johannes&quot;</span>, <span class="tok-str">&quot;Juha&quot;</span>, <span class="tok-str">&quot;Juhani&quot;</span>, <span class="tok-str">&quot;Juho&quot;</span>, <span class="tok-str">&quot;Jukka&quot;</span>, <span class="tok-str">&quot;Kalervo&quot;</span>, <span class="tok-str">&quot;Kalevi&quot;</span>, <span class="tok-str">&quot;Kari&quot;</span>, <span class="tok-str">&quot;Kristian&quot;</span>, <span class="tok-str">&quot;Lauri&quot;</span>, <span class="tok-str">&quot;Markku&quot;</span>, <span class="tok-str">&quot;Marko&quot;</span>, <span class="tok-str">&quot;Markus&quot;</span>, <span class="tok-str">&quot;Martti&quot;</span>, <span class="tok-str">&quot;Matias&quot;</span>, <span class="tok-str">&quot;Matti&quot;</span>, <span class="tok-str">&quot;Mika&quot;</span>, <span class="tok-str">&quot;Mikael&quot;</span>, <span class="tok-str">&quot;Mikko&quot;</span>, <span class="tok-str">&quot;Olavi&quot;</span>, <span class="tok-str">&quot;Oskari&quot;</span>, <span class="tok-str">&quot;Pekka&quot;</span>, <span class="tok-str">&quot;Pentti&quot;</span>, <span class="tok-str">&quot;Petri&quot;</span>, <span class="tok-str">&quot;Petteri&quot;</span>, <span class="tok-str">&quot;Sakari&quot;</span>, <span class="tok-str">&quot;Sami&quot;</span>, <span class="tok-str">&quot;Seppo&quot;</span>, <span class="tok-str">&quot;Tapani&quot;</span>, <span class="tok-str">&quot;Tapio&quot;</span>, <span class="tok-str">&quot;Timo&quot;</span>, <span class="tok-str">&quot;Tuomas&quot;</span>, <span class="tok-str">&quot;Valtteri&quot;</span>, <span class="tok-str">&quot;Veikko&quot;</span>, <span class="tok-str">&quot;Ville&quot;</span>, <span class="tok-str">&quot;Aino&quot;</span>, <span class="tok-str">&quot;Anja&quot;</span>, <span class="tok-str">&quot;Anna&quot;</span>, <span class="tok-str">&quot;Anne&quot;</span>, <span class="tok-str">&quot;Anneli&quot;</span>, <span class="tok-str">&quot;Annikki&quot;</span>, <span class="tok-str">&quot;Eeva&quot;</span>, <span class="tok-str">&quot;Elina&quot;</span>, <span class="tok-str">&quot;Elisabet&quot;</span>, <span class="tok-str">&quot;Emilia&quot;</span>, <span class="tok-str">&quot;Eveliina&quot;</span>, <span class="tok-str">&quot;Hanna&quot;</span>, <span class="tok-str">&quot;Hannele&quot;</span>, <span class="tok-str">&quot;Helena&quot;</span>, <span class="tok-str">&quot;Inkeri&quot;</span>, <span class="tok-str">&quot;Irmeli&quot;</span>, <span class="tok-str">&quot;Johanna&quot;</span>, <span class="tok-str">&quot;Kaarina&quot;</span>, <span class="tok-str">&quot;Karoliina&quot;</span>, <span class="tok-str">&quot;Katariina&quot;</span>, <span class="tok-str">&quot;Kristiina&quot;</span>, <span class="tok-str">&quot;Kyllikki&quot;</span>, <span class="tok-str">&quot;Laura&quot;</span>, <span class="tok-str">&quot;Leena&quot;</span>, <span class="tok-str">&quot;Liisa&quot;</span>, <span class="tok-str">&quot;Maarit&quot;</span>, <span class="tok-str">&quot;Maija&quot;</span>, <span class="tok-str">&quot;Mari&quot;</span>, <span class="tok-str">&quot;Maria&quot;</span>, <span class="tok-str">&quot;Marika&quot;</span>, <span class="tok-str">&quot;Marja&quot;</span>, <span class="tok-str">&quot;Marjatta&quot;</span>, <span class="tok-str">&quot;Minna&quot;</span>, <span class="tok-str">&quot;Orvokki&quot;</span>, <span class="tok-str">&quot;Pauliina&quot;</span>, <span class="tok-str">&quot;Pirjo&quot;</span>, <span class="tok-str">&quot;Pirkko&quot;</span>, <span class="tok-str">&quot;Päivi&quot;</span>, <span class="tok-str">&quot;Riitta&quot;</span>, <span class="tok-str">&quot;Ritva&quot;</span>, <span class="tok-str">&quot;Sari&quot;</span>, <span class="tok-str">&quot;Satu&quot;</span>, <span class="tok-str">&quot;Sinikka&quot;</span>, <span class="tok-str">&quot;Sofia&quot;</span>, <span class="tok-str">&quot;Susanna&quot;</span>, <span class="tok-str">&quot;Tarja&quot;</span>, <span class="tok-str">&quot;Tellervo&quot;</span>, <span class="tok-str">&quot;Tiina&quot;</span>, <span class="tok-str">&quot;Tuula&quot;</span>, <span class="tok-str">&quot;Tuulikki&quot;</span> };</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aaltonen&quot;</span>, <span class="tok-str">&quot;Ahonen&quot;</span>, <span class="tok-str">&quot;Anttila&quot;</span>, <span class="tok-str">&quot;Hakala&quot;</span>, <span class="tok-str">&quot;Heikkilä&quot;</span>, <span class="tok-str">&quot;Heikkinen&quot;</span>, <span class="tok-str">&quot;Heinonen&quot;</span>, <span class="tok-str">&quot;Hiltunen&quot;</span>, <span class="tok-str">&quot;Hirvonen&quot;</span>, <span class="tok-str">&quot;Hämäläinen&quot;</span>, <span class="tok-str">&quot;Jokinen&quot;</span>, <span class="tok-str">&quot;Järvinen&quot;</span>, <span class="tok-str">&quot;Kallio&quot;</span>, <span class="tok-str">&quot;Karjalainen&quot;</span>, <span class="tok-str">&quot;Kinnunen&quot;</span>, <span class="tok-str">&quot;Koivisto&quot;</span>, <span class="tok-str">&quot;Korhonen&quot;</span>, <span class="tok-str">&quot;Koskinen&quot;</span>, <span class="tok-str">&quot;Laakso&quot;</span>, <span class="tok-str">&quot;Laaksonen&quot;</span>, <span class="tok-str">&quot;Lahtinen&quot;</span>, <span class="tok-str">&quot;Laine&quot;</span>, <span class="tok-str">&quot;Laitinen&quot;</span>, <span class="tok-str">&quot;Lehtinen&quot;</span>, <span class="tok-str">&quot;Lehto&quot;</span>, <span class="tok-str">&quot;Lehtonen&quot;</span>, <span class="tok-str">&quot;Leinonen&quot;</span>, <span class="tok-str">&quot;Leppänen&quot;</span>, <span class="tok-str">&quot;Manninen&quot;</span>, <span class="tok-str">&quot;Mattila&quot;</span>, <span class="tok-str">&quot;Miettinen&quot;</span>, <span class="tok-str">&quot;Mustonen&quot;</span>, <span class="tok-str">&quot;Mäkelä&quot;</span>, <span class="tok-str">&quot;Mäkinen&quot;</span>, <span class="tok-str">&quot;Niemi&quot;</span>, <span class="tok-str">&quot;Nieminen&quot;</span>, <span class="tok-str">&quot;Ojala&quot;</span>, <span class="tok-str">&quot;Pitkänen&quot;</span>, <span class="tok-str">&quot;Rantanen&quot;</span>, <span class="tok-str">&quot;Räsänen&quot;</span>, <span class="tok-str">&quot;Saarinen&quot;</span>, <span class="tok-str">&quot;Salminen&quot;</span>, <span class="tok-str">&quot;Salo&quot;</span>, <span class="tok-str">&quot;Salonen&quot;</span>, <span class="tok-str">&quot;Savolainen&quot;</span>, <span class="tok-str">&quot;Toivonen&quot;</span>, <span class="tok-str">&quot;Tuominen&quot;</span>, <span class="tok-str">&quot;Turunen&quot;</span>, <span class="tok-str">&quot;Virtanen&quot;</span>, <span class="tok-str">&quot;Väisänen&quot;</span> };</span>
+<span class="line" id="L8"></span>
+<span class="line" id="L9"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> last_name_pattern = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.last_name}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L10"></span>
+<span class="line" id="L11"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> male_first_name = [_][]<span class="tok-kw">const</span> <span class="tok-type">u8</span>{ <span class="tok-str">&quot;Aleksi&quot;</span>, <span class="tok-str">&quot;Antero&quot;</span>, <span class="tok-str">&quot;Antti&quot;</span>, <span class="tok-str">&quot;Ari&quot;</span>, <span class="tok-str">&quot;Eero&quot;</span>, <span class="tok-str">&quot;Ensio&quot;</span>, <span class="tok-str">&quot;Erik&quot;</span>, <span class="tok-str">&quot;Erkki&quot;</span>, <span class="tok-str">&quot;Hannu&quot;</span>, <span class="tok-str">&quot;Heikki&quot;</span>, <span class="tok-str">&quot;Henrik&quot;</span>, <span class="tok-str">&quot;Ilmari&quot;</span>, <span class="tok-str">&quot;Jaakko&quot;</span>, <span class="tok-str">&quot;Janne&quot;</span>, <span class="tok-str">&quot;Jari&quot;</span>, <span class="tok-str">&quot;Johannes&quot;</span>, <span class="tok-str">&quot;Juha&quot;</span>, <span class="tok-str">&quot;Juhani&quot;</span>, <span class="tok-str">&quot;Juho&quot;</span>, <span class="tok-str">&quot;Jukka&quot;</span>, <span class="tok-str">&quot;Kalervo&quot;</span>, <span class="tok-str">&quot;Kalevi&quot;</span>, <span class="tok-str">&quot;Kari&quot;</span>, <span class="tok-str">&quot;Kristian&quot;</span>, <span class="tok-str">&quot;Lauri&quot;</span>, <span class="tok-str">&quot;Markku&quot;</span>, <span class="tok-str">&quot;Marko&quot;</span>, <span class="tok-str">&quot;Markus&quot;</span>, <span class="tok-str">&quot;Martti&quot;</span>, <span class="tok-str">&quot;Matias&quot;</span>, <span class="tok-str">&quot;Matti&quot;</span>, <span class="tok-str">&quot;Mika&quot;</span>, <span class="tok-str">&quot;Mikael&quot;</span>, <span class="tok-str">&quot;Mikko&quot;</span>, <span class="tok-str">&quot;Olavi&quot;</span>, <span class="tok-str">&quot;Oskari&quot;</span>, <span class="tok-str">&quot;Pekka&quot;</span>, <span class="tok-str">&quot;Pentti&quot;</span>, <span class="tok-str">&quot;Petri&quot;</span>, <span class="tok-str">&quot;Petteri&quot;</span>, <span class="tok-str">&quot;Sakari&quot;</span>, <span class="tok-str">&quot;Sami&quot;</span>, <span class="tok-str">&quot;Seppo&quot;</span>, <span class="tok-str">&quot;Tapani&quot;</span>, <span class="tok-str">&quot;Tapio&quot;</span>, <span class="tok-str">&quot;Timo&quot;</span>, <span class="tok-str">&quot;Tuomas&quot;</span>, <span class="tok-str">&quot;Valtteri&quot;</span>, <span class="tok-str">&quot;Veikko&quot;</span>, <span class="tok-str">&quot;Ville&quot;</span> };</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> name = [_]NamePattern{.{ .value = <span class="tok-str">&quot;{{person.firstName}} {{person.lastName}}&quot;</span>, .weight = <span class="tok-number">1</span> }};</span>
+<span class="line" id="L14"></span>
+</code></pre></body>
+</html>
