@@ -83,7 +83,7 @@ pub fn main() !void {
             allocator.free(self.body);
         }
 
-        pub const @"faker.dummy" = struct {
+        pub const @"faker.fields" = struct {
             pub const tag = .{ "color", "human" };
             pub const title = .{ "lorem", "words", .{ .min = 5, .max = 10 } };
 
