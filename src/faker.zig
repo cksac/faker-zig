@@ -18,17 +18,20 @@ pub fn Faker(comptime opt: anytype) type {
         // modules
         color: module.ColorModule(opt.locales),
         lorem: module.LoremModule(opt.locales),
+        number: module.NumberModule(opt.locales),
 
         pub fn init(allocator: Allocator, random: std.rand.Random) Self {
             const helper = Helper(opt.locales).init(allocator, random);
             const color = module.ColorModule(opt.locales).init(helper);
             const lorem = module.LoremModule(opt.locales).init(helper);
+            const number = module.NumberModule(opt.locales).init(helper);
             return Self{
                 .allocator = allocator,
                 .random = random,
                 .helper = helper,
                 .color = color,
                 .lorem = lorem,
+                .number = number,
             };
         }
 
@@ -59,5 +62,5 @@ pub fn Faker(comptime opt: anytype) type {
 test {
     const tests = @import("test.zig");
     _ = tests;
-    // std.testing.refAllDeclsRecursive(@This());
+    std.testing.refAllDeclsRecursive(@This());
 }
