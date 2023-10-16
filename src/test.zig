@@ -406,4 +406,10 @@ test "lorem" {
     const v4 = FAKER.lorem.words(.{ .separator = "-" });
     defer FAKER.allocator.free(v4);
     std.debug.print("lorem.words(.{{ .separator = \"-\" }}) = {s}\n", .{v4});
+
+    {
+        const v = FAKER.lorem.sentence(.{ .min = 10, .max = 15 });
+        defer FAKER.allocator.free(v);
+        std.debug.print("lorem.sentence(.{{ .min = 10, .max = 15 }}) = {s}\n", .{v});
+    }
 }

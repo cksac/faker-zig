@@ -11,6 +11,14 @@ pub fn LoremModule(comptime locales: anytype) type {
             return Self{ .helper = helper };
         }
 
+        fn multiple_words(self: Self, len: usize) std.ArrayList([]const u8) {
+            var arr = std.ArrayList([]const u8).init(self.helper.allocator);
+            for (0..len) |_| {
+                arr.append(self.word()) catch |e| std.debug.panic("panic with error: {any}", .{e});
+            }
+            return arr;
+        }
+
         /// Generates a word from lorem words
         /// @example
         /// faker.lorem.word();
@@ -35,19 +43,23 @@ pub fn LoremModule(comptime locales: anytype) type {
             separator: []const u8 = " ",
         }) []u8 {
             const len = self.helper.random.intRangeLessThan(usize, opt.min, opt.max);
-            var arr = std.ArrayList([]const u8).init(self.helper.allocator);
+            var arr = self.multiple_words(len);
             defer arr.deinit();
-            for (0..len) |_| {
-                arr.append(self.word()) catch |e| std.debug.panic("panic with error: {any}", .{e});
-            }
             const v = std.mem.join(self.helper.allocator, opt.separator, arr.items) catch |e| std.debug.panic("panic with error: {any}", .{e});
             return v;
         }
 
-        // pub fn sentence(self: Self, opt: struct {
-        //     min: usize = 3,
-        //     max: usize = 10,
-        // }) []u8 {}
+        pub fn sentence(self: Self, opt: struct {
+            min: usize = 3,
+            max: usize = 10,
+        }) []u8 {
+            const len = self.helper.random.intRangeLessThan(usize, opt.min, opt.max);
+            var arr = self.multiple_words(len);
+            defer arr.deinit();
+            const v = std.mem.join(self.helper.allocator, " ", arr.items) catch |e| std.debug.panic("panic with error: {any}", .{e});
+            var s = v ++ ".";
+            return s;
+        }
 
         // pub fn sentences(self: Self, opt: struct {
         //     min: usize = 3,
