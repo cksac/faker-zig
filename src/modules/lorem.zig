@@ -57,8 +57,8 @@ pub fn LoremModule(comptime locales: anytype) type {
             var arr = self.multiple_words(len);
             defer arr.deinit();
             const v = std.mem.join(self.helper.allocator, " ", arr.items) catch |e| std.debug.panic("panic with error: {any}", .{e});
-            var s = v ++ ".";
-            return s;
+            // TODO: uppercase first char, add period at the end
+            return v;
         }
 
         // pub fn sentences(self: Self, opt: struct {
