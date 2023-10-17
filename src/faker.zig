@@ -19,12 +19,15 @@ pub fn Faker(comptime opt: anytype) type {
         color: module.ColorModule(opt.locales),
         lorem: module.LoremModule(opt.locales),
         number: module.NumberModule(opt.locales),
+        person: module.PersonModule(opt.locales),
 
         pub fn init(allocator: Allocator, random: std.rand.Random) Self {
             const helper = Helper(opt.locales).init(allocator, random);
             const color = module.ColorModule(opt.locales).init(helper);
             const lorem = module.LoremModule(opt.locales).init(helper);
             const number = module.NumberModule(opt.locales).init(helper);
+            const person = module.PersonModule(opt.locales).init(helper);
+
             return Self{
                 .allocator = allocator,
                 .random = random,
@@ -32,6 +35,7 @@ pub fn Faker(comptime opt: anytype) type {
                 .color = color,
                 .lorem = lorem,
                 .number = number,
+                .person = person,
             };
         }
 

@@ -1,5 +1,4 @@
 const std = @import("std");
-const Allocator = std.mem.Allocator;
 const Helper = @import("../helper.zig").Helper;
 
 pub fn LoremModule(comptime locales: anytype) type {
