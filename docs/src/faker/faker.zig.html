@@ -134,51 +134,55 @@
 <span class="line" id="L19">        color: module.ColorModule(opt.locales),</span>
 <span class="line" id="L20">        lorem: module.LoremModule(opt.locales),</span>
 <span class="line" id="L21">        number: module.NumberModule(opt.locales),</span>
-<span class="line" id="L22"></span>
-<span class="line" id="L23">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">init</span>(allocator: Allocator, random: std.rand.Random) Self {</span>
-<span class="line" id="L24">            <span class="tok-kw">const</span> helper = Helper(opt.locales).init(allocator, random);</span>
-<span class="line" id="L25">            <span class="tok-kw">const</span> color = module.ColorModule(opt.locales).init(helper);</span>
-<span class="line" id="L26">            <span class="tok-kw">const</span> lorem = module.LoremModule(opt.locales).init(helper);</span>
-<span class="line" id="L27">            <span class="tok-kw">const</span> number = module.NumberModule(opt.locales).init(helper);</span>
-<span class="line" id="L28">            <span class="tok-kw">return</span> Self{</span>
-<span class="line" id="L29">                .allocator = allocator,</span>
-<span class="line" id="L30">                .random = random,</span>
-<span class="line" id="L31">                .helper = helper,</span>
-<span class="line" id="L32">                .color = color,</span>
-<span class="line" id="L33">                .lorem = lorem,</span>
-<span class="line" id="L34">                .number = number,</span>
-<span class="line" id="L35">            };</span>
-<span class="line" id="L36">        }</span>
-<span class="line" id="L37"></span>
-<span class="line" id="L38">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">dummy</span>(self: Self, <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>) T {</span>
-<span class="line" id="L39">            <span class="tok-kw">const</span> fake = <span class="tok-kw">comptime</span> blk: {</span>
-<span class="line" id="L40">                <span class="tok-kw">if</span> (<span class="tok-builtin">@hasField</span>(<span class="tok-builtin">@TypeOf</span>(opt), <span class="tok-str">&quot;user_impls&quot;</span>)) {</span>
-<span class="line" id="L41">                    <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (opt.user_impls) |impl| {</span>
-<span class="line" id="L42">                        <span class="tok-kw">if</span> (impl.is(T)) {</span>
-<span class="line" id="L43">                            <span class="tok-kw">break</span> :blk impl;</span>
-<span class="line" id="L44">                        }</span>
-<span class="line" id="L45">                    }</span>
-<span class="line" id="L46">                }</span>
-<span class="line" id="L47"></span>
-<span class="line" id="L48">                <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (impls) |impl| {</span>
-<span class="line" id="L49">                    <span class="tok-kw">if</span> (impl.is(T)) {</span>
-<span class="line" id="L50">                        <span class="tok-kw">break</span> :blk impl;</span>
-<span class="line" id="L51">                    }</span>
-<span class="line" id="L52">                }</span>
-<span class="line" id="L53"></span>
-<span class="line" id="L54">                <span class="tok-builtin">@compileError</span>(<span class="tok-str">&quot;type is not supported: &quot;</span> ++ <span class="tok-builtin">@typeName</span>(T));</span>
-<span class="line" id="L55">            };</span>
-<span class="line" id="L56"></span>
-<span class="line" id="L57">            <span class="tok-kw">return</span> fake.dummy(T, opt, self);</span>
-<span class="line" id="L58">        }</span>
-<span class="line" id="L59">    };</span>
-<span class="line" id="L60">}</span>
-<span class="line" id="L61"></span>
-<span class="line" id="L62"><span class="tok-kw">test</span> {</span>
-<span class="line" id="L63">    <span class="tok-kw">const</span> tests = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;test.zig&quot;</span>);</span>
-<span class="line" id="L64">    _ = tests;</span>
-<span class="line" id="L65">    std.testing.refAllDeclsRecursive(<span class="tok-builtin">@This</span>());</span>
-<span class="line" id="L66">}</span>
-<span class="line" id="L67"></span>
+<span class="line" id="L22">        person: module.PersonModule(opt.locales),</span>
+<span class="line" id="L23"></span>
+<span class="line" id="L24">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">init</span>(allocator: Allocator, random: std.rand.Random) Self {</span>
+<span class="line" id="L25">            <span class="tok-kw">const</span> helper = Helper(opt.locales).init(allocator, random);</span>
+<span class="line" id="L26">            <span class="tok-kw">const</span> color = module.ColorModule(opt.locales).init(helper);</span>
+<span class="line" id="L27">            <span class="tok-kw">const</span> lorem = module.LoremModule(opt.locales).init(helper);</span>
+<span class="line" id="L28">            <span class="tok-kw">const</span> number = module.NumberModule(opt.locales).init(helper);</span>
+<span class="line" id="L29">            <span class="tok-kw">const</span> person = module.PersonModule(opt.locales).init(helper);</span>
+<span class="line" id="L30"></span>
+<span class="line" id="L31">            <span class="tok-kw">return</span> Self{</span>
+<span class="line" id="L32">                .allocator = allocator,</span>
+<span class="line" id="L33">                .random = random,</span>
+<span class="line" id="L34">                .helper = helper,</span>
+<span class="line" id="L35">                .color = color,</span>
+<span class="line" id="L36">                .lorem = lorem,</span>
+<span class="line" id="L37">                .number = number,</span>
+<span class="line" id="L38">                .person = person,</span>
+<span class="line" id="L39">            };</span>
+<span class="line" id="L40">        }</span>
+<span class="line" id="L41"></span>
+<span class="line" id="L42">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">dummy</span>(self: Self, <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>) T {</span>
+<span class="line" id="L43">            <span class="tok-kw">const</span> fake = <span class="tok-kw">comptime</span> blk: {</span>
+<span class="line" id="L44">                <span class="tok-kw">if</span> (<span class="tok-builtin">@hasField</span>(<span class="tok-builtin">@TypeOf</span>(opt), <span class="tok-str">&quot;user_impls&quot;</span>)) {</span>
+<span class="line" id="L45">                    <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (opt.user_impls) |impl| {</span>
+<span class="line" id="L46">                        <span class="tok-kw">if</span> (impl.is(T)) {</span>
+<span class="line" id="L47">                            <span class="tok-kw">break</span> :blk impl;</span>
+<span class="line" id="L48">                        }</span>
+<span class="line" id="L49">                    }</span>
+<span class="line" id="L50">                }</span>
+<span class="line" id="L51"></span>
+<span class="line" id="L52">                <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (impls) |impl| {</span>
+<span class="line" id="L53">                    <span class="tok-kw">if</span> (impl.is(T)) {</span>
+<span class="line" id="L54">                        <span class="tok-kw">break</span> :blk impl;</span>
+<span class="line" id="L55">                    }</span>
+<span class="line" id="L56">                }</span>
+<span class="line" id="L57"></span>
+<span class="line" id="L58">                <span class="tok-builtin">@compileError</span>(<span class="tok-str">&quot;type is not supported: &quot;</span> ++ <span class="tok-builtin">@typeName</span>(T));</span>
+<span class="line" id="L59">            };</span>
+<span class="line" id="L60"></span>
+<span class="line" id="L61">            <span class="tok-kw">return</span> fake.dummy(T, opt, self);</span>
+<span class="line" id="L62">        }</span>
+<span class="line" id="L63">    };</span>
+<span class="line" id="L64">}</span>
+<span class="line" id="L65"></span>
+<span class="line" id="L66"><span class="tok-kw">test</span> {</span>
+<span class="line" id="L67">    <span class="tok-kw">const</span> tests = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;test.zig&quot;</span>);</span>
+<span class="line" id="L68">    _ = tests;</span>
+<span class="line" id="L69">    std.testing.refAllDeclsRecursive(<span class="tok-builtin">@This</span>());</span>
+<span class="line" id="L70">}</span>
+<span class="line" id="L71"></span>
 </code></pre></body>
 </html>

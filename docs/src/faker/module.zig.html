@@ -112,9 +112,10 @@
     </style>
 </head>
 <body>
-<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">usingnamespace</span> <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;modules/color.zig&quot;</span>);</span>
-<span class="line" id="L2"><span class="tok-kw">pub</span> <span class="tok-kw">usingnamespace</span> <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;modules/lorem.zig&quot;</span>);</span>
-<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">usingnamespace</span> <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;modules/number.zig&quot;</span>);</span>
-<span class="line" id="L4"></span>
+<pre><code><span class="line" id="L1"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ColorModule = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;modules/color.zig&quot;</span>).ColorModule;</span>
+<span class="line" id="L2"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> LoremModule = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;modules/lorem.zig&quot;</span>).LoremModule;</span>
+<span class="line" id="L3"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> NumberModule = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;modules/number.zig&quot;</span>).NumberModule;</span>
+<span class="line" id="L4"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> PersonModule = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;modules/person.zig&quot;</span>).PersonModule;</span>
+<span class="line" id="L5"></span>
 </code></pre></body>
 </html>
